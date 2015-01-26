@@ -1,8 +1,23 @@
 
-
-function create_buttons (obj){
+function create_buttons(obj){
 	
+	$.each( obj.buttons, function( key, value ) {
+		// make button
+		var btn = '<img src ="assets/img/'+ obj.meta.path + value.btn_img +'">'
+		$('body').append(btn)
+	});
+	
+	
+	for (var key in obj.buttons) {
 		
+		$('body').append(obj.buttons)
+	}
+}
+
+
+
+function print_obj (obj){
+	
 	for (var key in obj) {
 		var log = '';
 		if (obj.hasOwnProperty(key)) {
