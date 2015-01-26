@@ -77,6 +77,58 @@ moloshe1.jpg (+1 troll)
 }
 
 
+/*
+	
+	SELFIES (PAIRED WITH BACKGROUNDS)
+
+sbhb.png (basic, -2 in every category)
+sbhd.png (-1 in every category, +1 cam girl)
+sbhm.png (-1 in every category, +1 martyr)
+sbht.png (-1 every category, +1 troll)
+sdhb.png (-1 every category, +1 camgirl)
+sdhd.png (+2 camgirl)
+sdhm.png (+1 camgirl +1 martyr)
+sdht.png (+1 camgirl +1 troll)
+smhb.png (-1 every category, +1 martyr)
+smhd.png (+1 camgirl, +1 martyr)
+smhm.png (+2 martyr)
+smht.png (+1 troll, +1 martyr)
+sthd.png (+1 troll, +1 camgirl)
+sthm.png (+1troll, +1 martyr)
+stht.png (+1troll, +1 troll)
+sthb.png (+1troll, -1 every category)
+
+______________
+FOODIES (PAIRED WITH BACKGROUNDS)
+
+bagelbites.png (+1 troll)
+smoothlie.png (+1 camgirl)
+spaghetti.png (+1 martyr)
+steak.png (+1 martyr)
+starbucks.png (-1 every category)
+sushi.png (+1 camgirl)
+tacobell.png (+1 troll)
+wine.png (+1 camgirl)
+________________
+BACKGROUNDS
+alienpizza.png (+1 camgirl)
+boobs.png (+1 troll)
+cheetos.png (+1 troll)
+doom.png (+1 martyr)
+ericharris.png (+1martyr)
+heartemoji.png (+1 camgirl)
+meme.png (+1 troll)
+pumpkinspice.png (-1 in every category)
+
+Affirmations page:
+You gained followers! (bar increases)
+You lost followers! (bar decreases)
+
+
+*/
+
+
+
 
 // one tags object
 // 18
