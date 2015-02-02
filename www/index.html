@@ -13,14 +13,56 @@ $(document).ready(function(){
 	
 	create_buttons(instagram_camera_roll);
 	
+	
+	
+//var screenW,screenH;	
+
+//
+
+	
+	$("#scene1_btn").click(function () {
+		console.log('scene1_btn()')
+		$("#scene1").animate({"margin-left": '+=200'});
+	});
+	$("#scene2_btn").click(function () {
+		console.log('scene2_btn()')
+		$("#scene2").animate({"margin-left": '+=200'});
+	});
+	
 });
 </script>
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
 <body>
 
 
-
+<div id="container">
+	
+	<nav>
+		<button id="scene1_btn">scene1</button>
+		<button id="scene2_btn">scene2</button>
+	</nav>
+	
+	<div id="scenecontainer">
+	
+	
+	
+	
+	
+	
+	<div id="scene1" class="scene">
+		currently visible
+	</div>
+	<div id="scene2" class="scene">
+		currently visible
+	</div>
+	
+	
+	
+	
+	</div>
+</div>
 
 
 
