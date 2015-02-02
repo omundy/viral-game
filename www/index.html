@@ -11,23 +11,108 @@ $(document).ready(function(){
 	
 	//load stuff
 	
-	create_buttons(instagram_camera_roll);
+	//create_buttons(instagram_camera_roll);
 	
 	
 	
-//var screenW,screenH;	
 
-//
+var sceneW = 1092;
+var sceneH = 768;
+
+
+var scene_positions = [0,1092,2184,3276,4368,5460];
+
+
+// current scene and frame
+var current_scene = {};
+/**
+ *	scene_control()
+ *	Controls all scene movement
+ */
+function scene_control(scene,frame){
+	
+	// in wrong scene, move to different scene
+	if (current_scene.scene != scene){
+		hide_scenes();
+		$('#'+scene+'_scene').show();
+		frame = 0;
+		$('#'+scene+'_scene').css('margin-left','0');
+		console.log('in wrong scene ('+ current_scene.scene +'), moving to '+ scene);
+	}
+	// in correct scene, wrong frame
+	else if (current_scene.scene == scene && current_scene.frame != frame){
+		console.log('in correct scene ('+ current_scene.scene +'), but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
+		
+		
+		var moveto = scene_positions[frame];
+		console.log(moveto);
+		var movefrom = scene_positions[current_scene.frame];
+		console.log(-movefrom);
+		
+		
+		$('#'+scene+'_scene').animate({"margin-left": '-='+ (moveto-movefrom)},500);
+		
+		/*
+		if (current_scene.frame < frame){
+			$('#'+scene+'_scene').animate({"margin-left": '-='+scene_positions[frame]},500);
+		} if (current_scene.frame > frame){
+			$('#'+scene+'_scene').animate({"margin-left": '+='+scene_positions[frame]},500);
+		}
+		*/
+	}
+	
+	// position
+	//$('#instacam_scene').css('left','0px');
+	
+	// save, report
+	current_scene = {'scene':scene,'frame':frame}
+	console.log(current_scene);
+}
+/**
+ *	hide_scenes()
+ *	To load a new one
+ */
+function hide_scenes(){
+	$('#home_scene').hide();
+	$('#cinder_scene').hide();
+	$('#dumblr_scene').hide();
+	$('#instacam_scene').hide();
+	$('#metube_scene').hide();
+}
+hide_scenes();
+scene_control('home',0);
+
+
+	$("#home_btn").click(function () { scene_control('home',0); });
+	$("#home1_btn").click(function () { scene_control('home',1); });
+	$("#home2_btn").click(function () { scene_control('home',2); });
+	
+	$("#cinder_btn").click(function () { scene_control('cinder',0); });
+	$("#cinder1_btn").click(function () { scene_control('cinder',1); });
+	$("#cinder2_btn").click(function () { scene_control('cinder',2); });
+	$("#cinder3_btn").click(function () { scene_control('cinder',3); });	
+	$("#cinder4_btn").click(function () { scene_control('cinder',4); });	
+	
+	$("#dumblr_btn").click(function () { scene_control('dumblr',0); });
+	$("#dumblr1_btn").click(function () { scene_control('dumblr',1); });
+	$("#dumblr2_btn").click(function () { scene_control('dumblr',2); });
+	$("#dumblr3_btn").click(function () { scene_control('dumblr',3); });	
+	$("#dumblr4_btn").click(function () { scene_control('dumblr',4); });	
+	
+	$("#instacam_btn").click(function () { scene_control('instacam',0); });
+	$("#instacam1_btn").click(function () { scene_control('instacam',1); });
+	$("#instacam2_btn").click(function () { scene_control('instacam',2); });
+	$("#instacam3_btn").click(function () { scene_control('instacam',3); });	
+	$("#instacam4_btn").click(function () { scene_control('instacam',4); });	
+		
+	$("#metube_btn").click(function () { scene_control('metube',0); });
+	$("#metube1_btn").click(function () { scene_control('metube',1); });
+	$("#metube2_btn").click(function () { scene_control('metube',2); });
+	$("#metube3_btn").click(function () { scene_control('metube',3); });
+	$("#metube4_btn").click(function () { scene_control('metube',4); });
 
 	
-	$("#scene1_btn").click(function () {
-		console.log('scene1_btn()')
-		$("#scene1").animate({"margin-left": '+=200'});
-	});
-	$("#scene2_btn").click(function () {
-		console.log('scene2_btn()')
-		$("#scene2").animate({"margin-left": '+=200'});
-	});
+	
 	
 });
 </script>
@@ -40,31 +125,136 @@ $(document).ready(function(){
 <div id="container">
 	
 	<nav>
-		<button id="scene1_btn">scene1</button>
-		<button id="scene2_btn">scene2</button>
+		<div class="group">
+			<button id="home_btn">home</button>
+			<button id="home1_btn">1</button>
+			<button id="home2_btn">2</button>
+		</div>
+		<div class="group">
+			<button id="cinder_btn">cinder</button>
+			<button id="cinder1_btn">1</button>
+			<button id="cinder2_btn">2</button>
+			<button id="cinder3_btn">3</button>
+			<button id="cinder4_btn">4</button>
+		</div>
+		<div class="group">
+			<button id="dumblr_btn">dumblr</button>
+			<button id="dumblr1_btn">1</button>
+			<button id="dumblr2_btn">2</button>
+			<button id="dumblr3_btn">3</button>
+			<button id="dumblr4_btn">4</button>
+		</div>
+		<div class="group">
+			<button id="instacam_btn">instacam</button>
+			<button id="instacam1_btn">1</button>
+			<button id="instacam2_btn">2</button>
+			<button id="instacam3_btn">3</button>
+			<button id="instacam4_btn">4</button>
+		</div>
+		<div class="group">
+			<button id="metube_btn">metube</button>
+			<button id="metube1_btn">1</button>
+			<button id="metube2_btn">2</button>
+			<button id="metube3_btn">3</button>
+			<button id="metube4_btn">4</button>
+		</div>	
 	</nav>
 	
-	<div id="scenecontainer">
+	<div id="scene_container">
 	
 	
 	
 	
-	
-	
-	<div id="scene1" class="scene">
-		currently visible
-	</div>
-	<div id="scene2" class="scene">
-		currently visible
-	</div>
-	
+		
+		
+		<div id="home_scene">
+			<div id="home0" class="scene">
+				home scene, frame0
+			</div>
+			<div id="home1" class="scene">
+				home scene, frame1
+			</div>
+			<div id="home2" class="scene">
+				home scene, frame2
+			</div>
+		</div>
+		
+		<div id="cinder_scene">
+			<div id="cinder0" class="scene">
+				cinder scene, frame0
+			</div>
+			<div id="cinder1" class="scene">
+				cinder scene, frame1
+			</div>
+			<div id="cinder2" class="scene">
+				cinder scene, frame2
+			</div>
+			<div id="cinder3" class="scene">
+				cinder scene, frame3
+			</div>
+			<div id="cinder4" class="scene">
+				cinder scene, frame4
+			</div>
+		</div>
+		
+		<div id="dumblr_scene">
+			<div id="dumblr0" class="scene">
+				dumblr scene, frame0
+			</div>
+			<div id="dumblr1" class="scene">
+				dumblr scene, frame1
+			</div>
+			<div id="dumblr2" class="scene">
+				dumblr scene, frame2
+			</div>
+			<div id="dumblr3" class="scene">
+				dumblr scene, frame3
+			</div>
+			<div id="dumblr4" class="scene">
+				dumblr scene, frame4
+			</div>
+		</div>
+		
+		<div id="instacam_scene">
+			<div id="instacam0" class="scene">
+				instacam scene, frame0
+			</div>
+			<div id="instacam1" class="scene">
+				instacam scene, frame1
+			</div>
+			<div id="instacam2" class="scene">
+				instacam scene, frame2
+			</div>
+			<div id="instacam3" class="scene">
+				instacam scene, frame3
+			</div>
+			<div id="instacam4" class="scene">
+				instacam scene, frame4
+			</div>
+		</div>
+		
+		<div id="metube_scene">
+			<div id="metube0" class="scene">
+				metube scene, frame0
+			</div>
+			<div id="metube1" class="scene">
+				metube scene, frame1
+			</div>
+			<div id="metube2" class="scene">
+				metube scene, frame2
+			</div>
+			<div id="metube3" class="scene">
+				metube scene, frame3
+			</div>
+			<div id="metube4" class="scene">
+				metube scene, frame4
+			</div>
+		</div>
+			
 	
 	
 	
 	</div>
 </div>
-
-
-
 </body>
 </html>

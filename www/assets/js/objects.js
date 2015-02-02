@@ -16,13 +16,14 @@ var instagram_camera_roll = {
 	},
 	'buttons': {
 
-		'dikpic': {
+		'dikpic': { // css class
 			'locked':true, // on beginning
 			'disabled':false, // after used
 			// what is shown
 			'display':'img', 
 			'btn_img': 'dikpic_btn.jpg',
 			'btn_img_locked': 'dikpic_btn_locked.jpg',
+			'btn_img_disabled': 'dikpic_btn_disabled.jpg',
 			'btn_clicked':display_insta_pic('dikpic.jpg'),
 			// how the score is tallied
 			'score': { 'camgirl':0, 'martyr':1, 'troll':0 }
@@ -33,6 +34,7 @@ var instagram_camera_roll = {
 			'display':'img', 
 			'btn_img': 'lilb_btn.jpg',
 			'btn_img_locked': 'lilb_btn_locked.jpg',
+			'btn_img_disabled': 'lilb_btn_disabled.jpg',
 			'btn_clicked':display_insta_pic('lilb.jpg'),
 			'score': { 'camgirl':0, 'martyr':0, 'troll':1 }
 		},
@@ -42,6 +44,7 @@ var instagram_camera_roll = {
 			'display':'img', 
 			'btn_img': 'nails_btn.jpg',
 			'btn_img_locked': 'nails_btn_locked.jpg',
+			'btn_img_disabled': 'nails_btn_disabled.jpg',
 			'btn_clicked':display_insta_pic('nails.jpg'),
 			'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 }
 		},
@@ -51,6 +54,7 @@ var instagram_camera_roll = {
 			'display':'img', 
 			'btn_img': 'nude_btn.jpg',
 			'btn_img_locked': 'nude_btn_locked.jpg',
+			'btn_img_disabled': 'nude_btn_disabled.jpg',
 			'btn_clicked':display_insta_pic('nude.jpg'),
 			'score': { 'camgirl':1, 'martyr':0, 'troll':0 }
 		},
