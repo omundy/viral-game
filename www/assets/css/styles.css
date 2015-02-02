@@ -8,16 +8,13 @@ nav .group { display: block }
 .scene { background: #900; float: left; width: 1092px; height: 768px; }
 
 
-/* 	SCENE PIXEL WIDTHS
-	
-	1092 x 1
-	2184 x 2
-	3276 x 3
-	4368 x 4
-	5460 x 5
-*/
+/* 	SCENE PIXEL WIDTHS: 0,1092,2184,3276,4368,5460 */
+
 #home_scene { width: 3276px; position: relative; }
-#cinder_scene, #dumblr_scene, #instacam_scene, #metube_scene { width: 5460px; position: relative; }
+#cinder_scene { width: 5460px; position: relative; }
+#dumblr_scene { width: 5460px; position: relative; }
+#instacam_scene { width: 5460px; position: relative; }
+#metube_scene { width: 5460px; position: relative; }
 
 #home0 { background: #eed7f4; }
 #home1 { background: #d4a1e1; }
@@ -54,6 +51,8 @@ nav .group { display: block }
 
 
 
-/* INSTACAM BUTTONS */
+/* INSTACAM BUTTON POSITIONS */
 
 .dikpic { left:0px; top:0px }
+
+// lena: add more positions here

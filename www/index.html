@@ -15,73 +15,72 @@ $(document).ready(function(){
 	
 	
 	
-
-var sceneW = 1092;
-var sceneH = 768;
-
-
-var scene_positions = [0,1092,2184,3276,4368,5460];
-
-
-// current scene and frame
-var current_scene = {};
-/**
- *	scene_control()
- *	Controls all scene movement
- */
-function scene_control(scene,frame){
 	
-	// in wrong scene, move to different scene
-	if (current_scene.scene != scene){
-		hide_scenes();
-		$('#'+scene+'_scene').show();
-		frame = 0;
-		$('#'+scene+'_scene').css('margin-left','0');
-		console.log('in wrong scene ('+ current_scene.scene +'), moving to '+ scene);
-	}
-	// in correct scene, wrong frame
-	else if (current_scene.scene == scene && current_scene.frame != frame){
-		console.log('in correct scene ('+ current_scene.scene +'), but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
+	var sceneW = 1092;
+	var sceneH = 768;
+	
+	
+	var scene_positions = [0,1092,2184,3276,4368,5460];
+	
+	
+	// current scene and frame
+	var current_scene = {};
+	/**
+	 *	scene_control()
+	 *	Controls all scene movement
+	 */
+	function scene_control(scene,frame){
 		
-		
-		var moveto = scene_positions[frame];
-		console.log(moveto);
-		var movefrom = scene_positions[current_scene.frame];
-		console.log(-movefrom);
-		
-		
-		$('#'+scene+'_scene').animate({"margin-left": '-='+ (moveto-movefrom)},500);
-		
-		/*
-		if (current_scene.frame < frame){
-			$('#'+scene+'_scene').animate({"margin-left": '-='+scene_positions[frame]},500);
-		} if (current_scene.frame > frame){
-			$('#'+scene+'_scene').animate({"margin-left": '+='+scene_positions[frame]},500);
+		// in wrong scene, move to different scene
+		if (current_scene.scene != scene){
+			hide_scenes();
+			$('#'+scene+'_scene').show();
+			frame = 0; // reset position
+			$('#'+scene+'_scene').css('margin-left','0'); 
+			console.log('in wrong scene ('+ current_scene.scene +'), moving to '+ scene);
 		}
-		*/
+		// in correct scene, wrong frame
+		else if (current_scene.scene == scene && current_scene.frame != frame){
+			console.log('in correct scene ('+ current_scene.scene +'), but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
+			
+			
+			var moveto = scene_positions[frame];
+			console.log(moveto);
+			var movefrom = scene_positions[current_scene.frame];
+			console.log(-movefrom);
+			
+			
+			$('#'+scene+'_scene').animate({"margin-left": '-='+ (moveto-movefrom)},500);
+			
+			/*
+			if (current_scene.frame < frame){
+				$('#'+scene+'_scene').animate({"margin-left": '-='+scene_positions[frame]},500);
+			} if (current_scene.frame > frame){
+				$('#'+scene+'_scene').animate({"margin-left": '+='+scene_positions[frame]},500);
+			}
+			*/
+		}
+		
+		// save, report
+		current_scene = {'scene':scene,'frame':frame}
+		console.log(current_scene);
 	}
-	
-	// position
-	//$('#instacam_scene').css('left','0px');
-	
-	// save, report
-	current_scene = {'scene':scene,'frame':frame}
-	console.log(current_scene);
-}
-/**
- *	hide_scenes()
- *	To load a new one
- */
-function hide_scenes(){
-	$('#home_scene').hide();
-	$('#cinder_scene').hide();
-	$('#dumblr_scene').hide();
-	$('#instacam_scene').hide();
-	$('#metube_scene').hide();
-}
-hide_scenes();
-scene_control('home',0);
+	/**
+	 *	hide_scenes()
+	 *	To load a new one
+	 */
+	function hide_scenes(){
+		$('#home_scene').hide();
+		$('#cinder_scene').hide();
+		$('#dumblr_scene').hide();
+		$('#instacam_scene').hide();
+		$('#metube_scene').hide();
+	}
+	hide_scenes();
+	scene_control('home',0);
 
+
+	/* BUTTONS */
 
 	$("#home_btn").click(function () { scene_control('home',0); });
 	$("#home1_btn").click(function () { scene_control('home',1); });
@@ -111,8 +110,6 @@ scene_control('home',0);
 	$("#metube3_btn").click(function () { scene_control('metube',3); });
 	$("#metube4_btn").click(function () { scene_control('metube',4); });
 
-	
-	
 	
 });
 </script>
