@@ -41,6 +41,8 @@ function print_obj (obj){
 }
 
 
+/*
+
 var screenW,screenH;
 
 window.addEventListener('resize', setWindowSize);
@@ -62,4 +64,4 @@ function setWindowSize() {
 	}
 	console.log('screen: '+screenW+','+screenH);
 }
-	
+	*/

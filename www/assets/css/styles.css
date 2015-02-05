@@ -1,11 +1,58 @@
 
 
+nav .group { display: block }
+
+
 #container { width:100%; height: 100%; background: #222; position: absolute }
-#scenecontainer { width:1092px; height: 768px; background: #900; margin: 0 auto 0; }
+#scene_container { width:1092px; height: 768px; background: #000; margin: 0 auto 0; overflow: hidden }
+.scene { background: #900; float: left; width: 1092px; height: 768px; }
 
-nav { }
+
+/* 	SCENE PIXEL WIDTHS: 0,1092,2184,3276,4368,5460 */
+
+#home_scene { width: 3276px; position: relative; }
+#cinder_scene { width: 5460px; position: relative; }
+#dumblr_scene { width: 5460px; position: relative; }
+#instacam_scene { width: 5460px; position: relative; }
+#metube_scene { width: 5460px; position: relative; }
+
+#home0 { background: #eed7f4; }
+#home1 { background: #d4a1e1; }
+#home2 { background: #a367b2; }
+
+#cinder0 { background: #77f3da; }
+#cinder1 { background: #23b194; }
+#cinder2 { background: #24b06f; }
+#cinder3 { background: #0e9a2c; }
+#cinder4 { background: #20990e; }
+
+#dumblr0 { background: #eaf377; }
+#dumblr1 { background: #d3dd49; }
+#dumblr2 { background: #b8a812; }
+#dumblr3 { background: #95780c; }
+#dumblr4 { background: #7f5907; }
+
+#instacam0 { background: #79f279; }
+#instacam1 { background: #10f010; }
+#instacam2 { background: #74c116; }
+#instacam3 { background: #3b6b0e; }
+#instacam4 { background: #354f03; }
+
+#metube0 { background: #f27676; }
+#metube1 { background: #f01010; }
+#metube2 { background: #c21680; }
+#metube3 { background: #d915b9; }
+#metube4 { background: #840c94; }
 
 
-#scene { position: absolute;  background: #900; }
-#scene1 { background: #090; width:300px; }
-#scene2 { background: #009; width:400px; }
+
+
+
+
+
+
+/* INSTACAM BUTTON POSITIONS */
+
+.dikpic { left:0px; top:0px }
+
+// lena: add more positions here
