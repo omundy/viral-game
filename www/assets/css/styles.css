@@ -53,6 +53,216 @@ nav .group { display: block }
 
 /* INSTACAM BUTTON POSITIONS */
 
-.dikpic { left:0px; top:0px }
+/*.dikpic { left:0px; top:0px }*/
+/* IN INSTACAM */
+/*img/instacam/*/
 
-// lena: add more positions here
+    #polaroid {  /* polaroid.png */
+    stop:18px;
+    left: 14px;
+ }
+ 
+    #back {  /* bakhov.png, bak.png */
+    left: 0px;
+    top:0px;
+ }
+ 
+    #pic {  /* everyting in img/instacam/pics folder */
+    left: 71px;
+    top:132px;
+ } 
+    #select {  /* homesel.png*/
+    left: 71px;
+    top:132px;
+ }
+    #next {  /* next.png, nexthov.png*/
+    left: 744px;
+    top:585px;
+ }
+    #box {  /* selfiebox.png, foodbox.png, bkgbox.png, cambox.png */
+    left: 506px;
+    top:106px;
+ }
+  /* FIRST SCREEN SELECT TYPE OF PIC: images in img/instacam/home */
+  
+     #selself {  /* selselfie.png, selselfiehov.png*/
+    left: 490px;
+    top:99px;
+ }
+     #selfood {  /* selfood.png, selfoodhov.png*/
+    left: 490px;
+    top: 245px;
+ }
+    #selcam {  /* selcam.png, selcamhov.png*/
+    left: 490px;
+    top: 404px;
+ }
+   /* SELFIES ICONS -- put hover effects on all of these- glow & enlarge: all images in img/instacam/selfie*/
+   
+    #hbasic {  /* hairbasic.png*/
+    left: 539px;
+    top: 181px;
+ }
+     #hmartyr {  /* hairmartyr.png*/
+    left: 670px;
+    top: 181px;
+ }
+      #hcam {  /* haircamho.png*/
+    left: 800px;
+    top: 181px;
+ }  
+    #htroll {  /*hairtroll.png*/
+    left: 932px;
+    top: 181px;
+ }
+     #scam {  /*swagcamho.png*/
+    left: 539px;
+    top: 395px;
+ } 
+    #sbasic {  /*swagbasic.png*/
+    left: 670px;
+    top: 395px;
+ }
+     #stroll {  /*swagtroll.png*/
+    left: 800px;
+    top: 395px;
+ }
+      #smartyr {  /*swagmartyr.png*/
+    left: 932px;
+    top: 395px;
+ }
+    /* FOODIES ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/foodie*/
+     
+    #pasta {  /* pasta.png*/
+    left: 538px;
+    top: 163px;
+ }
+    #starbux{  /* starbux.png*/
+    left: 667px;
+    top: 163px;
+ }
+     #sushi{  /* sushi.png*/
+    left: 798px;
+    top: 163px;
+ }
+    #taco{  /* taco.png*/
+    left: 930px;
+    top: 163px;
+ }
+     #smoothie{  /*smoothie.png*/
+    left: 538px;
+    top: 292px;
+ }  
+      #wine{  /* wine.png*/
+    left: 667px;
+    top: 292px;
+ }
+     #bagel{  /* bagel.png*/
+    left: 798px;
+    top: 292px;
+ }
+    #steak{  /* steak.png*/
+    left: 930px;
+    top: 292px;
+ }
+     /* CAMERAROLL ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/cameraroll*/
+     
+    #weenie {  /* weenie.png*/
+    left: 538px;
+    top: 163px;
+ }
+    #nails{  /*nails.png*/
+    left: 667px;
+    top: 163px;
+ }
+     #guns{  /* gun.png, gunlok.png*/
+    left: 798px;
+    top: 163px;
+ }
+    #fedora{  /* fedora.png, fedoralok.png */
+    left: 930px;
+    top: 163px;
+ }
+     #scene{  /*scenelok.png, scene.png*/
+    left: 538px;
+    top: 292px;
+ }  
+      #cat{  /* cat.png, catlok.png*/
+    left: 667px;
+    top: 292px;
+ }
+     #dik{  /* dik.png, diklok.png*/
+    left: 798px;
+    top: 292px;
+ }
+    #moloshe{  /* moloshe.png*/
+    left: 930px;
+    top: 419px;
+ }
+      #lilb{  /*lilb.png, lilblok.png*/
+    left: 538px;
+    top: 419px;
+ }  
+    #dylan{  /* dylanlok.png, dylan.png*/
+    left: 667px;
+    top: 419px;
+ }
+     #nude{  /*nude.png*/
+    left: 798px;
+    top: 419px;
+ }
+     #eric{  /* dylanlok.png, dylan.png ...this is temporary*/
+    left: 930px;
+    top: 419px;
+ }
+    /* BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
+     
+    #cheeto{  /* cheeto.png*/
+    left: 538px;
+    top: 163px;
+ }
+    #heart{  /* heart.png*/
+    left: 667px;
+    top: 163px;
+ }
+    #alien{  /* alien.png*/
+    left: 798px;
+    top: 163px;
+ }
+    #latte{  /* latte.png*/
+    left: 930px;
+    top: 163px;
+ }
+    #killman{  /*killman.png*/
+    left: 538px;
+    top: 292px;
+ }  
+    #boob{  /* boob.png*/
+    left: 667px;
+    top: 292px;
+ }
+    #doom{  /* doom.png*/
+    left: 798px;
+    top: 292px;
+ }
+    #meme{  /* meme.png*/
+    left: 930px;
+    top: 292px;
+ }
+ /* INSTACAM TAGS-- put hover effects image lightens: all images in img/instacam/tags*/
+    #scrollbar{  /* scrolla.png*/
+    top: 121px;
+    left: 479px;
+ }
+    #post{  /*post.png, posthov.png*/
+    left: 31px;
+    top: 483px;
+ }
+    #tagcover{  /*tagcover.png*/
+    left: 506px;
+    top: 487px;
+ }
+    #tagbar{  /*tagbar.png*/
+    left: 30px;
+    top: 484px;
+ }
