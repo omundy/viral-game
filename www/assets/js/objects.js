@@ -8,75 +8,97 @@ function display_insta_pic(){
 
 
 
-
 var instagram_camera_roll = {
 	
 	'meta': {
-		'path':'instacam/cameraroll/'
+		'path':' img/instacam/'
 	},
-	'buttons': {
-
-		'dikpic': { // css class
-			'locked':true, // on beginning
+	'buttons': { //these are only buttons that generate images
+//SELFIES
+	//1st choice
+		'hbasic': { // css class
+			'locked': false, // on beginning
 			'disabled':false, // after used
 			// what is shown
 			'display':'img', 
-			'btn_img': 'dikpic_btn.jpg',
-			'btn_img_locked': 'dikpic_btn_locked.jpg',
-			'btn_img_disabled': 'dikpic_btn_disabled.jpg',
-			'btn_clicked':display_insta_pic('dikpic.jpg'),
+			'btn_img': 'selfie/hairbasic.png',
+			//'btn_img_locked': '',
+			'btn_img_disabled': 'selfie/hairbasic.png', //greyed out
+			'btn_clicked':display_insta_pic('pics/selfies/hair_choice1/defb.png'),
 			// how the score is tallied
-			'score': { 'camgirl':0, 'martyr':1, 'troll':0 }
+			'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
 		},
-		'lilb': {
-			'locked':true,
+		'hmartyr': {
+			'locked':false,
 			'disabled':false,
 			'display':'img', 
-			'btn_img': 'lilb_btn.jpg',
-			'btn_img_locked': 'lilb_btn_locked.jpg',
-			'btn_img_disabled': 'lilb_btn_disabled.jpg',
-			'btn_clicked':display_insta_pic('lilb.jpg'),
-			'score': { 'camgirl':0, 'martyr':0, 'troll':1 }
+			'btn_img': 'selfie/hairmartyr.png',
+			//'btn_img_locked': '',
+			'btn_img_disabled': 'selfie/hairmartyr.png', //greyed out
+			'btn_clicked':display_insta_pic('pics/selfies/hair_choice1/defm.png'),
+			'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
 		},
-		'nails': {
-			'locked':true,
+		'hcam': {
+			'locked': false,
 			'disabled':false,
 			'display':'img', 
-			'btn_img': 'nails_btn.jpg',
-			'btn_img_locked': 'nails_btn_locked.jpg',
-			'btn_img_disabled': 'nails_btn_disabled.jpg',
-			'btn_clicked':display_insta_pic('nails.jpg'),
-			'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 }
+			'btn_img': 'selfie/haircamho.png',
+			//'btn_img_locked': '',
+			'btn_img_disabled': 'selfie/haircamho.png', //greyed out
+			'btn_clicked':display_insta_pic('pics/selfies/hair_choice1/defd.png'),
+			'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
 		},
-		'nude': {
-			'locked':true,
+		'htroll': {
+			'locked': false,
 			'disabled':false,
 			'display':'img', 
-			'btn_img': 'nude_btn.jpg',
-			'btn_img_locked': 'nude_btn_locked.jpg',
-			'btn_img_disabled': 'nude_btn_disabled.jpg',
-			'btn_clicked':display_insta_pic('nude.jpg'),
-			'score': { 'camgirl':1, 'martyr':0, 'troll':0 }
+			'btn_img': 'selfies/hairtroll.png',
+			//'btn_img_locked': '',
+			'btn_img_disabled': 'selfies/hairtroll.png', //greyed out
+			'btn_clicked':display_insta_pic('pics/selfies/hair_choice1/deft.png'),
+			'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
 		},
-		
-		
-		// lena...
-		
-		
-		
-	/*
-
-scenequeen.jpg (+1 camgirl)
-weenie.jpg (+1 troll)
-fedora.jpg (+1 troll)
-arsenal.jpg (+1 martyr)
-dylan.jpg (+1 martyr)
-cats.jpg (+1 Camgirl)
-moloshe2.jpg (+1 camgirl)
-moloshe1.jpg (+1 troll)
-	*/
-	
-	
+//2nd choice		
+		'scam': {
+			'locked': false,
+			'disabled':false,
+			'display':'img', 
+			'btn_img': 'selfies/swagcamho.png',
+			//'btn_img_locked': '',
+			'btn_img_disabled': 'selfies/swagcamho.png', //greyed out
+			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+			'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
+		},
+		'sbasic': {
+			'locked': false,
+			'disabled':false,
+			'display':'img', 
+			'btn_img': 'selfies/swagbasic.png',
+			//'btn_img_locked': '',
+			'btn_img_disabled': 'selfies/swagbasic.png', //greyed out
+			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+			'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
+		},
+		'stroll': {
+			'locked': false,
+			'disabled':false,
+			'display':'img', 
+			'btn_img': 'selfies/swagtroll.png',
+			//'btn_img_locked': '',
+			'btn_img_disabled': 'selfies/swagtroll.png', //greyed out
+			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+			'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
+		},
+		'smartyr': {
+			'locked': false,
+			'disabled':false,
+			'display':'img', 
+			'btn_img': 'selfies/swagmartyr.png',
+			//'btn_img_locked': '',
+			'btn_img_disabled': 'selfies/swagmartyr.png', //greyed out
+			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+			'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
+		},
 	}
 }
 
