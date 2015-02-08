@@ -67,6 +67,7 @@ nav .group { display: block }
     left: 506px;
     top:106px;
  }
+ 
 
 
 /* INSTACAM BUTTON POSITIONS */
@@ -77,9 +78,7 @@ nav .group { display: block }
     left: 0px;
     top:0px;
  }
- 
-
-    .next {  /* next.png, nexthov.png*/
+     .next {  /* next.png, nexthov.png*/
     left: 744px;
     top:585px;
  }
@@ -185,9 +184,9 @@ nav .group { display: block }
  
  /* INSTACAM TAGS-- put hover effects image lightens: all images in img/instacam/tags*/
  
-    .scrollbar{  /* scrolla.png*/
-    top: 121px;
-    left: 479px;
+    .scrollbar{  /* scrollbar.png*/
+    top: 108px;
+    left: 1031px;
  }
     .post{  /*post.png, posthov.png*/
     left: 31px;
@@ -200,4 +199,10 @@ nav .group { display: block }
     .tagbar{  /*tagbar.png*/
     left: 30px;
     top: 484px;
+ }
+    .tagcontainer{  /*tags.png  -- put all tag options in this container; scroll to see alll options*/
+    left: 506px;
+    top:106px;
+    width: 520px;
+    height: 445px;
  }
