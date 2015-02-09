@@ -690,7 +690,12 @@ img/affirmations/lostfollowers_overlay_notification.gif
 // lena...
 
 
-var tags = {}
+var tags = {
+	
+	'swag': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':2, 'troll':0 } },
+	'likes4likes': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':2, 'troll':0 } },
+	
+}
 
 
 // global score object

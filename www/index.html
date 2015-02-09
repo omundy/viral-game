@@ -15,6 +15,16 @@ $(document).ready(function(){
 	
 	
 	
+	/* use code 
+		to grey out / disable buttons
+		hover effect
+		
+		
+	problem: 3 steps for intacam and the pose after hair is dependent on hair	
+		*/
+	
+	
+	
 	
 	var sceneW = 1092;
 	var sceneH = 768;
@@ -25,6 +35,32 @@ $(document).ready(function(){
 	
 	// current scene and frame
 	var current_scene = {};
+	
+	
+	
+	$(document).keydown(function(e) {
+		//console.log('key: '+ e.which)
+		
+		if(e.which == 38) { // up
+		} else if(e.which == 40) { // down
+			
+			
+		} else if(e.which == 39) { // right
+			scene_control(current_scene.scene,current_scene.frame+1)
+			
+			
+		} else if(e.which == 37) { // left
+			scene_control(current_scene.scene,current_scene.frame-1)
+			
+		} 
+	});
+	
+
+	
+	
+	
+	
+	
 	/**
 	 *	scene_control()
 	 *	Controls all scene movement
@@ -33,32 +69,42 @@ $(document).ready(function(){
 		
 		// in wrong scene, move to different scene
 		if (current_scene.scene != scene){
+			console.log('in wrong scene ('+ current_scene.scene +') - moving to '+ scene);
+			
 			hide_scenes();
 			$('#'+scene+'_scene').show();
 			frame = 0; // reset position
 			$('#'+scene+'_scene').css('margin-left','0'); 
-			console.log('in wrong scene ('+ current_scene.scene +'), moving to '+ scene);
 		}
 		// in correct scene, wrong frame
 		else if (current_scene.scene == scene && current_scene.frame != frame){
-			console.log('in correct scene ('+ current_scene.scene +'), but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
+			console.log('in correct scene ('+ current_scene.scene +')');
 			
-			
-			var moveto = scene_positions[frame];
-			console.log(moveto);
-			var movefrom = scene_positions[current_scene.frame];
-			console.log(-movefrom);
-			
-			
-			$('#'+scene+'_scene').animate({"margin-left": '-='+ (moveto-movefrom)},500);
-			
-			/*
-			if (current_scene.frame < frame){
-				$('#'+scene+'_scene').animate({"margin-left": '-='+scene_positions[frame]},500);
-			} if (current_scene.frame > frame){
-				$('#'+scene+'_scene').animate({"margin-left": '+='+scene_positions[frame]},500);
+			if ((current_scene.frame + frame) < 0){
+				console.log(' - already at zero');
+			} else {
+				console.log(' - but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
+				
+				
+				var moveto = scene_positions[frame];
+				console.log(moveto);
+				var movefrom = scene_positions[current_scene.frame];
+				console.log(-movefrom);
+				
+				
+				$('#'+scene+'_scene').animate({"margin-left": '-='+ (moveto-movefrom)},500);
+				
+				/*
+				if (current_scene.frame < frame){
+					$('#'+scene+'_scene').animate({"margin-left": '-='+scene_positions[frame]},500);
+				} if (current_scene.frame > frame){
+					$('#'+scene+'_scene').animate({"margin-left": '+='+scene_positions[frame]},500);
+				}
+				*/
 			}
-			*/
+			
+		} else {
+			console.log('apparently all is ok');
 		}
 		
 		// save, report
@@ -143,17 +189,20 @@ $(document).ready(function(){
 		</div>
 		<div class="group">
 			<button id="instacam_btn">instacam</button>
-			<button id="instacam1_btn">1</button>
-			<button id="instacam2_btn">2</button>
-			<button id="instacam3_btn">3</button>
-			<button id="instacam4_btn">4</button>
+			<button id="instacam1_btn">1 genres</button>
+			<button id="instacam2_btn">2.0_selfies_hair</button>
+			<button id="instacam3_btn">2.1_selfies_swag</button>
+			<button id="instacam4_btn">2.2_selfies_background</button>
+			<button id="instacam4_btn">3.0_food</button>
+			<button id="instacam4_btn">3.1_food_background</button>
+			<button id="instacam4_btn">3.0_cameroll</button>
+			<button id="instacam4_btn">4.tags</button>
 		</div>
 		<div class="group">
 			<button id="metube_btn">metube</button>
 			<button id="metube1_btn">1</button>
 			<button id="metube2_btn">2</button>
 			<button id="metube3_btn">3</button>
-			<button id="metube4_btn">4</button>
 		</div>	
 	</nav>
 	
