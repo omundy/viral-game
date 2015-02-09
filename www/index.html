@@ -9,106 +9,123 @@
 <script>
 $(document).ready(function(){
 	
-	//load stuff
-	
-	//create_buttons(instagram_camera_roll);
-	
-	
-	
-	/* use code 
-		to grey out / disable buttons
-		hover effect
-		
-		
-	problem: 3 steps for intacam and the pose after hair is dependent on hair	
-		*/
-	
-	
-	
-	
+	// scene size
 	var sceneW = 1092;
 	var sceneH = 768;
 	
-	
-	var scene_positions = [0,1092,2184,3276,4368,5460];
-	
+	// determines positions of scenes
+	var scene_positions = [0,1092,2184,3276,4368,5460,6552,7644,8736,9828];	
 	
 	// current scene and frame
 	var current_scene = {};
 	
-	
-	
-	$(document).keydown(function(e) {
-		//console.log('key: '+ e.which)
+	// all scenes keep track in here
+	var scene_map = {
 		
-		if(e.which == 38) { // up
-		} else if(e.which == 40) { // down
-			
-			
-		} else if(e.which == 39) { // right
-			scene_control(current_scene.scene,current_scene.frame+1)
-			
-			
-		} else if(e.which == 37) { // left
-			scene_control(current_scene.scene,current_scene.frame-1)
-			
-		} 
-	});
+		'home':[
+			'welcome',
+            'how_to_play',
+            'credits',
+		],
+		'cinder':[
+			'cinder0',
+            'cinder1',
+            'cinder2',
+            'cinder3',
+            'cinder4',
+		],
+		'dumblr':[
+			'dumblr0',
+            'dumblr1',
+            'dumblr2',
+            'dumblr3',
+            'dumblr4',
+		],
+		'instacam':[
+            '1_genres',
+            '2a1_selfies_hair',
+            '2a2_selfies_swag',
+            '2a3_selfies_background',
+            '2b1_food_chooser',
+            '2b2_food_background',
+            '2c1_cameroll_selector',
+            '3_tags'
+		],
+		'metube':[
+			'metube0',
+            'metube1',
+            'metube2',
+            'metube3',
+            'metube4',
+		],
+	}
 	
+	// make buttons for testing
+    $.each( scene_map, function( scene ) {
+		//alert(key)
+		$.each( this, function( frame,title ) {
+			$('#nav').append('<button id="'+ title +'">'+ title +'</button><br>')
+			$("#"+title).on('click',function () { scene_control(scene,frame); });
+		});
+		$('#nav').append('<br>')
+    });
 
-	
-	
-	
-	
 	
 	/**
 	 *	scene_control()
 	 *	Controls all scene movement
 	 */
 	function scene_control(scene,frame){
+		console.log('scene_control('+ scene +','+ frame +')');
+		var update = false;
 		
 		// in wrong scene, move to different scene
 		if (current_scene.scene != scene){
-			console.log('in wrong scene ('+ current_scene.scene +') - moving to '+ scene);
+			console.log('---in wrong scene ('+ current_scene.scene +') - moving to '+ scene);
 			
 			hide_scenes();
 			$('#'+scene+'_scene').show();
 			frame = 0; // reset position
-			$('#'+scene+'_scene').css('margin-left','0'); 
+			$('#'+scene+'_scene').css('margin-left','0');
+			update = true; // update current_scene
 		}
 		// in correct scene, wrong frame
 		else if (current_scene.scene == scene && current_scene.frame != frame){
-			console.log('in correct scene ('+ current_scene.scene +')');
+			console.log('---in correct scene ('+ current_scene.scene +')');
 			
-			if ((current_scene.frame + frame) < 0){
-				console.log(' - already at zero');
-			} else {
-				console.log(' - but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
+			// don't go below zero
+			if (frame == -1 && current_scene.frame <= 0){
+				console.log('---already at zero');
+			} 
+			// don't go above number of frames in scene
+			else if (frame >= scene_map[scene].length ){
+				console.log('---already at max ');
+			}
+			// otherwise go ahead
+			else {
+				console.log('---but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
 				
-				
+				// calculate new positions
 				var moveto = scene_positions[frame];
-				console.log(moveto);
 				var movefrom = scene_positions[current_scene.frame];
-				console.log(-movefrom);
-				
-				
-				$('#'+scene+'_scene').animate({"margin-left": '-='+ (moveto-movefrom)},500);
-				
-				/*
-				if (current_scene.frame < frame){
-					$('#'+scene+'_scene').animate({"margin-left": '-='+scene_positions[frame]},500);
-				} if (current_scene.frame > frame){
-					$('#'+scene+'_scene').animate({"margin-left": '+='+scene_positions[frame]},500);
-				}
-				*/
+				console.log('---moving from: '+ movefrom +' to: '+moveto);
+
+				// move scene				
+				$('#'+scene+'_scene').animate( {"margin-left": '-='+ (moveto-movefrom)},500, function(){ 
+						scene_loader(scene +','+ frame)
+					});
+				// update current_scene
+				update = true; 
 			}
 			
 		} else {
-			console.log('apparently all is ok');
+			console.log('---apparently all is ok');
 		}
 		
 		// save, report
-		current_scene = {'scene':scene,'frame':frame}
+		if (update){ 
+			current_scene = {'scene':scene,'frame':frame}
+			}
 		console.log(current_scene);
 	}
 	/**
@@ -124,40 +141,83 @@ $(document).ready(function(){
 	}
 	hide_scenes();
 	scene_control('home',0);
-
-
-	/* BUTTONS */
-
-	$("#home_btn").click(function () { scene_control('home',0); });
-	$("#home1_btn").click(function () { scene_control('home',1); });
-	$("#home2_btn").click(function () { scene_control('home',2); });
 	
-	$("#cinder_btn").click(function () { scene_control('cinder',0); });
-	$("#cinder1_btn").click(function () { scene_control('cinder',1); });
-	$("#cinder2_btn").click(function () { scene_control('cinder',2); });
-	$("#cinder3_btn").click(function () { scene_control('cinder',3); });	
-	$("#cinder4_btn").click(function () { scene_control('cinder',4); });	
-	
-	$("#dumblr_btn").click(function () { scene_control('dumblr',0); });
-	$("#dumblr1_btn").click(function () { scene_control('dumblr',1); });
-	$("#dumblr2_btn").click(function () { scene_control('dumblr',2); });
-	$("#dumblr3_btn").click(function () { scene_control('dumblr',3); });	
-	$("#dumblr4_btn").click(function () { scene_control('dumblr',4); });	
-	
-	$("#instacam_btn").click(function () { scene_control('instacam',0); });
-	$("#instacam1_btn").click(function () { scene_control('instacam',1); });
-	$("#instacam2_btn").click(function () { scene_control('instacam',2); });
-	$("#instacam3_btn").click(function () { scene_control('instacam',3); });	
-	$("#instacam4_btn").click(function () { scene_control('instacam',4); });	
+	/**
+	 *	Add keyboard controls
+	 */
+	$(document).keydown(function(e) {
+		//console.log('key: '+ e.which)
 		
-	$("#metube_btn").click(function () { scene_control('metube',0); });
-	$("#metube1_btn").click(function () { scene_control('metube',1); });
-	$("#metube2_btn").click(function () { scene_control('metube',2); });
-	$("#metube3_btn").click(function () { scene_control('metube',3); });
-	$("#metube4_btn").click(function () { scene_control('metube',4); });
+		if(e.which == 38) { // up
+		} else if(e.which == 40) { // down
+		
+		} else if(e.which == 39) { // right
+			scene_control(current_scene.scene,current_scene.frame+1)
+		} else if(e.which == 37) { // left
+			scene_control(current_scene.scene,current_scene.frame-1)
+		} 
+	});
 
+
+	var finished_pages {
+		'instacam': 'instagram_camera_roll',
+	}
+
+
+	function scene_loader(scene,frame){
+		//create_buttons(instagram_camera_roll);
+		// update buttons function
+		
+		
+		
+
+		
+		
 	
-});
+		
+		/* use code 
+			to grey out / disable buttons
+			hover effect
+			
+			
+		problem: 3 steps for intacam and the pose after hair is dependent on hair	
+			*/
+		
+		
+		
+		
+	}
+
+
+	function update_buttons(obj){
+		
+		$.each( obj.buttons, function( key, value ) {
+			// make button
+			if (value.locked == true){
+				var btn = '<img src ="assets/img/'+ obj.meta.path + value.btn_img +'">'
+			} else if (value.disabled == true){
+				var btn = '<img src ="assets/img/'+ obj.meta.path + value.btn_img +'">'
+			} else {
+				var btn = '<img src ="assets/img/'+ obj.meta.path + value.btn_img +'">'
+			}
+			$('body').append(btn)
+		});
+		
+		
+		for (var key in obj.buttons) {
+			
+			$('body').append(obj.buttons)
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}); // /ready()
 </script>
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
@@ -167,44 +227,7 @@ $(document).ready(function(){
 
 <div id="container">
 	
-	<nav>
-		<div class="group">
-			<button id="home_btn">home</button>
-			<button id="home1_btn">1</button>
-			<button id="home2_btn">2</button>
-		</div>
-		<div class="group">
-			<button id="cinder_btn">cinder</button>
-			<button id="cinder1_btn">1</button>
-			<button id="cinder2_btn">2</button>
-			<button id="cinder3_btn">3</button>
-			<button id="cinder4_btn">4</button>
-		</div>
-		<div class="group">
-			<button id="dumblr_btn">dumblr</button>
-			<button id="dumblr1_btn">1</button>
-			<button id="dumblr2_btn">2</button>
-			<button id="dumblr3_btn">3</button>
-			<button id="dumblr4_btn">4</button>
-		</div>
-		<div class="group">
-			<button id="instacam_btn">instacam</button>
-			<button id="instacam1_btn">1 genres</button>
-			<button id="instacam2_btn">2.0_selfies_hair</button>
-			<button id="instacam3_btn">2.1_selfies_swag</button>
-			<button id="instacam4_btn">2.2_selfies_background</button>
-			<button id="instacam4_btn">3.0_food</button>
-			<button id="instacam4_btn">3.1_food_background</button>
-			<button id="instacam4_btn">3.0_cameroll</button>
-			<button id="instacam4_btn">4.tags</button>
-		</div>
-		<div class="group">
-			<button id="metube_btn">metube</button>
-			<button id="metube1_btn">1</button>
-			<button id="metube2_btn">2</button>
-			<button id="metube3_btn">3</button>
-		</div>	
-	</nav>
+	<div id="nav"></div>
 	
 	<div id="scene_container">
 	

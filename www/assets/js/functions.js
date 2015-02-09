@@ -1,24 +1,4 @@
 
-function create_buttons(obj){
-	
-	$.each( obj.buttons, function( key, value ) {
-		// make button
-		if (value.locked == true){
-			var btn = '<img src ="assets/img/'+ obj.meta.path + value.btn_img +'">'
-		} else if (value.disabled == true){
-			var btn = '<img src ="assets/img/'+ obj.meta.path + value.btn_img +'">'
-		} else {
-			var btn = '<img src ="assets/img/'+ obj.meta.path + value.btn_img +'">'
-		}
-		$('body').append(btn)
-	});
-	
-	
-	for (var key in obj.buttons) {
-		
-		$('body').append(obj.buttons)
-	}
-}
 
 
 
