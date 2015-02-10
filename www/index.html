@@ -94,13 +94,9 @@ $(document).ready(function(){
 			console.log('---in correct scene ('+ current_scene.scene +')');
 			
 			// don't go below zero
-			if (frame == -1 && current_scene.frame <= 0){
-				console.log('---already at zero');
-			} 
+			if (frame == -1 && current_scene.frame <= 0){ console.log('---already at zero'); } 
 			// don't go above number of frames in scene
-			else if (frame >= scene_map[scene].length ){
-				console.log('---already at max ');
-			}
+			else if (frame >= scene_map[scene].length ){ console.log('---already at max '); }
 			// otherwise go ahead
 			else {
 				console.log('---but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
@@ -215,7 +211,34 @@ $(document).ready(function(){
 	}
 	
 	
+	$('.home_button').on('click',function(){
+		scene_control('home',0)
+	});
+	$('.back_button').on('click',function(){
+		scene_control(current_scene.scene,current_scene.frame-1)
+	});
 	
+	
+	
+	
+	$('#instacam_home_selselfie_btn').on('click',function(){ scene_control('instacam',1) });
+	$('#instacam_home_selselfie_btn').mouseover(function(){ 
+		this.src = 'assets/img/instacam/home/selselfiehov.png'
+	}).mouseout(function(){ 
+		this.src = 'assets/img/instacam/home/selselfie.png'
+	});
+	$('#instacam_home_selfood_btn').on('click',function(){ scene_control('instacam',2) });
+	$('#instacam_home_selfood_btn').mouseover(function(){ 
+		this.src = 'assets/img/instacam/home/selfoodhov.png'
+	}).mouseout(function(){ 
+		this.src = 'assets/img/instacam/home/selfood.png'
+	});
+	$('#instacam_home_selcam_btn').on('click',function(){ scene_control('instacam',3) });
+	$('#instacam_home_selcam_btn').mouseover(function(){ 
+		this.src = 'assets/img/instacam/home/selcamhov.png'
+	}).mouseout(function(){ 
+		this.src = 'assets/img/instacam/home/selcam.png'
+	});
 	
 	
 	
@@ -255,74 +278,112 @@ $(document).ready(function(){
 		
 		<div id="cinder_scene">
 			<div id="cinder0" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="home_button">
 				cinder scene, frame0
 			</div>
 			<div id="cinder1" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				cinder scene, frame1
 			</div>
 			<div id="cinder2" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				cinder scene, frame2
 			</div>
 			<div id="cinder3" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				cinder scene, frame3
 			</div>
 			<div id="cinder4" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				cinder scene, frame4
 			</div>
 		</div>
 		
 		<div id="dumblr_scene">
 			<div id="dumblr0" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="home_button">
 				dumblr scene, frame0
 			</div>
 			<div id="dumblr1" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				dumblr scene, frame1
 			</div>
 			<div id="dumblr2" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				dumblr scene, frame2
 			</div>
 			<div id="dumblr3" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				dumblr scene, frame3
 			</div>
 			<div id="dumblr4" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				dumblr scene, frame4
 			</div>
 		</div>
 		
 		<div id="instacam_scene">
-			<div id="instacam0" class="scene">
-				<button id="back_button"></button>
+			<div id="1_genres" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="home_button">
 				
 				instacam scene, frame0
+				
+				<div class="screen"></div>
+				<input type="image" src="assets/img/instacam/home/selselfie.png" id="instacam_home_selselfie_btn">
+				<input type="image" src="assets/img/instacam/home/selfood.png" id="instacam_home_selfood_btn">
+				<input type="image" src="assets/img/instacam/home/selcam.png" id="instacam_home_selcam_btn">
 			</div>
 			<div id="instacam1" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
+				
 				instacam scene, frame1
+				<div class="screen"></div>
 			</div>
 			<div id="instacam2" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				instacam scene, frame2
 			</div>
 			<div id="instacam3" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				instacam scene, frame3
 			</div>
 			<div id="instacam4" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
+				instacam scene, frame4
+			</div>
+			<div id="instacam5" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
+				instacam scene, frame4
+			</div>
+			<div id="instacam6" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
+				instacam scene, frame4
+			</div>
+			<div id="instacam7" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				instacam scene, frame4
 			</div>
 		</div>
 		
 		<div id="metube_scene">
 			<div id="metube0" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="home_button">
 				metube scene, frame0
 			</div>
 			<div id="metube1" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				metube scene, frame1
 			</div>
 			<div id="metube2" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				metube scene, frame2
 			</div>
 			<div id="metube3" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				metube scene, frame3
 			</div>
 			<div id="metube4" class="scene">
+				<input type="image" src="assets/img/instacam/bak.png" class="back_button">
 				metube scene, frame4
 			</div>
 		</div>

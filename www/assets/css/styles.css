@@ -1,3 +1,4 @@
+html,body { font: 1em/1.4em Arial; color: #fff }
 
 #nav { position: absolute;}
 #nav .group { display: block; }
@@ -14,27 +15,31 @@
 
 
 
+/* Lena, you can swap out these images if you want */
 
 
-
-/* 	SCENE PIXEL WIDTHS: 0,1092,2184,3276,4368,5460 */
+/* 	SCENE PIXEL WIDTHS: 0,1092,2184,3276,4368,5460,6552,7644,8736,9828 */
 
 #home_scene { width: 3276px; position: relative;  }
 #home_scene div { background: url('../img/instacam/intsta_bkg.png') left top }
 
 #cinder_scene { width: 5460px; position: relative; }
-#dumblr_scene { width: 5460px; position: relative; }
+#cinder_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
 
-#instacam_scene { width: 5460px; position: relative;  }
-#instacam_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
+#dumblr_scene { width: 5460px; position: relative; }
+#dumblr_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
+
+#instacam_scene { width: 8736px; position: relative;  }
+#instacam_scene>div { background: url('../img/instacam/intsta_bkg.png') left top; }
 
 #metube_scene { width: 5460px; position: relative; }
+#metube_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
 
-
-#home0 {  }
+/*
+#home0 { background: #d4a1e1; }
 #home1 { background: #d4a1e1; }
 #home2 { background: #a367b2; }
-/**/
+
 #cinder0 { background: #77f3da; }
 #cinder1 { background: #23b194; }
 #cinder2 { background: #24b06f; }
@@ -46,18 +51,19 @@
 #dumblr2 { background: #b8a812; }
 #dumblr3 { background: #95780c; }
 #dumblr4 { background: #7f5907; }
-/*
+
 #instacam0 { background: #79f279; }
 #instacam1 { background: #10f010; }
 #instacam2 { background: #74c116; }
 #instacam3 { background: #3b6b0e; }
 #instacam4 { background: #354f03; }
-*/
+
 #metube0 { background: #f27676; }
 #metube1 { background: #f01010; }
 #metube2 { background: #c21680; }
 #metube3 { background: #d915b9; }
 #metube4 { background: #840c94; }
+*/
 
 
 
@@ -65,16 +71,40 @@
 
 
 
-
-#back_button {
+.home_button,.back_button {
 	position: absolute;
-	
+	border: none
 }
 
 
 
+/***********************************************************************************/
+/* INSTACAM
+************************************************************************************/
 
-
+#instacam_scene .screen {
+	width: 349px;
+	height: 349px;
+	position: relative;
+	top: 128px;
+	left: 48px;
+	background: #000;
+}
+#instacam_scene #instacam_home_selselfie_btn {
+	position: absolute;
+	left: 440px;
+	top: 128px;
+}
+#instacam_scene #instacam_home_selfood_btn {
+	position: absolute;
+	left: 440px;
+	top: 268px;
+}
+#instacam_scene #instacam_home_selcam_btn {
+	position: absolute;
+	left: 440px;
+	top: 408px;
+}
 
 
 
