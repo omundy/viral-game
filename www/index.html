@@ -112,7 +112,7 @@ $(document).ready(function(){
 
 				// move scene				
 				$('#'+scene+'_scene').animate( {"margin-left": '-='+ (moveto-movefrom)},500, function(){ 
-						scene_loader(scene +','+ frame)
+						scene_loader(scene,frame)
 					});
 				// update current_scene
 				update = true; 
@@ -159,18 +159,24 @@ $(document).ready(function(){
 	});
 
 
-	var finished_pages {
+	var finished_pages = {
 		'instacam': 'instagram_camera_roll',
 	}
 
 
 	function scene_loader(scene,frame){
-		//create_buttons(instagram_camera_roll);
-		// update buttons function
+		console.log(scene +','+ frame)
 		
 		
-		
-
+		if (scene == 'instacam'){
+			
+			if (frame == '1'){
+				//update_buttons(instagram_camera_roll);
+			}
+			else if (frame == '2'){
+				//update_buttons(instagram_camera_roll);
+			}
+		}
 		
 		
 	
@@ -180,7 +186,7 @@ $(document).ready(function(){
 			hover effect
 			
 			
-		problem: 3 steps for intacam and the pose after hair is dependent on hair	
+		problem: 3 steps for instacam and the pose after hair is dependent on hair	
 			*/
 		
 		
@@ -191,23 +197,21 @@ $(document).ready(function(){
 
 	function update_buttons(obj){
 		
+		
+		
 		$.each( obj.buttons, function( key, value ) {
 			// make button
 			if (value.locked == true){
-				var btn = '<img src ="assets/img/'+ obj.meta.path + value.btn_img +'">'
+				var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
 			} else if (value.disabled == true){
-				var btn = '<img src ="assets/img/'+ obj.meta.path + value.btn_img +'">'
+				var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
 			} else {
-				var btn = '<img src ="assets/img/'+ obj.meta.path + value.btn_img +'">'
+				var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
 			}
-			$('body').append(btn)
+			$('.scene').append(btn)
 		});
 		
 		
-		for (var key in obj.buttons) {
-			
-			$('body').append(obj.buttons)
-		}
 	}
 	
 	
@@ -237,8 +241,9 @@ $(document).ready(function(){
 		
 		
 		<div id="home_scene">
+			
 			<div id="home0" class="scene">
-				home scene, frame0
+				home scene, frame0 hell
 			</div>
 			<div id="home1" class="scene">
 				home scene, frame1
@@ -286,6 +291,8 @@ $(document).ready(function(){
 		
 		<div id="instacam_scene">
 			<div id="instacam0" class="scene">
+				<button id="back_button"></button>
+				
 				instacam scene, frame0
 			</div>
 			<div id="instacam1" class="scene">

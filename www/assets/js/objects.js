@@ -11,7 +11,7 @@ function display_insta_pic(){
 var instagram_camera_roll = {
 	
 	'meta': {
-		'path':' img/instacam/'
+		'path':'img/instacam/'
 	},
 	'buttons': { //these are only buttons that generate images
  /* SELFIES ICONS -- put hover effects on all of these- glow & enlarge: all images in img/instacam/selfie*/
