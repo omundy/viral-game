@@ -154,7 +154,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: 0px;
     top:0px;
  }
-#instacam_scene .next {  /* next.png, nexthov.png*/
+#instacam_scene .next_button {  /* next.png, nexthov.png*/
     position: absolute;
     left: 744px;
     top:585px;

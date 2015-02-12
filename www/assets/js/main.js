@@ -201,37 +201,38 @@ $(document).ready(function(){
 	
 	/* GLOBAL BUTTONS */
 	
-	$('.home_button').on('click',function(){
-		scene_control('home',0)
-	});
-	$('.back_button').on('click',function(){
-		scene_control(current_scene.scene,current_scene.frame-1)
-	});
+	$('.home_button')
+		.on('click',function(){ scene_control('home',0)})
+		.mouseover(function(){ this.src = 'assets/img/instacam/bakhov.png' })
+		.mouseout(function(){ this.src = 'assets/img/instacam/bak.png' });
+		
+	$('.back_button')
+		.on('click',function(){ scene_control(current_scene.scene,current_scene.frame-1) })
+		.mouseover(function(){ this.src = 'assets/img/instacam/bakhov.png' })
+		.mouseout(function(){ this.src = 'assets/img/instacam/bak.png' });
+	$('.next_button')
+		.on('click',function(){ scene_control(current_scene.scene,current_scene.frame-1) })
+		.mouseover(function(){ this.src = 'assets/img/instacam/nexthov.png' })
+		.mouseout(function(){ this.src = 'assets/img/instacam/next.png' });
 	
 	
 	/* INSTACAM BUTTONS */
 	
-	$('#instacam_home_selselfie_btn').on('click',function(){ scene_control('instacam',1) });
-	$('#instacam_home_selselfie_btn').mouseover(function(){ 
-		this.src = 'assets/img/instacam/home/selselfiehov.png'
-	}).mouseout(function(){ 
-		this.src = 'assets/img/instacam/home/selselfie.png'
-	});
-	$('#instacam_home_selfood_btn').on('click',function(){ scene_control('instacam',2) });
-	$('#instacam_home_selfood_btn').mouseover(function(){ 
-		this.src = 'assets/img/instacam/home/selfoodhov.png'
-	}).mouseout(function(){ 
-		this.src = 'assets/img/instacam/home/selfood.png'
-	});
-	$('#instacam_home_selcam_btn').on('click',function(){ scene_control('instacam',3) });
-	$('#instacam_home_selcam_btn').mouseover(function(){ 
-		this.src = 'assets/img/instacam/home/selcamhov.png'
-	}).mouseout(function(){ 
-		this.src = 'assets/img/instacam/home/selcam.png'
-	});
+	$('#instacam_home_selselfie_btn')
+		.on('click',function(){ scene_control('instacam',1) })
+		.mouseover(function(){ this.src = 'assets/img/instacam/home/selselfiehov.png' })
+		.mouseout(function(){ this.src = 'assets/img/instacam/home/selselfie.png' });
+	$('#instacam_home_selfood_btn')
+		.on('click',function(){ scene_control('instacam',2) })
+		.mouseover(function(){ this.src = 'assets/img/instacam/home/selfoodhov.png' })
+		.mouseout(function(){ this.src = 'assets/img/instacam/home/selfood.png' });
+	$('#instacam_home_selcam_btn').on('click',function(){ scene_control('instacam',3) })
+		.mouseover(function(){ this.src = 'assets/img/instacam/home/selcamhov.png' })
+		.mouseout(function(){ this.src = 'assets/img/instacam/home/selcam.png'});
 	
 	
 	
 	
 	
 }); // /ready()
+
