@@ -33,14 +33,14 @@ $(document).ready(function(){
             'dumblr4',
 		],
 		'instacam':[
-            '1_genres',
-            '2a1_selfies_hair',
-            '2a2_selfies_swag',
-            '2a3_selfies_background',
-            '2b1_food_chooser',
-            '2b2_food_background',
-            '2c1_cameroll_selector',
-            '3_tags'
+            'instacam0', // 1_genres
+            'instacam1', // 2a1_selfies_hair
+            'instacam2', // 2a2_selfies_swag
+            'instacam3', // 2a3_selfies_background
+            'instacam4', // 2b1_food_chooser
+            'instacam5', // 2b2_food_background
+            'instacam6', // 2c1_cameroll_selector
+            'instacam7', // 3_tags
 		],
 		'metube':[
 			'metube0',
@@ -152,7 +152,7 @@ $(document).ready(function(){
 
 
 	function scene_loader(scene,frame){
-		console.log(scene +','+ frame)
+		console.log('scene_loader('+ scene +','+ frame +')')
 		
 		
 		if (scene == 'instacam'){

@@ -6,7 +6,8 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 
 #container { width:100%; height: 100%; background: #222; position: absolute }
 #scene_container { width:1092px; height: 768px; background: #000; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); }
-.scene { float: left; width: 1092px; height: 728px; }
+
+.scene { position:relative; width: 1092px; height: 728px; }
 
 #scene_container .footer {
 	position: absolute;
@@ -27,7 +28,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 
 /* 	SCENE PIXEL WIDTHS: 0,1092,2184,3276,4368,5460,6552,7644,8736,9828 */
 
-#home_scene { width: 3276px; position: relative;  }
+#home_scene { width: 3276px; position: relative; }
 #home_scene div { background: url('../img/instacam/intsta_bkg.png') left top }
 
 #cinder_scene { width: 5460px; position: relative; }
@@ -36,11 +37,16 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 #dumblr_scene { width: 5460px; position: relative; }
 #dumblr_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
 
-#instacam_scene { width: 8736px; position: relative;  }
-#instacam_scene>div { background: url('../img/instacam/intsta_bkg.png') left top; }
+#instacam_scene { width: 8736px; position: relative; }
+#instacam_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
 
 #metube_scene { width: 5460px; position: relative; }
 #metube_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
+
+
+.scene { float: left; width: 1092px; height: 728px; }
+
+
 
 /*
 #home0 { background: #d4a1e1; }
@@ -97,21 +103,9 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 	left: 48px;
 	background: #000;
 }
-#instacam_scene #instacam_home_selselfie_btn {
-	position: absolute;
-	left: 490px;
-        top:99px;
-}
-#instacam_scene #instacam_home_selfood_btn {
-	position: absolute;
-	left: 490px;
-	top: 245px;
-}
-#instacam_scene #instacam_home_selcam_btn {
-	position: absolute;
-	left: 490px;
-	top: 404px;
-}
+#instacam_scene #instacam_home_selselfie_btn { position: absolute; left: 490px; top:99px; }
+#instacam_scene #instacam_home_selfood_btn { position: absolute; left: 490px; top: 245px; }
+#instacam_scene #instacam_home_selcam_btn { position: absolute; left: 490px; top: 404px; }
 
 
 
@@ -121,158 +115,51 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 /*INSTACAM NON-BUTTON ELEMENTS*/
 /*img/instacam/*/
 
- #instacam_scene .polaroid {  /* polaroid.png */
-    position: absolute;
-    top: 18px;
-    left: 14px;
- }
-#instacam_scene .pic {  /* everyting in img/instacam/pics folder */
-    position: absolute;
-    left: 71px;
-    top:132px;
- } 
- #instacam_scene .select {  /* homesel.png*/
-    position: absolute;
-    left: 71px;
-    top:132px;
- }
- 
- #instacam_scene .box {  /* swagbox.png, hairbox.png, foodbox.png, bkgbox.png, cambox.png, tags/tagbartop.png */
-    position: absolute;
-    left: 506px;
-    top:106px;
- }
- 
+#instacam_scene .polaroid { position: absolute; top: 18px; left: 14px; } /* polaroid.png */
+#instacam_scene .pic { position: absolute; left: 71px; top:132px; }  /* everyting in img/instacam/pics folder */
+#instacam_scene .select { position: absolute; left: 71px; top:132px; } /* homesel.png*/
+
+#instacam_scene .box { position: absolute; left: 506px; top:106px; } /* swagbox.png, hairbox.png, foodbox.png, bkgbox.png, cambox.png, tags/tagbartop.png */
+
 
 
 /* INSTACAM BUTTON POSITIONS */
 /*img/instacam/*/
 
+#instacam_scene .back { position: absolute; left: 0px; top:0px; } /* bakhov.png, bak.png */
+#instacam_scene .next_button { position: absolute; left: 744px; top:585px; } /* next.png, nexthov.png*/
 
- #instacam_scene .back {  /* bakhov.png, bak.png */
-    position: absolute;
-    left: 0px;
-    top:0px;
- }
-#instacam_scene .next_button {  /* next.png, nexthov.png*/
-    position: absolute;
-    left: 744px;
-    top:585px;
- }
+/* SELFIES ICONS -- put hover effects on all of these- glow & enlarge: all images in img/instacam/selfie*/
 
-   /* SELFIES ICONS -- put hover effects on all of these- glow & enlarge: all images in img/instacam/selfie*/
-   
- #instacam_scene .selfone {  /* dswag.png, mhair.png */
-    position: absolute;
-    left: 593px;
-    top: 183px;
- }
-#instacam_scene .selftwo {  /* tswag.png, thair.png*/
-    position: absolute;
-    left: 805px;
-    top: 183px;
- }
-#instacam_scene .selfthree {  /* bswag.png, dhair.png*/
-    position: absolute;
-    left: 593px;
-    top: 360px;
- }  
-#instacam_scene .selffour {  /*smartyr.png, bhair.png*/
-    position: absolute;
-    left: 805px;
-    top: 360px;
- }
+#instacam_scene .selfone { position: relative; left: 593px; top: 183px; } /* dswag.png, mhair.png */
+#instacam_scene .selftwo { position: relative; left: 805px; top: 183px; } /* tswag.png, thair.png*/
+#instacam_scene .selfthree { position: relative; left: 593px; top: 360px; }  /* bswag.png, dhair.png*/
+#instacam_scene .selffour { position: relative; left: 805px; top: 360px; } /*smartyr.png, bhair.png*/
 
- }
-    /* FOODIES, CAMERAR ROLLL, & BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/foodie OR img/instacam/bkg OR img/instacam/cameraroll*/
-     
- #instacam_scene .oneone {  /* pasta.png, weenie.png, cheeto.png*/
-    position: absolute;
-    left: 538px;
-    top: 163px;
- }
- #instacam_scene .onetwo {  /* starbux.png, nail.png, heart.png*/
-    position: absolute;
-    left: 667px;
-    top: 163px;
- }
-  #instacam_scene .onethree {  /* sushi.png  gun.png, gunlok.png, alien.png*/
-    position: absolute;
-    left: 798px;
-    top: 163px;
- }
- #instacam_scene .onefour {  /* taco.png, fedora.png, fedoralok.png, latte.png*/
-    position: absolute;
-    left: 930px;
-    top: 163px;
- }
-#instacam_scene .twoone {  /*smoothie.png, scenelok.png, scene.png, killman.png*/
-    position: absolute;
-    left: 538px;
-    top: 292px;
- }  
- #instacam_scene .twotwo {  /* wine.png, cat.png, catlok.png, boob.png*/
-    position: absolute;
-    left: 667px;
-    top: 292px;
- }
-#instacam_scene .twothree {  /* bagel.png,  dik.png, diklok.png, doom.png*/
-    position: absolute;
-    left: 798px;
-    top: 292px;
- }
- #instacam_scene .twofour {  /* steak.png, moloshe.png, meme.png*/
-    position: absolute;
-    left: 930px;
-    top: 292px;
- }
-#instacam_scene .threeone {  /*lilb.png, lilblok.png*/
-    position: absolute;
-    left: 538px;
-    top: 419px;
- }  
-#instacam_scene  .threetwo {  /* dylanlok.png, dylan.png*/
-    position: absolute;
-    left: 667px;
-    top: 419px;
- }
- #instacam_scene .threethree {  /*nude.png*/
-    position: absolute;
-    left: 798px;
-    top: 419px;
- }
- #instacam_scene .threefour {  /* dylanlok.png, dylan.png ...this is temporary*/
-    position: absolute;
-    left: 930px;
-    top: 419px;
- }
- 
- /* INSTACAM TAGS-- put hover effects image lightens: all images in img/instacam/tags*/
- 
- #instacam_scene .scrollbar{  /* scrollbar.png*/
-    position: absolute;
-    top: 108px;
-    left: 1031px;
- }
- #instacam_scene .post{  /*post.png, posthov.png*/
-    position: absolute;
-    left: 31px;
-    top: 483px;
- }
- #instacam_scene .tagcover{  /*tagcover.png*/
-    position: absolute;
-    left: 506px;
-    top: 487px;
- }
-#instacam_scene .tagbar{  /*tagbar.png*/
-    position: absolute;
-    left: 30px;
-    top: 484px;
- }
-#instacam_scene .tagcontainer{  /*tags.png  -- put all tag options in this container; scroll to see alll options*/
-    position: absolute;
-    left: 506px;
-    top:106px;
-    width: 520px;
-    height: 445px;
- }
+
+
+/* FOODIES, CAMERAR ROLLL, & BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/foodie OR img/instacam/bkg OR img/instacam/cameraroll*/
+
+#instacam_scene .oneone { position: absolute; left: 538px; top: 163px; } /* pasta.png, weenie.png, cheeto.png*/
+#instacam_scene .onetwo { position: absolute; left: 667px; top: 163px; } /* starbux.png, nail.png, heart.png*/ 
+#instacam_scene .onethree { position: absolute; left: 798px; top: 163px; } /* sushi.png gun.png, gunlok.png, alien.png*/
+#instacam_scene .onefour { position: absolute; left: 930px; top: 163px; } /* taco.png, fedora.png, fedoralok.png, latte.png*/
+#instacam_scene .twoone { position: absolute; left: 538px; top: 292px; } /*smoothie.png, scenelok.png, scene.png, killman.png*/ 
+#instacam_scene .twotwo { position: absolute; left: 667px; top: 292px; } /* wine.png, cat.png, catlok.png, boob.png*/ 
+#instacam_scene .twothree { position: absolute; left: 798px; top: 292px; } /* bagel.png, dik.png, diklok.png, doom.png*/ 
+#instacam_scene .twofour { position: absolute; left: 930px; top: 292px; } /* steak.png, moloshe.png, meme.png*/ 
+#instacam_scene .threeone { position: absolute; left: 538px; top: 419px; }  /*lilb.png, lilblok.png*/
+#instacam_scene .threetwo { position: absolute; left: 667px; top: 419px; }  /* dylanlok.png, dylan.png*/
+#instacam_scene .threethree { position: absolute; left: 798px; top: 419px; } /*nude.png*/
+#instacam_scene .threefour { /* dylanlok.png, dylan.png ...this is temporary*/ position: absolute; left: 930px; top: 419px; }
+
+/* INSTACAM TAGS-- put hover effects image lightens: all images in img/instacam/tags*/ 
+#instacam_scene .scrollbar{ position: absolute; top: 108px; left: 1031px; } /* scrollbar.png*/
+#instacam_scene .post{ position: absolute; left: 31px; top: 483px; } /*post.png, posthov.png*/ 
+#instacam_scene .tagcover{ position: absolute; left: 506px; top: 487px; } /*tagcover.png*/
+#instacam_scene .tagbar{ position: absolute; left: 30px; top: 484px; } /*tagbar.png*/
+#instacam_scene .tagcontainer{ position: absolute; left: 506px; top:106px; width: 520px; height: 445px; } /*tags.png -- put all tag options in this container; scroll to see alll options*/
+
+
+
+
