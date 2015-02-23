@@ -14,7 +14,11 @@ var instagram_camera_roll = {
 		'path':'img/instacam/'
 	},
 	'buttons': { //these are only buttons that generate images
- /* SELFIES ICONS -- put hover effects on all of these- glow & enlarge: all images in img/instacam/selfie*/
+ /* SELFIES ICONS -- put hover effects on all of these- glow & enlarge: all images in img/instacam/selfie
+ 
+ the way this is written right now the buttons correspond to points. this is wrong, the image that shows up as a result of clicking on buttons should generate the points
+ */
+ 
 	//1st choice
 		'hbasic': { // css class
 			'locked': false, // on beginning
@@ -417,8 +421,6 @@ moloshe.png (+2 troll)
 we have 1 image that we haven’t created yet coz we want to relate it to something we r making l8r
 ____________________
 SELFIES (without backgrounds)
-
-
 file path: 
 img/instacam/pics/selfies/swag_choice2
 
@@ -438,138 +440,6 @@ sthd.png (+2 troll, +2 camgirl)
 sthm.png (+2troll, +2 martyr)
 stht.png (+2troll, +2 troll)
 sthb.png (+2troll, -2 every category)
-
-SELFIES (paired with backgrounds)
-file path: 
-img/instacam/pics/selfies/withbkg_finalchoice
-
-sbhb_alien.png (basic, -4 in every category, +2 camgirl)
-sbhb_boob.png (basic, -4 in every category, +2 troll)
-sbhb_doom.png (basic, -4 in every category, +2 martyr)
-sbhb_heart.png (basic, -4 in every category +2 camgirl)
-sbhb_killman.png (basic, -4 in every category, +2 martyr)
-sbhb_latte.png (basic, -4 in every category, -2 in every category)
-sbhb_meme.png (basic, -4 in every category, +2 troll)
-sbhd_alien.png (-2 in every category, +2 cam girl, +2 camgirl) 
-sbhd_boob.png (-2 in every category, +2 cam girl, +2 camgirl)
-sbhd_cheeto.png (-2 in every category, +2 cam girl +2 troll)
-sbhd_doom.png (-2 in every category, +2 cam girl +2 martyr)
-sbhd_heart.png (-2 in every category, +2 cam girl +2 camgirl)
-sbhd_killman.png (-2 in every category, +2 cam girl +2 martyr)
-sbhd_latte.png (-2 in every category, +2 cam girl -2 in every category)
-sbhd_meme.png (-2 in every category, +2 cam girl +2 troll)
-sbhm_alien.png (-2 in every category, +2 martyr +2 camgirl) 
-sbhm_boob.png (-2 in every category, +2 martyr +2 troll)
-sbhm_cheeto.png (-2 in every category, +2 martyr, +2 troll)
-sbhm_doom.png (-2 in every category, +2 martyr, +martyr)
-sbhm_heart.png (-2 in every category, +2 martyr, +2 camgirl)
-sbhm_killman.png (-2 in every category, +2 martyr +2 martyr)
-sbhm_latte.png (-2 in every category, +2 martyr, -2 in every category)
-sbhm_meme.png (-2 in every category, +2 martyr +2troll)
-sbht_alien.png (-2 every category, +2 troll , +2 camgirl)
-sbht_boob.png (-2 every category, +2 troll +2 troll)
-sbht_cheeto.png (-2 every category, +2 troll +2 troll)
-sbht_doom.png (-2 every category, +2 troll +2 martyr)
-sbht_heart.png (-2 every category, +2 troll, +2 camgirl)
-sbht_killman.png (-2 every category, +2 troll, +2 martyr)
-sbht_latte.png (-2 every category, +2 troll, -2 in every category)
-sbht_meme.png (-2 every category, +2 troll,  +2 troll)
-sbht_cheetos.png (-2 every category, +2 troll +2troll)
-sdhb_alien.png (-2 every category, +2 camgirl, +2 camgirl)
-sdhb_boob.png (-2 every category, +2 camgirl +2 troll)
-sdhb_cheeto.png (-2 every category, +2 camgirl +2 troll)
-sdhb_doom.png (-2 every category, +2 camgirl +2 martyr)
-sdhb_heart.png (-2 every category, +2 camgirl +2 camgirl)
-sdhb_killman.png (-2 every category, +2 camgirl +2 martyr)
-sdhb_latte.png (-2 every category, +2 camgirl -2 in every category)
-sdhd_alien.png (+4 camgirl , +2 camgirl)
-sdhd_boob.png (+4 camgirl +2 troll)
-sdhd_cheeto.png (+4 camgirl +2 troll)
-sdhd_doom.png (+4 camgirl +2 martyr)
-sdhd_heart.png (+4 camgirl, +2 camgirl)
-sdhd_killman.png (+4 camgirl , +2 martyr)
-sdhd_latte.png (+4 camgirl -2 in every category)
-sdhd_meme.png (+4 camgirl, +2 troll)
-sdhm_alien.png  (+2 camgirl +2 martyr, +2 camgirl)
-sdhm_boob.png  (+2 camgirl +2 martyr +2 troll)
-sdhm_cheeto.png  (+2 camgirl +2 martyr +2 troll)
-sdhm_doom.png  (+2 camgirl +2 martyr)
-sdhm_heart.png  (+2 camgirl +2 martyr)
-sdhm_killman.png  (+2 camgirl +2 martyr)
-sdhm_latte.png  (+2 camgirl +2 martyr)
-sdhm_meme.png  (+2 camgirl +2 martyr)
-sdht_alien.png  (+2 camgirl +2 troll) 
-sdht_boob.png   (+2 camgirl +2 troll)
-sdht_cheeto.png  (+2 camgirl +2 troll)
-sdht_doom.png (+2 camgirl +2 troll)
-sdht_heart.png (+2 camgirl +2 troll)
-sdht_killman.png (+2 camgirl +2 troll)
-sdht_latte.png (+2 camgirl +2 troll)
-sdht_troll.png (+2 camgirl +2 troll)
-smhb_alien.png  (-2 every category, +2 martyr, +2 camgirl)
-smhb_boob.png  (-2 every category, +2 martyr +2 troll)
-smhb_cheeto.png (-2 every category, +2 martyr +2 troll)
-smhb_doom.png (-2 every category, +2 martyr +2 martyr)
-smhb_heart.png (-2 every category, +2 martyr +2 camgirl)
-smhb_killman.png (-2 every category, +2 martyr +2 martyr)
-smhb_latte.png (-4 every category, +2 martyr )
-smhb_meme.png (-2 every category, +2 martyr +2troll)
-smhd_alien.png  (+2 camgirl, +2 martyr +2 camgirl)
-smhd_boob.png  (+2 camgirl, +2 martyr +2 troll)
-smhd_cheeto.png  (+2 camgirl, +2 martyr +2 troll)
-smhd_doom.png  (+2 camgirl, +2 martyr +2 martyr)
-smhd_heart.png  (+2 camgirl, +2 martyr +2 camgirl)
-smhd_killman.png   (+2 camgirl, +2 martyr +2 martyr)
-smhd_latte.png  (+2 camgirl, +2 martyr -2 in every category)
-smhd_meme.png  (+2 camgirl, +2 martyr +2 troll)
-smhm_alien.png (+4 martyr +2 camgirl)
-smhm_boob.png  (+4 martyr +2 troll)
-smhm_cheeto.png (+4 martyr +2 troll)
-smhm_doom.png (+4 martyr +2 martyr)
-smhm_heart.png (+4 martyr +2 camgirl)
-smhm_killman.png (+4 martyr +2 martyr)
-smhm_latte.png  (+4 martyr -2 in every category)
-smhm_meme.png  (+4 martyr +2 troll)
-smht_alien.png (+2 troll, +2 martyr +2 camgirl)
-smht_boob.png (+2 troll, +2 martyr +2 troll)
-smht_cheeto.png (+2 troll, +2 martyr +2 troll)
-smht_doom.png (+2 troll, +2 martyr +2 martyr)
-smht_heart.png (+2 troll, +2 martyr +2 camgirl)
-smht_killman.png (+2 troll, +2 martyr +2 martyr)
-smht_latte.png (+2 troll, +2 martyr -2 in every category)
-smht_meme.png  (+2 troll, +2 martyr +2 troll)
-sthb_alien.png  (+2troll, -2 every category +2 camgirl)
-sthb_boob.png  (+2troll, -2 every category +2 troll)
-sthb_cheeto.png  (+2troll, -2 every category +2 troll)
-sthb_doom.png  (+2troll, -2 every category +2 martyr)
-sthb_eme.png  (+2troll, -2 every category +2 troll)
-sthb_heart.png  (+2troll, -2 every category +2 camgirl)
-sthb_killman.png  (+2troll, -2 every category +2 martyr)
-sthb_latte.png  (+2troll, -2 every category -2 in every category)
-sthd_alien.png (+2 troll, +4 camgirl)  
-sthd_boob.png   (+4 troll, +2 camgirl)
-sthd_cheeto.png   (+4 troll, +2 camgirl)
-sthd_doom.png  (+2 troll, +2 camgirl +2 martyr) 
-sthd_heart.png  (+2 troll, +4 camgirl ) 
-sthd_killman.png  (+2 troll, +2 camgirl +2 martyr)
-sthd_latte.png  (+2 troll, +2 camgirl -2 in every category)
-sthd_meme.png  (+4 troll, +2 camgirl)
-sthm_alien.png  (+2troll, +2 martyr +2 category)
-sthm_boob.png  (+2troll, +2 martyr +troll)
-sthm_cheeto.png  (+2troll, +2 martyr  +2 troll)
-sthm_doom.png  (+2troll, +4 martyr)
-sthm_heart.png  (+2troll, +2 martyr +2 camgirl)
-sthm_killman.png  (+2troll, +4 martyr)
-sthm_latte.png  (+2troll, +2 martyr -2 in every category)
-sthm_meme.png  (+4 troll, +2 martyr)
-stht_alien.png (+2troll, +2 troll +2 camgirl)
-stht_boob.png (+2troll, +4 troll)
-stht_cheeto.png (+2troll, +4 troll)
-stht_doom.png (+2troll, +2 troll +2 martyr)
-stht_heart.png (+2troll, +2 troll +2 camgirl)
-stht_killman.png (+2troll, +2 troll +2 martyr)
-stht_latte.png (+2troll, +2 troll -2 in every category)
-stht_meme.png (+2troll, +4 troll)
 ______________
 FOODIES (without backgrounds)
 
@@ -584,77 +454,19 @@ starbux.png (-2 every category)
 sushi.png (+2 camgirl)
 taco.png (+2 troll)
 wine.png (+2 camgirl)
-
-FOODIES (PAIRED WITH BACKGROUNDS)
-
-file path: 
-img/instacam/pics/cameraroll/withbkg
-
-bagel_killman.png  (+2 trolll, +2 martyr)
-bagel_boobs.png (+2 troll, +2troll)
-bagel_cheetos.png (+2 troll, +2 troll)
-bagel_doom.png (+2 troll, +2 martyr)
-bagel_heart.png (+2 troll, +2 camgirl)
-bagel_latte.png (+2 troll, -2 in every category)
-bagel_meme.png (+2 troll, +2 troll )
-bagel_alien.png  (+2 troll, +2 camgirl)
-pasta_alien.png (+2 martyr, +2 camgirl )
-pasta_boob.png (+2 martyr,+2 troll )
-pasta_cheeto.png (+2 martyr, +2 troll )
-pasta_doom.png (+2 martyr, +2 martyr )
-pasta_heart.png (+2 martyr, +camgirl)
-pasta_killman.png (+2 martyr, +martyr)
-pasta_latte.png (+2 martyr, -2 in every category)
-pasta_meme.png (+2 martyr, +2troll )
-smoothie_alein.png (+2 camgirl, +2 camgirl)
-smoothie_boob.png (+2 camgirl, +2troll )
-smoothie_cheetos.png (+2 camgirl, +1 troll )
-smoothie_doom.png (+2 camgirl, +2 martyr )
-smoothie_heart.png (+2 camgirl, +2 camgirl)
-smoothie_killman.png (+2 camgirl, +2 martyr )
-smoothie_latte.png (+2 camgirl, -2 in every category)
-smoothie_meme.png (+2 camgirl, +2 camgirl )
-starbux_alien.png (-2 in every category, +2 camgirl)
-starbux_boobs.png (-2 in every category, +2 troll )
-starbux_cheetos.png (-2 in every category, +2 troll)
-starbux_doom.png (-2 in every category, +2 martyr)
-starbux_heart.png (-2 in every category, +2 camgirl)
-starbux_killman.png (-2 in every category, +2 martyr )
-starbux_latte.png (-2 in every category, -2 in every category)
-starbux_meme.png (-2 in every category,  +2 troll)
-steak_alien.png (+2 martyr, +2 camgirl )
-steak_boob.png (+2 martyr,+2 troll )
-steak_cheeto.png (+2 martyr, +2 troll )
-steak_doom.png (+2 martyr, +2 martyr )
-steak_heart.png (+2 martyr, +camgirl)
-steak_killman.png (+2 martyr, +martyr)
-steak_latte.png (+2 martyr, -2 in every category)
-steak_meme.png (+2 martyr, +2troll )
-sushi_alien.png (+2 camgirl, +2 camgirl)
-sushi_boobs.png (+2 camgirl, +2troll )
-sushi_cheetos.png (+2 camgirl, +1 troll )
-sushi_doom.png (+2 camgirl, +2 martyr )
-sushi_heart.png (+2 camgirl, +2 camgirl)
-sushi_killman.png (+2 camgirl, +2 martyr )
-sushi_latte.png (+2 camgirl, -2 in every category)
-sushi_meme.png (+2 camgirl, +2 camgirl )
-taco_killman.png  (+2 trolll, +2 martyr)
-taco_boobs.png (+2 troll, +2troll)
-taco_cheetos.png (+2 troll, +2 troll)
-taco_doom.png (+2 troll, +2 martyr)
-taco_heart.png (+2 troll, +2 camgirl)
-taco_latte.png (+2 troll, -2 in every category)
-taco_meme.png (+2 troll, +2 troll )
-taco_alien.png  (+2 troll, +2 camgirl)
-wine_alien.png (+2 camgirl, +2 camgirl)
-wine_boob.png (+2 camgirl, +2troll )
-wine_cheetos.png (+2 camgirl, +1 troll )
-wine_doom.png (+2 camgirl, +2 martyr )
-wine_heart.png (+2 camgirl, +2 camgirl)
-wine_killman.png (+2 camgirl, +2 martyr )
-wine_latte.png (+2 camgirl, -2 in every category)
-wine_meme.png (+2 camgirl, +2 camgirl )
 ________________
+BACKGROUNDS:
+file path: 
+img/instacam/pics/backgrounds
+
+alien.png (+2 camgirl)
+boob.png (+2 troll)
+meme.png (+2 troll)
+cheeto (+2 troll)
+doom.png (+2 martyr)
+heart.png (+2 camgirl)
+latte.png (-2 in every category)
+killman.png (+2 martyr)
 
 Affirmations pages:
 
@@ -692,9 +504,59 @@ img/affirmations/lostfollowers_overlay_notification.gif
 
 var tags = {
 	
-	'swag': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':2, 'troll':0 } },
-	'likes4likes': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':2, 'troll':0 } },
-	
+'swag': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'likes4likes': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'tbt': { 'disabled':false, 'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 } },
+	'instamood': { 'disabled':false, 'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 } },
+	'foreveralone': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'poop': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'selfie': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'lol': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'nofilter': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'ftw': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'killmankind': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'wcw': { 'disabled':false, 'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 } },
+	'blessed': { 'disabled':false, 'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 } },
+	'epicwin': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'turnt': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'virgin': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'plur': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'problematic': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'nohomo': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'yesallwomen':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'slutshaming': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'trashy': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'gamergate': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'thatswhatslutsdo': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'pussypower': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'racist': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'smd': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'buchdick': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'downwardspiral': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'naturalselection': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'nipslip': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'2hot4u': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'comeatmebro': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'witch': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'basic': { 'disabled':false, 'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 } },
+	'wrath': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'rip': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'supremebeing': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'twinsies': { 'disabled':false, 'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 } },
+	'gotbitches': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'fml': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'killme': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'hotbish': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'mytwistedworld': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'gunsout': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'proana': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'rage': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'bowdown': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'wetnwild': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
+	'godlike': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'thinspo': { 'disabled':false, 'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 } },
+	'retribution': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'evil': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
 }
 
 

@@ -35,7 +35,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 #cinder_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
 
 #dumblr_scene { width: 5460px; position: relative; }
-#dumblr_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
+#dumblr_scene div { background: url('../img/dumblr/bkg.png') left top; }
 
 #instacam_scene { width: 8736px; position: relative; }
 #instacam_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
@@ -147,20 +147,31 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: 646px;
  }
   /*screens second option*/
-#metube_scene .top {  /* shock.png, shockhov.png */
+#metube_scene .top {  /* rap.png, raphov.png, rant.png, ranthov.png, challenge.png, challengehov.png */
     position: absolute;
     top: 188px;
     left: 330px;
  }
- #metube_scene .middle {  /* shock.png, shockhov.png */
+ #metube_scene .middle {  /* pop.png, pophov.png, diary.png, diaryhov.png, snuff.png, snuffhov.png */
     position: absolute;
     top: 276px;
     left: 330px;
  }
-#metube_scene .bottom {  /* shock.png, shockhov.png */
+#metube_scene .bottom {  /* parody.png, parodyhov.png, comedy.png, comedyhov.png, camwhore.png, camwhore.png */
     position: absolute;
     top: 361px;
     left: 330px;
+ }
+/*affirmations*/
+#metube_scene .affirmation {  /*gainedfollowers_overlay_notification.gif, lostfollowers_overlay_notification.gif */
+    position: absolute;
+    top: 128px;
+    left: 276px;
+ }
+ #metube_scene .ok {  /*ok.png, lost_okhov.png, gain_okhov.png */
+    position: absolute;
+    top: 482px;
+    left: 444px;
  }
 
 /***********************************************************************************/
@@ -233,5 +244,21 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 #instacam_scene .tagcontainer{ position: absolute; left: 506px; top:106px; width: 520px; height: 445px; } /*tags.png -- put all tag options in this container; scroll to see alll options*/
 
 
-
-
+/***********************************************************************************/
+/*DUMBLR   img/dumblr
+************************************************************************************/
+#dumblr_scene .back {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 13px;
+    top: 10px;
+ }
+ #dumblr_scene .reblog {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 267px;
+    top: 202px;
+ }
+  #dumblr_scene .entry {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 498px;
+    top: 202px;
+ }
