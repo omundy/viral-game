@@ -33,6 +33,7 @@ var instagram_camera_roll = {
  
 	//1st choice
 		'hbasic': { // css class
+			'id':'selfie_hbasic',
 			'locked': false, // on beginning
 			'disabled':false, // after used
 			// what is shown

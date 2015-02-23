@@ -189,7 +189,7 @@ $(document).ready(function(){
 		if (scene == 'instacam'){
 			
 			if (frame == '1'){
-				//update_buttons(instagram_camera_roll);
+				update_buttons(instagram_camera_roll);
 				
 				
 				
@@ -218,7 +218,14 @@ $(document).ready(function(){
 		
 		$.each( obj.buttons, function( key, value ) {
 
-			//alert()
+			
+			//console.log($('#selfie_bhair'));
+			//console.log (value.btn_img)
+			
+			
+			
+			
+			//alert(key +','+ value)
 
 
 			/*
