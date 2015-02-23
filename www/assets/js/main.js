@@ -1,5 +1,28 @@
 $(document).ready(function(){
 	
+	/*
+		
+		TO DO
+		
+		Owen: 
+			Make popup video player, blue bg http://blurjs.com/?bg=2
+		scoring
+			next page
+			associate buttons with right image
+		
+		popups
+			function will know what to do
+			html as string
+		
+		
+		
+		*/
+	
+	
+	
+	
+	
+	
 	// scene size
 	var sceneW = 1092;
 	var sceneH = 768;
@@ -15,8 +38,6 @@ $(document).ready(function(){
 		
 		'home':[
 			'welcome',
-            'how_to_play',
-            'credits',
 		],
 		'cinder':[
 			'cinder0',
@@ -48,6 +69,7 @@ $(document).ready(function(){
             'metube2',
             'metube3',
             'metube4',
+            'metube5',
 		],
 	}
 	
@@ -115,88 +137,8 @@ $(document).ready(function(){
 			}
 		console.log(current_scene);
 	}
-	/**
-	 *	hide_scenes()
-	 *	To load a new one
-	 */
-	function hide_scenes(){
-		$('#home_scene').hide();
-		$('#cinder_scene').hide();
-		$('#dumblr_scene').hide();
-		$('#instacam_scene').hide();
-		$('#metube_scene').hide();
-	}
-	hide_scenes();
-	scene_control('home',0);
 	
-	/**
-	 *	Add keyboard controls
-	 */
-	$(document).keydown(function(e) {
-		//console.log('key: '+ e.which)
-		
-		if(e.which == 38) { // up
-		} else if(e.which == 40) { // down
-		
-		} else if(e.which == 39) { // right
-			scene_control(current_scene.scene,current_scene.frame+1)
-		} else if(e.which == 37) { // left
-			scene_control(current_scene.scene,current_scene.frame-1)
-		} 
-	});
-
-
-	var finished_pages = {
-		'instacam': 'instagram_camera_roll',
-	}
-
-
-	function scene_loader(scene,frame){
-		console.log('scene_loader('+ scene +','+ frame +')')
-		
-		
-		if (scene == 'instacam'){
-			
-			if (frame == '1'){
-				//update_buttons(instagram_camera_roll);
-			}
-			else if (frame == '2'){
-				//update_buttons(instagram_camera_roll);
-			}
-		}
-		
-		
 	
-		
-		/* use code 
-			to grey out / disable buttons
-			hover effect
-			
-			
-		problem: 3 steps for instacam and the pose after hair is dependent on hair	
-			*/
-		
-		
-		
-		
-	}
-
-	function update_buttons(obj){
-		
-		$.each( obj.buttons, function( key, value ) {
-			// make button
-			if (value.locked == true){
-				var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
-			} else if (value.disabled == true){
-				var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
-			} else {
-				var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
-			}
-			$('.scene').append(btn)
-		});
-		
-		
-	}
 	
 	
 	/* GLOBAL BUTTONS */
@@ -211,7 +153,7 @@ $(document).ready(function(){
 		.mouseover(function(){ this.src = 'assets/img/instacam/bakhov.png' })
 		.mouseout(function(){ this.src = 'assets/img/instacam/bak.png' });
 	$('.next_button')
-		.on('click',function(){ scene_control(current_scene.scene,current_scene.frame-1) })
+		.on('click',function(){ scene_control(current_scene.scene,current_scene.frame+1) })
 		.mouseover(function(){ this.src = 'assets/img/instacam/nexthov.png' })
 		.mouseout(function(){ this.src = 'assets/img/instacam/next.png' });
 	
@@ -233,6 +175,139 @@ $(document).ready(function(){
 	
 	
 	
+
+	var finished_pages = {
+		'instacam': 'instagram_camera_roll',
+	}
+
+
+	function scene_loader(scene,frame){
+		console.log('scene_loader('+ scene +','+ frame +')')
+		
+		//alert(scene +','+ frame)
+		
+		if (scene == 'instacam'){
+			
+			if (frame == '1'){
+				//update_buttons(instagram_camera_roll);
+				
+				
+				
+			}
+			else if (frame == '2'){
+				//update_buttons(instagram_camera_roll);
+			}
+		}
+		
+		
+	
+		
+		/* use code 
+			to grey out / disable buttons
+			hover effect
+			
+			
+			*/
+		
+		
+		
+		
+	}
+
+	function update_buttons(obj){
+		
+		$.each( obj.buttons, function( key, value ) {
+
+			//alert()
+
+
+			/*
+			// make button
+			if (value.locked == true){
+				var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
+			} else if (value.disabled == true){
+				var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
+			} else {
+				var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
+			}
+			$('.scene').append(btn)
+			
+			*/
+			
+		});
+		
+		
+	}
+	
+	
+
+	
+	
+	
+	/* SCORING FUNCTIONS */
+	
+	var score = { 'camgirl':0, 'martyr':0, 'troll':0 }
+	var tempscore = { 'camgirl':0, 'martyr':0, 'troll':0 }
+	
+	
+	/**
+     *	Update score using tempscore, called on post pages
+     */
+	
+	function update_score(tempscore){
+		
+		score.camgirl += tempscore.camgirl;
+		score.martyr += tempscore.martyr;
+		score.troll += tempscore.troll;
+		
+		// report score
+		console.log('score: '+ JSON.stringify(score))
+		console.log('tempscore: '+ JSON.stringify(tempscore))
+		
+		
+		// update the score bars
+
+		$('#bar1').animate( {"left": '-='+ score.camgirl },500);
+		$('#bar2').animate( {"left": '-='+ score.martyr },500);
+		$('#bar3').animate( {"left": '-='+ score.troll },500);
+		
+	}
+	
+	
+	
+	// all app home pages should 
+	// reset temp score
+	
+	// tempscore only gets counted at affirmation / post
+	
+	
+	
+	var nextButton = { // target 
+		};
+	
+	function instacam_preview(buttonObj){
+		// preview the file in the instacam window
+		
+		// set the target for the "next" button
+	
+		
+			
+	}
+	
+	function instacam_next(buttonObj){
+		// target is based on preview
+		
+		// update temp score
+		
+		// move to next page, which is also showing the preview image
+		
+	}
+	
+	
+	
+	// run game
+	hide_scenes();
+	scene_control('home',0);	
 	
 }); // /ready()
 

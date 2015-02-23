@@ -1,4 +1,39 @@
 
+/**
+ *	hide_scenes()
+ *	To load a new one
+ */
+function hide_scenes(){
+	$('#home_scene').hide();
+	$('#cinder_scene').hide();
+	$('#dumblr_scene').hide();
+	$('#instacam_scene').hide();
+	$('#metube_scene').hide();
+}
+
+/**
+ *	Add keyboard controls
+ */
+$(document).keydown(function(e) {
+	//console.log('key: '+ e.which)
+	
+	if(e.which == 38) { // up
+	} else if(e.which == 40) { // down
+	
+	} else if(e.which == 39) { // right
+		scene_control(current_scene.scene,current_scene.frame+1)
+	} else if(e.which == 37) { // left
+		scene_control(current_scene.scene,current_scene.frame-1)
+	} 
+});
+
+
+
+
+
+
+
+
 
 
 
@@ -45,3 +80,8 @@ function setWindowSize() {
 	console.log('screen: '+screenW+','+screenH);
 }
 	*/
+
+
+
+
+

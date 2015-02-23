@@ -5,6 +5,18 @@ function display_insta_pic(){
 }
 
 
+
+var metube = {  
+	'shock_snuff': {
+		'disabled':false, // after used
+		'score': { 'camgirl':0, 'martyr':0, 'troll':0 }
+	},
+}
+
+
+
+
+
 //problems with this format: there are multple classes that correspond to different buttons on differen pages but they have the same coordinates
 //should i create distinct classes for each button? or is there another work around
 
@@ -504,7 +516,7 @@ img/affirmations/lostfollowers_overlay_notification.gif
 
 var tags = {
 	
-'swag': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
+	'swag': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
 	'likes4likes': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
 	'tbt': { 'disabled':false, 'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 } },
 	'instamood': { 'disabled':false, 'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 } },
@@ -523,7 +535,7 @@ var tags = {
 	'plur': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
 	'problematic': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
 	'nohomo': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
-	'yesallwomen':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
+	'yesallwomen': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':1, 'troll':0 } },
 	'slutshaming': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
 	'trashy': { 'disabled':false, 'score': { 'camgirl':1, 'martyr':0, 'troll':0 } },
 	'gamergate': { 'disabled':false, 'score': { 'camgirl':0, 'martyr':0, 'troll':1 } },
