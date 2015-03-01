@@ -43,16 +43,18 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 }
 
 
+
+
 /* Lena, you can swap out these images if you want */
 
 
 /* 	SCENE PIXEL WIDTHS: 0,1092,2184,3276,4368,5460,6552,7644,8736,9828 */
 
-#home_scene { width: 1092px; position: relative; }
+#home_scene { width: 3276px; position: relative; }
 #home_scene div { background: url('../img/home/bkg.png') left top }
 
 #cinder_scene { width: 5460px; position: relative; }
-#cinder_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
+#cinder_scene div { background: url('../img/cinder/bkg.png') left top; }
 
 #dumblr_scene { width: 5460px; position: relative; }
 #dumblr_scene div { background: url('../img/dumblr/bkg.png') left top; }
@@ -60,7 +62,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 #instacam_scene { width: 8736px; position: relative; }
 #instacam_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
 
-#metube_scene { width: 6552px; position: relative; }
+#metube_scene { width: 5460px; position: relative; }
 #metube_scene div { background: url('../img/metube/bkg.png') left top; }
 
 
@@ -111,22 +113,22 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 /***********************************************************************************/
 /* HOME
 ************************************************************************************/
-#home_scene .instacam {  /* instacam.gif */
+#home_scene .instacam_button {  /* instacam.gif */
     position: absolute;
     left: 764px;
     top: 456px;
  }
-#home_scene .cinder {  /* cinder.gif */
+#home_scene .cinder_button {  /* cinder.gif */
     position: absolute;
     left: 61px;
     top: 437px;
  }
-#home_scene .dumblr {  /* dumblr.gif */
+#home_scene .dumblr_button {  /* dumblr.gif */
     position: absolute;
     left: 98px;
     top: 0px;
  }
-#home_scene .metube {  /* metube.gif */
+#home_scene .metube_button {  /* metube.gif */
     position: absolute;
     left: 774px;
     top: 20px;
@@ -151,17 +153,17 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: 321px;
     top: 200px;
  }
-#metube_scene .mv {  /* mv.png, mvhov.png */
+#metube_scene .metube_mv {  /* mv.png, mvhov.png */
     position: absolute;
     top: 282px;
     left: 220px;
  }
- #metube_scene .vlog {  /* vlog.png, vloghov.png */
+ #metube_scene .metube_vlog {  /* vlog.png, vloghov.png */
     position: absolute;
     top: 282px;
     left: 434px;
  }
-  #metube_scene .shock {  /* shock.png, shockhov.png */
+  #metube_scene .metube_shock {  /* shock.png, shockhov.png */
     position: absolute;
     top: 282px;
     left: 646px;
@@ -231,6 +233,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 
 #instacam_scene .back { position: absolute; left: 0px; top:0px; } /* bakhov.png, bak.png */
 #instacam_scene .next_button { position: absolute; left: 744px; top:585px; } /* next.png, nexthov.png*/
+#instacam_scene .instacam_totags { position: absolute; left: 744px; top:585px; } /* next.png, nexthov.png*/
 
 /* SELFIES ICONS -- put hover effects on all of these- glow & enlarge: all images in img/instacam/selfie*/
 
@@ -281,4 +284,57 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     position: absolute;
     left: 498px;
     top: 202px;
+ }
+   #dumblr_scene .dprompt {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 324px;
+    top: 207px;
+ }
+   #dumblr_scene .diary {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 256px;
+    top: 260px;
+ }
+   #dumblr_scene .rant {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 502px;
+    top: 260px;
+ }
+   #dumblr_scene .manifesto {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 349px;
+    top: 360px;
+ }
+/***********************************************************************************/
+/*CINDER   img/cinder
+************************************************************************************/
+#cinder_scene .pass {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 249px;
+    top: 510px;
+ }
+ #cinder_scene .lastpass {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 249px;
+    top: 510px;
+ }
+ #cinder_scene .date_lilb {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 546px;
+    top: 510px;
+ }
+#cinder_scene .date_elliot {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 546px;
+    top: 510px;
+ }
+ #cinder_scene .date_scene {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 546px;
+    top: 510px;
+ }
+ #cinder_scene .date_bro {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 546px;
+    top: 510px;
  }
