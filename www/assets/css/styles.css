@@ -308,33 +308,39 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 /***********************************************************************************/
 /*CINDER   img/cinder
 ************************************************************************************/
-#cinder_scene .pass {  /* bakhov.png, bak.png */
+#cinder_scene .pass {  
     position: absolute;
     left: 249px;
     top: 510px;
  }
- #cinder_scene .lastpass {  /* bakhov.png, bak.png */
+ #cinder_scene .lastpass { 
     position: absolute;
     left: 249px;
     top: 510px;
  }
- #cinder_scene .date_lilb {  /* bakhov.png, bak.png */
+ #cinder_scene .date_lilb {  
     position: absolute;
     left: 546px;
     top: 510px;
  }
-#cinder_scene .date_elliot {  /* bakhov.png, bak.png */
+#cinder_scene .date_elliot {  
     position: absolute;
     left: 546px;
     top: 510px;
  }
- #cinder_scene .date_scene {  /* bakhov.png, bak.png */
+ #cinder_scene .date_scene {  
     position: absolute;
     left: 546px;
     top: 510px;
  }
- #cinder_scene .date_bro {  /* bakhov.png, bak.png */
+ #cinder_scene .date_bro { 
     position: absolute;
     left: 546px;
     top: 510px;
+ }
+ 
+  #cinder_scene .profpic{ 
+    position: absolute;
+    left: 324px;
+    top: 68px;
  }
