@@ -704,6 +704,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: px;
     top: 162px;
  }
+<<<<<<< Updated upstream
     #dumblr_scene .c2  { /*troll*/
     position: absolute;
     left: 546px;
@@ -713,6 +714,12 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     position: absolute;
     left: 199px;
     top: 225px;
+=======
+    #dumblr_scene .c1  { /*camwhore*/
+    position: absolute;
+    left: 431px;
+    top: 320px;
+>>>>>>> Stashed changes
  }
 /***********************************************************************************/
 /*CINDER   img/cinder
