@@ -242,6 +242,16 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 #instacam_scene .selfthree { position: absolute; left: 593px; top: 345px; }  /* bswag.png, dhair.png*/
 #instacam_scene .selffour { position: absolute; left: 805px; top: 345px; } /*smartyr.png, bhair.png*/
 
+#instacam_scene .scam { position: absolute; left: 593px; top: 168px; } /* dswag.png, mhair.png */
+#instacam_scene .stroll{ position: absolute; left: 805px; top: 168px; } /* tswag.png, thair.png*/
+#instacam_scene .sbasic { position: absolute; left: 593px; top: 345px; }  /* bswag.png, dhair.png*/
+#instacam_scene .smartyr { position: absolute; left: 805px; top: 345px; } /*smartyr.png, bhair.png*/
+
+
+#instacam_scene .hmartyr { position: absolute; left: 593px; top: 168px; } /* dswag.png, mhair.png */
+#instacam_scene .htroll { position: absolute; left: 805px; top: 168px; } /* tswag.png, thair.png*/
+#instacam_scene .hcam { position: absolute; left: 593px; top: 345px; }  /* bswag.png, dhair.png*/
+#instacam_scene .hbasic{ position: absolute; left: 805px; top: 345px; } /*smartyr.png, bhair.png*/
 
 
 /* FOODIES, CAMERAR ROLLL, & BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/foodie OR img/instacam/bkg OR img/instacam/cameraroll*/
@@ -275,7 +285,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: 13px;
     top: 10px;
  }
- #dumblr_scene .reblog {  /* bakhov.png, bak.png */
+ #dumblr_scene .reblog { 
     position: absolute;
     left: 267px;
     top: 202px;
@@ -285,25 +295,414 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: 498px;
     top: 202px;
  }
-   #dumblr_scene .dprompt {  /* bakhov.png, bak.png */
+   #dumblr_scene .dprompt { 
     position: absolute;
     left: 324px;
     top: 207px;
  }
-   #dumblr_scene .diary {  /* bakhov.png, bak.png */
+   #dumblr_scene .diary { 
     position: absolute;
     left: 256px;
     top: 260px;
  }
-   #dumblr_scene .rant {  /* bakhov.png, bak.png */
+   #dumblr_scene .rant {  
     position: absolute;
     left: 502px;
     top: 260px;
  }
-   #dumblr_scene .manifesto {  /* bakhov.png, bak.png */
+   #dumblr_scene .manifesto {
     position: absolute;
     left: 349px;
     top: 360px;
+ }
+    #dumblr_scene .madbox {
+    position: absolute;
+    left: 216px;
+    top: 155px;
+ }
+    #dumblr_scene .next_button {
+    position: absolute;
+    left: 362px;
+    top: 517px;
+ }
+  /*MADLIBS img/dumblr/words/  */
+  
+    #dumblr_scene .word1 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 234px;
+    top: 221px;
+ }
+    #dumblr_scene .word2 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 234px;
+    top: 251px;
+ }
+     #dumblr_scene .word3 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 234px;
+    top: 281px;
+ }
+      #dumblr_scene .word4 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 234px;
+    top: 309px;
+ }
+     #dumblr_scene .word5 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 411px;
+    top: 221px;
+ }
+    #dumblr_scene .word6 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 411px;
+    top: 251px;
+ }
+     #dumblr_scene .word7 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 411px;
+    top: 281px;
+ }
+    #dumblr_scene .word8 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 411px;
+    top: 309px;
+ }
+      #dumblr_scene .word9 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 588px;
+    top: 221px;
+ }
+    #dumblr_scene .word10 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 588px;
+    top: 251px;
+ }
+     #dumblr_scene .word11 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 588px;
+    top: 281px;
+ }
+    #dumblr_scene .word12 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 588px;
+    top: 309px;
+ }
+     #dumblr_scene .word13 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 234px;
+    top: 376px;
+ }
+    #dumblr_scene .word14 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 234px;
+    top: 407px;
+ }
+     #dumblr_scene .word15 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 234px;
+    top: 436px;
+ }
+      #dumblr_scene .word16 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 234px;
+    top: 465px;
+ }
+     #dumblr_scene .word17 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 411px;
+    top: 376px;
+ }
+    #dumblr_scene .word18 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 411px;
+    top: 407px;
+ }
+     #dumblr_scene .word19 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 411px;
+    top: 436px;
+ }
+    #dumblr_scene .word20 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 411px;
+    top: 465px;
+ }
+   #dumblr_scene .word21 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 588px;
+    top: 376px;
+ }
+    #dumblr_scene .word22 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 588px;
+    top: 407px;
+ }
+    #dumblr_scene .word23 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 588px;
+    top: 436px;
+ }
+    #dumblr_scene .word24 { /*make glow and enlarge on roll over/ turn pink on selection*/
+    position: absolute;
+    left: 588px;
+    top: 465px;
+ }
+ 
+  /*MADLIBS img/dumblr/reblog/  */
+    #dumblr_scene .click2reblog { 
+    position: absolute;
+    left: 240px;
+    top: 432px;
+ }
+    #dumblr_scene .progresssbar { 
+    position: absolute;
+    left: 270px;
+    top: 510px;
+ }
+    #dumblr_scene .a1 { /*basic*/
+    position: absolute;
+    left: 636px;
+    top: 342px;
+ }
+     #dumblr_scene .a2 { /*camwhore*/
+    position: absolute;
+    left: 690px;
+    top: 214px;
+ }
+    #dumblr_scene .a3 { /*martyr*/
+    position: absolute;
+    left: 689px;
+    top: 342px;
+ }
+    #dumblr_scene .a4 { /*troll*/
+    position: absolute;
+    left: 651px;
+    top: 268px;
+ }
+    #dumblr_scene .a5 { /*troll*/
+    position: absolute;
+    left: 644px;
+    top: 152px;
+ }
+    #dumblr_scene .a6 { /*camwhore*/
+    position: absolute;
+    left: 591px;
+    top: 206px;
+ }
+     #dumblr_scene .a7 { /*martyr*/
+    position: absolute;
+    left: 215px;
+    top: 369px;
+ }
+      #dumblr_scene .a8 { /*martyr*/
+    position: absolute;
+    left: 586px;
+    top: 280px;
+ }
+    #dumblr_scene .a9 { /*martyr*/
+    position: absolute;
+    left: 435px;
+    top: 269px;
+ }
+    #dumblr_scene .a10 { /*basic*/
+    position: absolute;
+    left: 584px;
+    top: 152px;
+ }
+    #dumblr_scene .a11 { /*troll*/
+    position: absolute;
+    left: 505px;
+    top: 248px;
+ }
+    #dumblr_scene .a12 { /*troll*/
+    position: absolute;
+    left: 291px;
+    top: 205px;
+ }
+    #dumblr_scene .a13 { /*camwhore*/
+    position: absolute;
+    left: 242px;
+    top: 236px;
+ }
+    #dumblr_scene .a14 { /*basic*/
+    position: absolute;
+    left: 478px;
+    top: 233px;
+ }
+    #dumblr_scene .a15 { /*martyr*/
+    position: absolute;
+    left: 516px;
+    top: 324px;
+ }
+    #dumblr_scene .a16 { /*camwhore*/
+    position: absolute;
+    left: 278px;
+    top: 303px;
+ }
+    #dumblr_scene .a17 { /*troll*/
+    position: absolute;
+    left: 377px;
+    top: 345px;
+ }
+    #dumblr_scene .a18 { /*camwhore*/
+    position: absolute;
+    left: 213px;
+    top: 301px;
+ }
+    #dumblr_scene .a19 { /*troll*/
+    position: absolute;
+    left: 373px;
+    top: 265px;
+ }
+    #dumblr_scene .a20 { /*camwhore*/
+    position: absolute;
+    left: 497px;
+    top: 152px;
+ }
+    #dumblr_scene .a21   { /*basic*/
+    position: absolute;
+    left: 362px;
+    top: 162px;
+ }
+    #dumblr_scene .a22   { /*basic*/
+    position: absolute;
+    left: 395px;
+    top: 195px;
+ }
+    #dumblr_scene .a23   { /*troll*/
+    position: absolute;
+    left: 213px;
+    top: 163px;
+ }
+    #dumblr_scene .a24   { /*basic*/
+    position: absolute;
+    left: 465px;
+    top: 333px;
+ }
+    #dumblr_scene .a25   { /*martyr*/
+    position: absolute;
+    left: 288px;
+    top: 145px;
+ }
+     #dumblr_scene .b1  { /*basic*/
+    position: absolute;
+    left: 477px;
+    top: 191px;
+ }
+      #dumblr_scene .b2  { /*camwhore*/
+    position: absolute;
+    left: 315px;
+    top: 180px;
+ }
+    #dumblr_scene .b3  { /*basic*/
+    position: absolute;
+    left: 445px;
+    top: 232px;
+ }
+    #dumblr_scene .b4  { /*camwhore*/
+    position: absolute;
+    left: 349px;
+    top: 232px;
+ }
+    #dumblr_scene .b5  { /*troll*/
+    position: absolute;
+    left: 690px;
+    top: 299px;
+ }
+     #dumblr_scene .b6  { /*troll*/
+    position: absolute;
+    left: 507px;
+    top: 263px;
+ }
+    #dumblr_scene .b7  { /*camwhore*/
+    position: absolute;
+    left: 361px;
+    top: 356px;
+ }
+    #dumblr_scene .b8  { /*martyr*/
+    position: absolute;
+    left: 213px;
+    top: 290px;
+ }
+    #dumblr_scene .b9  { /*basic*/
+    position: absolute;
+    left: 608px;
+    top: 240px;
+ }
+    #dumblr_scene .b10  { /*martyr*/
+    position: absolute;
+    left: 655px;
+    top: 216px;
+ }
+    #dumblr_scene .b11  { /*troll*/
+    position: absolute;
+    left: 469px;
+    top: 317px;
+ }
+    #dumblr_scene .b12  { /*martyr*/
+    position: absolute;
+    left: 728px;
+    top: 248px;
+ }
+    #dumblr_scene .b13  { /*basic*/
+    position: absolute;
+    left: 304px;
+    top: 245px;
+ }
+    #dumblr_scene .b14  { /*troll*/
+    position: absolute;
+    left: 285px;
+    top: 288px;
+ }
+    #dumblr_scene .b15  { /*martyr*/
+    position: absolute;
+    left: 285px;
+    top: 187px;
+ }
+    #dumblr_scene .b16  { /*martyr*/
+    position: absolute;
+    left: 562px;
+    top: 281px;
+ }
+    #dumblr_scene .b17  { /*troll*/
+    position: absolute;
+    left: 197px;
+    top: 379px;
+ }
+    #dumblr_scene .b18  { /*basic*/
+    position: absolute;
+    left: 406px;
+    top: 180px;
+ }
+    #dumblr_scene .b19  { /*troll*/
+    position: absolute;
+    left: 215px;
+    top: 197px;
+ }
+     #dumblr_scene .b20  { /*basic*/
+    position: absolute;
+    left: 690px;
+    top: 372px;
+ }
+    #dumblr_scene .b21  { /*camwhore*/
+    position: absolute;
+    left: 607px;
+    top: 334px;
+ }
+    #dumblr_scene .b22  { /*camwhore*/
+    position: absolute;
+    left: 629px;
+    top: 281px;
+ }
+    #dumblr_scene .b23  { /*basic*/
+    position: absolute;
+    left: 255px;
+    top: 356px;
+ }
+     #dumblr_scene .b24  { /*camwhore*/
+    position: absolute;
+    left: px;
+    top: 162px;
  }
 /***********************************************************************************/
 /*CINDER   img/cinder
