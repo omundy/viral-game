@@ -704,6 +704,16 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: px;
     top: 162px;
  }
+    #dumblr_scene .c2  { /*troll*/
+    position: absolute;
+    left: 546px;
+    top: 260px;
+ }
+    #dumblr_scene .c4  { /*troll*/
+    position: absolute;
+    left: 199px;
+    top: 225px;
+ }
 /***********************************************************************************/
 /*CINDER   img/cinder
 ************************************************************************************/
