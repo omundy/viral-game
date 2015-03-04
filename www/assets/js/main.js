@@ -28,7 +28,7 @@ $(document).ready(function(){
 	var sceneH = 768;
 	
 	// determines positions of scenes
-	var scene_positions = [0,1092,2184,3276,4368,5460,6552,7644,8736,9828];	
+	var scene_positions = [0,1092,2184,3276,4368,5460,6552,7644,8736,9828,10920,12012,13104,14196,15288,16380,17472];	
 	
 	// current scene and frame
 	var current_scene = {};
@@ -52,6 +52,17 @@ $(document).ready(function(){
             'dumblr2',
             'dumblr3',
             'dumblr4',
+	    'dumblr5',
+            'dumblr6',
+            'dumblr7',
+            'dumblr8',
+	    'dumblr9',
+	    'dumblr10',
+	    'dumblr11',
+	    'dumblr12',
+	    'dumblr13',
+	    'dumblr14',
+	    'dumblr15',
 		],
 		'instacam':[
             'instacam0', // 1_genres
@@ -209,11 +220,11 @@ $(document).ready(function(){
 	$('.entry')
 		.on('click',function(){ scene_control('dumblr',1) });
 	$('.diary')
-		.on('click',function(){ scene_control('dumblr',1) });
+		.on('click',function(){ scene_control('dumblr',6) });
 	$('.manifesto')
-		.on('click',function(){ scene_control('dumblr',1) });
-	$('.entry')
-		.on('click',function(){ scene_control('dumblr',1) });
+		.on('click',function(){ scene_control('dumblr',10) });
+	$('.rant')
+		.on('click',function(){ scene_control('dumblr',8) });
 		
 	/*CINDER BUTTONS */
 	

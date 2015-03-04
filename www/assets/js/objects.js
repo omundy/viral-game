@@ -6,13 +6,67 @@ function display_insta_pic(){
 
 
 
-var metube = {  
-	'shock_snuff': {
-		'disabled':false, // after used
-		'score': { 'camgirl':0, 'martyr':0, 'troll':0 }
+var metube = {
+	'meta': {
+		'path':'img/metube/'
+	},
+	'buttons': {
+		'shock_snuff': {
+			'disabled':false, // after used
+			'display':'img', 
+			'btn_img': 'snuff.png',
+			'score': { 'camgirl':0, 'martyr':3, 'troll':0 }
+	},
+		'shock_challenge': {
+			'disabled':false, // after used
+			'display':'img', 
+			'btn_img': 'challenge.png',
+			'score': { 'camgirl':-3, 'martyr':-3, 'troll':-3 }
+	},
+		'shock_camwhore': {
+			'disabled':false, // after used
+			'display':'img', 
+			'btn_img': 'camwhore.png',
+			'score': { 'camgirl': 3, 'martyr':0, 'troll':0 }
+	},
+		'mv_pop': {
+			'disabled':false, // after used
+			'display':'img', 
+			'btn_img': 'pop.png',
+			'score': { 'camgirl': 0, 'martyr':0, 'troll':3 }
+	},
+		'mv_rap': {
+			'disabled':false, // after used
+			'display':'img', 
+			'btn_img': 'rap.png',
+			'score': { 'camgirl': 3, 'martyr':0, 'troll':0 }
+	},
+		'mv_parody': {
+			'disabled':false, // after used
+			'display':'img', 
+			'btn_img': 'parody.png',
+			'score': { 'camgirl': 0, 'martyr':3, 'troll':0 }
+	},
+		'vlog_rant': {
+			'disabled':false, // after used
+			'display':'img', 
+			'btn_img': 'rant.png',
+			'score': { 'camgirl': 0, 'martyr':3, 'troll':0 }
+	},
+		'vlog_comedy': {
+			'disabled':false, // after used
+			'display':'img', 
+			'btn_img': 'comedy.png',
+			'score': { 'camgirl': 0, 'martyr':0, 'troll':3 }
+	},
+		'vlog_diary': {
+			'disabled':false, // after used
+			'display':'img', 
+			'btn_img': 'comedy.png',
+			'score': { 'camgirl': 3, 'martyr':0, 'troll':0 }
 	},
 }
-
+}
 
 
 
@@ -221,7 +275,7 @@ var instagram_camera_roll = {
 			'btn_img': 'bkg/cheeto.png',
 			//'btn_img_locked': '',
 			'btn_img_disabled': 'bkg/cheeto.png', //greyed out
-			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE  
+			'btn_clicked':display_insta_pic('pics/backgrounds/cheeto.png'), //this appears as the background for the image (foodes or selfies) selected previously)
 			'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
 		},
 		'onetwo': {
@@ -232,7 +286,7 @@ var instagram_camera_roll = {
 			'btn_img': 'bkg/heart.png',
 			//'btn_img_locked': '',
 			'btn_img_disabled': 'bkg/heart.png', //greyed out
-			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE  
+			'btn_clicked':display_insta_pic('pics/backgrounds/heart.png'), //this appears as the background for the image (foodes or selfies) selected previously) 
 			'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
 		},
 		'onethree': {
@@ -243,7 +297,7 @@ var instagram_camera_roll = {
 			'btn_img': 'bkgs/alien.png',
 			//'btn_img_locked': '',
 			'btn_img_disabled': 'bkg/alien.png', //greyed out
-			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE  
+			'btn_clicked':display_insta_pic('pics/backgrounds/alien.png'), //this appears as the background for the image (foodes or selfies) selected previously)
 			'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
 		},
 		'onefour': {
@@ -254,7 +308,7 @@ var instagram_camera_roll = {
 			'btn_img': 'bkg/latte.png',
 			//'btn_img_locked': '',
 			'btn_img_disabled': 'bkg/latte.png', //greyed out
-			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+			'btn_clicked':display_insta_pic('pics/backgrounds/latte.png'), //this appears as the background for the image (foodes or selfies) selected previously)
 			'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
 		},
 		'twoone': {
@@ -265,7 +319,7 @@ var instagram_camera_roll = {
 			'btn_img': 'bkg/killman.png',
 			//'btn_img_locked': '',
 			'btn_img_disabled': 'bkg/killman.png', //greyed out
-			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+			'btn_clicked':display_insta_pic('pics/backgrounds/killman.png'), //this appears as the background for the image (foodes or selfies) selected previously)
 			'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
 		},
 		'twotwo': {
@@ -276,7 +330,7 @@ var instagram_camera_roll = {
 			'btn_img': 'bkg/boob.png',
 			//'btn_img_locked': '',
 			'btn_img_disabled': 'bkg/boob.png', //greyed out
-			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+			'btn_clicked':display_insta_pic('pics/backgrounds/boob.png'), //this appears as the background for the image (foodes or selfies) selected previously)
 			'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
 		},
 		'twothree': {
@@ -287,7 +341,7 @@ var instagram_camera_roll = {
 			'btn_img': 'bkg/doom.png',
 			//'btn_img_locked': '',
 			'btn_img_disabled': 'bkg/doom.png', //greyed out
-			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+			'btn_clicked':display_insta_pic('pics/backgrounds/doom.png'), //this appears as the background for the image (foodes or selfies) selected previously)
 			'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
 		},
 		'twofour': {
@@ -298,7 +352,7 @@ var instagram_camera_roll = {
 			'btn_img': 'bkg/meme.png',
 			//'btn_img_locked': '',
 			'btn_img_disabled': 'bkg/meme.png', //greyed out
-			//'btn_clicked':display_insta_pic(''), THIS IS RELIANT ON THE 1ST CHOICE MADE  
+			'btn_clicked':display_insta_pic('pics/backgrounds/meme.png'), //this appears as the background for the image (foodes or selfies) selected previously) 
 			'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
 		},
 /* CAMERA ROLL ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/cameraroll*/
