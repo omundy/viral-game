@@ -21,6 +21,22 @@ $(document).ready(function(){
 	
 	
 	
+	function show_popup_video(file,width,height){
+		var str = '';
+		str += '<video autoplay width="'+ width +'" height="'+ height +'"><source src="'+ file +'" type="video/mp4">';
+		str += 'Your browser does not support the video tag.</video>';
+		$('#video_container').html(str);
+		$('#video_window').css('display','block');
+	}
+	function close_popup_video(){
+		$('#video_container').html('');
+		$('#video_window').css('display','none');
+	}
+	$('#video_player_test').on('click',function(){ show_popup_video('assets/img/metube/nyan.mp4',540,360) })
+	$('#close_video_window').on('click',function(){ close_popup_video(); })
+	
+	
+	
 	
 	
 	// scene size

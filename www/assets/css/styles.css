@@ -19,7 +19,31 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 	background-image: url('../img/statusbar_parts/stautsbkg.png');
 
 }
-
+#video_window { 
+	display: none;
+	width:100%;
+	height:100%;
+	z-index: 200;
+	position: absolute;
+	background: rgba(25,  25,  25, 0.85);
+	text-align: center;
+}
+#video_window #close_video_window {
+	position: absolute;
+	top:30px;
+	right: 30px;
+	display: block;
+	font-size: 100px;
+	color: #ff00f2;
+}
+#video_container { 
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
 #footer #bar1, #footer #bar2, #footer #bar3 {
 	position: absolute;
 	left: 20px;
