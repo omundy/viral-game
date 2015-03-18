@@ -10,30 +10,30 @@ var cinder = {
     },
     'buttons': {
         'date_lilb': {
-        'id':'date_lilb',
-            'disabled':false, // after used
+	    'id':'date_lilb',
+            'disabled':false, // after used true
             'display':'img',
             'btn_img': 'date.png',
             'score': { 'camgirl':0, 'martyr':0, 'troll':3 }
     },
 
         'date_elliot': {
-        'id':'date_elliot',
-            'disabled':false, // after used
+            'id':'date_elliot',
+            'disabled':false, // after used true
             'display':'img',
             'btn_img': 'date.png',
             'score': { 'camgirl':0, 'martyr':3, 'troll':0 }
     },
         'date_scene': {
-        'id':'date_scene',
-            'disabled':false, // after used
+            'id':'date_scene',
+            'disabled':false, // after used true
             'display':'img',
             'btn_img': 'date.png',
             'score': { 'camgirl':3, 'martyr':0, 'troll':0 }
     },
         'date_bro': {
-        'id':'date_bro',
-            'disabled':false, // after used
+            'id':'date_bro',
+            'disabled':false, // after used true
             'display':'img',
             'btn_img': 'date.png',
             'score': { 'camgirl':-3, 'martyr':-3, 'troll':-3 }
@@ -431,6 +431,314 @@ var dumblr = {
             'display':'img',
             'btn_img': 'reblog/c5.png',
             'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'c6': {
+            'id':'c6',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c6.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'c7': {
+            'id':'c7',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c7.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'c8': {
+            'id':'c8',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c8.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'c9': {
+            'id':'c9',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c9.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'c10': {
+            'id':'c10',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c10.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'c11': {
+            'id':'c11',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c11.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'c12': {
+            'id':'c12',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c12.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'c13': {
+            'id':'c13',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c13.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'c14': {
+            'id':'c14',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c14.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'c15': {
+            'id':'c15',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c15.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'c16': {
+            'id':'c16',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c16.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'c17': {
+            'id':'c17',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c17.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+       'c18': {
+            'id':'c18',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c18.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'c19': {
+            'id':'c19',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c19.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'c20': {
+            'id':'c20',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c20.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'c21': {
+            'id':'c21',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c21.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'c22': {
+            'id':'c22',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c22.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'c23': {
+            'id':'c23',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c23.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'c24': {
+            'id':'c24',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c24.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'c25': {
+            'id':'c25',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/c25.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'd1': {
+            'id':'d1',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d1.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'd2': {
+            'id':'d2',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d2.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'd3': {
+            'id':'d3',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d3.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'd4': {
+            'id':'d4',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d4.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'd5': {
+            'id':'d5',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d5.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'd6': {
+            'id':'d6',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d6.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'd7': {
+            'id':'d7',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d7.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'd8': {
+            'id':'d8',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d8.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'd10': {
+            'id':'d10',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d10.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'd11': {
+            'id':'d11',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d11.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'd12': {
+            'id':'d12',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d12.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'd13': {
+            'id':'d13',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d13.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'd14': {
+            'id':'d14',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d10.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'd15': {
+            'id':'d15',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d15.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'd16': {
+            'id':'d16',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d16.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'd17': {
+            'id':'d17',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d17.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'd18': {
+            'id':'d18',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d18.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'd19': {
+            'id':'d19',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d19.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'd20': {
+            'id':'d20',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d20.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'd21': {
+            'id':'d21',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d21.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'd22': {
+            'id':'d22',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/22.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'd23': {
+            'id':'d23',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d23.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'd24': {
+            'id':'d24',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d24.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'd25': {
+            'id':'d25',
+            'disabled':false, // after used true, button greyed out or disappears
+            'display':'img',
+            'btn_img': 'reblog/d25.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
     },
 }
 }
