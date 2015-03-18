@@ -75,19 +75,19 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 /* 	SCENE PIXEL WIDTHS: 0,1092,2184,3276,4368,5460,6552,7644,8736,9828 */
 
 #home_scene { width: 3276px; position: relative; }
-#home_scene div { background: url('../img/home/bkg.png') left top }
+#home_scene>div { background: url('../img/home/bkg.png') left top }
 
 #cinder_scene { width: 5460px; position: relative; }
-#cinder_scene div { background: url('../img/cinder/bkg.png') left top; }
+#cinder_scene>div { background: url('../img/cinder/bkg.png') left top; }
 
 #dumblr_scene { width: 17472px; position: relative; }
-#dumblr_scene div { background: url('../img/dumblr/bkg.png') left top; }
+#dumblr_scene>div { background: url('../img/dumblr/bkg.png') left top; }
 
 #instacam_scene { width: 8736px; position: relative; }
-#instacam_scene div { background: url('../img/instacam/intsta_bkg.png') left top; }
+#instacam_scene>div { background: url('../img/instacam/intsta_bkg.png') left top; }
 
 #metube_scene { width: 5460px; position: relative; }
-#metube_scene div { background: url('../img/metube/bkg.png') left top; }
+#metube_scene>div { background: url('../img/metube/bkg.png') left top; }
 
 
 .scene { float: left; width: 1092px; height: 728px; }
@@ -289,7 +289,8 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 /*INSTACAM NON-BUTTON ELEMENTS*/
 /*img/instacam/*/
 
-#instacam_scene .polaroid { position: absolute; top: 18px; left: 14px; } /* polaroid.png */
+#instacam_scene .polaroid { position: absolute; top: 18px; left: 14px; width:470px; height:562px; background: url('../img/instacam/polaroid.png') } /* polaroid.png */
+#instacam_scene .polaroid .instacam_preview { position: relative; top: 106px; left: 57px; }
 #instacam_scene .pic { position: absolute; left: 71px; top:132px; }  /* everyting in img/instacam/pics folder */
 #instacam_scene .select { position: absolute; left: 71px; top:132px; } /* homesel.png*/
 

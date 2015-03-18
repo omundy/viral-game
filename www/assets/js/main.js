@@ -167,8 +167,8 @@ $(document).ready(function(){
 	
 	
 	
-	
-/* GLOBAL BUTTONS */
+		
+	/* GLOBAL BUTTONS */
 	
 	$('.home_button')
 		.on('click',function(){ scene_control('home',0)})
@@ -182,6 +182,8 @@ $(document).ready(function(){
 		.on('click',function(){ scene_control(current_scene.scene,current_scene.frame +1) })
 		.mouseover(function(){ this.src = 'assets/img/instacam/nexthov.png' })
 		.mouseout(function(){ this.src = 'assets/img/instacam/next.png' });
+	
+	
 	
 	/* HOMESCREEN BUTTONS */
 	
@@ -203,7 +205,7 @@ $(document).ready(function(){
 		.mouseout(function(){ this.src = 'assets/img/home/cinder.gif' });
 	
 	
-
+	
 	/* INSTACAM BUTTONS */
 	
 	$('#instacam_home_selselfie_btn')
@@ -221,42 +223,42 @@ $(document).ready(function(){
 		.mouseover(function(){ this.src = 'assets/img/instacam/nexthov.png' })
 		.mouseout(function(){ this.src = 'assets/img/instacam/next.png' });
 		
+	
+	
+		
+		
+		
+		
 	/*METUBE BUTTONS */
 	
-	$('.metube_mv')
-		.on('click',function(){ scene_control('metube',1) });
-	$('.metube_vlog')
-		.on('click',function(){ scene_control('metube',2) });
+	$('.metube_mv').on('click',function(){ scene_control('metube',1) });
+	$('.metube_vlog').on('click',function(){ scene_control('metube',2) });
 	$('.metube_shock').on('click',function(){ scene_control('metube',3) });
+	
+	
+	
 	
 	/*DUMBLR BUTTONS */
 	
-	$('.reblog')
-		.on('click',function(){ scene_control('dumblr',2) });
-	$('.entry')
-		.on('click',function(){ scene_control('dumblr',1) });
-	$('.diary')
-		.on('click',function(){ scene_control('dumblr',6) });
-	$('.manifesto')
-		.on('click',function(){ scene_control('dumblr',10) });
-	$('.rant')
-		.on('click',function(){ scene_control('dumblr',8) });
+	$('.reblog').on('click',function(){ scene_control('dumblr',2) });
+	$('.entry').on('click',function(){ scene_control('dumblr',1) });
+	$('.diary').on('click',function(){ scene_control('dumblr',6) });
+	$('.manifesto').on('click',function(){ scene_control('dumblr',10) });
+	$('.rant').on('click',function(){ scene_control('dumblr',8) });
+		
+		
+		
 		
 	/*CINDER BUTTONS */
 	
-	$('.pass')
-		.on('click',function(){ scene_control(current_scene.scene,current_scene.frame +1) });
-	$('.lastpass')
-		.on('click',function(){ scene_control('cinder', 0) });
-	$('.date_lilb')
-		.on('click',function(){ scene_control('cinder',1) });
-	$('.date_bro')
-		.on('click',function(){ scene_control('cinder',1) });
-	$('.date_scene')
-		.on('click',function(){ scene_control('cinder',1) });
-	$('.date_elliot')
-		.on('click',function(){ scene_control('cinder',1) });
-
+	$('.pass').on('click',function(){ scene_control(current_scene.scene,current_scene.frame +1) });
+	$('.lastpass').on('click',function(){ scene_control('cinder', 0) });
+	$('.date_lilb').on('click',function(){ scene_control('cinder',1) });
+	$('.date_bro').on('click',function(){ scene_control('cinder',1) });
+	$('.date_scene').on('click',function(){ scene_control('cinder',1) });
+	$('.date_elliot').on('click',function(){ scene_control('cinder',1) });
+	
+	
 
 	
 	
@@ -379,11 +381,20 @@ $(document).ready(function(){
 	var nextButton = { // target 
 		};
 	
+	$('#selfie_hbasic').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_hbasic']) });
+	$('#selfie_hmartyr').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_hmartyr']) });
+	$('#selfie_hcam').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_hcam']) });
+	$('#selfie_htroll').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_htroll']) });
+	
 	function instacam_preview(buttonObj){
+		
+		console.log(buttonObj)
+		
 		// preview the file in the instacam window
+		$('.instacam_preview').html( '<img src="assets/img/instacam/'+ buttonObj.btn_clicked +'">' ) 
 		
 		// set the target for the "next" button
-	
+		//$('.next_button').
 		
 			
 	}
