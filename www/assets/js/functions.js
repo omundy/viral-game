@@ -29,14 +29,9 @@ $(document).keydown(function(e) {
 
 
 
-
-
-
-
-
-
-
-
+/**
+ *	Prints object
+ */
 function print_obj (obj){
 	
 	for (var key in obj) {
@@ -51,8 +46,6 @@ function print_obj (obj){
 		}
 		console.log(log);
 	}
-
-	
 }
 
 
