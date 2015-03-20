@@ -50,7 +50,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 	border: none;
 	background: #fff
 } 
-.tags button:hover, .tag_selected {
+.tags button:hover, .tag_selected, .tag_used {
 	color: #fff;
 	background: rgba(0,0,0,.5)
 } 
@@ -59,13 +59,17 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 
 
 #dumblr_tag_confirm, #instacam_tag_confirm, #metube_tag_confirm { position: absolute; font-size: 120%; background: #ed00ff; color: #fff; border: none; padding: 8px }
-#dumblr_tag_confirm { top: 520px; left: 500px; }
-#instacam_tag_confirm { top: 520px; left: 500px; }
+#dumblr_tag_confirm { top: 550px; left: 460px; }
+#instacam_tag_confirm { top: 580px; left: 600px; }
 #metube_tag_confirm { top: 520px; left: 500px; }
 
-/*.tag_selected, .tag_selected:hover { background: #ccc; color: #ed00ff; }*/
-.tag_used { background: #ccc; color: #000; }
+/*.tag_selected, .tag_selected:hover { background: #ccc; color: #ed00ff; }
+.tag_used { background: #ccc; color: #000; }*/
 
+.tags button:hover, .tag_selected, .tag_used {
+	color: #fff;
+	background-color: rgba(0,0,0,.5) !important;
+} 
 
 
 

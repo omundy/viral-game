@@ -35,6 +35,7 @@ function close_popup_video(){
 	$('#video_window').css('display','none');
 }
 $('#video_player_test').on('click',function(){ show_popup_video('assets/img/metube/nyan.mp4',540,360) })
+$('#video_player_rapmv').on('click',function(){ show_popup_video('assets/img/metube/nyan.mp4',540,360) })
 $('#close_video_window').on('click',function(){ close_popup_video(); })
 
 
@@ -387,19 +388,23 @@ function tag_handler(element){
 }
 // confirm selected tags and add them to used
 function tag_confirm(){
-	if (tags_selected.length > 4){
+	
+	if (tags_selected.length > 2){
 		alert("You can only use four tags at a time!!!")
 	} else {
 		tags_used = tags_used.concat(tags_selected)
+		// do score here
 	}
 	
-	console.log(tags_selected)
-	console.log(tags_used)
+	console.log('tags_selected: '+ tags_selected)
+	console.log('tags_used: '+ tags_used)
 	
 	// add score
 	//update_temp_score(tags[tag].score);
 }
+$('#dumblr_tag_confirm').on('click',function(){ tag_confirm() });
 $('#instacam_tag_confirm').on('click',function(){ tag_confirm() });
+$('#metube_tag_confirm').on('click',function(){ tag_confirm() });
 
 
 
