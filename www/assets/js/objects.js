@@ -1920,7 +1920,7 @@ var instagram_camera_roll = {
             'btn_img': 'selfies/dswag.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/dswag.png', //greyed out
-            //'preview_img': ''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+            //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
         'sbasic': {
@@ -1931,7 +1931,7 @@ var instagram_camera_roll = {
             'btn_img': 'selfies/bswag.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/bswag.png', //greyed out
-            //'preview_img': ''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+            //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
             'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
         },
         'stroll': {
@@ -1942,7 +1942,7 @@ var instagram_camera_roll = {
             'btn_img': 'selfies/tswag.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/tswag.png', //greyed out
-            //'preview_img': ''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+            //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
         'smartyr': {
@@ -1953,7 +1953,7 @@ var instagram_camera_roll = {
             'btn_img': 'selfies/mswag.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/mswag.png', //greyed out
-            //'preview_img': ''), THIS IS RELIANT ON THE 1ST CHOICE MADE 
+            //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
 /* FOODIES ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/foodie*/
@@ -2045,10 +2045,6 @@ var instagram_camera_roll = {
             'preview_img': 'pics/foodies/steak.png', 
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
-<<<<<<< Updated upstream
-/* BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
-        'oneone': {
-=======
 /* FOODIES BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
         'bkgf_oneone': {
             'id':'bkgf_oneone',
@@ -2058,7 +2054,7 @@ var instagram_camera_roll = {
             'btn_img': 'bkg/cheeto.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'bkg/cheeto.png', //greyed out
-            'btn_clicked':display_insta_pic('pics/backgrounds/cheeto.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'btn_clicked': 'pics/backgrounds/cheeto.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
         'bkgf_onetwo': {
@@ -2069,7 +2065,7 @@ var instagram_camera_roll = {
             'btn_img': 'bkg/heart.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'bkg/heart.png', //greyed out
-            'btn_clicked':display_insta_pic('pics/backgrounds/heart.png'), //this appears as the background for the image (foodes or selfies) selected previously) 
+            'btn_clicked': 'pics/backgrounds/heart.png', //this appears as the background for the image (foodes or selfies) selected previously) 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
         'bkgf_onethree': {
@@ -2080,7 +2076,7 @@ var instagram_camera_roll = {
             'btn_img': 'bkgs/alien.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'bkg/alien.png', //greyed out
-            'btn_clicked':display_insta_pic('pics/backgrounds/alien.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'btn_clicked': 'pics/backgrounds/alien.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
         'bkgf_onefour': {
@@ -2091,7 +2087,7 @@ var instagram_camera_roll = {
             'btn_img': 'bkg/latte.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'bkg/latte.png', //greyed out
-            'btn_clicked':display_insta_pic('pics/backgrounds/latte.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'btn_clicked': 'pics/backgrounds/latte.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
         },
         'bkgf_twoone': {
@@ -2102,7 +2098,7 @@ var instagram_camera_roll = {
             'btn_img': 'bkg/killman.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'bkg/killman.png', //greyed out
-            'btn_clicked':display_insta_pic('pics/backgrounds/killman.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'btn_clicked': 'pics/backgrounds/killman.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
         'bkgf_twotwo': {
@@ -2113,7 +2109,7 @@ var instagram_camera_roll = {
             'btn_img': 'bkg/boob.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'bkg/boob.png', //greyed out
-            'btn_clicked':display_insta_pic('pics/backgrounds/boob.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'btn_clicked': 'pics/backgrounds/boob.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
         'bkgf_twothree': {
@@ -2124,7 +2120,7 @@ var instagram_camera_roll = {
             'btn_img': 'bkg/doom.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'bkg/doom.png', //greyed out
-            'btn_clicked':display_insta_pic('pics/backgrounds/doom.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'btn_clicked': 'pics/backgrounds/doom.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
         'bkgf_twofour': {
@@ -2135,12 +2131,11 @@ var instagram_camera_roll = {
             'btn_img': 'bkg/meme.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'bkg/meme.png', //greyed out
-            'btn_clicked':display_insta_pic('pics/backgrounds/meme.png'), //this appears as the background for the image (foodes or selfies) selected previously) 
+            'btn_clicked': 'pics/backgrounds/meme.png', //this appears as the background for the image (foodes or selfies) selected previously) 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
 /* SELFIES BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
         'bkg_oneone': {
->>>>>>> Stashed changes
             'id':'bkg_oneone',
             'locked': false,
             'disabled':false,
