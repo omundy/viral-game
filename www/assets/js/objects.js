@@ -164,13 +164,6 @@ var dumblr = {
             'btn_img': 'reblog/a17.png',
             'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
     },
-        'a18': {
-        'id':'a18',
-            'disabled':false, // after used true, button greyed out or disappears
-            'display':'img',
-            'btn_img': 'reblog/a18.png',
-            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
-    },
             'a18': {
         'id':'a18',
             'disabled':false, // after used true, button greyed out or disappears
@@ -738,6 +731,1049 @@ var dumblr = {
             'btn_img': 'reblog/d25.png',
             'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
     },
+//madlib genre seleciton
+        'manifesto': {
+            'id':'manifesto' ,
+            'disabled':false, // after used true, button greyed out
+            'display':'img',
+            'btn_img': 'manifesto.png',
+            'score': { 'camgirl':  0, 'martyr': 6, 'troll': 0 }
+    },
+        'diary': {
+            'id':'diary' ,
+            'disabled':false, // after used true, button greyed out
+            'display':'img',
+            'btn_img': 'diary.png',
+            'score': { 'camgirl':  6, 'martyr': 0, 'troll': 0 }
+    },
+        'rant': {
+            'id':'rant' ,
+            'disabled':false, // after used true, button greyed out
+            'display':'img',
+            'btn_img': 'rant.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 6 }
+    },
+//NOTE: the following correspond to TEXT HTML WORDS which are inserted into text. MADLIBS STYLE
+
+//manifesto page 1
+
+        'mw1': {
+            'id':'mw1' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw1.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'mw2': {
+            'id':'mw2',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw2.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'mw3': {
+            'id':'mw3',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw3.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'mw4': {
+            'id':'mw4',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw4.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'mw5': {
+            'id':'mw5',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw5.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'mw6': {
+            'id':'mw6',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw6.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'mw7': {
+            'id':'mw7' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw7.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'mw8': {
+            'id':'mw8' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw8.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'mw9': {
+            'id':'mw9',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw9.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'mw10': {
+            'id':'mw10' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw10.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'mw11': {
+            'id':'mw11',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw11.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'mw12': {
+            'id':'mw12',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw12.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'mw13': {
+            'id':'mw13',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw13.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'mw14': {
+            'id':'mw14' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw14.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'mw15': {
+            'id':'mw15',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw15.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'mw16': {
+            'id':'mw16',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw16.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'mw17': {
+            'id':'mw17' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw17.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'mw18': {
+            'id':'mw18',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw18.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'mw19': {
+            'id':'mw19',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw19.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'mw20': {
+            'id':'mw20',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw20.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'mw21': {
+            'id':'mw21',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw21.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'mw22': {
+            'id':'mw22',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw22.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'mw23': {
+            'id':'mw23' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw23.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'mw24': {
+            'id':'mw24',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/mw24.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+
+//manifesto page 2
+
+        'm2w1': {
+            'id':'m2w1',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w1.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll':- 1 }
+    },
+        'm2w2': {
+            'id':'m2w2' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w2.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'm2w3': {
+            'id': 'm2w3' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w3.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'm2w4': {
+            'id':'m2w4',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w4.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'm2w5': {
+            'id':'m2w5',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w5.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'm2w6': {
+            'id':'m2w6',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w6.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'm2w7': {
+            'id':'m2w7',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w7.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'm2w8': {
+            'id':'m2w8' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w8.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'm2w9': {
+            'id':'m2w9',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w9.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'm2w10': {
+            'id':'m2w10' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w10.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'm2w11': {
+            'id':'m2w11',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w11.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll':  -1 }
+    },
+        'm2w12': {
+            'id':'m2w12',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w12.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'm2w13': {
+            'id':'m2w13',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w13.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'm2w14': {
+            'id':'m2w14',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w14.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'm2w15': {
+            'id':'m2w15',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w15.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'm2w16': {
+            'id':'m2w16' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w16.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'm2w17': {
+            'id':'m2w17' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w17.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'm2w18': {
+            'id':'m2w18' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w19.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'm2w19': {
+            'id':'m2w19',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w19.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'm2w20': {
+            'id':'m2w20' ,
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w20.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'm2w21': {
+            'id':'m2w21',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w21.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'm2w22': {
+            'id':'m2w22',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w22.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'm2w23': {
+            'id':'m2w23',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w23.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'm2w24': {
+            'id':'m2w24',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/m2w24.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+
+//diary page 1
+
+        'cgw1': {
+            'id':'cgw1',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw1.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'cgw2': {
+            'id':'cgw2',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw2.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll':- 1 }
+    },
+        'cgw3': {
+            'id':'cgw3',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw3.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'cgw4': {
+            'id':'cgw4',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw4.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'cgw5': {
+            'id':'cgw5',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw5.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'cgw6': {
+            'id':'cgw6',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw6.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cgw7': {
+            'id':'cgw7',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw7.png',
+            'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
+    },
+        'cgw8': {
+            'id':'cgw8',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw8.png',
+            'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
+    },
+        'cgw9': {
+            'id':'cgw9',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw9.png',
+            'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
+    },
+        'cgw10': {
+            'id':'cgw10',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw10.png',
+            'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cgw11': {
+            'id':'cgw11',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw11.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'cgw12': {
+            'id':'cgw12',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw12.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'cgw13': {
+            'id':'cgw13',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw13.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'cgw14': {
+            'id':'cgw14',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw14.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cgw15': {
+            'id':'cgw15',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw15.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'cgw16': {
+            'id':'cgw16',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw16.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'cgw17': {
+            'id':'cgw17',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw17.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'cgw18': {
+            'id':'cgw18',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw18.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cgw19': {
+            'id':'cgw19',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw19.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'cgw20': {
+            'id':'cgw20',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw20.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'cgw21': {
+            'id':'cgw21',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw21.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'cgw22': {
+            'id':'cgw22',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw22.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cgw23': {
+            'id':'cgw23',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw23.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'cgw24': {
+            'id':'cgw24',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cgw24.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+//diary page 2
+        'cg2w1': {
+            'id':'cg2w1',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w1.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'cg2w2': {
+            'id':'cg2w2',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w2.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cg2w3': {
+            'id':'cg2w3',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w3.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'cg2w4': {
+            'id':'cg2w4',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w4.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'cg2w5': {
+            'id':'cg2w5',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w5.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'cg2w6': {
+            'id':'cg2w6',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w6.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cg2w7': {
+            'id':'cg2w7',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w7.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'cg2w8': {
+            'id':'cg2w8',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w8.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'cg2w9': {
+            'id':'cg2w9',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w9.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cg2w10': {
+            'id':'cg2w10',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w10.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'cg2w11': {
+            'id':'cg2w11',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w11.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'cg2w12': {
+            'id':'cg2w12',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w12.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'cg2w13': {
+            'id':'cg2w13',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w13.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'cg2w14': {
+            'id':'cg2w14',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w14.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cg2w15': {
+            'id':'cg2w15',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w15.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'cg2w16': {
+            'id':'cg2w16',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w16.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'cg2w17': {
+            'id':'cg2w17',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w17.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+    },
+        'cg2w18': {
+            'id':'cg2w18',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w18.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+    },
+        'cg2w19': {
+            'id':'cg2w19',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w19.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+    },
+        'cg2w20': {
+            'id':'cg2w20',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w20.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cg2w21': {
+            'id':'cg2w21',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w21.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+    },
+        'cg2w22': {
+            'id':'cg2w22',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w22.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	'cg2w23': {
+            'id':'cg2w23',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w23.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	'cg2w24': {
+            'id':'cg2w24',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/cg2w24.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+//rant page 1
+	'tw1': {
+            'id':'tw1',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw1.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	'tw2': {
+            'id':'tw2',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw2.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	'tw3': {
+            'id':'tw3',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw3.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	'tw4': {
+            'id':'tw4',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw4.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	'tw5': {
+            'id':'tw5',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw5.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	'tw6': {
+            'id':'tw6',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw6.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	'tw7': {
+            'id':'tw7',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw7.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	'tw8': {
+            'id':'tw8',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw8.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	'tw9': {
+            'id':'tw9',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw9.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	'tw10': {
+            'id':'tw10',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw10.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	'tw11': {
+            'id':'tw11',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw11.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	'tw12': {
+            'id':'tw12',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw12.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	'tw13': {
+            'id':'tw13',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw13.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	'tw14': {
+            'id':'tw14',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw14.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	'tw15': {
+            'id':'tw15',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw15.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	'tw16': {
+            'id':'tw16',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw16.png',
+            'score': { 'camgirl':0, 'martyr': 1, 'troll': 0 }
+	},
+	'tw17': {
+            'id':'tw10',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw10.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	'tw18': {
+            'id':'tw18',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw18.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	'tw19': {
+            'id':'tw19',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw19.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	'tw20': {
+            'id':'tw20',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw20.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	'tw21': {
+            'id':'tw21',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw21.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	'tw22': {
+            'id':'tw22',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw22.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	'tw23': {
+            'id':'tw23',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw23.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	'tw24': {
+            'id':'tw24',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/tw24.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+//rant page 2
+	't2w1': {
+            'id':'t2w1',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w1.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	't2w2': {
+            'id':'t2w2',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w2.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	't2w3': {
+            'id':'t2w3',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w3.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	't2w4': {
+            'id':'t2w4',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w4.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	't2w5': {
+            'id':'t2w5',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w5.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	't2w6': {
+            'id':'t2w6',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w6.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	't2w7': {
+            'id':'t2w7',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w7.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	't2w8': {
+            'id':'t2w8',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w8.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	't2w9': {
+            'id':'t2w9',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w9.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	't2w10': {
+            'id':'t2w10',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w10.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	't2w11': {
+            'id':'t2w11',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w11.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	't2w12': {
+            'id':'t2w12',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w12.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	't2w13': {
+            'id':'t2w13',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w13.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
+	't2w14': {
+            'id':'t2w14',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w14.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	't2w15': {
+            'id':'t2w15',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w15.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	't2w16': {
+            'id':'t2w16',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w16.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	't2w17': {
+            'id':'t2w17',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w17.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1}
+	},
+	't2w18': {
+            'id':'t2w18',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w18.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	't2w19': {
+            'id':'t2w19',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w19.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	't2w20': {
+            'id':'t2w20',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w20.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	't2w21': {
+            'id':'t2w21',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w21.png',
+            'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
+	},
+	't2w22': {
+            'id':'t2w22',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w22.png',
+            'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
+	},
+	't2w23': {
+            'id':'t2w23',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w23.png',
+            'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
+	},
+	't2w24': {
+            'id':'t2w24',
+            'disabled':false, // after used true, button greyed out 
+            'display':'img',
+            'btn_img': 'words/t2w24.png',
+            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
+	},
 }
 }
 var metube = {
@@ -1009,8 +2045,102 @@ var instagram_camera_roll = {
             'preview_img': 'pics/foodies/steak.png', 
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
+<<<<<<< Updated upstream
 /* BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
         'oneone': {
+=======
+/* FOODIES BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
+        'bkgf_oneone': {
+            'id':'bkgf_oneone',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/cheeto.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/cheeto.png', //greyed out
+            'btn_clicked':display_insta_pic('pics/backgrounds/cheeto.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
+        },
+        'bkgf_onetwo': {
+            'id':'bkgf_onetwo',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/heart.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/heart.png', //greyed out
+            'btn_clicked':display_insta_pic('pics/backgrounds/heart.png'), //this appears as the background for the image (foodes or selfies) selected previously) 
+            'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
+        },
+        'bkgf_onethree': {
+            'id':'bkg_onethree',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkgs/alien.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/alien.png', //greyed out
+            'btn_clicked':display_insta_pic('pics/backgrounds/alien.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
+        },
+        'bkgf_onefour': {
+            'id':'bkgf_onefour',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/latte.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/latte.png', //greyed out
+            'btn_clicked':display_insta_pic('pics/backgrounds/latte.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
+        },
+        'bkgf_twoone': {
+            'id':'bkgf_twoone',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/killman.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/killman.png', //greyed out
+            'btn_clicked':display_insta_pic('pics/backgrounds/killman.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
+        },
+        'bkgf_twotwo': {
+            'id':'bkgf_twotwo',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/boob.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/boob.png', //greyed out
+            'btn_clicked':display_insta_pic('pics/backgrounds/boob.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
+        },
+        'bkgf_twothree': {
+            'id':'bkgf_twothree',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/doom.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/doom.png', //greyed out
+            'btn_clicked':display_insta_pic('pics/backgrounds/doom.png'), //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
+        },
+        'bkgf_twofour': {
+            'id':'bkgf_twofour',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/meme.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/meme.png', //greyed out
+            'btn_clicked':display_insta_pic('pics/backgrounds/meme.png'), //this appears as the background for the image (foodes or selfies) selected previously) 
+            'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
+        },
+/* SELFIES BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
+        'bkg_oneone': {
+>>>>>>> Stashed changes
             'id':'bkg_oneone',
             'locked': false,
             'disabled':false,
@@ -1043,7 +2173,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/backgrounds/alien.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
-        'onefour': {
+        'bkg_onefour': {
             'id':'bkg_onefour',
             'locked': false,
             'disabled':false,
@@ -1176,7 +2306,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/dik.png', 
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
-        'twofour': {
+        'roll_twofour': {
             'id':'roll_twofour',
             'locked': false,
             'disabled':false,
@@ -1187,7 +2317,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/moloshe.png', 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
-        'threeone': {
+        'roll_threeone': {
             'id':'roll_threeone',
             'locked': true,
             'disabled':false,
@@ -1209,7 +2339,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/dylan.png', 
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
-        'threethree': {
+        'roll_threethree': {
             'id':'roll_threethree',
             'locked': false,
             'disabled':false,
@@ -1220,7 +2350,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/nude.png', 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
-        'threefour': {
+        'roll_threefour': {
             'id':'roll_threefour',
             'locked': true,
             'disabled':false,

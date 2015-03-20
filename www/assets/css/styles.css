@@ -448,6 +448,16 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: 349px;
     top: 360px;
  }
+ #dumblr_scene .madtext {
+    position: absolute;
+    left: 230px;
+    top: 210px;
+    height: 290px;
+    width: 515px;
+    color: black;
+    font-size: x-small; 
+    
+ }
     #dumblr_scene .madbox {
     position: absolute;
     left: 216px;
