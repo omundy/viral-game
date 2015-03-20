@@ -23,6 +23,54 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 
 
 
+/* TAGS */
+
+#dumblr_scene .tags {  
+    position: absolute;
+    top: 160px;
+    left: 198px;
+    width: 596px;
+}
+#instacam_scene .tags {  
+    position: absolute;
+    top: 120px;
+    left: 500px;
+    width: 560px;
+}
+#metube_scene .tags {  
+    position: absolute;
+    top: 175px;
+    left: 237px;
+    width: 620px;
+}
+.tags button {
+	font-size: 111%;
+	padding: 7px;	
+	margin: 4px 5px;	
+	border: none;
+	background: #fff
+} 
+.tags button:hover, .tag_selected {
+	color: #fff;
+	background: rgba(0,0,0,.5)
+} 
+#dumblr_scene .tags button { font-size: 105%; padding: 6px; }
+#metube_scene .tags button { font-size: 105%; padding: 4px; }
+
+
+#dumblr_tag_confirm, #instacam_tag_confirm, #metube_tag_confirm { position: absolute; font-size: 120%; background: #ed00ff; color: #fff; border: none; padding: 8px }
+#dumblr_tag_confirm { top: 520px; left: 500px; }
+#instacam_tag_confirm { top: 520px; left: 500px; }
+#metube_tag_confirm { top: 520px; left: 500px; }
+
+/*.tag_selected, .tag_selected:hover { background: #ccc; color: #ed00ff; }*/
+.tag_used { background: #ccc; color: #000; }
+
+
+
+
+/* VIDEOS */
+
 #video_window { 
 	display: none;
 	width:100%;

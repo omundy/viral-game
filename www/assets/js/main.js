@@ -55,6 +55,10 @@ var current_scene = {};
 var current_score = { 'camgirl':0, 'martyr':0, 'troll':0 }
 var temp_score = { 'camgirl':0, 'martyr':0, 'troll':0 }
 
+// keep track of tags selected by user
+var tags_selected = []
+var tags_used = []
+
 // all scenes keep track in here
 var scene_map = {
 	
@@ -254,9 +258,10 @@ var finished_pages = {
 
 /**
  *	Update current_score using temp_score, called on post pages
+ *	- Only gets counted at affirmation / post
  */
 
-function update_score(temp_score){
+function update_current_score(temp_score){
 	
 	current_score.camgirl += temp_score.camgirl;
 	current_score.martyr += temp_score.martyr;
@@ -265,39 +270,44 @@ function update_score(temp_score){
 	// report score
 	console.log('current_score: '+ JSON.stringify(current_score))
 	console.log('temp_score: '+ JSON.stringify(temp_score))
-	
-	
+		
 	// update the score bars
-
 	$('#bar1').animate( {"left": '-='+ current_score.camgirl },500);
 	$('#bar2').animate( {"left": '-='+ current_score.martyr },500);
-	$('#bar3').animate( {"left": '-='+ current_score.troll },500);
-	
+	$('#bar3').animate( {"left": '-='+ current_score.troll },500);	
 }
-
-
-
-// all app home pages should 
-// reset temp_score
-
-// temp_score only gets counted at affirmation / post
-
+function update_temp_score(score_obj){
+	//console.log('update_temp_score('+ JSON.stringify(score_obj) +')')
+	temp_score.camgirl += score_obj.camgirl;
+	temp_score.martyr += score_obj.martyr;
+	temp_score.troll += score_obj.troll;
+	report();
+}
 
 
 var nextButton = { // target 
 	};
 
+
+// instacam frame 1 (HAIR), not dependent upon previous pages
 $('#selfie_hbasic').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_hbasic']) });
 $('#selfie_hmartyr').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_hmartyr']) });
 $('#selfie_hcam').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_hcam']) });
 $('#selfie_htroll').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_htroll']) });
+
+// instacam frame 2 (SWAG), DEPENDENT upon choices on previous pages
+$('#selfie_smartyr').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_smartyr']) });
+
+// instacam frame 3 (BACKGROUND), DEPENDENT upon choices on previous pages
+$('#bkg_onethree').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['bkg_onethree']) });
+
 
 function instacam_preview(buttonObj){
 	
 	console.log(buttonObj)
 	
 	// preview the file in the instacam window
-	$('.instacam_preview').html( '<img src="assets/img/instacam/'+ buttonObj.btn_clicked +'">' ) 
+	$('.instacam_preview').html( '<img src="assets/img/instacam/'+ buttonObj.preview_img +'">' ) 
 	
 	temp_score = buttonObj.score;
 	report();
@@ -316,6 +326,80 @@ function instacam_next(buttonObj){
 	// move to next page, which is also showing the preview image
 	
 }
+
+
+
+/**
+ *	TAGS
+ */	
+ 
+// add tags to tags frame 
+function add_tags(){
+	// reset tags_selected
+	tags_selected = [];
+	
+	var obj = tags;
+	for (var key in obj) {
+		var log = '';
+		if (obj.hasOwnProperty(key)) {
+			var prop = obj[key];
+			/*for (var k in prop) {
+				if (prop.hasOwnProperty(k)) {
+					log += key +': '+ k  +': '+ prop[k] +"\n";
+				}
+			}*/
+			
+			$('.tags').append('<button class="tag_'+ key + '">'+ key + '</button>');
+			
+			$('.tag_'+key).click( function(){ tag_handler( $(this) ) })
+		}
+	}
+}
+add_tags()
+
+// handle click from tags
+function tag_handler(element){
+	// get tag
+	var tag = element.attr("class")
+	// get tag name only
+	var tag_name = tag.replace('tag_', '');
+	
+	if (tag_name.indexOf("tag_selected") > -1){
+		// remove from string
+		tag_name = tag_name.replace(' tag_selected', '');
+		// remove class
+		element.removeClass('tag_selected')
+		// remove from tags_selected
+		remove_from_arr(tags_selected,tag_name);
+	} else {
+		// add class
+		element.addClass('tag_selected')
+		// add to tags_selected
+		tags_selected.push(tag_name);
+	}
+	
+	
+	
+	//console.log(tags[tag_name])
+	console.log(tags_selected)
+	
+
+}
+// confirm selected tags and add them to used
+function tag_confirm(){
+	if (tags_selected.length > 4){
+		alert("You can only use four tags at a time!!!")
+	} else {
+		tags_used = tags_used.concat(tags_selected)
+	}
+	
+	console.log(tags_selected)
+	console.log(tags_used)
+	
+	// add score
+	//update_temp_score(tags[tag].score);
+}
+$('#instacam_tag_confirm').on('click',function(){ tag_confirm() });
 
 
 

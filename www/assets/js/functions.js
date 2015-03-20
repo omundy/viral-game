@@ -49,6 +49,27 @@ function print_obj (obj){
 }
 
 
+/**
+ *	Is var in array?
+ */
+function in_array(needle, arrhaystack) {
+    return (arrhaystack.indexOf(needle) > -1);
+}
+/**
+ *	remove var from array
+ */
+function remove_from_arr(arr, what) {
+	
+    var found = arr.indexOf(what);
+
+    while (found !== -1) {
+        arr.splice(found, 1);
+        found = arr.indexOf(what);
+    }
+}
+
+
+
 /*
 
 var screenW,screenH;
