@@ -1912,7 +1912,7 @@ var instagram_camera_roll = {
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
 //2nd choice        
-        'scam': {
+        'selfie_scam': {
             'id':'selfie_scam',
             'locked': false,
             'disabled':false,
@@ -1923,7 +1923,7 @@ var instagram_camera_roll = {
             //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
-        'sbasic': {
+        'selfie_sbasic': {
             'id':'selfie_sbasic',
             'locked': false,
             'disabled':false,
@@ -1934,7 +1934,7 @@ var instagram_camera_roll = {
             //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
             'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
         },
-        'stroll': {
+        'selfie_stroll': {
             'id':'selfie_stroll',
             'locked': false,
             'disabled':false,
@@ -1945,7 +1945,7 @@ var instagram_camera_roll = {
             //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
-        'smartyr': {
+        'selfie_smartyr': {
             'id':'selfie_smartyr',
             'locked': false,
             'disabled':false,
@@ -1957,7 +1957,7 @@ var instagram_camera_roll = {
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
 /* FOODIES ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/foodie*/
-        'oneone': {
+        'foodie_oneone': {
             'id':'foodie_oneone',
             'locked': false,
             'disabled':false,
@@ -1968,7 +1968,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/foodies/pasta.png', 
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
-        'onetwo': {
+        'foodie_onetwo': {
             'id':'foodie_onetwo',
             'locked': false,
             'disabled':false,
@@ -1979,7 +1979,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/foodies/starbux.png', 
             'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
         },
-        'onethree': {
+        'foodie_onethree': {
             'id':'foodie_onethree',
             'locked': false,
             'disabled':false,
@@ -1990,7 +1990,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/foodies/sushi.png', 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
-        'onefour': {
+        'foodie_onefour': {
             'id':'foodie_onefour',
             'locked': false,
             'disabled':false,
@@ -2001,7 +2001,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/foodies/taco.png', 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
-        'twoone': {
+        'foodie_twoone': {
             'id':'foodie_twoone',
             'locked': false,
             'disabled':false,
@@ -2012,7 +2012,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/foodies/smoothie.png', 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
-        'twotwo': {
+        'foodie_twotwo': {
             'id':'foodie_twotwo',
             'locked': false,
             'disabled':false,
@@ -2023,7 +2023,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/foodies/wine.png', 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
-        'twothree': {
+        'foodie_twothree': {
             'id':'foodie_twothree',
             'locked': false,
             'disabled':false,
@@ -2034,7 +2034,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/foodies/bagel.png', 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
-        'twofour': {
+        'foodie_twofour': {
             'id':'foodie_twofour',
             'locked': false,
             'disabled':false,
@@ -2146,7 +2146,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/backgrounds/cheeto.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
-        'onetwo': {
+        'bkg_onetwo': {
             'id':'bkg_onetwo',
             'locked': false,
             'disabled':false,
@@ -2157,7 +2157,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/backgrounds/heart.png', //this appears as the background for the image (foodes or selfies) selected previously) 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
-        'onethree': {
+        'bkg_onethree': {
             'id':'bkg_onethree',
             'locked': false,
             'disabled':false,
@@ -2179,7 +2179,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/backgrounds/latte.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
         },
-        'twoone': {
+        'bkg_twoone': {
             'id':'bkg_twoone',
             'locked': false,
             'disabled':false,
@@ -2190,7 +2190,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/backgrounds/killman.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
-        'twotwo': {
+        'bkg_twotwo': {
             'id':'bkg_twotwo',
             'locked': false,
             'disabled':false,
@@ -2201,7 +2201,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/backgrounds/boob.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
-        'twothree': {
+        'bkg_twothree': {
             'id':'bkg_twothree',
             'locked': false,
             'disabled':false,
@@ -2212,7 +2212,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/backgrounds/doom.png', //this appears as the background for the image (foodes or selfies) selected previously)
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
-        'twofour': {
+        'bkg_twofour': {
             'id':'bkg_twofour',
             'locked': false,
             'disabled':false,
@@ -2224,7 +2224,7 @@ var instagram_camera_roll = {
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
 /* CAMERA ROLL ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/cameraroll*/
-        'oneone': {
+        'roll_oneone': {
             'id':'roll_oneone',
             'locked': false,
             'disabled':false,
@@ -2235,7 +2235,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/weenie.png', 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
-        'onetwo': {
+        'roll_onetwo': {
             'id':'roll_onetwo',
             'locked': false,
             'disabled':false,
@@ -2246,7 +2246,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/nails.png', 
             'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
         },
-        'onethree': {
+        'roll_onethree': {
             'id':'roll_onethree',
             'locked': true,
             'disabled':false,
@@ -2257,7 +2257,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/guns.png', 
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
-        'onefour': {
+        'roll_onefour': {
             'id':'roll_onefour',
             'locked': true,
             'disabled':false,
@@ -2268,7 +2268,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/fedora.png', 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
-        'twoone': {
+        'roll_twoone': {
             'id':'roll_twoone',
             'locked': true,
             'disabled':false,
@@ -2279,7 +2279,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/scene.png', 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
-        'twotwo': {
+        'roll_twotwo': {
             'id':'roll_twotwo',
             'locked': true,
             'disabled':false,
@@ -2290,7 +2290,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/catz.png', 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
-        'twothree': {
+        'roll_twothree': {
             'id':'roll_twothree',
             'locked': true,
             'disabled':false,
@@ -2323,7 +2323,7 @@ var instagram_camera_roll = {
             'preview_img': 'pics/cameraroll/lilb.png', 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
-        'threetwo': {
+        'roll_threetwo': {
             'id':'roll_threetwo',
             'locked': true,
             'disabled':false,
