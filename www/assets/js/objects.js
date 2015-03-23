@@ -1853,7 +1853,7 @@ var metube = {
 //problems with this format: there are multple classes that correspond to different buttons on differen pages but they have the same coordinates
 //should i create distinct classes for each button? or is there another work around
 
-var instagram_camera_roll = {
+var instacam_camera_roll = {
     
     'meta': {
         'path':'img/instacam/'

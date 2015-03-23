@@ -23,20 +23,65 @@
 /**
  *	VIDEO FUNCTIONS
  */
-function show_popup_video(file,width,height){
+var video_close_goto = -1;
+function show_popup_video(file,width,height,xcloseframe){
 	var str = '';
 	str += '<video autoplay width="'+ width +'" height="'+ height +'"><source src="'+ file +'" type="video/mp4">';
 	str += 'Your browser does not support the video tag.</video>';
 	$('#video_container').html(str);
 	$('#video_window').css('display','block');
+	video_close_goto = xcloseframe;
 }
 function close_popup_video(){
 	$('#video_container').html('');
 	$('#video_window').css('display','none');
+	if (video_close_goto > -1){
+		scene_control('metube',video_close_goto)
+	}
 }
-$('#video_player_test').on('click',function(){ show_popup_video('assets/img/metube/nyan.mp4',540,360) })
-$('#video_player_rapmv').on('click',function(){ show_popup_video('assets/img/metube/nyan.mp4',540,360) })
 $('#close_video_window').on('click',function(){ close_popup_video(); })
+/* all video buttons */
+$('#video_player_test').on('click',function(){ show_popup_video('assets/img/metube/nyan.mp4',540,360,-1) })
+$('#video_player_rapmv').on('click',function(){ show_popup_video('assets/img/metube/nyan.mp4',540,360,4) })
+
+
+
+
+
+
+var cinder_date_name = '';
+var cinder_date_current_img = -1;
+var cinder_date_totalpages = 0;
+
+/**
+ *	CINDER DATE FUNCTIONS
+ */
+// (re)start date
+function start_cinder_date(datename,totalpages){
+	cinder_date_name = datename;
+	cinder_date_current_img = 0;
+	cinder_date_totalpages = totalpages;
+}
+// next button
+function cinder_date_next_img(){
+	console.log(cinder_date_current_img)
+	if (cinder_date_current_img < cinder_date_totalpages ){
+		cinder_date_current_img ++;
+		$('.cinder_date').html('<img src="assets/img/cinder/'+ cinder_date_name +'/'+ cinder_date_current_img +'.png">')
+	} else {
+		console.log()
+		
+		if (cinder_date_name == 'brody_date'){
+			instacam_camera_roll.roll_twothree.locked = false;
+		} else if (cinder_date_name == 'scene_date'){
+			//
+		}
+		
+	}
+		
+}
+$('.cinder_date_next').on('click',function () { cinder_date_next_img() })
+
 
 
 
@@ -190,13 +235,13 @@ function scene_loader(scene,frame){
 	if (scene == 'instacam'){
 		
 		if (frame == '1'){
-			update_buttons(instagram_camera_roll);
+			update_buttons(instacam_camera_roll);
 			
 			
 			
 		}
 		else if (frame == '2'){
-			//update_buttons(instagram_camera_roll);
+			//update_buttons(instacam_camera_roll);
 		}
 	}
 	/* use code 
@@ -245,7 +290,7 @@ function update_buttons(obj){
 
 
 var finished_pages = {
-	'instacam': 'instagram_camera_roll',
+	'instacam': 'instacam_camera_roll',
 }
 
 
@@ -291,16 +336,16 @@ var nextButton = { // target
 
 
 // instacam frame 1 (HAIR), not dependent upon previous pages
-$('#selfie_hbasic').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_hbasic']) });
-$('#selfie_hmartyr').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_hmartyr']) });
-$('#selfie_hcam').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_hcam']) });
-$('#selfie_htroll').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_htroll']) });
+$('#selfie_hbasic').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['selfie_hbasic']) });
+$('#selfie_hmartyr').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['selfie_hmartyr']) });
+$('#selfie_hcam').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['selfie_hcam']) });
+$('#selfie_htroll').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['selfie_htroll']) });
 
 // instacam frame 2 (SWAG), DEPENDENT upon choices on previous pages
-$('#selfie_smartyr').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['selfie_smartyr']) });
+$('#selfie_smartyr').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['selfie_smartyr']) });
 
 // instacam frame 3 (BACKGROUND), DEPENDENT upon choices on previous pages
-$('#bkg_onethree').on('click',function(){ instacam_preview(instagram_camera_roll.buttons['bkg_onethree']) });
+$('#bkg_onethree').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['bkg_onethree']) });
 
 
 function instacam_preview(buttonObj){

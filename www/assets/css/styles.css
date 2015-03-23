@@ -157,35 +157,6 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 
 
 
-/*
-#home0 { background: #d4a1e1; }
-#home1 { background: #d4a1e1; }
-#home2 { background: #a367b2; }
-
-#cinder0 { background: #77f3da; }
-#cinder1 { background: #23b194; }
-#cinder2 { background: #24b06f; }
-#cinder3 { background: #0e9a2c; }
-#cinder4 { background: #20990e; }
-
-#dumblr0 { background: #eaf377; }
-#dumblr1 { background: #d3dd49; }
-#dumblr2 { background: #b8a812; }
-#dumblr3 { background: #95780c; }
-#dumblr4 { background: #7f5907; }
-
-#instacam0 { background: #79f279; }
-#instacam1 { background: #10f010; }
-#instacam2 { background: #74c116; }
-#instacam3 { background: #3b6b0e; }
-#instacam4 { background: #354f03; }
-
-#metube0 { background: #f27676; }
-#metube1 { background: #f01010; }
-#metube2 { background: #c21680; }
-#metube3 { background: #d915b9; }
-#metube4 { background: #840c94; }
-*/
 
 
 
@@ -1136,3 +1107,6 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: 324px;
     top: 68px;
  }
+ 
+ .cinder_date { width:1092px; height: 728px; }
+ .cinder_date_next { position: absolute; left: 600px; top:500px; }
