@@ -23,6 +23,12 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 
 
 
+.affirmation_ok_button { position: absolute; left: 600px; top:600px}
+
+
+
+
+
 /* TAGS */
 
 #dumblr_scene .tags {  
@@ -53,6 +59,10 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 .tags button:hover, .tag_selected, .tag_used {
 	color: #fff;
 	background: rgba(0,0,0,.5)
+} 
+.tag_disabled, tag_disabled:hover, tag_disabled:disabled {
+	color: #999 !important;
+	background: rgba(0,0,0,.5) !important;
 } 
 #dumblr_scene .tags button { font-size: 105%; padding: 6px; }
 #metube_scene .tags button { font-size: 105%; padding: 4px; }
@@ -143,13 +153,13 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 #cinder_scene { width: 5460px; position: relative; }
 #cinder_scene>div { background: url('../img/cinder/bkg.png') left top; }
 
-#dumblr_scene { width: 17472px; position: relative; }
+#dumblr_scene { width: 18564px; position: relative; }
 #dumblr_scene>div { background: url('../img/dumblr/bkg.png') left top; }
 
-#instacam_scene { width: 8736px; position: relative; }
+#instacam_scene { width: 9828px; position: relative; }
 #instacam_scene>div { background: url('../img/instacam/intsta_bkg.png') left top; }
 
-#metube_scene { width: 5460px; position: relative; }
+#metube_scene { width: 6552px; position: relative; }
 #metube_scene>div { background: url('../img/metube/bkg.png') left top; }
 
 

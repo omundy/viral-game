@@ -92,7 +92,8 @@ var sceneW = 1092;
 var sceneH = 768;
 
 // determines positions of scenes
-var scene_positions = [0,1092,2184,3276,4368,5460,6552,7644,8736,9828,10920,12012,13104,14196,15288,16380,17472];	
+					// 0	1	  2		3	  3		4	  5		6	  7		8	  9		10		11	   12	  13	 14     15     16
+var scene_positions = [0, 1092, 2184, 3276, 4368, 5460, 6552, 7644, 8736, 9828, 10920, 12012, 13104, 14196, 15288, 16380, 17472, 18564];	
 
 // current scene and frame
 var current_scene = {};
@@ -135,6 +136,7 @@ var scene_map = {
     'dumblr13',
     'dumblr14',
     'dumblr15',
+    'dumblr16',
 	],
 	'instacam':[
         'instacam0', // 1_genres
@@ -145,6 +147,7 @@ var scene_map = {
         'instacam5', // 2b2_food_background
         'instacam6', // 2c1_cameroll_selector
         'instacam7', // 3_tags
+        'instacam8', // affirmation
 	],
 	'metube':[
 		'metube0',
@@ -232,18 +235,46 @@ function scene_loader(scene,frame){
 	
 	//alert(scene +','+ frame)
 	
-	if (scene == 'instacam'){
+	// CINDER
+	if (scene == 'cinder'){
+		
+		
+	} 
+	
+	// DUMBLR
+	else if (scene == 'dumblr'){
+		if (frame == '1'){
+			
+		}
+		// tags
+		else if (frame == '15'){ add_tags(); }
+		// affirmation
+		else if (frame == '16'){ affirmation_loader(); }
+	} 
+	
+	// INSTACAM
+	else if (scene == 'instacam'){
 		
 		if (frame == '1'){
 			update_buttons(instacam_camera_roll);
-			
-			
-			
 		}
-		else if (frame == '2'){
-			//update_buttons(instacam_camera_roll);
-		}
+		// tags
+		else if (frame == '7'){ add_tags() }
+		// affirmation
+		else if (frame == '8'){ affirmation_loader(); }
 	}
+	
+	// METUBE
+	else if (scene == 'metube'){
+		if (frame == '1'){
+			
+		}
+		// tags
+		else if (frame == '4'){ add_tags() }
+		// affirmation
+		else if (frame == '5'){ affirmation_loader(); }
+	}
+	
 	/* use code 
 		to grey out / disable buttons
 		hover effect 
@@ -383,6 +414,8 @@ function instacam_next(buttonObj){
 function add_tags(){
 	// reset tags_selected
 	tags_selected = [];
+	// reset
+	$('.tags').html('')
 	
 	var obj = tags;
 	for (var key in obj) {
@@ -395,13 +428,19 @@ function add_tags(){
 				}
 			}*/
 			
-			$('.tags').append('<button class="tag_'+ key + '">'+ key + '</button>');
-			
-			$('.tag_'+key).click( function(){ tag_handler( $(this) ) })
+			// make sure tag hasn't been used
+			if (tags_used.indexOf(key) > -1){
+				console.log(key +' has been used')	
+				$('.tags').append('<button class="tag_disabled" disabled>'+ key + '</button>');
+			}
+			else {
+				$('.tags').append('<button class="tag_'+ key + '">'+ key + '</button>');
+				$('.tag_'+key).click( function(){ tag_handler( $(this) ) })
+			}
 		}
 	}
 }
-add_tags()
+
 
 // handle click from tags
 function tag_handler(element){
@@ -418,10 +457,13 @@ function tag_handler(element){
 		// remove from tags_selected
 		remove_from_arr(tags_selected,tag_name);
 	} else {
-		// add class
-		element.addClass('tag_selected')
-		// add to tags_selected
-		tags_selected.push(tag_name);
+		// make sure it hasn't been used before
+		if (tags_used.indexOf(tag_name) == -1){
+			// add class
+			element.addClass('tag_selected')
+			// add to tags_selected
+			tags_selected.push(tag_name);
+		}
 	}
 	
 	
@@ -435,10 +477,22 @@ function tag_handler(element){
 function tag_confirm(){
 	
 	if (tags_selected.length > 2){
-		alert("You can only use four tags at a time!!!")
+		alert("You can only use 2 tags at a time!!!")
 	} else {
+		// add tags to used
 		tags_used = tags_used.concat(tags_selected)
-		// do score here
+		
+		// make sure there is just one of each
+		var tag_names_clean = [];
+		$.each(tags_used, function(i, el){
+			if($.inArray(el, tag_names_clean) === -1) tag_names_clean.push(el);
+		});
+		tags_used = tag_names_clean;
+		
+		// do score
+		
+		// go to affirmation page
+		scene_control(current_scene.scene,current_scene.frame +1)
 	}
 	
 	console.log('tags_selected: '+ tags_selected)
@@ -452,6 +506,16 @@ $('#instacam_tag_confirm').on('click',function(){ tag_confirm() });
 $('#metube_tag_confirm').on('click',function(){ tag_confirm() });
 
 
+
+
+function affirmation_loader(){
+	var winner = 'assets/img/affirmations/gainedfollowers_overlay_notification.gif';
+	var loser = 'assets/img/affirmations/lostfollowers_overlay_notification.gif';
+	var ahtml = '<input type="image" alt="button" src="assets/img/affirmations/ok.png" class="affirmation_ok_button">';
+	ahtml += '<img src="'+ winner +'">';
+	$('.affirmation').html(ahtml)
+	$('.affirmation_ok_button').on('click',function(){ scene_control('home',0) })
+}
 
 
 
