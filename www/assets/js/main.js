@@ -215,7 +215,7 @@ function scene_control(scene,frame){
 	// SCORING
 	// reset temp score if on app home page
 	if (frame == 0){
-		temp_score = { 'camgirl':0, 'martyr':0, 'troll':0 }
+		reset_temp_score()
 	}
 	
 	// save, report
@@ -338,7 +338,7 @@ var finished_pages = {
  *	- Only gets counted at affirmation / post
  */
 
-function update_current_score(temp_score){
+function update_current_score(){
 	
 	current_score.camgirl += temp_score.camgirl;
 	current_score.martyr += temp_score.martyr;
@@ -360,7 +360,9 @@ function update_temp_score(score_obj){
 	temp_score.troll += score_obj.troll;
 	report();
 }
-
+function reset_temp_score(){
+	temp_score = { 'camgirl':0, 'martyr':0, 'troll':0 }
+}
 
 var nextButton = { // target 
 	};
@@ -484,12 +486,15 @@ function tag_confirm(){
 		
 		// make sure there is just one of each
 		var tag_names_clean = [];
-		$.each(tags_used, function(i, el){
-			if($.inArray(el, tag_names_clean) === -1) tag_names_clean.push(el);
+		$.each(tags_used, function(i, tag){
+			if($.inArray(tag, tag_names_clean) === -1) tag_names_clean.push(tag);
 		});
 		tags_used = tag_names_clean;
 		
 		// do score
+		$.each(tags_selected, function(i, tag){
+			update_temp_score(tags[tag].score);
+		});
 		
 		// go to affirmation page
 		scene_control(current_scene.scene,current_scene.frame +1)
@@ -497,9 +502,6 @@ function tag_confirm(){
 	
 	console.log('tags_selected: '+ tags_selected)
 	console.log('tags_used: '+ tags_used)
-	
-	// add score
-	//update_temp_score(tags[tag].score);
 }
 $('#dumblr_tag_confirm').on('click',function(){ tag_confirm() });
 $('#instacam_tag_confirm').on('click',function(){ tag_confirm() });
@@ -509,13 +511,27 @@ $('#metube_tag_confirm').on('click',function(){ tag_confirm() });
 
 
 function affirmation_loader(){
-	var winner = 'assets/img/affirmations/gainedfollowers_overlay_notification.gif';
-	var loser = 'assets/img/affirmations/lostfollowers_overlay_notification.gif';
+	// update current_score with temp_score
+	update_current_score();
+	// figure out their affirmation image
+	if (temp_score.camgirl + temp_score.martyr + temp_score.troll > 0){
+		var aff_img = 'assets/img/affirmations/gainedfollowers_overlay_notification.gif';
+	} else {
+		var aff_img = 'assets/img/affirmations/lostfollowers_overlay_notification.gif';
+	}
+	// reset temp_score
+	reset_temp_score();
+	
 	var ahtml = '<input type="image" alt="button" src="assets/img/affirmations/ok.png" class="affirmation_ok_button">';
-	ahtml += '<img src="'+ winner +'">';
+	ahtml += '<img src="'+ aff_img +'">';
 	$('.affirmation').html(ahtml)
 	$('.affirmation_ok_button').on('click',function(){ scene_control('home',0) })
+	
+	report();
 }
+
+
+
 
 
 
