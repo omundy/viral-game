@@ -135,7 +135,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 #footer .underlay {
 	position: absolute;
 	z-index: 120;
-	left:-200px;
+	left:-280px;
 	top:0;
 }
 

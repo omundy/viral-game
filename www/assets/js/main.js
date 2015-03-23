@@ -349,9 +349,9 @@ function update_current_score(){
 	console.log('temp_score: '+ JSON.stringify(temp_score))
 		
 	// update the score bars
-	$('#bar1').animate( {"left": '-='+ current_score.camgirl },500);
-	$('#bar2').animate( {"left": '-='+ current_score.martyr },500);
-	$('#bar3').animate( {"left": '-='+ current_score.troll },500);	
+	$('#bar1_bar').animate( {"left": '-='+ current_score.camgirl*20 },500);
+	$('#bar2_bar').animate( {"left": '-='+ current_score.martyr*20 },500);
+	$('#bar3_bar').animate( {"left": '-='+ current_score.troll*20 },500);	
 }
 function update_temp_score(score_obj){
 	//console.log('update_temp_score('+ JSON.stringify(score_obj) +')')
