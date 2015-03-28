@@ -1,3 +1,33 @@
+// moving things in here as they are finished
+
+
+/**
+ *	REPORTING AND TESTING FUNCTIONS
+ */	
+
+// Displays information about scenes, scores, etc.
+function report(){
+	$('#report').html('current_scene: '+ JSON.stringify(current_scene) 
+		+'; current_score: '+ JSON.stringify(current_score) 
+		+'; temp_score: '+ JSON.stringify(temp_score)
+		+'; instacam_choices: '+ JSON.stringify(instacam_choices)
+		);	
+	console.log(current_scene);
+}
+
+// make buttons for testing
+function test_buttons(){
+	$.each( scene_map, function( scene ) {
+		//alert(key)
+		$.each( this, function( frame,title ) {
+			$('#nav').append('<button id="'+ title +'">'+ title +'</button>')
+			$("#"+title).on('click',function () { scene_control(scene,frame); });
+		});
+		$('#nav').append('<br><br>')
+	});
+}	
+	
+
 
 
 

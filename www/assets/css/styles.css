@@ -1,7 +1,8 @@
 html,body { font: 1em/1.4em Arial; color: #fff }
 
-#nav { position: absolute; top: 50px;}
-#nav .group { display: block; }
+#nav { position: absolute; top: 30px; width: 9%}
+#nav .group { display: block;  }
+#nav  button { background:#666; border: none; margin: 2px 4px 0 0 }
 #report { position: absolute; color: #fff; top: 0; background: rgba(0,0,0,.5); width: 100%; font-size: 80%; z-index: 500}
 
 #container { width:100%; height: 100%; background: #222; position: absolute }
@@ -23,8 +24,8 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 
 
 
-.affirmation_ok_button { position: absolute; left: 425px; top:463px; z-index: 1222;}
-.affirmation_img  { position: absolute; left: 260px; top:110px; z-index: 1;}
+.affirmation_ok_button { position: absolute; left: 430px; top:463px; z-index: 1222;}
+.affirmation_img  { position: absolute; left: 265px; top:110px; z-index: 1;}
 
 
 

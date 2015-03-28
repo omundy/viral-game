@@ -14,7 +14,9 @@
 		function will know what to do
 		html as string
 	
-	
+	use code 
+		to grey out / disable buttons
+		hover effect 
 	
 	*/
 
@@ -88,30 +90,12 @@ var scene_map = {
 		'welcome',
 	],
 	'cinder':[
-		'cinder0',
-        'cinder1',
-        'cinder2',
-        'cinder3',
-        'cinder4',
+		'cinder0', 'cinder1', 'cinder2', 'cinder3', 'cinder4',
 	],
 	'dumblr':[
-		'dumblr0',
-        'dumblr1',
-        'dumblr2',
-        'dumblr3',
-        'dumblr4',
-    'dumblr5',
-        'dumblr6',
-        'dumblr7',
-        'dumblr8',
-    'dumblr9',
-    'dumblr10',
-    'dumblr11',
-    'dumblr12',
-    'dumblr13',
-    'dumblr14',
-    'dumblr15',
-    'dumblr16',
+		'dumblr0', 'dumblr1', 'dumblr2', 'dumblr3', 'dumblr4', 'dumblr5', 
+		'dumblr6', 'dumblr7', 'dumblr8', 'dumblr9', 'dumblr10', 'dumblr11',
+	    'dumblr12', 'dumblr13', 'dumblr14', 'dumblr15', 'dumblr16',
 	],
 	'instacam':[
         'instacam0', // 1_genres
@@ -125,12 +109,7 @@ var scene_map = {
         'instacam8', // affirmation
 	],
 	'metube':[
-		'metube0',
-        'metube1',
-        'metube2',
-        'metube3',
-        'metube4',
-        'metube5',
+		'metube0', 'metube1', 'metube2', 'metube3', 'metube4', 'metube5',
 	],
 }
 
@@ -177,7 +156,7 @@ function scene_control(scene,frame){
 
 			// move scene				
 			$('#'+scene+'_scene').animate( {"margin-left": '-='+ (moveto-movefrom)},500, function(){ 
-					scene_loader(scene,frame)
+					scene_updater(scene,frame)
 				});
 			// update current_scene
 			update = true; 
@@ -187,26 +166,28 @@ function scene_control(scene,frame){
 		console.log('---apparently all is ok');
 	}
 	
+	// save, report
+	if (update){ 
+		current_scene = {'scene':scene,'frame':frame}
+	}
+	scene_updater(scene,frame)
+	report();
+}
+
+/**
+ *	scene_updater() 
+ * 	- Detects current_scene and makes special things happen
+ *	- Also updates all buttons to disabled / or not, etc.
+ */
+function scene_updater(scene,frame){
+	console.log('scene_updater('+ scene +','+ frame +')')
+	
+	
 	// SCORING
 	// reset temp score if on app home page
 	if (frame == 0){
 		reset_temp_score()
 	}
-	
-	// save, report
-	if (update){ 
-		current_scene = {'scene':scene,'frame':frame}
-	}
-	report();
-}
-
-/**
- *	scene_loader() 
- * 	- Detects current_scene and makes special things happen
- *	- Also updates all buttons to disabled / or not, etc.
- */
-function scene_loader(scene,frame){
-	console.log('scene_loader('+ scene +','+ frame +')')
 	
 	//alert(scene +','+ frame)
 	
@@ -230,7 +211,14 @@ function scene_loader(scene,frame){
 	// INSTACAM
 	else if (scene == 'instacam'){
 		
-		if (frame == '1'){
+		if (frame == '0'){
+			// reset choices array
+			instacam_choices = {};
+			// reset image
+			$('.instacam_preview').html('');
+		}
+		// selfies
+		else if (frame == '1'){
 			update_buttons(instacam_camera_roll);
 		}
 		// tags
@@ -249,11 +237,8 @@ function scene_loader(scene,frame){
 		// affirmation
 		else if (frame == '5'){ affirmation_loader(); }
 	}
-	
-	/* use code 
-		to grey out / disable buttons
-		hover effect 
-		*/
+	// report
+	report();
 }
 
 
@@ -294,16 +279,9 @@ function update_buttons(obj){
 
 
 
-
-var finished_pages = {
-	'instacam': 'instacam_camera_roll',
-}
-
-
-
-
-
-/* SCORING FUNCTIONS */
+/*********************************************************************************************
+ *	SCORING FUNCTIONS
+ *********************************************************************************************/	
 
 
 
@@ -344,33 +322,51 @@ var nextButton = { // target
 
 
 // instacam frame 1 (HAIR), not dependent upon previous pages
-$('#selfie_hbasic').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['selfie_hbasic']) });
-$('#selfie_hmartyr').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['selfie_hmartyr']) });
-$('#selfie_hcam').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['selfie_hcam']) });
-$('#selfie_htroll').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['selfie_htroll']) });
+$('#selfie_hbasic').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_hbasic'],'selfie1' ) });
+$('#selfie_hmartyr').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_hmartyr'],'selfie1' ) });
+$('#selfie_hcam').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_hcam'],'selfie1' ) });
+$('#selfie_htroll').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_htroll'],'selfie1' ) });
 
 // instacam frame 2 (SWAG), DEPENDENT upon choices on previous pages
-$('#selfie_smartyr').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['selfie_smartyr']) });
+$('#selfie_smartyr').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_smartyr'],'selfie2' ) });
 
 // instacam frame 3 (BACKGROUND), DEPENDENT upon choices on previous pages
-$('#bkg_onethree').on('click',function(){ instacam_preview(instacam_camera_roll.buttons['bkg_onethree']) });
+$('#bkg_onethree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkg_onethree'],'selfie3' ) });
+
+var instacam_choices = {};
 
 
-function instacam_preview(buttonObj){
+
+
+function instacam_preview(buttonObj,camframe){
 	
-	console.log(buttonObj)
+	console.log(buttonObj,camframe)
 	
 	// preview the file in the instacam window
 	$('.instacam_preview').html( '<img src="assets/img/instacam/'+ buttonObj.preview_img +'">' ) 
 	
-	temp_score = buttonObj.score;
-	report();
+	instacam_choices[camframe] = buttonObj.id;
+	/*
+	// if not already in instacam_choices
+	if (!instacam_choices.camframe){
+		// update instacam_choices
+		instacam_choices.camframe = buttonObj.id;
+	}
+	*/
+	
+	/*
+	// update temp_score
+	update_temp_score(buttonObj.score);
+	*/
 	
 	// set the target for the "next" button
 	//$('.next_button').
-	
-		
+
+	report();
 }
+
+
+
 
 function instacam_next(buttonObj){
 	// target is based on preview
@@ -383,9 +379,11 @@ function instacam_next(buttonObj){
 
 
 
-/**
- *	TAGS
- */	
+
+
+/*********************************************************************************************
+ *	TAGS & AFFIRMATION
+ *********************************************************************************************/	
  
 // add tags to tags frame 
 function add_tags(){
@@ -407,7 +405,7 @@ function add_tags(){
 			
 			// make sure tag hasn't been used
 			if (tags_used.indexOf(key) > -1){
-				console.log(key +' has been used')	
+				//console.log(key +' has been used')	
 				$('.tags').append('<button class="tag_disabled" disabled>'+ key + '</button>');
 			}
 			else {
@@ -417,8 +415,6 @@ function add_tags(){
 		}
 	}
 }
-
-
 // handle click from tags
 function tag_handler(element){
 	// get tag
@@ -442,13 +438,8 @@ function tag_handler(element){
 			tags_selected.push(tag_name);
 		}
 	}
-	
-	
-	
 	//console.log(tags[tag_name])
 	console.log(tags_selected)
-	
-
 }
 // confirm selected tags and add them to used
 function tag_confirm(){
@@ -483,8 +474,7 @@ $('#instacam_tag_confirm').on('click',function(){ tag_confirm() });
 $('#metube_tag_confirm').on('click',function(){ tag_confirm() });
 
 
-
-
+// affirmation
 function affirmation_loader(){
 	// update current_score with temp_score
 	update_current_score();
@@ -510,34 +500,8 @@ function affirmation_loader(){
 
 
 
-
-
-
-/**
- *	REPORTING AND TESTING FUNCTIONS
- */	
-
-// Displays information about scenes, scores, etc.
-function report(){
-	$('#report').html('current_scene: '+ JSON.stringify(current_scene) +'; current_score: '+ JSON.stringify(current_score) +'; temp_score: '+ JSON.stringify(temp_score));	
-	console.log(current_scene);
-}
-
-// make buttons for testing
-$.each( scene_map, function( scene ) {
-	//alert(key)
-	$.each( this, function( frame,title ) {
-		$('#nav').append('<button id="'+ title +'">'+ title +'</button><br>')
-		$("#"+title).on('click',function () { scene_control(scene,frame); });
-	});
-	$('#nav').append('<br>')
-});
-
-
-
-
-
 // run game
 hide_scenes();
 scene_control('home',0);	
+test_buttons();
 

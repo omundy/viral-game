@@ -36,7 +36,7 @@ $('.cinder_button')
 	.mouseout(function(){ this.src = 'assets/img/home/cinder.gif' });
 
 
-/* AFFIRMATION SCREEN BUTTONS */
+
 
 
 
@@ -64,6 +64,7 @@ $('.instacam_totags').on('click',function(){ scene_control('instacam', 7) })
 	.mouseover(function(){ this.src = 'assets/img/instacam/nexthov.png' })
 	.mouseout(function(){ this.src = 'assets/img/instacam/next.png' });
 	
+$('#foodie_twothree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons.foodie_twothree ) })
 	
 	
 	

@@ -1867,6 +1867,7 @@ var instacam_camera_roll = {
     //1st choice
         'selfie_hbasic': { // css class
             'id':'selfie_hbasic',
+            'frame':'selfie1',
             'locked': false, // on beginning
             'disabled':false, // after used
             // what is shown
@@ -1880,6 +1881,7 @@ var instacam_camera_roll = {
         },
         'selfie_hmartyr': {
             'id':'selfie_hmartyr',
+            'frame':'selfie1',
             'locked':false,
             'disabled':false,
             'display':'img', 
@@ -1891,6 +1893,7 @@ var instacam_camera_roll = {
         },
         'selfie_hcam': {
             'id':'selfie_hcam',
+            'frame':'selfie1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -1902,6 +1905,7 @@ var instacam_camera_roll = {
         },
         'selfie_htroll': {
             'id':'selfie_htroll',
+            'frame':'selfie1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -1914,51 +1918,76 @@ var instacam_camera_roll = {
 //2nd choice        
         'selfie_scam': {
             'id':'selfie_scam',
+            'frame':'selfie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
             'btn_img': 'selfies/dswag.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/dswag.png', //greyed out
-            //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
+            'preview_img': { // THIS IS RELIANT ON THE 1ST CHOICE MADE 
+	            'selfie_hbasic':'',
+	            'selfie_hmartyr':'',
+	            'selfie_hcam':'',
+	            'selfie_htroll':''
+	        }, 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
         'selfie_sbasic': {
             'id':'selfie_sbasic',
+            'frame':'selfie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
             'btn_img': 'selfies/bswag.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/bswag.png', //greyed out
-            //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
+            'preview_img': { // THIS IS RELIANT ON THE 1ST CHOICE MADE 
+	            'selfie_hbasic':'',
+	            'selfie_hmartyr':'',
+	            'selfie_hcam':'',
+	            'selfie_htroll':''
+	        }, 
             'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
         },
         'selfie_stroll': {
             'id':'selfie_stroll',
+            'frame':'selfie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
             'btn_img': 'selfies/tswag.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/tswag.png', //greyed out
-            //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
+            'preview_img': { // THIS IS RELIANT ON THE 1ST CHOICE MADE 
+	            'selfie_hbasic':'',
+	            'selfie_hmartyr':'',
+	            'selfie_hcam':'',
+	            'selfie_htroll':''
+	        }, 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
         'selfie_smartyr': {
             'id':'selfie_smartyr',
+            'frame':'selfie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
             'btn_img': 'selfies/mswag.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/mswag.png', //greyed out
-            //'preview_img': '', THIS IS RELIANT ON THE 1ST CHOICE MADE 
+            'preview_img': { // THIS IS RELIANT ON THE 1ST CHOICE MADE 
+	            'selfie_hbasic':'',
+	            'selfie_hmartyr':'',
+	            'selfie_hcam':'',
+	            'selfie_htroll':''
+	        }, 
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
 /* FOODIES ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/foodie*/
         'foodie_oneone': {
             'id':'foodie_oneone',
+            'frame':'foodie1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -1970,6 +1999,7 @@ var instacam_camera_roll = {
         },
         'foodie_onetwo': {
             'id':'foodie_onetwo',
+            'frame':'foodie1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -1981,6 +2011,7 @@ var instacam_camera_roll = {
         },
         'foodie_onethree': {
             'id':'foodie_onethree',
+            'frame':'foodie1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -1992,6 +2023,7 @@ var instacam_camera_roll = {
         },
         'foodie_onefour': {
             'id':'foodie_onefour',
+            'frame':'foodie1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2003,6 +2035,7 @@ var instacam_camera_roll = {
         },
         'foodie_twoone': {
             'id':'foodie_twoone',
+            'frame':'foodie1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2014,6 +2047,7 @@ var instacam_camera_roll = {
         },
         'foodie_twotwo': {
             'id':'foodie_twotwo',
+            'frame':'foodie1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2025,6 +2059,7 @@ var instacam_camera_roll = {
         },
         'foodie_twothree': {
             'id':'foodie_twothree',
+            'frame':'foodie1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2036,6 +2071,7 @@ var instacam_camera_roll = {
         },
         'foodie_twofour': {
             'id':'foodie_twofour',
+            'frame':'foodie1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2048,6 +2084,7 @@ var instacam_camera_roll = {
 /* FOODIES BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
         'bkgf_oneone': {
             'id':'bkgf_oneone',
+            'frame':'foodie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2059,6 +2096,7 @@ var instacam_camera_roll = {
         },
         'bkgf_onetwo': {
             'id':'bkgf_onetwo',
+            'frame':'foodie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2070,6 +2108,7 @@ var instacam_camera_roll = {
         },
         'bkgf_onethree': {
             'id':'bkg_onethree',
+            'frame':'foodie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2081,6 +2120,7 @@ var instacam_camera_roll = {
         },
         'bkgf_onefour': {
             'id':'bkgf_onefour',
+            'frame':'foodie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2092,6 +2132,7 @@ var instacam_camera_roll = {
         },
         'bkgf_twoone': {
             'id':'bkgf_twoone',
+            'frame':'foodie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2103,6 +2144,7 @@ var instacam_camera_roll = {
         },
         'bkgf_twotwo': {
             'id':'bkgf_twotwo',
+            'frame':'foodie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2114,6 +2156,7 @@ var instacam_camera_roll = {
         },
         'bkgf_twothree': {
             'id':'bkgf_twothree',
+            'frame':'foodie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2125,6 +2168,7 @@ var instacam_camera_roll = {
         },
         'bkgf_twofour': {
             'id':'bkgf_twofour',
+            'frame':'foodie2',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2137,6 +2181,7 @@ var instacam_camera_roll = {
 /* SELFIES BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
         'bkg_oneone': {
             'id':'bkg_oneone',
+            'frame':'selfie3',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2148,6 +2193,7 @@ var instacam_camera_roll = {
         },
         'bkg_onetwo': {
             'id':'bkg_onetwo',
+            'frame':'selfie3',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2159,6 +2205,7 @@ var instacam_camera_roll = {
         },
         'bkg_onethree': {
             'id':'bkg_onethree',
+            'frame':'selfie3',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2170,6 +2217,7 @@ var instacam_camera_roll = {
         },
         'bkg_onefour': {
             'id':'bkg_onefour',
+            'frame':'selfie3',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2181,6 +2229,7 @@ var instacam_camera_roll = {
         },
         'bkg_twoone': {
             'id':'bkg_twoone',
+            'frame':'selfie3',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2192,6 +2241,7 @@ var instacam_camera_roll = {
         },
         'bkg_twotwo': {
             'id':'bkg_twotwo',
+            'frame':'selfie3',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2203,6 +2253,7 @@ var instacam_camera_roll = {
         },
         'bkg_twothree': {
             'id':'bkg_twothree',
+            'frame':'selfie3',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2214,6 +2265,7 @@ var instacam_camera_roll = {
         },
         'bkg_twofour': {
             'id':'bkg_twofour',
+            'frame':'selfie3',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2226,6 +2278,7 @@ var instacam_camera_roll = {
 /* CAMERA ROLL ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/cameraroll*/
         'roll_oneone': {
             'id':'roll_oneone',
+            'frame':'camroll1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2237,6 +2290,7 @@ var instacam_camera_roll = {
         },
         'roll_onetwo': {
             'id':'roll_onetwo',
+            'frame':'camroll1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2248,6 +2302,7 @@ var instacam_camera_roll = {
         },
         'roll_onethree': {
             'id':'roll_onethree',
+            'frame':'camroll1',
             'locked': true,
             'disabled':false,
             'display':'img', 
@@ -2259,6 +2314,7 @@ var instacam_camera_roll = {
         },
         'roll_onefour': {
             'id':'roll_onefour',
+            'frame':'camroll1',
             'locked': true,
             'disabled':false,
             'display':'img', 
@@ -2270,6 +2326,7 @@ var instacam_camera_roll = {
         },
         'roll_twoone': {
             'id':'roll_twoone',
+            'frame':'camroll1',
             'locked': true,
             'disabled':false,
             'display':'img', 
@@ -2281,6 +2338,7 @@ var instacam_camera_roll = {
         },
         'roll_twotwo': {
             'id':'roll_twotwo',
+            'frame':'camroll1',
             'locked': true,
             'disabled':false,
             'display':'img', 
@@ -2292,6 +2350,7 @@ var instacam_camera_roll = {
         },
         'roll_twothree': {
             'id':'roll_twothree',
+            'frame':'camroll1',
             'locked': true,
             'disabled':false,
             'display':'img', 
@@ -2303,6 +2362,7 @@ var instacam_camera_roll = {
         },
         'roll_twofour': {
             'id':'roll_twofour',
+            'frame':'camroll1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2314,6 +2374,7 @@ var instacam_camera_roll = {
         },
         'roll_threeone': {
             'id':'roll_threeone',
+            'frame':'camroll1',
             'locked': true,
             'disabled':false,
             'display':'img', 
@@ -2325,6 +2386,7 @@ var instacam_camera_roll = {
         },
         'roll_threetwo': {
             'id':'roll_threetwo',
+            'frame':'camroll1',
             'locked': true,
             'disabled':false,
             'display':'img', 
@@ -2336,6 +2398,7 @@ var instacam_camera_roll = {
         },
         'roll_threethree': {
             'id':'roll_threethree',
+            'frame':'camroll1',
             'locked': false,
             'disabled':false,
             'display':'img', 
@@ -2347,6 +2410,7 @@ var instacam_camera_roll = {
         },
         'roll_threefour': {
             'id':'roll_threefour',
+            'frame':'camroll1',
             'locked': true,
             'disabled':false,
             'display':'img', 
