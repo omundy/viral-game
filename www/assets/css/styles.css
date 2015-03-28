@@ -23,8 +23,8 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 
 
 
-.affirmation_ok_button { position: absolute; left: 600px; top:600px}
-
+.affirmation_ok_button { position: absolute; left: 425px; top:463px; z-index: 1222;}
+.affirmation_img  { position: absolute; left: 260px; top:110px; z-index: 1;}
 
 
 
@@ -297,12 +297,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     top: 361px;
     left: 330px;
  }
-/*affirmations*/
-#metube_scene .affirmation {  /*gainedfollowers_overlay_notification.gif, lostfollowers_overlay_notification.gif */
-    position: absolute;
-    top: 128px;
-    left: 276px;
- }
+
  #metube_scene .ok {  /*ok.png, lost_okhov.png, gain_okhov.png */
     position: absolute;
     top: 482px;

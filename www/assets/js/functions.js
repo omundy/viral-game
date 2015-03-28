@@ -1,4 +1,33 @@
 
+
+
+/**
+ *	VIDEO FUNCTIONS
+ */
+var video_close_goto = -1;
+function show_popup_video(file,width,height,xcloseframe){
+	var str = '';
+	str += '<video autoplay width="'+ width +'" height="'+ height +'"><source src="'+ file +'" type="video/mp4">';
+	str += 'Your browser does not support the video tag.</video>';
+	$('#video_container').html(str);
+	$('#video_window').css('display','block');
+	video_close_goto = xcloseframe;
+}
+function close_popup_video(){
+	$('#video_container').html('');
+	$('#video_window').css('display','none');
+	if (video_close_goto > -1){
+		scene_control('metube',video_close_goto)
+	}
+}
+$('#close_video_window').on('click',function(){ close_popup_video(); })
+/* all video buttons */
+$('#video_player_test').on('click',function(){ show_popup_video('assets/img/metube/videos/nyan.mp4',540,360,-1) })
+$('#video_player_rapmv').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/nyan.mp4',540,360,4) })
+
+
+
+
 /**
  *	hide_scenes()
  *	To load a new one

@@ -16,7 +16,6 @@ $('.next_button')
 	.mouseout(function(){ this.src = 'assets/img/instacam/next.png' });
 
 
-
 /* HOMESCREEN BUTTONS */
 
 $('.instacam_button')
@@ -37,6 +36,16 @@ $('.cinder_button')
 	.mouseout(function(){ this.src = 'assets/img/home/cinder.gif' });
 
 
+/* AFFIRMATION SCREEN BUTTONS */
+
+
+
+
+
+
+
+
+
 
 /* INSTACAM BUTTONS */
 
@@ -54,9 +63,6 @@ $('#instacam_home_selcam_btn').on('click',function(){ scene_control('instacam',6
 $('.instacam_totags').on('click',function(){ scene_control('instacam', 7) })
 	.mouseover(function(){ this.src = 'assets/img/instacam/nexthov.png' })
 	.mouseout(function(){ this.src = 'assets/img/instacam/next.png' });
-	
-
-
 	
 	
 	

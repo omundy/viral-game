@@ -1787,64 +1787,64 @@ var metube = {
             'display':'img', 
             'btn_img': 'snuff.png',
             'score': { 'camgirl':0, 'martyr':3, 'troll':0 }
-    },
+    	},
         'shock_challenge': {
             'id':'shock_challenge',
             'disabled':false, // after used
             'display':'img', 
             'btn_img': 'challenge.png',
             'score': { 'camgirl':-3, 'martyr':-3, 'troll':-3 }
-    },
+    	},
         'shock_camwhore': {
             'id':'shock_camwhore',
             'disabled':false, // after used
             'display':'img', 
             'btn_img': 'camwhore.png',
             'score': { 'camgirl': 3, 'martyr':0, 'troll':0 }
-    },
+			},
         'mv_pop': {
             'id':'mv_pop',
             'disabled':false, // after used
             'display':'img', 
             'btn_img': 'pop.png',
             'score': { 'camgirl': 0, 'martyr':0, 'troll':3 }
-    },
+    	},
         'mv_rap': {
             'id':'mv_rap',
             'disabled':false, // after used
             'display':'img', 
             'btn_img': 'rap.png',
             'score': { 'camgirl': 3, 'martyr':0, 'troll':0 }
-    },
+    	},
         'mv_parody': {
             'id':'mv_parody',
             'disabled':false, // after used
             'display':'img', 
             'btn_img': 'parody.png',
             'score': { 'camgirl': 0, 'martyr':3, 'troll':0 }
-    },
+    	},
         'vlog_rant': {
             'id':'vlog_rant',
             'disabled':false, // after used
             'display':'img', 
             'btn_img': 'rant.png',
             'score': { 'camgirl': 0, 'martyr':3, 'troll':0 }
-    },
+    	},
         'vlog_comedy': {
             'id':'vlog_comedy',
             'disabled':false, // after used
             'display':'img', 
             'btn_img': 'comedy.png',
             'score': { 'camgirl': 0, 'martyr':0, 'troll':3 }
-    },
+    	},
         'vlog_diary': {
             'id':'vlog_diary',
             'disabled':false, // after used
             'display':'img', 
             'btn_img': 'comedy.png',
             'score': { 'camgirl': 3, 'martyr':0, 'troll':0 }
-    },
-}
+		},
+	}
 }
 
 
