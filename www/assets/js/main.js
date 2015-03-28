@@ -79,6 +79,10 @@ var current_scene = {};
 var current_score = { 'camgirl':0, 'martyr':0, 'troll':0 }
 var temp_score = { 'camgirl':0, 'martyr':0, 'troll':0 }
 
+// keep track of instacam stuff
+var instacam_choices = {};
+var instacam_temp_score = {};
+
 // keep track of tags selected by user
 var tags_selected = []
 var tags_used = []
@@ -156,7 +160,7 @@ function scene_control(scene,frame){
 
 			// move scene				
 			$('#'+scene+'_scene').animate( {"margin-left": '-='+ (moveto-movefrom)},500, function(){ 
-					scene_updater(scene,frame)
+					//scene_updater(scene,frame)
 				});
 			// update current_scene
 			update = true; 
@@ -187,6 +191,7 @@ function scene_updater(scene,frame){
 	// reset temp score if on app home page
 	if (frame == 0){
 		reset_temp_score()
+		reset_instacam_temp_score()
 	}
 	
 	//alert(scene +','+ frame)
@@ -211,9 +216,15 @@ function scene_updater(scene,frame){
 	// INSTACAM
 	else if (scene == 'instacam'){
 		
+		if (frame > 1){
+			update_temp_score(instacam_temp_score);
+			console.log(instacam_temp_score)
+		}
+		
 		if (frame == '0'){
 			// reset choices array
 			instacam_choices = {};
+			instacam_temp_score = {};
 			// reset images
 			$('.instacam_preview').html('');
 			$('.instacam_preview').css('background','none');
@@ -226,6 +237,9 @@ function scene_updater(scene,frame){
 		else if (frame == '7'){ add_tags() }
 		// affirmation
 		else if (frame == '8'){ affirmation_loader(); }
+		
+		// reset instacam_temp_score for next frame
+		reset_instacam_temp_score()
 	}
 	
 	// METUBE
@@ -303,9 +317,10 @@ function update_current_score(){
 	console.log('temp_score: '+ JSON.stringify(temp_score))
 		
 	// update the score bars
-	$('#bar1_bar').animate( {"left": '-='+ current_score.camgirl*20 },500);
-	$('#bar2_bar').animate( {"left": '-='+ current_score.martyr*20 },500);
-	$('#bar3_bar').animate( {"left": '-='+ current_score.troll*20 },500);	
+	$('#bar1_bar').animate( {"left": '+='+ current_score.camgirl*10 },500);
+	$('#bar2_bar').animate( {"left": '+='+ current_score.martyr*10 },500);
+	$('#bar3_bar').animate( {"left": '+='+ current_score.troll*10 },500);	
+	report();
 }
 function update_temp_score(score_obj){
 	//console.log('update_temp_score('+ JSON.stringify(score_obj) +')')
@@ -316,25 +331,30 @@ function update_temp_score(score_obj){
 }
 function reset_temp_score(){
 	temp_score = { 'camgirl':0, 'martyr':0, 'troll':0 }
+	report();
+}
+function reset_instacam_temp_score(){
+	instacam_temp_score = { 'camgirl':0, 'martyr':0, 'troll':0 }
+	report();
 }
 
 var nextButton = { // target 
 	};
 
 
-// instacam frame 1 (HAIR), not dependent upon previous pages
+// instacam frame 1: HAIR ( selfie1 )
 $('#selfie_hbasic').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_hbasic'] ) });
 $('#selfie_hmartyr').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_hmartyr'] ) });
 $('#selfie_hcam').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_hcam'] ) });
 $('#selfie_htroll').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_htroll'] ) });
 
-// instacam frame 2 (SWAG), DEPENDENT upon choices on previous pages
+// instacam frame 2:SWAG ( selfie2 ), DEPENDENT upon choices on previous pages
 $('#selfie_smartyr').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_smartyr'] ) });
 $('#selfie_sbasic').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_sbasic'] ) });
 $('#selfie_scam').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_scam'] ) });
 $('#selfie_stroll').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['selfie_stroll'] ) });
 
-// instacam frame 3 (BACKGROUND), DEPENDENT upon choices on previous pages
+// instacam frame 3:BACKGROUND ( selfie3 ), DEPENDENT upon choices on previous pages
 $('#bkg_onethree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkg_onethree'] ) });
 $('#bkg_twotwo').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkg_twotwo'] ) });
 $('#bkg_oneone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkg_oneone'] ) });
@@ -344,7 +364,19 @@ $('#bkg_twoone').on('click',function(){ instacam_preview( instacam_camera_roll.b
 $('#bkg_onefour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkg_onefour'] ) });
 $('#bkg_twofour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkg_twofour'] ) });
 
-var instacam_choices = {};
+// instacam frame 4 ( foodie1 )
+$('#foodie_twothree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_twothree'] ) });
+$('#foodie_oneone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_oneone'] ) });
+$('#foodie_twoone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_twoone'] ) });
+$('#foodie_onetwo').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_onetwo'] ) });
+$('#foodie_twofour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_twofour'] ) });
+$('#foodie_onethrees').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_onethrees'] ) });
+$('#foodie_onefour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_onefour'] ) });
+$('#foodie_twotwo').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_twotwo'] ) });
+
+
+
+
 
 function instacam_preview(buttonObj){
 	
@@ -357,7 +389,7 @@ function instacam_preview(buttonObj){
 	
 	// selfie1
 	if (buttonObj.frame == 'selfie1'){
-		var preview_img = buttonObj.preview_img;	
+		var preview_img = buttonObj.preview_img;
 	}
 	// selfie2
 	else if (buttonObj.frame == 'selfie2'){
@@ -368,6 +400,14 @@ function instacam_preview(buttonObj){
 		//preview_img = buttonObj.preview_img[instacam_choices.selfie1];
 		var background_img = buttonObj.preview_img;
 	}	
+	
+	// foodie1
+	else if (buttonObj.frame == 'foodie1'){
+		var preview_img = buttonObj.preview_img;	
+	}
+	
+	
+	
 	
 	if (preview_img){
 		// preview the file in the instacam window
@@ -387,13 +427,10 @@ function instacam_preview(buttonObj){
 	}
 	*/
 	
-	/*
-	// update temp_score
-	update_temp_score(buttonObj.score);
-	*/
 	
-	// set the target for the "next" button
-	//$('.next_button').
+	// instacam_temp_score ( temp_score updated from next_button )
+	instacam_temp_score = buttonObj.score;
+	
 
 	report();
 }
@@ -402,6 +439,11 @@ function instacam_preview(buttonObj){
 
 
 function instacam_next(buttonObj){
+	
+	
+	
+	
+	
 	// target is based on preview
 	
 	// update temp_score
