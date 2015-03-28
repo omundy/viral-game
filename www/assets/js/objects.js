@@ -1870,13 +1870,11 @@ var instacam_camera_roll = {
             'frame':'selfie1',
             'locked': false, // on beginning
             'disabled':false, // after used
-            // what is shown
             'display':'img', 
             'btn_img': 'selfie/bhair.png',
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfie/bhair.png', //greyed out
             'preview_img': 'pics/selfies/hair_choice1/defb.png',
-            // how the score is tallied
             'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
         },
         'selfie_hmartyr': {
@@ -1926,10 +1924,10 @@ var instacam_camera_roll = {
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/dswag.png', //greyed out
             'preview_img': { // THIS IS RELIANT ON THE 1ST CHOICE MADE 
-	            'selfie_hbasic':'',
-	            'selfie_hmartyr':'',
-	            'selfie_hcam':'',
-	            'selfie_htroll':''
+	            'selfie_hbasic':'pics/selfies/swag_choice2/sdhb.png',
+	            'selfie_hmartyr':'pics/selfies/swag_choice2/sdhm.png',
+	            'selfie_hcam':'pics/selfies/swag_choice2/sdhd.png',
+	            'selfie_htroll':'pics/selfies/swag_choice2/sdht.png'
 	        }, 
             'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
         },
@@ -1943,10 +1941,10 @@ var instacam_camera_roll = {
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/bswag.png', //greyed out
             'preview_img': { // THIS IS RELIANT ON THE 1ST CHOICE MADE 
-	            'selfie_hbasic':'',
-	            'selfie_hmartyr':'',
-	            'selfie_hcam':'',
-	            'selfie_htroll':''
+	            'selfie_hbasic':'pics/selfies/swag_choice2/sbhb.png',
+	            'selfie_hmartyr':'pics/selfies/swag_choice2/sbhm.png',
+	            'selfie_hcam':'pics/selfies/swag_choice2/sbhd.png',
+	            'selfie_htroll':'pics/selfies/swag_choice2/sbht.png'
 	        }, 
             'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
         },
@@ -1960,10 +1958,10 @@ var instacam_camera_roll = {
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/tswag.png', //greyed out
             'preview_img': { // THIS IS RELIANT ON THE 1ST CHOICE MADE 
-	            'selfie_hbasic':'',
-	            'selfie_hmartyr':'',
-	            'selfie_hcam':'',
-	            'selfie_htroll':''
+	            'selfie_hbasic':'pics/selfies/swag_choice2/sthb.png',
+	            'selfie_hmartyr':'pics/selfies/swag_choice2/sthm.png',
+	            'selfie_hcam':'pics/selfies/swag_choice2/sthd.png',
+	            'selfie_htroll':'pics/selfies/swag_choice2/stht.png'
 	        }, 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
@@ -1977,12 +1975,109 @@ var instacam_camera_roll = {
             //'btn_img_locked': '',
             'btn_img_disabled': 'selfies/mswag.png', //greyed out
             'preview_img': { // THIS IS RELIANT ON THE 1ST CHOICE MADE 
-	            'selfie_hbasic':'',
-	            'selfie_hmartyr':'',
-	            'selfie_hcam':'',
-	            'selfie_htroll':''
+	            'selfie_hbasic':'pics/selfies/swag_choice2/smhb.png',
+	            'selfie_hmartyr':'pics/selfies/swag_choice2/smhm.png',
+	            'selfie_hcam':'pics/selfies/swag_choice2/smhd.png',
+	            'selfie_htroll':'pics/selfies/swag_choice2/smht.png'
 	        }, 
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
+        },
+/* SELFIES BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
+        'bkg_oneone': {
+            'id':'bkg_oneone',
+            'frame':'selfie3',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/cheeto.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/cheeto.png', //greyed out
+            'preview_img': 'pics/backgrounds/cheeto.png', //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
+        },
+        'bkg_onetwo': {
+            'id':'bkg_onetwo',
+            'frame':'selfie3',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/heart.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/heart.png', //greyed out
+            'preview_img': 'pics/backgrounds/heart.png', //this appears as the background for the image (foodes or selfies) selected previously) 
+            'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
+        },
+        'bkg_onethree': {
+            'id':'bkg_onethree',
+            'frame':'selfie3',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkgs/alien.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/alien.png', //greyed out
+            'preview_img': 'pics/backgrounds/alien.png', //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
+        },
+        'bkg_onefour': {
+            'id':'bkg_onefour',
+            'frame':'selfie3',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/latte.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/latte.png', //greyed out
+            'preview_img': 'pics/backgrounds/latte.png', //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
+        },
+        'bkg_twoone': {
+            'id':'bkg_twoone',
+            'frame':'selfie3',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/killman.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/killman.png', //greyed out
+            'preview_img': 'pics/backgrounds/killman.png', //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
+        },
+        'bkg_twotwo': {
+            'id':'bkg_twotwo',
+            'frame':'selfie3',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/boob.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/boob.png', //greyed out
+            'preview_img': 'pics/backgrounds/boob.png', //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
+        },
+        'bkg_twothree': {
+            'id':'bkg_twothree',
+            'frame':'selfie3',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/doom.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/doom.png', //greyed out
+            'preview_img': 'pics/backgrounds/doom.png', //this appears as the background for the image (foodes or selfies) selected previously)
+            'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
+        },
+        'bkg_twofour': {
+            'id':'bkg_twofour',
+            'frame':'selfie3',
+            'locked': false,
+            'disabled':false,
+            'display':'img', 
+            'btn_img': 'bkg/meme.png',
+            //'btn_img_locked': '',
+            'btn_img_disabled': 'bkg/meme.png', //greyed out
+            'preview_img': 'pics/backgrounds/meme.png', //this appears as the background for the image (foodes or selfies) selected previously) 
+            'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
 /* FOODIES ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/foodie*/
         'foodie_oneone': {
@@ -2176,103 +2271,6 @@ var instacam_camera_roll = {
             //'btn_img_locked': '',
             'btn_img_disabled': 'bkg/meme.png', //greyed out
             'btn_clicked': 'pics/backgrounds/meme.png', //this appears as the background for the image (foodes or selfies) selected previously) 
-            'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
-        },
-/* SELFIES BKG ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/bkg*/
-        'bkg_oneone': {
-            'id':'bkg_oneone',
-            'frame':'selfie3',
-            'locked': false,
-            'disabled':false,
-            'display':'img', 
-            'btn_img': 'bkg/cheeto.png',
-            //'btn_img_locked': '',
-            'btn_img_disabled': 'bkg/cheeto.png', //greyed out
-            'preview_img': 'pics/backgrounds/cheeto.png', //this appears as the background for the image (foodes or selfies) selected previously)
-            'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
-        },
-        'bkg_onetwo': {
-            'id':'bkg_onetwo',
-            'frame':'selfie3',
-            'locked': false,
-            'disabled':false,
-            'display':'img', 
-            'btn_img': 'bkg/heart.png',
-            //'btn_img_locked': '',
-            'btn_img_disabled': 'bkg/heart.png', //greyed out
-            'preview_img': 'pics/backgrounds/heart.png', //this appears as the background for the image (foodes or selfies) selected previously) 
-            'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
-        },
-        'bkg_onethree': {
-            'id':'bkg_onethree',
-            'frame':'selfie3',
-            'locked': false,
-            'disabled':false,
-            'display':'img', 
-            'btn_img': 'bkgs/alien.png',
-            //'btn_img_locked': '',
-            'btn_img_disabled': 'bkg/alien.png', //greyed out
-            'preview_img': 'pics/backgrounds/alien.png', //this appears as the background for the image (foodes or selfies) selected previously)
-            'score': { 'camgirl':2, 'martyr':0, 'troll':0 }
-        },
-        'bkg_onefour': {
-            'id':'bkg_onefour',
-            'frame':'selfie3',
-            'locked': false,
-            'disabled':false,
-            'display':'img', 
-            'btn_img': 'bkg/latte.png',
-            //'btn_img_locked': '',
-            'btn_img_disabled': 'bkg/latte.png', //greyed out
-            'preview_img': 'pics/backgrounds/latte.png', //this appears as the background for the image (foodes or selfies) selected previously)
-            'score': { 'camgirl':-2, 'martyr':-2, 'troll':-2 }
-        },
-        'bkg_twoone': {
-            'id':'bkg_twoone',
-            'frame':'selfie3',
-            'locked': false,
-            'disabled':false,
-            'display':'img', 
-            'btn_img': 'bkg/killman.png',
-            //'btn_img_locked': '',
-            'btn_img_disabled': 'bkg/killman.png', //greyed out
-            'preview_img': 'pics/backgrounds/killman.png', //this appears as the background for the image (foodes or selfies) selected previously)
-            'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
-        },
-        'bkg_twotwo': {
-            'id':'bkg_twotwo',
-            'frame':'selfie3',
-            'locked': false,
-            'disabled':false,
-            'display':'img', 
-            'btn_img': 'bkg/boob.png',
-            //'btn_img_locked': '',
-            'btn_img_disabled': 'bkg/boob.png', //greyed out
-            'preview_img': 'pics/backgrounds/boob.png', //this appears as the background for the image (foodes or selfies) selected previously)
-            'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
-        },
-        'bkg_twothree': {
-            'id':'bkg_twothree',
-            'frame':'selfie3',
-            'locked': false,
-            'disabled':false,
-            'display':'img', 
-            'btn_img': 'bkg/doom.png',
-            //'btn_img_locked': '',
-            'btn_img_disabled': 'bkg/doom.png', //greyed out
-            'preview_img': 'pics/backgrounds/doom.png', //this appears as the background for the image (foodes or selfies) selected previously)
-            'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
-        },
-        'bkg_twofour': {
-            'id':'bkg_twofour',
-            'frame':'selfie3',
-            'locked': false,
-            'disabled':false,
-            'display':'img', 
-            'btn_img': 'bkg/meme.png',
-            //'btn_img_locked': '',
-            'btn_img_disabled': 'bkg/meme.png', //greyed out
-            'preview_img': 'pics/backgrounds/meme.png', //this appears as the background for the image (foodes or selfies) selected previously) 
             'score': { 'camgirl':0, 'martyr':0, 'troll':2 }
         },
 /* CAMERA ROLL ICONS -- put hover effects on all of these-glow & enlarge: all images in img/instacam/cameraroll*/
