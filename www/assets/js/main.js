@@ -140,6 +140,7 @@ function scene_control(scene,frame){
 		frame = 0; // reset position
 		$('#'+scene+'_scene').css('margin-left','0');
 		update = true; // update current_scene
+		scene_updater(scene,frame)
 	}
 	// in correct scene, wrong frame
 	else if (current_scene.scene == scene && current_scene.frame != frame){
@@ -160,7 +161,7 @@ function scene_control(scene,frame){
 
 			// move scene				
 			$('#'+scene+'_scene').animate( {"margin-left": '-='+ (moveto-movefrom)},500, function(){ 
-					//scene_updater(scene,frame)
+					scene_updater(scene,frame)
 				});
 			// update current_scene
 			update = true; 
@@ -173,8 +174,8 @@ function scene_control(scene,frame){
 	// save, report
 	if (update){ 
 		current_scene = {'scene':scene,'frame':frame}
+		
 	}
-	scene_updater(scene,frame)
 	report();
 }
 
@@ -231,6 +232,7 @@ function scene_updater(scene,frame){
 		}
 		// selfies
 		else if (frame == '1'){
+			$('.instacam_preview').html( '<img src="assets/img/instacam/pics/selfies/default.png">' ) 
 			update_buttons(instacam_camera_roll);
 		}
 		// tags
@@ -370,9 +372,19 @@ $('#foodie_oneone').on('click',function(){ instacam_preview( instacam_camera_rol
 $('#foodie_twoone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_twoone'] ) });
 $('#foodie_onetwo').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_onetwo'] ) });
 $('#foodie_twofour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_twofour'] ) });
-$('#foodie_onethrees').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_onethrees'] ) });
+$('#foodie_onethree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_onethree'] ) });
 $('#foodie_onefour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_onefour'] ) });
 $('#foodie_twotwo').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['foodie_twotwo'] ) });
+
+// instacam frame 5 ( foodie2 )
+$('#bkgf_onethree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkgf_onethree'] ) });
+$('#bkgf_twotwo').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkgf_twotwo'] ) });
+$('#bkgf_oneone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkgf_oneone'] ) });
+$('#bkgf_twothree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkgf_twothree'] ) });
+$('#bkgf_onetwo').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkgf_onetwo'] ) });
+$('#bkgf_twoone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkgf_twoone'] ) });
+$('#bkgf_onefour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkgf_onefour'] ) });
+$('#bkgf_twofour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkgf_twofour'] ) });
 
 
 
@@ -397,7 +409,7 @@ function instacam_preview(buttonObj){
 	}
 	// selfie3
 	else if (buttonObj.frame == 'selfie3'){
-		//preview_img = buttonObj.preview_img[instacam_choices.selfie1];
+		// change only background
 		var background_img = buttonObj.preview_img;
 	}	
 	
@@ -405,14 +417,19 @@ function instacam_preview(buttonObj){
 	else if (buttonObj.frame == 'foodie1'){
 		var preview_img = buttonObj.preview_img;	
 	}
+	// foodie2
+	else if (buttonObj.frame == 'foodie2'){
+		// change only background
+		var background_img = buttonObj.preview_img;	
+		console.log(buttonObj)
+	}
 	
 	
-	
-	
+	// preview the file in the instacam window
 	if (preview_img){
-		// preview the file in the instacam window
 		$('.instacam_preview').html( '<img src="assets/img/instacam/'+ preview_img +'">' ) 
 	}
+	// preview the BACKGROUND in the instacam window
 	if (background_img){
 		$('.instacam_preview').css( 'background-image', 'url(assets/img/instacam/'+ background_img +')' ) 
 	}
