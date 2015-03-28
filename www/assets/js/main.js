@@ -386,8 +386,18 @@ $('#bkgf_twoone').on('click',function(){ instacam_preview( instacam_camera_roll.
 $('#bkgf_onefour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkgf_onefour'] ) });
 $('#bkgf_twofour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['bkgf_twofour'] ) });
 
-
-
+// instacam frame 6 ( camroll1 )
+$('#roll_twotwo').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_twotwo'] ) });
+$('#roll_twothree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_twothree'] ) });
+$('#roll_threefour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_threefour'] ) });
+$('#roll_onefour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_onefour'] ) });
+$('#roll_onethree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_onethree'] ) });
+$('#roll_threeone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_threeone'] ) });
+$('#roll_twofour').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_twofour'] ) });
+$('#roll_onetwo').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_onetwo'] ) });
+$('#roll_threethree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_threethree'] ) });
+$('#roll_twoone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_twoone'] ) });
+$('#roll_oneone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_oneone'] ) });
 
 
 function instacam_preview(buttonObj){
@@ -424,6 +434,11 @@ function instacam_preview(buttonObj){
 		console.log(buttonObj)
 	}
 	
+	// camroll1
+	else if (buttonObj.frame == 'camroll1'){
+		var preview_img = buttonObj.preview_img;	
+	}
+	
 	
 	// preview the file in the instacam window
 	if (preview_img){
@@ -433,21 +448,9 @@ function instacam_preview(buttonObj){
 	if (background_img){
 		$('.instacam_preview').css( 'background-image', 'url(assets/img/instacam/'+ background_img +')' ) 
 	}
-	
-	
-	
-	/*
-	// if not already in instacam_choices
-	if (!instacam_choices.camframe){
-		// update instacam_choices
-		instacam_choices.camframe = buttonObj.id;
-	}
-	*/
-	
-	
+
 	// instacam_temp_score ( temp_score updated from next_button )
 	instacam_temp_score = buttonObj.score;
-	
 
 	report();
 }
