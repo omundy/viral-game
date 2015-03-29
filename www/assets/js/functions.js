@@ -65,9 +65,9 @@ function close_popup_video(action){
 
 /* all video buttons */
 $('#video_player_test').on('click',function(){ show_popup_video('assets/img/metube/videos/nyan.mp4',540,360) })
-$('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/nyan.mp4',540,360,4) })
-$('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/nyan.mp4',540,360,4) })
-$('.mv_parody').on('click',function(){ update_temp_score(metube.buttons.mv_parody.score); show_popup_video('assets/img/metube/videos/nyan.mp4',540,360,4) })
+$('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/camgirl.mp4',540,360,4) })
+$('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/challenge.mp4',540,360,4) })
+$('.mv_parody').on('click',function(){ update_temp_score(metube.buttons.mv_parody.score); show_popup_video('assets/img/metube/videos/dogfriend.mp4',540,360,4) })
 
 
 
