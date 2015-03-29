@@ -1113,6 +1113,57 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: 324px;
     top: 68px;
  }
+ /*brody date*/
+   #cinder_scene .next_but{ 
+    position: absolute;
+    left: 912px;
+    top: 627px;
+ }
+    #cinder_scene .2a{  /*8a*/
+    position: absolute;
+    left: 41px;
+    top: 516px;
+ }
+    #cinder_scene .2b{  /*8b*/
+    position: absolute;
+    left: 41px;
+    top: 589px;
+ }
+     #cinder_scene .okay{  
+    position: absolute;
+    left: 459px;
+    top: 582px;
+ }
+      #cinder_scene .9next{ 
+    position: absolute;
+    left: 917px;
+    top: 192px;
+ }
+    #cinder_scene .10a{  
+    position: absolute;
+    left: 622px;
+    top: 94px;
+ }
+    #cinder_scene .10b{  
+    position: absolute;
+    left: 622px;
+    top: 149px;
+ }
+    #cinder_scene .13a{  /*15a, 17a, 19a*/
+    position: absolute;
+    left: 36px;
+    top: 513px;
+ }
+    #cinder_scene .13b{  /*15b*/
+    position: absolute;
+    left: 36px;
+    top: 606px;
+ }
+     #cinder_scene .17b{  /*19b*/
+    position: absolute;
+    left: 36px;
+    top: 571px;
+ }
  
  .cinder_date { width:1092px; height: 728px; }
  .cinder_date_next { position: absolute; left: 600px; top:500px; }
