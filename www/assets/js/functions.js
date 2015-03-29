@@ -36,25 +36,38 @@ function test_buttons(){
  *	VIDEO FUNCTIONS
  */
 var video_close_goto = -1;
-function show_popup_video(file,width,height,xcloseframe){
+function show_popup_video(file,width,height){
 	var str = '';
 	str += '<video autoplay width="'+ width +'" height="'+ height +'"><source src="'+ file +'" type="video/mp4">';
 	str += 'Your browser does not support the video tag.</video>';
+	
+	
+	str += '<div id="confirm_btns">';
+	str += '<button id="gohome_video_window">go back</button> ';
+	str += '<button id="confirm_video_window">confirm</button>';
+	str += '</div>';	
+	
 	$('#video_container').html(str);
 	$('#video_window').css('display','block');
-	video_close_goto = xcloseframe;
+	$('#confirm_video_window').on('click',function(){ close_popup_video('confirm'); })
+	$('#gohome_video_window').on('click',function(){ close_popup_video('home'); })
 }
-function close_popup_video(){
+function close_popup_video(action){
+	if (action == 'confirm'){
+		scene_control('metube',4)
+	} else {
+		reset_temp_score()
+	}
 	$('#video_container').html('');
 	$('#video_window').css('display','none');
-	if (video_close_goto > -1){
-		scene_control('metube',video_close_goto)
-	}
+	
 }
-$('#close_video_window').on('click',function(){ close_popup_video(); })
+
 /* all video buttons */
-$('#video_player_test').on('click',function(){ show_popup_video('assets/img/metube/videos/nyan.mp4',540,360,-1) })
-$('#video_player_rapmv').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/nyan.mp4',540,360,4) })
+$('#video_player_test').on('click',function(){ show_popup_video('assets/img/metube/videos/nyan.mp4',540,360) })
+$('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/nyan.mp4',540,360,4) })
+$('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/nyan.mp4',540,360,4) })
+$('.mv_parody').on('click',function(){ update_temp_score(metube.buttons.mv_parody.score); show_popup_video('assets/img/metube/videos/nyan.mp4',540,360,4) })
 
 
 

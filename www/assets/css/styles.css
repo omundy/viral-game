@@ -95,14 +95,17 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 	background: rgba(25,  25,  25, 0.85);
 	text-align: center;
 }
-#video_window #close_video_window {
-	position: absolute;
-	top:30px;
-	right: 30px;
-	display: block;
-	font-size: 100px;
+#video_window #confirm_btns {
+	width:400px;
+	text-align: center;
+	margin: 0 auto;
+}
+#video_window #confirm_video_window, #video_window #gohome_video_window {
+	display: inline;
+	font-size: 30px;
 	color: #ff00f2;
 }
+#video_window #gohome_video_window { left:250px; }
 #video_container { 
 	margin: 0 auto;
 	position: relative;
