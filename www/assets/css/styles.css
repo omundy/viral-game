@@ -155,7 +155,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 #footer .underlay {
 	position: absolute;
 	z-index: 120;
-	left:-280px;
+	left:-300px;
 	top:0;
 }
 
