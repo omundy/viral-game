@@ -156,6 +156,14 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 
 
 
+.instacam_hover:hover { 
+	-moz-box-shadow: 0 0 10px #ccc; 
+	-webkit-box-shadow: 0 0 10px #ccc; 
+	box-shadow: 0 0 10px #ccc; } 
+
+
+
+
 
 #footer #bar1, #footer #bar2, #footer #bar3 {
 	position: absolute;
