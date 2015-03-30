@@ -157,9 +157,9 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 
 
 .instacam_hover:hover { 
-	-moz-box-shadow: 0 0 10px #ccc; 
-	-webkit-box-shadow: 0 0 10px #ccc; 
-	box-shadow: 0 0 10px #ccc; } 
+	-moz-box-shadow: 0 0 20px #f20bdf ; 
+	-webkit-box-shadow: 0 0 20px #f20bdf; 
+	box-shadow: 0 0 20px #f20bdf; } 
 
 
 

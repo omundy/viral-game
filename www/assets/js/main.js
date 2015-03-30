@@ -48,7 +48,7 @@ function cinder_date_next_img(){
 	} else {
 		console.log()
 		
-		if (cinder_date_name == 'brody_date'){
+		if (cinder_date_name == 'brody'){
 			instacam_camera_roll.roll_twothree.locked = false;
 		} else if (cinder_date_name == 'scene_date'){
 			//
@@ -320,14 +320,12 @@ function update_current_score(){
 	console.log('current_score: '+ JSON.stringify(current_score))
 	console.log('temp_score: '+ JSON.stringify(temp_score))
 	
-	
 	var factor = 300 / 60;
 	
-	
 	// update the score bars
-	$('#bar1_bar').animate( {"left": '+='+ current_score.camgirl * factor },500);
-	$('#bar2_bar').animate( {"left": '+='+ current_score.martyr * factor },500);
-	$('#bar3_bar').animate( {"left": '+='+ current_score.troll * factor },500);	
+	$('#bar1_bar').animate( {"left": '+='+ (temp_score.camgirl) * factor },500);
+	$('#bar2_bar').animate( {"left": '+='+ (temp_score.martyr) * factor },500);
+	$('#bar3_bar').animate( {"left": '+='+ (temp_score.troll) * factor },500);	
 	report();
 	//maximum score is 60; length divided by 60
 }

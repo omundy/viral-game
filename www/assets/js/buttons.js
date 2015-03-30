@@ -93,7 +93,7 @@ $('.rant').on('click',function(){ scene_control('dumblr',8) });
 $('.pass').on('click',function(){ scene_control(current_scene.scene,current_scene.frame +1) });
 $('.lastpass').on('click',function(){ scene_control('cinder', 0) });
 $('.date_lilb').on('click',function(){ scene_control('cinder',1) });
-$('.date_bro').on('click',function(){ start_cinder_date('brody_date',10); scene_control('cinder',4) });
+$('.date_bro').on('click',function(){ start_cinder_date('brody',10); scene_control('cinder',4) });
 $('.date_scene').on('click',function(){ scene_control('cinder',5) });
 $('.date_elliot').on('click',function(){ scene_control('cinder',1) });
 
