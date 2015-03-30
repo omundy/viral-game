@@ -187,7 +187,7 @@ function scene_control(scene,frame){
 function scene_updater(scene,frame){
 	console.log('scene_updater('+ scene +','+ frame +')')
 	
-	$('#video_window').css('display','none');
+	$('.affirmation_curtain').css('display','none');
 	
 	// SCORING
 	// reset temp score if on app home page
@@ -579,18 +579,20 @@ function affirmation_loader(){
 	// figure out their affirmation image
 	if (temp_score.camgirl + temp_score.martyr + temp_score.troll > 0){
 		var aff_img = 'assets/img/affirmations/gainedfollowers_overlay_notification.gif';
+		var aff_img_hover = 'assets/img/affirmations/gain_okhov.png';
 	} else {
 		var aff_img = 'assets/img/affirmations/lostfollowers_overlay_notification.gif';
+		var aff_img_hover = 'assets/img/affirmations/lost_okhov.png';
 	}
 	// reset temp_score
 	reset_temp_score();
 	
-	var ahtml = '<input type="image" alt="button" src="assets/img/affirmations/ok.png" class="affirmation_ok_button">';
-	
+	var ahtml = '<input type="image" alt="button" src="assets/img/affirmations/ok.png" class="affirmation_ok_button" onmouseover="src=\''+aff_img_hover+'\';" onmouseout="src=\'assets/img/affirmations/ok.png\';">';
 	
 	ahtml += '<img class="affirmation_img" src="'+ aff_img +'">';
 	$('.affirmation').html(ahtml)
 	$('.affirmation_ok_button').on('click',function(){ scene_control('home',0) })
+	
 	$('.affirmation_curtain').css('display','block');
 	
 	report();
