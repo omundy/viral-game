@@ -405,6 +405,7 @@ $('#roll_onetwo').on('click',function(){ instacam_preview( instacam_camera_roll.
 $('#roll_threethree').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_threethree'] ) });
 $('#roll_twoone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_twoone'] ) });
 $('#roll_oneone').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_oneone'] ) });
+$('#roll_threetwo').on('click',function(){ instacam_preview( instacam_camera_roll.buttons['roll_threetwo'] ) });
 
 
 function instacam_preview(buttonObj){

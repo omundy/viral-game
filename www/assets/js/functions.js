@@ -33,6 +33,30 @@ function test_buttons(){
 
 
 /**
+ *	MONTAGE FUNCTIONS
+ */
+ 
+ 
+ function show_popup_montage(file){
+	var str = '';
+	str += '<div style="width:728px; height:1092px>';
+	
+	
+	str += '<div id="confirm_btns">';
+	str += '<button id="gohome_video_window">go back</button> ';
+	str += '<button id="confirm_video_window">confirm</button>';
+	str += '</div>';	
+	
+	$('#video_container').html(str);
+	$('#video_window').css('display','block');
+	$('#confirm_video_window').on('click',function(){ close_popup_video('confirm'); })
+	$('#gohome_video_window').on('click',function(){ close_popup_video('home'); })
+}
+ 
+
+
+
+/**
  *	VIDEO FUNCTIONS
  */
 var video_close_goto = -1;
@@ -52,7 +76,7 @@ function show_popup_video(file,width,height){
 	$('#confirm_video_window').on('click',function(){ close_popup_video('confirm'); })
 	$('#gohome_video_window').on('click',function(){ close_popup_video('home'); })
 }
-function show_popup_video2(file,width,height){
+function show_popup_video_confirmonly(file,width,height){
 	var str = '';
 	str += '<video autoplay width="'+ width +'" height="'+ height +'"><source src="'+ file +'" type="video/mp4">';
 	str += 'Your browser does not support the video tag.</video>';
@@ -79,7 +103,7 @@ function close_popup_video(action){
 }
 
 /* all video buttons */
-$('#video_player_test').on('click',function(){ show_popup_video2('assets/img/metube/videos/liz.mp4', 854,480) })
+$('#video_player_test').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
 $('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/mypussy.mp4',1280,720,4) })
 $('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/dogfriend.mp4',1280,720,4) })
 $('.mv_parody').on('click',function(){ update_temp_score(metube.buttons.mv_parody.score); show_popup_video('assets/img/metube/videos/testicle.mp4',1280,720,4) })
