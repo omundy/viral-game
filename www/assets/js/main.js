@@ -323,6 +323,7 @@ function update_current_score(){
 	$('#bar2_bar').animate( {"left": '+='+ current_score.martyr*10 },500);
 	$('#bar3_bar').animate( {"left": '+='+ current_score.troll*10 },500);	
 	report();
+	//maximum score is 60; length divided by 60
 }
 function update_temp_score(score_obj){
 	//console.log('update_temp_score('+ JSON.stringify(score_obj) +')')
@@ -583,6 +584,8 @@ function affirmation_loader(){
 	reset_temp_score();
 	
 	var ahtml = '<input type="image" alt="button" src="assets/img/affirmations/ok.png" class="affirmation_ok_button">';
+	
+	
 	ahtml += '<img class="affirmation_img" src="'+ aff_img +'">';
 	$('.affirmation').html(ahtml)
 	$('.affirmation_ok_button').on('click',function(){ scene_control('home',0) })
