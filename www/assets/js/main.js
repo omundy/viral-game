@@ -187,6 +187,7 @@ function scene_control(scene,frame){
 function scene_updater(scene,frame){
 	console.log('scene_updater('+ scene +','+ frame +')')
 	
+	$('#video_window').css('display','none');
 	
 	// SCORING
 	// reset temp score if on app home page
@@ -212,6 +213,7 @@ function scene_updater(scene,frame){
 		else if (frame == '15'){ add_tags(); }
 		// affirmation
 		else if (frame == '16'){ affirmation_loader(); }
+
 	} 
 	
 	// INSTACAM
@@ -589,6 +591,7 @@ function affirmation_loader(){
 	ahtml += '<img class="affirmation_img" src="'+ aff_img +'">';
 	$('.affirmation').html(ahtml)
 	$('.affirmation_ok_button').on('click',function(){ scene_control('home',0) })
+	$('.affirmation_curtain').css('display','block');
 	
 	report();
 }
