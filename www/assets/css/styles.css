@@ -1,11 +1,11 @@
-html,body { font: 1em/1.4em Arial; color: #fff }
+html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bkg.png') }
 
 #nav { position: absolute; top: 30px; width: 9%}
 #nav .group { display: block;  }
 #nav  button { background:#666; border: none; margin: 2px 4px 0 0 }
 #report { position: absolute; color: #fff; top: 0; background: rgba(0,0,0,.5); width: 100%; font-size: 80%; z-index: 500}
 
-#container { width:100%; height: 100%; background: #222; position: absolute }
+#container { width:100%; height: 100%; background-image: url('../img/bkg.png'); position: absolute }
 #scene_container { width:1092px; height: 798px; background: #000; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); }
 
 .scene { position:relative; width: 1092px; height: 728px; }
@@ -56,7 +56,14 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 	margin: 4px 5px;	
 	border: none;
 	background: #fff
-} 
+}
+.tags button_post {
+	font-size: 111%;
+	padding: 0px;	
+	margin: 0px 0px;	
+	border: none;
+}
+
 .tags button:hover, .tag_selected, .tag_used {
 	color: #fff;
 	background: rgba(0,0,0,.5)
@@ -69,7 +76,7 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 #metube_scene .tags button { font-size: 105%; padding: 4px; }
 
 
-#dumblr_tag_confirm, #instacam_tag_confirm, #metube_tag_confirm { position: absolute; font-size: 120%; background: #ed00ff; color: #fff; border: none; padding: 8px }
+#dumblr_tag_confirm, #instacam_tag_confirm, #metube_tag_confirm { position: absolute; font-size: 120%; }
 #dumblr_tag_confirm { top: 550px; left: 460px; }
 #instacam_tag_confirm { top: 580px; left: 600px; }
 #metube_tag_confirm { top: 520px; left: 500px; }
@@ -337,7 +344,11 @@ html,body { font: 1em/1.4em Arial; color: #fff }
 #instacam_scene .pic { position: absolute; left: 71px; top:132px; }  /* everyting in img/instacam/pics folder */
 #instacam_scene .select { position: absolute; left: 71px; top:132px; } /* homesel.png*/
 
+#instacam_scene .cover { position: absolute; left: 13px; top:100px; }
+#instacam_scene .sidecover { position: absolute; left: 410px; top:133px; }
+
 #instacam_scene .box { position: absolute; left: 506px; top:106px; } /* swagbox.png, hairbox.png, foodbox.png, bkgbox.png, cambox.png, tags/tagbartop.png */
+#instacam_scene .cambox { position: absolute; left: 485px; top:106px; } /* swagbox.png, hairbox.png, foodbox.png, bkgbox.png, cambox.png, tags/tagbartop.png */
 
 
 
@@ -1167,6 +1178,60 @@ html,body { font: 1em/1.4em Arial; color: #fff }
     left: 36px;
     top: 571px;
  }
+<<<<<<< HEAD
+    #cinder_scene .22next{ 
+    position: absolute;
+    left: 906px;
+    top: 332px;
+ }
+    #cinder_scene .large_next{ 
+    position: absolute;
+    left: 810px;
+    top: 571px;
+ }
+     #cinder_scene .23a{ 
+    position: absolute;
+    left: 614px;
+    top: 125px;
+ }
+    #cinder_scene .23b{ 
+    position: absolute;
+    left: 614px;
+    top: 248px;
+ }
+ /*elliot date*/
+    #cinder_scene .next_but_e{ 
+    position: absolute;
+    left: 911px;
+    top: 638px;
+ }
+    #cinder_scene .next_but_e_top{ 
+    position: absolute;
+    left: 842px;
+    top: 219px;
+ }
+    #cinder_scene .e2a{ 
+    position: absolute;
+    left: 546px;
+    top: 122px;
+ }
+    #cinder_scene .e2b{ 
+    position: absolute;
+    left: 47px;
+    top: 519px;
+ }
+    #cinder_scene .e4a{ 
+    position: absolute;
+    left: 47px;
+    top: 519px;
+ }
+    #cinder_scene .e4b{ 
+    position: absolute;
+    left: 47px;
+    top: 596px;
+ }
+=======
+>>>>>>> parent of 3fa66c3... trying to sync again
  
  .cinder_date { width:1092px; height: 728px; }
  .cinder_date_next { position: absolute; left: 600px; top:500px; }

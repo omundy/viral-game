@@ -2388,10 +2388,10 @@ var instacam_camera_roll = {
             'locked': true,
             'disabled':false,
             'display':'img', 
-            'btn_img': 'cameraroll/dylan.png',
-            'btn_img_locked': 'cameraroll/dylanlok.png',
-            'btn_img_disabled': 'cameraroll/dylan.png', //greyed out
-            'preview_img': 'pics/cameraroll/dylan.png', 
+            'btn_img': 'cameraroll/eric.png',
+            'btn_img_locked': 'cameraroll/ericlok.png',
+            'btn_img_disabled': 'cameraroll/eric.png', //greyed out
+            'preview_img': 'pics/cameraroll/eric.png', 
             'score': { 'camgirl':0, 'martyr':2, 'troll':0 }
         },
         'roll_threethree': {
