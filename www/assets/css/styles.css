@@ -191,10 +191,6 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 
 
 
-
-/* Lena, you can swap out these images if you want */
-
-
 /* 	SCENE PIXEL WIDTHS: 0,1092,2184,3276,4368,5460,6552,7644,8736,9828 */
 
 #home_scene { width: 3276px; position: relative; }
@@ -215,19 +211,27 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 
 .scene { float: left; width: 1092px; height: 728px; }
 
-
-
-
-
-
-
-
-
-
 .home_button,.back_button {
 	position: absolute;
 	border: none
 }
+/***********************************************************************************/
+/* ABOUT/PLAY
+************************************************************************************/
+.about {  
+    position: absolute;
+    left: 170px;
+    top: 306px;
+    z-index: 100;
+ }
+.play {  
+    position: abosolute;
+    left: 764px;
+    top: 4506px;
+    z-index: 100;
+ }
+ .frame { float: left; width: 1092px; height: 728px; padding-top: 40px; z-index: 1;}
+
 /***********************************************************************************/
 /* HOME
 ************************************************************************************/
