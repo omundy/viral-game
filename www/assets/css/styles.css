@@ -1243,10 +1243,30 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 911px;
     top: 638px;
  }
-    #cinder_scene .next_but_e_top{ 
+    #cinder_scene .2next_e{ 
     position: absolute;
     left: 842px;
     top: 219px;
+ }
+    #cinder_scene .23next_e{ 
+    position: absolute;
+    left: 882px;
+    top: 621px;
+ }
+    #cinder_scene .25next_e{ /*27next*/
+    position: absolute;
+    left: 338px;
+    top: 636px;
+ }
+     #cinder_scene .31next_e{  /*32*/
+    position: absolute;
+    left: 730px;
+    top: 640px;
+ }
+    #cinder_scene .33next_e{  
+    position: absolute;
+    left: 238px;
+    top: 249px;
  }
     #cinder_scene .e2a{ 
     position: absolute;
@@ -1258,21 +1278,35 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 47px;
     top: 519px;
  }
-    #cinder_scene .e4a{ /*6a, 8a, 10a*/
+    #cinder_scene .e4a{ /*6a, 8a, 10a, 12a, 14a, 16a, 18a, 20a, 22a*/
     position: absolute;
     left: 47px;
     top: 519px;
  }
-    #cinder_scene .e4b{ /*6b*/
+    #cinder_scene .e4b{ /*6b, 12b, 14b, 16b, 18b, 20b, 22b*/
     position: absolute;
     left: 47px;
     top: 596px;
  }
-     #cinder_scene .e8b{ /*10b*/
+    #cinder_scene .e8b{ /*10b,*/
     position: absolute;
     left: 47px;
     top: 618px;
  }
- 
+    #cinder_scene .e24a{ /*26a*/
+    position: absolute;
+    left: 42px;
+    top: 540px;
+ }
+    #cinder_scene .e24b{ /*26b*/
+    position: absolute;
+    left: 42px;
+    top: 592px;
+ }
+     #cinder_scene .e_ok{ 
+    position: absolute;
+    left: 406px;
+    top: 635px;
+ }
  .cinder_date { width:1092px; height: 728px; }
  .cinder_date_next { position: absolute; left: 600px; top:500px; }
