@@ -36,7 +36,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 }
 
 .affirmation_ok_button { position: absolute; left: 430px; top:463px; z-index: 1222;}
-.affirmation_img  { position: absolute; left: 265px; top:110px; z-index: 1;}
+.affirmation_img  { position: absolute; left: 265px; top:110px; z-index: 2;}
 
 
 
@@ -218,19 +218,19 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 /***********************************************************************************/
 /* ABOUT/PLAY
 ************************************************************************************/
-.about {  
-    position: absolute;
-    left: 170px;
-    top: 306px;
+.about_main {  
+    position: relative;
+    left: 14px;
+    top: 200px;
     z-index: 100;
  }
-.play {  
-    position: abosolute;
-    left: 764px;
-    top: 4506px;
-    z-index: 100;
+.play_main {  
+    position: relative;
+    left: 10px;
+    top: 250px;
+    z-index: 101;
  }
- .frame { float: left; width: 1092px; height: 728px; padding-top: 40px; z-index: 1;}
+ .frame { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/main.png');}
 
 /***********************************************************************************/
 /* HOME
@@ -1314,3 +1314,88 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
  }
  .cinder_date { width:1092px; height: 728px; }
  .cinder_date_next { position: absolute; left: 600px; top:500px; }
+ /***********************************************************************************/
+/*CAMGIRL MONTAGE
+************************************************************************************/
+   
+   
+    .badge_ok{ 
+    position: absolute;
+    left: 475px;
+    top: 475px;
+ }
+    .play_again{ 
+    position: absolute;
+    left: 327px;
+    top: 431px;
+ }
+    .quit{ 
+    position: absolute;
+    left: 327px;
+    top: 520px;
+ } 
+   .dslut_1{ 
+    position: absolute;
+    left: 337px;
+    top: 496px;
+ }
+    .dslut_2{ 
+    position: absolute;
+    left: 313px;
+    top: 257px;
+ }
+    .dslut_3{ 
+    position: absolute;
+    left: 329px;
+    top: 37px;
+ }
+   .camgirl_1{ 
+    position: absolute;
+    left: 982px;
+    top: 346px;
+ }
+    .camgirl_2{ 
+    position: absolute;
+    left: 338px;
+    top: 122px;
+ }
+    .camgirl_3{ 
+    position: absolute;
+    left: 326px;
+    top: 445px;
+ }
+    .camgirl_4{ 
+    position: absolute;
+    left: 993px;
+    top: 450px;
+ }
+     .camgirl_5{  /*camgirl_6, 11*/
+    position: absolute;
+    left: 700px;
+    top: 0px;
+ }
+    .camgirl_7{ 
+    position: absolute;
+    left: 347px;
+    top: 273px;
+ }
+    .camgirl_8{ /*camgirl_9, _10,*/
+    position: absolute;
+    left: 949px;
+    top: 55px;
+ }
+    .pornstar_1{ 
+    position: absolute;
+    left: 953px;
+    top: 156px;
+ }
+    .pornstar_2{ 
+    position: absolute;
+    left: 818px;
+    top: 484px;
+ }
+    .pornstar_3{ 
+    position: absolute;
+    left: 353px;
+    top: 48px;
+ }

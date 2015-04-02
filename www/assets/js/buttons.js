@@ -20,20 +20,12 @@ $('.next_button')
 
 $('.instacam_button')
 	.on('click',function(){ scene_control('instacam',0)})
-	.mouseover(function(){ this.src = 'assets/img/home/instacam.gif' })
-	.mouseout(function(){ this.src = 'assets/img/home/instacam.gif' });
 $('.metube_button')
 	.on('click',function(){ scene_control('metube', 0) })
-	.mouseover(function(){ this.src = 'assets/img/home/metube.gif' })
-	.mouseout(function(){ this.src = 'assets/img/home/metube.gif' });
 $('.dumblr_button')
 	.on('click',function(){ scene_control('dumblr', 0) })
-	.mouseover(function(){ this.src = 'assets/img/home/dumblr.gif' })
-	.mouseout(function(){ this.src = 'assets/img/home/dumblr.gif' });
 $('.cinder_button')
 	.on('click',function(){ scene_control('cinder', 0) })
-	.mouseover(function(){ this.src = 'assets/img/home/cinder.gif' })
-	.mouseout(function(){ this.src = 'assets/img/home/cinder.gif' });
 
 
 
