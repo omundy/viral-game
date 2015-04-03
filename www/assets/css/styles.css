@@ -230,6 +230,120 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     top: 250px;
     z-index: 101;
  }
+ .lena_pic{  
+    position: relative;
+    left: 129px;
+    top: 181px;
+    z-index: 102;
+ }
+.julia_pic{  
+    position: relative;
+    left: 643px;
+    top: 398px;
+    z-index: 103;
+ }
+.about_back{  
+    position: relative;
+    left: 81px;
+    top: 87px;
+    z-index: 104;
+ }
+ .collaborators{  
+    position: relative;
+    left: 718px;
+    top: 38px;
+    z-index: 105;
+ }
+  .lena_wesbite{  
+    position: relative;
+    left: 737px;
+    top: 255px;
+    z-index: 106;
+ }
+   .julia_wesbite{  
+    position: relative;
+    left: 378px;
+    top: 494px;
+    z-index: 107;
+ }
+  .download{  
+    position: relative;
+    left: 16px;
+    top: 528px;
+    z-index: 108;
+ }
+    .owen{  
+    position: relative;
+    left: 90px;
+    top: 218px;
+    z-index: 109;
+ }
+     .rhizome{  
+    position: relative;
+    left: 469px;
+    top: 215px;
+    z-index: 110;
+ }
+      .gaea{  
+    position: relative;
+    left: 838px;
+    top: 222px;
+    z-index: 111;
+ }
+       .barbie{  
+    position: relative;
+    left: 810px;
+    top: 282px;
+    z-index: 112;
+ }
+    .zero{  
+    position: relative;
+    left: 830px;
+    top: 314px;
+    z-index: 113;
+ }
+     .beta_website{  
+    position: relative;
+    left: 467px;
+    top: 323px;
+    z-index: 114;
+ }
+    .tristan{  
+    position: relative;
+    left: 208px;
+    top: 418px;
+    z-index: 115;
+ }
+      .clitt{  
+    position: relative;
+    left: 261px;
+    top: 494px;
+    z-index: 116;
+ }
+    .drrty{  
+    position: relative;
+    left: 178px;
+    top: 566px;
+    z-index: 117;
+ }
+     .akuma{  
+    position: relative;
+    left: 683px;
+    top: 350px;
+    z-index: 118;
+ }
+      .moloshe{  
+    position: relative;
+    left: 736px;
+    top: 454px;
+    z-index: 119;
+ }
+    .joseph{  
+    position: relative;
+    left: 695px;
+    top: 554px;
+    z-index: 120;
+ }
  .frame { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/main.png');}
 
 /***********************************************************************************/
