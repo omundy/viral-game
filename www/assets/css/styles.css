@@ -231,120 +231,124 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     z-index: 101;
  }
  .lena_pic{  
-    position: relative;
+    position: absolute;
     left: 129px;
     top: 181px;
     z-index: 102;
  }
 .julia_pic{  
-    position: relative;
+    position: absolute;
     left: 643px;
     top: 398px;
     z-index: 103;
  }
 .about_back{  
-    position: relative;
+    position: absolute;
     left: 81px;
     top: 87px;
     z-index: 104;
  }
  .collaborators{  
-    position: relative;
+    position: absolute;
     left: 718px;
     top: 38px;
     z-index: 105;
  }
-  .lena_wesbite{  
-    position: relative;
+  .lena_website{  
+    position: absolute;
     left: 737px;
     top: 255px;
     z-index: 106;
  }
-   .julia_wesbite{  
-    position: relative;
+   .julia_website{  
+    position: absolute;
     left: 378px;
     top: 494px;
     z-index: 107;
  }
   .download{  
-    position: relative;
+    position: absolute;
     left: 16px;
     top: 528px;
     z-index: 108;
  }
     .owen{  
-    position: relative;
+    position: absolute;
     left: 90px;
     top: 218px;
     z-index: 109;
  }
      .rhizome{  
-    position: relative;
+    position: absolute;
     left: 469px;
     top: 215px;
     z-index: 110;
  }
       .gaea{  
-    position: relative;
+    position: absolute;
     left: 838px;
     top: 222px;
     z-index: 111;
  }
        .barbie{  
-    position: relative;
+    position: absolute;
     left: 810px;
     top: 282px;
     z-index: 112;
  }
     .zero{  
-    position: relative;
+    position: absolute;
     left: 830px;
     top: 314px;
     z-index: 113;
  }
      .beta_website{  
-    position: relative;
+    position: absolute;
     left: 467px;
     top: 323px;
     z-index: 114;
  }
     .tristan{  
-    position: relative;
+    position: absolute;
     left: 208px;
     top: 418px;
     z-index: 115;
  }
       .clitt{  
-    position: relative;
+    position: absolute;
     left: 261px;
     top: 494px;
     z-index: 116;
  }
     .drrty{  
-    position: relative;
+    position: absolute;
     left: 178px;
     top: 566px;
     z-index: 117;
  }
      .akuma{  
-    position: relative;
+    position: absolute;
     left: 683px;
     top: 350px;
     z-index: 118;
  }
       .moloshe{  
-    position: relative;
+    position: absolute;
     left: 736px;
     top: 454px;
     z-index: 119;
  }
     .joseph{  
-    position: relative;
+    position: absolute;
     left: 695px;
     top: 554px;
     z-index: 120;
  }
  .frame { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/main.png');}
+
+ .frame_ab { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/about_page.png');}
+
+ .frame_co { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/collaborators.png');}
 
 /***********************************************************************************/
 /* HOME
@@ -1429,7 +1433,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
  .cinder_date { width:1092px; height: 728px; }
  .cinder_date_next { position: absolute; left: 600px; top:500px; }
  /***********************************************************************************/
-/*CAMGIRL MONTAGE
+/*MONTAGES
 ************************************************************************************/
    
    
@@ -1447,7 +1451,8 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     position: absolute;
     left: 327px;
     top: 520px;
- } 
+ }
+/*CAMGIRL*/ 
    .dslut_1{ 
     position: absolute;
     left: 337px;
@@ -1512,4 +1517,136 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     position: absolute;
     left: 353px;
     top: 48px;
+ }
+    .pornstar_4{ /*_5*/
+    position: absolute;
+    left: 336px;
+    top: 488px;
+ }
+     .pornstar_6{ /*_7*/
+    position: absolute;
+    left: 0px;
+    top: 526px;
+ }
+      .pornstar_8{ /*big next*/
+    position: absolute;
+    left: 16px;
+    top: 0px;
+ }
+    .pornstar_9{ /*big next, _11*/
+    position: absolute;
+    left: 365px;
+    top: 83px;
+ }
+     .pornstar_10{ /*big next*/
+    position: absolute;
+    left: 805px;
+    top: 0px;
+ }
+ /*TROLL*/ 
+   .cyberbully_1{ 
+    position: absolute;
+    left: 341px;
+    top: 59px;
+ }
+     .cyberbully_2{ /*big next*/
+    position: absolute;
+    left: 365px;
+    top: 483px;
+ }
+    .cyberbully_3{ 
+    position: absolute;
+    left: 554px;
+    top: 489px;
+ }
+    .cyberbully_4{ 
+    position: absolute;
+    left: 988px;
+    top: 499px;
+ }
+     .cyberbully_5{ 
+    position: absolute;
+    left: 993px;
+    top: 40px;
+ }
+    .cyberbully_6{ 
+    position: absolute;
+    left: 323px;
+    top: 40px;
+ }
+    .meme_1{ 
+    position: absolute;
+    left: 336px;
+    top: 490px;
+ }
+    .meme_2{ 
+    position: absolute;
+    left: 378px;
+    top: 62px;
+ }
+    .meme_3{ 
+    position: absolute;
+    left: 382px;
+    top:483px;
+ }
+    .troll_1{ /*2*/
+    position: absolute;
+    left: 959px;
+    top:482px;
+ }
+  /*MARTYR*/
+    .avenger_1{ 
+    position: absolute;
+    left: 374px;
+    top:464px;
+ }
+    .avenger_2{ 
+    position: absolute;
+    left: 363px;
+    top: 504px;
+ }
+    .avenger_3{ 
+    position: absolute;
+    left: 993px;
+    top: 488px;
+ }
+    .avenger_4{ 
+    position: absolute;
+    left: 357px;
+    top: 480px;
+ }
+     .avenger_5{ 
+    position: absolute;
+    left: 352px;
+    top: 494px;
+ }
+    .avenger_6{ 
+    position: absolute;
+    left: 978px;
+    top: 52px;
+ }
+    .avenger_7{ 
+    position: absolute;
+    left: 934px;
+    top: 420px;
+ }
+    .mega_1{ 
+    position: absolute;
+    left: 375px;
+    top: 475px;
+ }
+    .mega_2{ 
+    position: absolute;
+    left: 977px;
+    top: 486px;
+ }
+    .mega_3{ 
+    position: absolute;
+    left: 961px;
+    top: 421px;
+ }
+    .top_secret{ 
+    position: absolute;
+    left: 20px;
+    top: 421px;
  }

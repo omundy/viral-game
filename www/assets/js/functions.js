@@ -104,16 +104,16 @@ function close_popup_video(action){
 
 /* all video buttons */
 $('#video_player_test').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
-$('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/mypussy.mp4',1280,720,4) })
-$('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/dogfriend.mp4',1280,720,4) })
-$('.mv_parody').on('click',function(){ update_temp_score(metube.buttons.mv_parody.score); show_popup_video('assets/img/metube/videos/testicle.mp4',1280,720,4) })
-$('.vlog_rant').on('click',function(){ update_temp_score(metube.buttons.vlog_rant.score); show_popup_video('assets/img/metube/videos/testicle.mp4',1280,720,4) })
-$('.vlog_rant').on('click',function(){ update_temp_score(metube.buttons.vlog_rant.score); show_popup_video('assets/img/metube/videos/testicle.mp4',1280,720,4) })
-$('.vlog_diary').on('click',function(){ update_temp_score(metube.buttons.vlog_diary.score); show_popup_video('assets/img/metube/videos/testicle.mp4',1280,720,4) })
-$('.vlog_comedy').on('click',function(){ update_temp_score(metube.buttons.vlog_comedy.score); show_popup_video('assets/img/metube/videos/testicle.mp4',1280,720,4) })
-$('.shock_challenge').on('click',function(){ update_temp_score(metube.buttons.shock_challenge.score); show_popup_video('assets/img/metube/videos/challenge.mp4',1280,720,4) })
-$('.shock_snuff').on('click',function(){ update_temp_score(metube.buttons.shock_snuff.score); show_popup_video('assets/img/metube/videos/snuff.mp4',1280,720,4) })
-$('.shock_camwhore').on('click',function(){ update_temp_score(metube.buttons.shock_camwhore.score); show_popup_video('assets/img/metube/videos/camgirl.mp4',1280,720,4) })
+$('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/mypussy.mp4', 854,480,4) })
+$('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/dogfriend.mp4', 854,480,4) })
+$('.mv_parody').on('click',function(){ update_temp_score(metube.buttons.mv_parody.score); show_popup_video('assets/img/metube/videos/testicle.mp4',854,480,4) })
+$('.vlog_rant').on('click',function(){ update_temp_score(metube.buttons.vlog_rant.score); show_popup_video('assets/img/metube/videos/testicle.mp4', 854,480,4) })
+$('.vlog_rant').on('click',function(){ update_temp_score(metube.buttons.vlog_rant.score); show_popup_video('assets/img/metube/videos/testicle.mp4', 854,480,4) })
+$('.vlog_diary').on('click',function(){ update_temp_score(metube.buttons.vlog_diary.score); show_popup_video('assets/img/metube/videos/amanda.mp4',854,480,4) })
+$('.vlog_comedy').on('click',function(){ update_temp_score(metube.buttons.vlog_comedy.score); show_popup_video('assets/img/metube/videos/testicle.mp4', 854,480,4) })
+$('.shock_challenge').on('click',function(){ update_temp_score(metube.buttons.shock_challenge.score); show_popup_video('assets/img/metube/videos/challenge.mp4',854,480,4) })
+$('.shock_snuff').on('click',function(){ update_temp_score(metube.buttons.shock_snuff.score); show_popup_video('assets/img/metube/videos/snuff.mp4',854,480,4) })
+$('.shock_camwhore').on('click',function(){ update_temp_score(metube.buttons.shock_camwhore.score); show_popup_video('assets/img/metube/videos/camgirl.mp4',854,480,4) })
 
 /**
  *	hide_scenes()
