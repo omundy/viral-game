@@ -1650,3 +1650,29 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 20px;
     top: 421px;
  }
+    .martyr_1{ 
+    position: absolute;
+    left: 361px;
+    top: 474px;
+ }
+    .martyr_2 { 
+    position: absolute;
+    left: 901px;
+    top: 46px;
+ }
+    .martyr_3 { 
+    position: absolute;
+    left: 285px;
+    top: 39px;
+ }
+    .martyr_4 { 
+    position: absolute;
+    left: 464px;
+    top: 416px;
+ }
+    .martyr_5 { 
+    position: absolute;
+    left: 371px;
+    top: 487px;
+ }
+    
