@@ -83,7 +83,7 @@ function show_popup_video_confirmonly(file,width,height){
 	
 	
 	str += '<div id="confirm_btns">';
-	str += '<button id="gohome_video_window">close</button> ';
+	str += '<button id="gohome_video_window"><img src="assets/img/metube/videos/goback.png"></button> ';
 	str += '</div>';	
 	
 	$('#video_container').html(str);
