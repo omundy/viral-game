@@ -1676,7 +1676,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     top: 487px;
  }
    /*INTRO*/
-    .intro_1 { /*big next, _3, _4 _6, _11*/
+    .intro_1 { /*big next, _3, _4 _6, _11, _14, _15 _16 _17 _18*/
     position: absolute;
     left: 594px;
     top: 547px;
@@ -1710,4 +1710,9 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     position: absolute;
     left: 1010px;
     top: 506px;
+ }
+    .intro_13 { 
+    position: absolute;
+    left: 925px;
+    top: 56px;
  }
