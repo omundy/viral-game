@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="assets/css/styles.css">   
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+
+
+
+<body onload="intro_1();">
+ 
+<script>
+  
+  function intro_1() {   
+     clearAll();
+  $('.intro_1_bkg').html("<img src='assets/img/montage/intro/intro_1.png'>");
+  $('.intro_1').html("<img src='assets/img/montage/next.png'>");
+  $('.intro_1').html("<img src='assets/img/montage/nexthov.png'>");
+
+$('.intro_1').hover(function() {
+   console.log("on");
+    $(this).find('img').attr("src", "assets/img/montage/nexthov.png");
+},
+function() {
+         console.log("off");
+           $(this).find('img').attr("src", "assets/img/montage/next.png");
+}
+  
+
+  );
+   
+ 
+         $('.intro_1').click(function(){
+                  intro_2();
+         });
+ }
+ function intro_2() {   
+     clearAll();
+  $('.intro_1_bkg').html("<img src='assets/img/montage/intro/intro_1.png'>");
+  $('.intro_1').html("<img src='assets/img/montage/next.png'>");
+  $('.intro_1').html("<img src='assets/img/montage/nexthov.png'>");
+
+$('.intro_1').hover(function() {
+   console.log("on");
+    $(this).find('img').attr("src", "assets/img/montage/nexthov.png");
+},
+function() {
+         console.log("off");
+           $(this).find('img').attr("src", "assets/img/montage/next.png");
+}
+  
+
+  );
+   
+ 
+         $('.intro_2').click(function(){
+                  intro_1();
+         });
+ }
+function clearAll(){
+ $( "div" ).off(); // remove all event handlers 
+ $('.intro_1_bkg').html('');
+ $('.intro_1').html('');
+
+}
+  
+</script>
+
+
+
+ 
+ 
+<div class="container">
+ 
+  <div class="intro_1_bkg"></div>
+ <div class="intro_1"></div>
+
+</div> 
+ 
+
+
+
+
+</body>
+</html>
+

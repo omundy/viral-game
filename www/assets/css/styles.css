@@ -1716,3 +1716,5 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 925px;
     top: 56px;
  }
+  .intro_1_bkg { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/montage/intro/intro_1.png');}
+
