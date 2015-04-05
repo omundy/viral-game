@@ -1675,4 +1675,39 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 371px;
     top: 487px;
  }
-    
+   /*INTRO*/
+    .intro_1 { /*big next, _3, _4 _6, _11*/
+    position: absolute;
+    left: 594px;
+    top: 547px;
+ }
+    .intro_2 { /*phone*/
+    position: absolute;
+    left: 594px;
+    top: 547px;
+ }
+    .intro_5 { 
+    position: absolute;
+    left: 897px;
+    top: 481px;
+ }
+    .intro_7 { 
+    position: absolute;
+    left: 476px;
+    top: 149px;
+ }
+    .intro_8 { 
+    position: absolute;
+    left: 921px;
+    top: 328px;
+ }
+    .intro_9 { 
+    position: absolute;
+    left: 981px;
+    top: 110px;
+ }
+     .intro_10 { /*_12*/
+    position: absolute;
+    left: 1010px;
+    top: 506px;
+ }
