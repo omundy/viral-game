@@ -1430,6 +1430,48 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 406px;
     top: 635px;
  }
+  /*josie date*/
+    #cinder_scene .1j{ 
+    position: absolute;
+    left: 921px;
+    top: 645px;
+ }
+    #cinder_scene .2aj{ /*4a, 6a, 8a, 15a*/
+    position: absolute;
+    left: 25px;
+    top: 514px;
+ }
+   #cinder_scene .2bj{ 
+    position: absolute;
+    left: 25px;
+    top: 629px;
+ }
+     #cinder_scene .3j{ /*5j, 7j, 10j, 11j, 12j, 13, 14, 16, 17, 18, 20, 22, 23, 25*/
+    position: absolute;
+    left: 920px;
+    top: 641px;
+ }
+      #cinder_scene .4j{ 
+    position: absolute;
+    left: 119px;
+    top: 575px;
+ } 
+     #cinder_scene .6bj{ /*8b, 15b */
+    position: absolute;
+    left: 25px;
+    top: 605px;
+ }
+    #cinder_scene .19aj{ /*21a, 24a*/
+    position: absolute;
+    left: 25px;
+    top: 511px;
+ }
+    #cinder_scene .19bj{ /*21b, 24b*/
+    position: absolute;
+    left: 25px;
+    top: 636px;
+ } 
+ 
  .cinder_date { width:1092px; height: 728px; }
  .cinder_date_next { position: absolute; left: 600px; top:500px; }
  /***********************************************************************************/
