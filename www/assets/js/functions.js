@@ -83,7 +83,7 @@ function show_popup_video_confirmonly(file,width,height){
 	
 	
 	str += '<div id="confirm_btns">';
-	str += '<button id="gohome_video_window"><img src="assets/img/metube/videos/goback.png"></button> ';
+	str += '<button id="gohome_video_window"><img src="assets/img/metube/videos/goback.png" class="metube_confirmonly_back"></button> ';
 	str += '</div>';	
 	
 	$('#video_container').html(str);
@@ -103,7 +103,12 @@ function close_popup_video(action){
 }
 
 /* all video buttons */
-$('#video_player_test').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
+$('.video_player_test').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
+
+$('.metube_confirmonly_back')
+	.mouseover(function(){ this.src = 'assets/img/instacam/bakhov.png' })
+	.mouseout(function(){ this.src = 'assets/img/instacam/bak.png' });
+
 $('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/mypussy.mp4', 854,480,4) })
 $('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/dogfriend.mp4', 854,480,4) })
 $('.mv_parody').on('click',function(){ update_temp_score(metube.buttons.mv_parody.score); show_popup_video('assets/img/metube/videos/testicle.mp4',854,480,4) })

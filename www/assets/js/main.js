@@ -23,41 +23,32 @@
 
 
 
-
-
-
-var cinder_date_name = '';
-var cinder_date_current_img = -1;
-var cinder_date_totalpages = 0;
-
-/**
- *	CINDER DATE FUNCTIONS
- */
-// (re)start date
-function start_cinder_date(datename,totalpages){
-	cinder_date_name = datename;
-	cinder_date_current_img = 0;
-	cinder_date_totalpages = totalpages;
+function montage_window(m_scene,m_frame){
+	console.log(m_scene +' + '+ m_frame)
+	// show montage_window
+	$('#montage_window').show()
+	// hide other montage_scene
+	$('.montage_scene').hide();
+	// show the scene
+	$('#' + m_scene).show()
+	// show the frame
+	$('#' + m_frame).show()
+	
+	
 }
-// next button
-function cinder_date_next_img(){
-	console.log(cinder_date_current_img)
-	if (cinder_date_current_img < cinder_date_totalpages ){
-		cinder_date_current_img ++;
-		$('.cinder_date').html('<img src="assets/img/cinder/'+ cinder_date_name +'/'+ cinder_date_current_img +'.png">')
-	} else {
-		console.log()
-		
-		if (cinder_date_name == 'brody'){
-			instacam_camera_roll.roll_twothree.locked = false;
-		} else if (cinder_date_name == 'scene_date'){
-			//
-		}
-		
-	}
-		
+
+function montage_frame(m_hide,m_frame){
+	console.log(m_frame)
+	// hide other montage_frame
+	$('#' + m_hide).hide();
+	// show the frame
+	$('#' + m_frame).show();
+	
 }
-$('.cinder_date_next').on('click',function () { cinder_date_next_img() })
+
+function montage_close(){
+	$('#montage_window').hide()
+}
 
 
 
@@ -94,7 +85,7 @@ var scene_map = {
 		'welcome',
 	],
 	'cinder':[
-		'cinder0', 'cinder1', 'cinder2', 'cinder3', 'cinder4',
+		'cinder0', 'cinder1', 'cinder2', 'cinder3',
 	],
 	'dumblr':[
 		'dumblr0', 'dumblr1', 'dumblr2', 'dumblr3', 'dumblr4', 'dumblr5', 
@@ -326,6 +317,13 @@ function update_current_score(){
 	$('#bar1_bar').animate( {"left": '+='+ (temp_score.camgirl) * factor },500);
 	$('#bar2_bar').animate( {"left": '+='+ (temp_score.martyr) * factor },500);
 	$('#bar3_bar').animate( {"left": '+='+ (temp_score.troll) * factor },500);	
+	
+	// check for action on score
+	if (current_score.camgirl > 20){
+		// montage player
+		//alert('hi')
+	}
+	
 	report();
 	//maximum score is 60; length divided by 60
 }
@@ -604,10 +602,29 @@ function affirmation_loader(){
 
 
 
+/* SOUND FUNCTIONS */
+
+
+function button_noise(noise){
+
+}
+
+function start_soundtrack(){
+	
+}
+function pause_soundtrack(){
+	
+}
+
+
+
+
+
 
 
 // run game
 hide_scenes();
-scene_control('home',0);	
+scene_control('home',0);
+montage_window('m_intro','m_intro_frame')	
 test_buttons();
 

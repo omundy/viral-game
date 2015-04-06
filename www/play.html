@@ -16,7 +16,51 @@
 	</div>
 	
 	<div id="montage_window">
-		<div id="montage_container"></div>
+		<div id="montage_container">
+			
+			<div id="m_intro" class="montage_scene">
+				<div id="m_intro_frame" class="montage_frame">
+					
+					<img src='assets/img/montage/intro/intro_1.gif' onclick="montage_close()">
+					
+				</div>
+			</div>	
+				
+			<div id="date_bro" class="montage_scene">
+				
+				<div id="brody_1" class="montage_frame">
+					<img src="assets/img/cinder/brody/1.png">
+					<input type="image" alt="button" src="assets/img/cinder/brody/brody_next.png" 
+						onclick="montage_frame('brody_1','brody_2')" 
+						onmouseover="src='assets/img/cinder/brody/brody_next_hov.png';" 
+						onmouseout="src='assets/img/cinder/brody/brody_next.png';">
+				</div>
+				
+				<div id="brody_2" class="montage_frame">
+					<img src="assets/img/cinder/brody/2.png">
+					<input type="image" alt="button" src="assets/img/cinder/brody/brody_next.png" 
+						onclick="montage_frame('brody_2','brody_3')" 
+						onmouseover="src='assets/img/cinder/brody/brody_next_hov.png';" 
+						onmouseout="src='assets/img/cinder/brody/brody_next.png';">
+				</div>
+			
+			</div>
+			
+			<div id="date_elliot" class="montage_scene">
+				
+				<div id="elliot_1" class="montage_frame">
+					<img src="assets/img/cinder/elliot/1.png">
+					<input type="image" alt="button" src="assets/img/cinder/brody/brody_next.png" 
+						onclick="montage_frame('brody_1','brody_2')" 
+						onmouseover="src='assets/img/cinder/brody/brody_next_hov.png';" 
+						onmouseout="src='assets/img/cinder/brody/brody_next.png';">
+				</div>
+			
+			</div>
+			
+			
+			
+		</div>
 	</div>
 	
 	<div id="nav"></div>
@@ -67,13 +111,11 @@
 				<input type="image" alt="button" src="assets/img/cinder/pass.png" onmouseover="src='assets/img/cinder/passhov.png';" onmouseout="src='assets/img/cinder/pass.png';" class="lastpass">
 				<input type="image" alt="button" src="assets/img/cinder/date.png" onmouseover="src='assets/img/cinder/datehov.png';" onmouseout="src='assets/img/cinder/date.png';" class="date_lilb">
 			</div>
-			<!--brody date-->
-			<div id="cinder4" class="scene">
-				<input type="image" alt="button" src="assets/img/instacam/bak.png" class="home_button">
-				
-				<div class="cinder_date"></div>
-				<input type="image" alt="button" src="assets/img/instacam/bak.png" class="cinder_date_next">
-			</div>
+			
+			
+			
+			
+			
 		</div>
 		
 		<div id="dumblr_scene">
@@ -760,7 +802,7 @@
 			<div id="metube0" class="scene">
 				<input type="image" alt="button" src="assets/img/instacam/bak.png" onmouseover="src='assets/img/instacam/bakhov.png';" onmouseout="src='assets/img/instacam/bak.png';" class="home_button">
 				<!--metube scene, frame0-->
-				<input type="image" alt="button" src="assets/img/metube/tv.png" onmouseover="src='assets/img/metube/tvhov.gif';" onmouseout="src='assets/img/metube/tv.png';" class="tv" id="video_player_test">
+				<input type="image" alt="button" src="assets/img/metube/tv.png" onmouseover="src='assets/img/metube/tvhov.gif';" onmouseout="src='assets/img/metube/tv.png';" class="tv" class="video_player_test">
 				<input type="image" alt="button" src="assets/img/metube/prompt.png" class="prompt">
 				<input type="image" alt="button" src="assets/img/metube/mv.png" onmouseover="src='assets/img/metube/mvhov.png';" onmouseout="src='assets/img/metube/mv.png';" class="metube_mv"> <!-- links to metube1-->
 				<input type="image" alt="button" src="assets/img/metube/vlog.png" onmouseover="src='assets/img/metube/vloghov.png';" onmouseout="src='assets/img/metube/vlog.png';" class="metube_vlog"> <!-- links to metube2-->
@@ -771,7 +813,7 @@
 			<!--metube scene, frame1-->
 			<div id="metube1" class="scene">
 				<input type="image" alt="button" src="assets/img/instacam/bak.png" onmouseover="src='assets/img/instacam/bakhov.png';" onmouseout="src='assets/img/instacam/bak.png';" class="back_button">
-				<input type="image" alt="button" src="assets/img/metube/tv.png" onmouseover="src='assets/img/metube/tvhov.gif';" onmouseout="src='assets/img/metube/tv.png';" class="tv" id="video_player_test">
+				<input type="image" alt="button" src="assets/img/metube/tv.png" onmouseover="src='assets/img/metube/tvhov.gif';" onmouseout="src='assets/img/metube/tv.png';" class="tv" class="video_player_test">
 				<input type="image" alt="button" src="assets/img/metube/rap.png" onmouseover="src='assets/img/metube/raphov.png';" onmouseout="src='assets/img/metube/rap.png';" class="mv_rap">
 				<input type="image" alt="button" src="assets/img/metube/pop.png" onmouseover="src='assets/img/metube/pophov.png';" onmouseout="src='assets/img/metube/pop.png';" class="mv_pop">
 				<input type="image" alt="button" src="assets/img/metube/parody.png" onmouseover="src='assets/img/metube/parodyhov.png';" onmouseout="src='assets/img/metube/parody.png';" class="mv_parody">
@@ -781,7 +823,7 @@
 			<!--metube scene, frame2-->
 			<div id="metube2" class="scene">
 				<input type="image" alt="button" src="assets/img/instacam/bak.png" onmouseover="src='assets/img/instacam/bakhov.png';" onmouseout="src='assets/img/instacam/bak.png';" class="back_button">
-				<input type="image" alt="button" src="assets/img/metube/tv.png" onmouseover="src='assets/img/metube/tvhov.gif';" onmouseout="src='assets/img/metube/tv.png';" class="tv" id="video_player_test">
+				<input type="image" alt="button" src="assets/img/metube/tv.png" onmouseover="src='assets/img/metube/tvhov.gif';" onmouseout="src='assets/img/metube/tv.png';" class="tv" class="video_player_test">
 				<input type="image" alt="button" src="assets/img/metube/rant.png" onmouseover="src='assets/img/metube/ranthov.png';" onmouseout="src='assets/img/metube/rant.png';" class="vlog_rant">
 				<input type="image" alt="button" src="assets/img/metube/diary.png" onmouseover="src='assets/img/metube/diaryhov.png';" onmouseout="src='assets/img/metube/diary.png';" class="vlog_diary">
 				<input type="image" alt="button" src="assets/img/metube/comedy.png" onmouseover="src='assets/img/metube/comedyhov.png';" onmouseout="src='assets/img/metube/comedy.png';" class="vlog_comedy">
@@ -790,7 +832,7 @@
 			<!--metube scene, frame3-->
 			<div id="metube3" class="scene">
 				<input type="image" alt="button" src="assets/img/instacam/bak.png" onmouseover="src='assets/img/instacam/bakhov.png';" onmouseout="src='assets/img/instacam/bak.png';" class="back_button">						
-				<input type="image" alt="button" src="assets/img/metube/tv.png" onmouseover="src='assets/img/metube/tvhov.gif';" onmouseout="src='assets/img/metube/tv.png';" class="tv" id="video_player_test">
+				<input type="image" alt="button" src="assets/img/metube/tv.png" onmouseover="src='assets/img/metube/tvhov.gif';" onmouseout="src='assets/img/metube/tv.png';" class="tv" class="video_player_test">
 				<input type="image" alt="button" src="assets/img/metube/challenge.png" onmouseover="src='assets/img/metube/challengehov.png';" onmouseout="src='assets/img/metube/challenge.png';" class="shock_challenge">
 				<input type="image" alt="button" src="assets/img/metube/snuff.png" onmouseover="src='assets/img/metube/snuffhov.png';" onmouseout="src='assets/img/metube/snuff.png';" class="shock_snuff">
 				<input type="image" alt="button" src="assets/img/metube/camwhore.png" onmouseover="src='assets/img/metube/camwhorehov.png';" onmouseout="src='assets/img/metube/camwhore.png';" class="shock_camwhore">
@@ -800,7 +842,7 @@
 			<!--metube scene, frame4, TAGS-->
 			<div id="metube4" class="scene">
 				<input type="image" alt="button" src="assets/img/instacam/bak.png" onmouseover="src='assets/img/instacam/bakhov.png';" onmouseout="src='assets/img/instacam/bak.png';" class="back_button">
-				<input type="image" alt="button" src="assets/img/metube/tv.png" onmouseover="src='assets/img/metube/tvhov.gif';" onmouseout="src='assets/img/metube/tv.png';" class="tv" id="video_player_test">
+				<input type="image" alt="button" src="assets/img/metube/tv.png" onmouseover="src='assets/img/metube/tvhov.gif';" onmouseout="src='assets/img/metube/tv.png';" class="tv" class="video_player_test">
 
 				<div class="tags"></div>
 				<button_post id="metube_tag_confirm"><input type="image" alt="button" src="assets/img/instacam/tags/post.png" onmouseover="src='assets/img/instacam/tags/posthov.png';" onmouseout="src='assets/img/instacam/tags/post.png';"></button_post>

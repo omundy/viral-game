@@ -9,6 +9,8 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 #scene_container { width:1092px; height: 798px; background: #000; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); }
 
 .scene { position:relative; width: 1092px; height: 728px; }
+.montage_scene { display: none}
+.montage_frame { display: none}
 
 #scene_container #footer {
 	position: absolute;
@@ -1474,6 +1476,9 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
  
  .cinder_date { width:1092px; height: 728px; }
  .cinder_date_next { position: absolute; left: 600px; top:500px; }
+ 
+ 
+ 
  /***********************************************************************************/
 /*MONTAGES
 ************************************************************************************/
