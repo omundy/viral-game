@@ -1728,15 +1728,20 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     top: 487px;
  }
    /*INTRO*/
-    .intro_1 { /*big next, _3, _4 _6, _11, _14, _15 _16 _17 _18*/
+    .intro_1 { 
     position: absolute;
-    left: 594px;
+    left: 1000px;
+    top: 647px;
+ }
+     .intro_a { /*big next, _3, _4 _6, _11, _14, _15 _16 _17 _18*/
+    position: absolute;
+    left: 785px;
     top: 547px;
  }
     .intro_2 { /*phone*/
     position: absolute;
-    left: 594px;
-    top: 547px;
+    left: 334px;
+    top: 260px;
  }
     .intro_5 { 
     position: absolute;
