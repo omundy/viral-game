@@ -85,7 +85,7 @@ var scene_map = {
 		'welcome',
 	],
 	'cinder':[
-		'cinder0', 'cinder1', 'cinder2', 'cinder3',
+		'cinder0', 'cinder1', 'cinder2', 'cinder3', 'cinder4'
 	],
 	'dumblr':[
 		'dumblr0', 'dumblr1', 'dumblr2', 'dumblr3', 'dumblr4', 'dumblr5', 
@@ -619,8 +619,7 @@ var sounds =  {
 	
 };
 
-
-/**/
+/*
 var soundtrack = new Howl({
 	urls: ['assets/sound/soundtrack.mp3'],
 	autoplay: true,
@@ -630,7 +629,7 @@ var soundtrack = new Howl({
 		console.log('Soundtrack just looped...');
 	}
 });
-
+*/
 
 function button_noise(){
 	
@@ -645,13 +644,6 @@ function button_noise(){
 
 
 
-function start_soundtrack(){
-	
-}
-function pause_soundtrack(){
-	
-}
-
 
 
 
@@ -661,6 +653,6 @@ function pause_soundtrack(){
 // run game
 hide_scenes();
 scene_control('home',0);
-montage_window('m_intro','m_intro_frame')	
+//montage_window('m_intro','m_intro_frame')	
 test_buttons();
 
