@@ -409,6 +409,8 @@ $('#roll_threetwo').on('click',function(){ instacam_preview( instacam_camera_rol
 
 function instacam_preview(buttonObj){
 	
+	button_noise()
+	
 	console.log(buttonObj)
 	
 	instacam_choices[buttonObj.frame] = buttonObj.id;
@@ -464,20 +466,6 @@ function instacam_preview(buttonObj){
 
 
 
-
-function instacam_next(buttonObj){
-	
-	
-	
-	
-	
-	// target is based on preview
-	
-	// update temp_score
-	
-	// move to next page, which is also showing the preview image
-	
-}
 
 
 
