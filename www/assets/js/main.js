@@ -620,7 +620,7 @@ var sounds =  {
 };
 
 
-/*
+/**/
 var soundtrack = new Howl({
 	urls: ['assets/sound/soundtrack.mp3'],
 	autoplay: true,
@@ -630,7 +630,7 @@ var soundtrack = new Howl({
 		console.log('Soundtrack just looped...');
 	}
 });
-*/
+
 
 function button_noise(){
 	
@@ -640,7 +640,7 @@ function button_noise(){
 	// pick random sound to play
 	var keys = Object.keys(sounds)
     var sound = sounds[keys[ keys.length * Math.random() << 0]];
-    sound.play()
+    sound.play()    
 }
 
 
