@@ -81,6 +81,9 @@ function show_popup_video(file,width,height){
 	$('#gohome_video_window').on('click',function(){ close_popup_video('home'); })
 }
 function show_popup_video_confirmonly(file,width,height){
+	
+	soundtrack.pause();
+	
 	var str = '';
 	str += '<video autoplay width="'+ width +'" height="'+ height +'"><source src="'+ file +'" type="video/mp4">';
 	str += 'Your browser does not support the video tag.</video>';
