@@ -116,8 +116,14 @@ function close_popup_video(action){
 $('.video_player_test').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
 
 $('.metube_confirmonly_back')
-	.mouseover(function(){ this.src = 'assets/img/instacam/bakhov.png' })
-	.mouseout(function(){ this.src = 'assets/img/instacam/bak.png' });
+	.mouseover(function(){ this.src = 'assets/img/metube/videos/goback_hov.png' })
+	.mouseout(function(){ this.src = 'assets/img/metube/videos/goback.png' });
+$('.metube_confirm')
+	.mouseover(function(){ this.src = 'assets/img/metube/videos/continue_hov.png' })
+	.mouseout(function(){ this.src = 'assets/img/metube/videos/continue.png' });
+$('.metube_goback')
+	.mouseover(function(){ this.src = 'assets/img/metube/videos/goback_hov.png' })
+	.mouseout(function(){ this.src = 'assets/img/metube/videos/goback.png' });	
 
 $('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/mypussy.mp4', 854,480,4) })
 $('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/dogfriend.mp4', 854,480,4) })
@@ -128,6 +134,7 @@ $('.vlog_comedy').on('click',function(){ update_temp_score(metube.buttons.vlog_c
 $('.shock_challenge').on('click',function(){ update_temp_score(metube.buttons.shock_challenge.score); show_popup_video('assets/img/metube/videos/challenge.mp4',854,480,4) })
 $('.shock_snuff').on('click',function(){ update_temp_score(metube.buttons.shock_snuff.score); show_popup_video('assets/img/metube/videos/snuff.mp4',854,480,4) })
 $('.shock_camwhore').on('click',function(){ update_temp_score(metube.buttons.shock_camwhore.score); show_popup_video('assets/img/metube/videos/camgirl.mp4',854,480,4) })
+$('.pic').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/wolfe.mp4',854,480,4) })
 
 /**
  *	hide_scenes()
