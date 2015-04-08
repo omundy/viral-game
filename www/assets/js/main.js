@@ -643,7 +643,7 @@ var soundtrack = new Howl({
 
 function button_noise(){
 	
-	// play as specific sound
+	// play a specific sound
 	//sounds.asif.play()
 	
 	// pick random sound to play

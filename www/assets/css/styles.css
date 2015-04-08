@@ -9,8 +9,40 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 #scene_container { width:1092px; height: 798px; background: #000; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); }
 
 .scene { position:relative; width: 1092px; height: 728px; }
-.montage_scene { display: none}
-.montage_frame { display: none}
+
+
+
+#montage_window { 
+	display: none;
+	width:100%;
+	height:100%;
+	z-index: 200;
+	position: absolute;
+	background: rgba(25,  25,  25, 0.85);
+	text-align: center;
+}
+#montage_container { 
+	margin: 0 auto;
+	width:1092px; 
+	height: 798px;
+	position: relative; 
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	
+}
+.montage_scene { display: none; }
+.montage_frame { display: none; }
+
+/*
+.montage_scene { display: none; position: relative; width:1092px; height: 798px; }
+.montage_frame { display: none; position: relative; width:1092px; height: 798px; }
+*/
+ /*#date_bro { position: relative; } */
+
+
+
 
 #scene_container #footer {
 	position: absolute;
@@ -136,24 +168,6 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 }
 
 
-
-#montage_window { 
-	display: none;
-	width:100%;
-	height:100%;
-	z-index: 200;
-	position: absolute;
-	background: rgba(25,  25,  25, 0.85);
-	text-align: center;
-}
-#montage_container { 
-	margin: 0 auto;
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
 
 
 
@@ -1284,6 +1298,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 546px;
     top: 510px;
  }
+
  
   #cinder_scene .profpic{ 
     position: absolute;
@@ -1291,6 +1306,9 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     top: 68px;
  }
  /*brody date*/
+ 
+
+ 
 #date_bro .next_but{ 
     position: absolute;
     left: 1000px;
