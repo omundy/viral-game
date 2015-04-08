@@ -43,14 +43,14 @@ function test_buttons(){
 	
 	
 	str += '<div id="confirm_btns">';
-	str += '<button id="gohome_video_window">go back</button> ';
-	str += '<button id="confirm_video_window">confirm</button>';
+	str += '<button class="gohome_video_window">go back</button> ';
+	str += '<button class="confirm_video_window">confirm</button>';
 	str += '</div>';	
 	
 	$('#video_container').html(str);
 	$('#video_window').css('display','block');
-	$('#confirm_video_window').on('click',function(){ close_popup_video('confirm'); })
-	$('#gohome_video_window').on('click',function(){ close_popup_video('home'); })
+	$('.confirm_video_window').on('click',function(){ close_popup_video('confirm'); })
+	$('.gohome_video_window').on('click',function(){ close_popup_video('home'); })
 }
  
 
@@ -71,14 +71,12 @@ function show_popup_video(file,width,height){
 	
 	
 	str += '<div id="confirm_btns">';
-	str += '<button id="gohome_video_window">go back</button> ';
-	str += '<button id="confirm_video_window">confirm</button>';
+	str += '<input type="image" src="assets/img/metube/videos/goback.png" class="gohome_video_window">';
+	str += '<input type="image" src="assets/img/metube/videos/continue.png" class="confirm_video_window">';
 	str += '</div>';	
 	
 	$('#video_container').html(str);
 	$('#video_window').css('display','block');
-	$('#confirm_video_window').on('click',function(){ close_popup_video('confirm'); })
-	$('#gohome_video_window').on('click',function(){ close_popup_video('home'); })
 }
 function show_popup_video_confirmonly(file,width,height){
 	
@@ -87,16 +85,13 @@ function show_popup_video_confirmonly(file,width,height){
 	var str = '';
 	str += '<video autoplay width="'+ width +'" height="'+ height +'"><source src="'+ file +'" type="video/mp4">';
 	str += 'Your browser does not support the video tag.</video>';
-	
-	
+		
 	str += '<div id="confirm_btns">';
-	str += '<button id="gohome_video_window"><img src="assets/img/metube/videos/goback.png" class="metube_confirmonly_back"></button> ';
+	str += '<input type="image" src="assets/img/metube/videos/goback.png" class="gohome_video_window">';
 	str += '</div>';	
 	
 	$('#video_container').html(str);
 	$('#video_window').css('display','block');
-	$('#confirm_video_window').on('click',function(){ close_popup_video('confirm'); })
-	$('#gohome_video_window').on('click',function(){ close_popup_video('home'); })
 }
 function close_popup_video(action){
 	
@@ -115,15 +110,16 @@ function close_popup_video(action){
 /* all video buttons */
 $('.video_player_test').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
 
-$('.metube_confirmonly_back')
-	.mouseover(function(){ this.src = 'assets/img/metube/videos/goback_hov.png' })
-	.mouseout(function(){ this.src = 'assets/img/metube/videos/goback.png' });
-$('.metube_confirm')
-	.mouseover(function(){ this.src = 'assets/img/metube/videos/continue_hov.png' })
-	.mouseout(function(){ this.src = 'assets/img/metube/videos/continue.png' });
-$('.metube_goback')
-	.mouseover(function(){ this.src = 'assets/img/metube/videos/goback_hov.png' })
-	.mouseout(function(){ this.src = 'assets/img/metube/videos/goback.png' });	
+// video player click
+$(document).on('click', '.gohome_video_window', function(){ close_popup_video('home'); });
+$(document).on('click', '.confirm_video_window', function(){ close_popup_video('confirm'); });
+
+// video player hover buttons
+$(document).on('mouseover', '.gohome_video_window', function(){ $('.gohome_video_window').attr('src','assets/img/metube/videos/goback_hov.png') });
+$(document).on('mouseleave', '.gohome_video_window', function(){ $('.gohome_video_window').attr('src','assets/img/metube/videos/goback.png') });
+$(document).on('mouseover', '.confirm_video_window', function(){ $('.confirm_video_window').attr('src','assets/img/metube/videos/continue_hov.png') });
+$(document).on('mouseleave', '.confirm_video_window', function(){ $('.confirm_video_window').attr('src','assets/img/metube/videos/continue.png') });
+
 
 $('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/mypussy.mp4', 854,480,4) })
 $('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/dogfriend.mp4', 854,480,4) })

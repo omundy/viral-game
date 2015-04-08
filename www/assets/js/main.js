@@ -629,6 +629,9 @@ var sounds =  {
 	
 };
 
+// dummy function for
+var soundtrack = new Howl({ /* null */ });
+
 /*
 var soundtrack = new Howl({
 	urls: ['assets/sound/soundtrack.mp3'],

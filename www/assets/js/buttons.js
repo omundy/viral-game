@@ -86,7 +86,7 @@ $('.pass').on('click',function(){ scene_control(current_scene.scene,current_scen
 $('.lastpass').on('click',function(){ scene_control('cinder', 0) });
 
 $('.date_lilb').on('click',function(){ update_temp_score(cinder.buttons.date_lilb.score); montage_window('date_lilb','lilb_1') });
-$('.date_bro').on('click',function(){ update_temp_score(cinder.buttons.date_bro.score); montage_window('date_bro','brody_1') });
+$('.date_bro').on('click',function(){ update_temp_score(cinder.buttons.date_bro.score); montage_window('date_bro','brody_24') });
 $('.date_josie').on('click',function(){ update_temp_score(cinder.buttons.date_josie.score); montage_window('date_josie','josie_1') });
 $('.date_elliot').on('click',function(){ update_temp_score(cinder.buttons.date_elliot.score); montage_window('date_elliot','elliot_1') });
 

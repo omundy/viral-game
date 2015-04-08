@@ -22,7 +22,7 @@ var cinder = {
             'btn_img': 'date.png',
             'score': { 'camgirl':0, 'martyr':3, 'troll':0 }
     },
-        'date_scene': {
+        'date_josie': {
             'id':'date_scene',
             'disabled':false, // after used true
             'display':'img',

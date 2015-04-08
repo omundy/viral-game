@@ -152,12 +152,12 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 	text-align: center;
 	margin: 0 auto;
 }
-#video_window #confirm_video_window, #video_window #gohome_video_window {
+#video_window .confirm_video_window, #video_window .gohome_video_window {
 	display: inline;
 	font-size: 30px;
 	color: #ff00f2;
 }
-#video_window #gohome_video_window { left:250px; }
+#video_window .gohome_video_window { left:250px; }
 #video_container { 
 	margin: 0 auto;
 	position: relative;
