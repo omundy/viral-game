@@ -21,10 +21,15 @@
 	*/
 
 
-
+var current_montage_scene = '';
+var current_montage_frame = '';
 
 function montage_window(m_scene,m_frame){
 	console.log(m_scene +' + '+ m_frame)
+	
+	current_montage_scene = m_scene;
+	current_montage_frame = m_frame;
+	
 	// show montage_window
 	$('#montage_window').show()
 	// hide other montage_scene
@@ -33,8 +38,6 @@ function montage_window(m_scene,m_frame){
 	$('#' + m_scene).show()
 	// show the frame
 	$('#' + m_frame).show()
-	
-	
 }
 
 function montage_frame(m_hide,m_frame){
@@ -47,6 +50,11 @@ function montage_frame(m_hide,m_frame){
 }
 
 function montage_close(){
+	
+	$('#' + current_montage_scene).hide();
+	$('#' + current_montage_frame).hide();
+	
+	$('.montage_scene').hide();
 	$('#montage_window').hide()
 }
 
