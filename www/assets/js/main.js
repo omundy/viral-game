@@ -195,6 +195,8 @@ function scene_updater(scene,frame){
 	// CINDER
 	if (scene == 'cinder'){
 		
+		// affirmation
+		if (frame == '4'){ affirmation_loader(); }
 		
 	} 
 	
