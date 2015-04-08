@@ -409,7 +409,7 @@ $('#roll_threetwo').on('click',function(){ instacam_preview( instacam_camera_rol
 
 function instacam_preview(buttonObj){
 	
-	button_noise()
+	/*button_noise()*/
 	
 	console.log(buttonObj)
 	
