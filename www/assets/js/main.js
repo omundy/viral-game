@@ -119,6 +119,9 @@ var scene_map = {
  *	- Controls all scene movement
  */
 function scene_control(scene,frame){
+	
+	button_noise()
+	
 	console.log('scene_control('+ scene +','+ frame +')');
 	var update = false; // whether or not to update the scene/frame
 	
@@ -604,10 +607,55 @@ function affirmation_loader(){
 
 /* SOUND FUNCTIONS */
 
-
-function button_noise(noise){
-
+var sounds2 = {
+	'soundtrack': 'assets/sound/soundtrack.mp3'
 }
+
+
+var sounds =  {
+	'asif': new Howl({
+		urls: ['assets/sound/click/asif.mp3']
+	}),
+	'boing': new Howl({
+		urls: ['assets/sound/click/boing.mp3']
+	}),
+	'fap': new Howl({
+		urls: ['assets/sound/click/fap.mp3']
+	}),
+	'snap': new Howl({
+		urls: ['assets/sound/click/snap.mp3']
+	}),
+	'static': new Howl({
+		urls: ['assets/sound/click/static.mp3']
+	}),
+	
+};
+
+
+/*
+var soundtrack = new Howl({
+	urls: ['assets/sound/soundtrack.mp3'],
+	autoplay: true,
+	loop: true,
+	volume: 0.5,
+	onend: function() {
+		console.log('Soundtrack just looped...');
+	}
+});
+*/
+
+function button_noise(){
+	
+	// play as specific sound
+	//sounds.asif.play()
+	
+	// pick random sound to play
+	var keys = Object.keys(sounds)
+    var sound = sounds[keys[ keys.length * Math.random() << 0]];
+    sound.play()
+}
+
+
 
 function start_soundtrack(){
 	
