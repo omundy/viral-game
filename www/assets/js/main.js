@@ -307,7 +307,23 @@ function update_buttons(obj){
  *********************************************************************************************/	
 
 
-
+var montages_played = {
+	camgirl: {
+		dslut: false,
+		camgirl: false,
+		pornstar: false
+	},
+	martyr: {
+		avenger: false, 
+		megalomaniac: false, 
+		martyr: false
+	},
+	troll: {
+		cyberbully: false, 
+		meme: false, 
+		troll: false
+	}
+}
 
 /**
  *	Update current_score using temp_score, called on post pages
@@ -327,18 +343,76 @@ function update_current_score(){
 	var factor = 300 / 60;
 	
 	// update the score bars
+	// maximum score is 60; length divided by 60
 	$('#bar1_bar').animate( {"left": '+='+ (temp_score.camgirl) * factor },500);
 	$('#bar2_bar').animate( {"left": '+='+ (temp_score.martyr) * factor },500);
 	$('#bar3_bar').animate( {"left": '+='+ (temp_score.troll) * factor },500);	
 	
 	// check for action on score
-	if (current_score.camgirl > 20){
-		// montage player
-		//alert('hi')
+	// open montage player
+	// CAMGIRL
+	if (current_score.camgirl > 20 && current_score.camgirl <= 39){
+		if (montages_played.camgirl.dslut == false){
+			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montages_played.camgirl.dslut = true
+		}
+	}
+	else if (current_score.camgirl > 40 && current_score.camgirl <= 59){
+		if (montages_played.camgirl.camgirl == false){
+			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montages_played.camgirl.camgirl = true
+		}
+	}
+	else if (current_score.camgirl >= 60){
+		if (montages_played.camgirl.pornstar == false){
+			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montages_played.camgirl.pornstar = true
+		}
+		
+	// MARTYR		
+	} else if (current_score.martyr > 20 && current_score.martyr <= 39){
+		if (montages_played.martyr.avenger == false){
+			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montages_played.martyr.avenger = true
+		}
+	}
+	else if (current_score.martyr > 40 && current_score.martyr <= 59){
+		if (montages_played.martyr.megalomaniac == false){
+			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montages_played.martyr.megalomaniac = true
+		}
+	}
+	else if (current_score.martyr >= 60){
+		if (montages_played.martyr.martyr == false){
+			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montages_played.martyr.martyr = true
+		}
+	
+	
+	// TROLL		
+	} else if (current_score.troll > 20 && current_score.troll <= 39){
+		if (montages_played.troll.cyberbully == false){
+			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montages_played.troll.cyberbully = true
+		}
+	}
+	else if (current_score.troll > 40 && current_score.troll <= 59){
+		if (montages_played.troll.meme == false){
+			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montages_played.troll.meme = true
+		}
+	}
+	else if (current_score.troll >= 60){
+		if (montages_played.troll.troll == false){
+			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montages_played.troll.troll = true
+		}
 	}
 	
+	
+	
+	
 	report();
-	//maximum score is 60; length divided by 60
 }
 function update_temp_score(score_obj){
 	//console.log('update_temp_score('+ JSON.stringify(score_obj) +')')
@@ -356,8 +430,7 @@ function reset_instacam_temp_score(){
 	report();
 }
 
-var nextButton = { // target 
-	};
+
 
 
 // instacam frame 1: HAIR ( selfie1 )
@@ -604,11 +677,6 @@ function affirmation_loader(){
 
 
 /* SOUND FUNCTIONS */
-
-var sounds2 = {
-	'soundtrack': 'assets/sound/soundtrack.mp3'
-}
-
 
 var sounds =  {
 	'asif': new Howl({
