@@ -734,6 +734,6 @@ function button_noise(){
 // run game
 hide_scenes();
 scene_control('home',0);
-//montage_window('m_intro','m_intro_frame')	
+montage_window('m_intro','m_intro_frame')	
 test_buttons();
 

@@ -1414,8 +1414,8 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
  }
     #date_elliot .etwob{ 
     position: absolute;
-    left: 47px;
-    top: 519px;
+    left: 546px;
+    top: 180px;
  }
     #date_elliot .efoura{ /*6a, 8a, 10a, 12a, 14a, 16a, 18a, 20a, 22a*/
     position: absolute;
@@ -1450,8 +1450,8 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
   /*josie date*/
     #date_josie .jokay{ 
     position: absolute;
-    left: 921px;
-    top: 645px;
+    left: 459px;
+    top: 582px;
  }
    
     #date_josie .onej{ 
@@ -1714,7 +1714,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     top: 421px;
  }
     .top_secret{ 
-    position: absolute;
+    positio: absolute;
     left: 20px;
     top: 421px;
  }
@@ -1744,20 +1744,20 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     top: 487px;
  }
    /*INTRO*/
-    .intro_1 { 
+    .intro_1 { /*big next, _3, _4 _6, _11, _14, _15 _16 _17 _18*/
     position: absolute;
-    left: 1000px;
-    top: 647px;
+    left:1000px;
+    top: 657px;
  }
-     .intro_a { /*big next, _3, _4 _6, _11, _14, _15 _16 _17 _18*/
+   .intro_a { /*big next, _3, _4 _6, _11, _14, _15 _16 _17 _18*/
     position: absolute;
-    left: 785px;
-    top: 547px;
+    left: 685px;
+    top: 557px;
  }
-    .intro_2 { /*phone*/
+     .intro_2 { /*phone*/
     position: absolute;
-    left: 334px;
-    top: 260px;
+    left: 194px;
+    top: 277px;
  }
     .intro_5 { 
     position: absolute;
