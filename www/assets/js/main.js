@@ -353,38 +353,38 @@ function update_current_score(){
 	// CAMGIRL
 	if (current_score.camgirl > 20 && current_score.camgirl <= 39){
 		if (montages_played.camgirl.dslut == false){
-			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montage_window('dslut','dslut_1')
 			montages_played.camgirl.dslut = true
 		}
 	}
 	else if (current_score.camgirl > 40 && current_score.camgirl <= 59){
 		if (montages_played.camgirl.camgirl == false){
-			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montage_window('camgirl','camgirl_1')
 			montages_played.camgirl.camgirl = true
 		}
 	}
 	else if (current_score.camgirl >= 60){
 		if (montages_played.camgirl.pornstar == false){
-			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montage_window('pornstar','pornstar_1')
 			montages_played.camgirl.pornstar = true
 		}
 		
 	// MARTYR		
 	} else if (current_score.martyr > 20 && current_score.martyr <= 39){
 		if (montages_played.martyr.avenger == false){
-			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montage_window('avenger','avenger_1')
 			montages_played.martyr.avenger = true
 		}
 	}
 	else if (current_score.martyr > 40 && current_score.martyr <= 59){
 		if (montages_played.martyr.megalomaniac == false){
-			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montage_window('mega','mega_1')
 			montages_played.martyr.megalomaniac = true
 		}
 	}
 	else if (current_score.martyr >= 60){
 		if (montages_played.martyr.martyr == false){
-			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montage_window('martyr','martyr_1')
 			montages_played.martyr.martyr = true
 		}
 	
@@ -392,19 +392,19 @@ function update_current_score(){
 	// TROLL		
 	} else if (current_score.troll > 20 && current_score.troll <= 39){
 		if (montages_played.troll.cyberbully == false){
-			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montage_window('cyberbully','cyberbully_1')
 			montages_played.troll.cyberbully = true
 		}
 	}
 	else if (current_score.troll > 40 && current_score.troll <= 59){
 		if (montages_played.troll.meme == false){
-			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montage_window('meme','meme_1')
 			montages_played.troll.meme = true
 		}
 	}
 	else if (current_score.troll >= 60){
 		if (montages_played.troll.troll == false){
-			montage_window('MONTAGE_WINDOW_NAME','MONTAGE_WINDOW_FRAME')
+			montage_window('troll','troll_1')
 			montages_played.troll.troll = true
 		}
 	}
@@ -700,7 +700,7 @@ var sounds =  {
 // dummy function for
 var soundtrack = new Howl({ /* null */ });
 
-/*
+
 var soundtrack = new Howl({
 	urls: ['assets/sound/soundtrack.mp3'],
 	autoplay: true,
@@ -710,7 +710,7 @@ var soundtrack = new Howl({
 		console.log('Soundtrack just looped...');
 	}
 });
-*/
+
 
 function button_noise(){
 	

@@ -108,8 +108,11 @@ function close_popup_video(action){
 }
 
 /* all video buttons */
-$('.video_player_test').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
-
+$('#video_player_test').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
+$('#video_playa_one').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
+$('#video_playa_two').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
+$('#video_playa_three').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
+$('#video_playa_four').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
 // video player click
 $(document).on('click', '.gohome_video_window', function(){ close_popup_video('home'); });
 $(document).on('click', '.confirm_video_window', function(){ close_popup_video('confirm'); });
