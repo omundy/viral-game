@@ -735,5 +735,5 @@ function button_noise(){
 hide_scenes();
 scene_control('home',0);
 montage_window('m_intro','m_intro_frame')	
-test_buttons();
+//test_buttons();
 

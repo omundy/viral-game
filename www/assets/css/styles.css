@@ -360,7 +360,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     top: 554px;
     z-index: 120;
  }
- .frame { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/main.png');}
+ .frame { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/main.gif');}
 
  .frame_ab { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/about_page.png');}
 
@@ -1549,7 +1549,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     .camgirl_3{ 
     position: absolute;
     left: 326px;
-    top: 445px;
+    top: 40px;
  }
     .camgirl_4{ 
     position: absolute;
@@ -1608,8 +1608,8 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
  }
      .pornstar_10{ /*big next*/
     position: absolute;
-    left: 805px;
-    top: 0px;
+    left: 690px;
+    top: 5px;
  }
  /*TROLL*/ 
    .cyberbully_1{ 
@@ -1619,7 +1619,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
  }
      .cyberbully_2{ /*big next*/
     position: absolute;
-    left: 365px;
+    left: 565px;
     top: 483px;
  }
     .cyberbully_3{ 
@@ -1714,7 +1714,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     top: 421px;
  }
     .top_secret{ 
-    positio: absolute;
+    position: absolute;
     left: 20px;
     top: 421px;
  }
