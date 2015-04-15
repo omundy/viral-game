@@ -8,12 +8,12 @@ var cinder = {
     },
     'buttons': {
         'date_lilb': {
-	    'id':'date_lilb',
+	  	  	'id':'date_lilb',
             'disabled':false, // after used true
             'display':'img',
             'btn_img': 'date.png',
             'score': { 'camgirl':0, 'martyr':0, 'troll':3 }
-    },
+    	},
 
         'date_elliot': {
             'id':'date_elliot',
@@ -21,23 +21,23 @@ var cinder = {
             'display':'img',
             'btn_img': 'date.png',
             'score': { 'camgirl':0, 'martyr':3, 'troll':0 }
-    },
+    	},
         'date_josie': {
             'id':'date_scene',
             'disabled':false, // after used true
             'display':'img',
             'btn_img': 'date.png',
             'score': { 'camgirl':3, 'martyr':0, 'troll':0 }
-    },
+    	},
         'date_bro': {
             'id':'date_bro',
             'disabled':false, // after used true
             'display':'img',
             'btn_img': 'date.png',
             'score': { 'camgirl':-3, 'martyr':-3, 'troll':-3 }
-    },
-
-}
+	    },
+	
+	}
 }
 var dumblr = {
     'meta': {

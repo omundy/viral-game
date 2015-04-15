@@ -22,7 +22,7 @@ function test_buttons(){
 		//alert(key)
 		$.each( this, function( frame,title ) {
 			$('#nav').append('<button id="'+ title +'">'+ title +'</button>')
-			$("#"+title).on('click',function () { scene_control(scene,frame); });
+			$("#"+title).on('click',function () { scene_control(scene,frame); montage_close() });
 		});
 		$('#nav').append('<br><br>')
 	});
@@ -154,6 +154,7 @@ $(document).keydown(function(e) {
 	//console.log('key: '+ e.which)
 	
 	if(e.which == 38) { // up
+		montage_close()
 	} else if(e.which == 40) { // down
 	
 	} else if(e.which == 39) { // right

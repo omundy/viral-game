@@ -51,6 +51,8 @@ function montage_frame(m_hide,m_frame){
 
 function montage_close(){
 	
+	update_buttons(cinder)
+	
 	$('#' + current_montage_scene).hide();
 	$('#' + current_montage_frame).hide();
 	
@@ -85,6 +87,9 @@ var instacam_temp_score = {};
 // keep track of tags selected by user
 var tags_selected = []
 var tags_used = []
+
+// keep track of things to disable
+var btns_to_disable = []
 
 // all scenes keep track in here
 var scene_map = {
@@ -205,6 +210,7 @@ function scene_control(scene,frame){
  */
 function scene_updater(scene,frame){
 	console.log('scene_updater('+ scene +','+ frame +')')
+	console.log ('btns_to_disable: '+ JSON.stringify(btns_to_disable))
 	
 	$('.affirmation_curtain').css('display','none');
 	
@@ -219,6 +225,8 @@ function scene_updater(scene,frame){
 	
 	// CINDER
 	if (scene == 'cinder'){
+		
+		update_buttons(cinder)
 		
 		// affirmation
 		if (frame == '4'){ affirmation_loader(); }
@@ -240,6 +248,9 @@ function scene_updater(scene,frame){
 	// INSTACAM
 	else if (scene == 'instacam'){
 		
+		update_buttons(instacam_camera_roll)
+		
+		
 		if (frame > 1){
 			update_temp_score(instacam_temp_score);
 			console.log(instacam_temp_score)
@@ -256,7 +267,6 @@ function scene_updater(scene,frame){
 		// selfies
 		else if (frame == '1'){
 			$('.instacam_preview').html( '<img src="assets/img/instacam/pics/selfies/default.png">' ) 
-			update_buttons(instacam_camera_roll);
 		}
 		// tags
 		else if (frame == '7'){ add_tags() }
@@ -289,13 +299,33 @@ function update_buttons(obj){
 
 		
 		//console.log($('#selfie_bhair'));
-		//console.log (value.btn_img)
 		
 		
 		
 		
-		//alert(key +','+ value)
+		
+		//console.log(key +' => '+ value)
 
+
+		if (value.disabled == true){
+			console.log('time to disable: ' + key)
+			
+			$('#'+key)
+				.attr('title','disabled')
+				.css('opacity','0.3')
+				.removeClass('instacam_hover')
+				.addClass('disabledButton')
+				.prop('disabled', true);
+			$('.'+key)
+				.attr('title','disabled')
+				.css('opacity','0.3')
+				.removeClass('instacam_hover')
+				.addClass('disabledButton')
+				.prop('disabled', true);
+		}
+		
+		
+		
 
 		/*
 		// make button
@@ -741,6 +771,8 @@ function button_noise(){
     var sound = sounds[keys[ keys.length * Math.random() << 0]];
     //sound.play()    
 }
+
+
 
 
 
