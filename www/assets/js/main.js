@@ -114,6 +114,9 @@ var scene_map = {
 	'metube':[
 		'metube0', 'metube1', 'metube2', 'metube3', 'metube4', 'metube5',
 	],
+	'testing':[
+		'testing_camgirl', 'testing_martyr', 'testing_troll',
+	],
 }
 
 
@@ -133,8 +136,22 @@ function scene_control(scene,frame){
 	console.log('scene_control('+ scene +','+ frame +')');
 	var update = false; // whether or not to update the scene/frame
 	
+	if (scene == 'testing'){
+		
+		if (frame == 0){
+			update_temp_score({ 'camgirl':1, 'martyr':0, 'troll':0 })
+		} else if (frame == 1){
+			update_temp_score({ 'camgirl':0, 'martyr':1, 'troll':0 })
+		}else if (frame == 2){
+			update_temp_score({ 'camgirl':0, 'martyr':0, 'troll':1 })
+		}
+		update_current_score();
+		reset_temp_score()
+		return;
+	}
+	
 	// in wrong scene, move to different scene
-	if (current_scene.scene != scene){
+	else if (current_scene.scene != scene){
 		console.log('---in wrong scene ('+ current_scene.scene +') - moving to '+ scene);
 		
 		hide_scenes();
@@ -703,7 +720,7 @@ var soundtrack = new Howl({ /* null */ });
 
 var soundtrack = new Howl({
 	urls: ['assets/sound/soundtrack.mp3'],
-	autoplay: true,
+	autoplay: false,
 	loop: true,
 	volume: 0.5,
 	onend: function() {
@@ -720,7 +737,7 @@ function button_noise(){
 	// pick random sound to play
 	var keys = Object.keys(sounds)
     var sound = sounds[keys[ keys.length * Math.random() << 0]];
-    sound.play()    
+    //sound.play()    
 }
 
 
@@ -734,6 +751,6 @@ function button_noise(){
 // run game
 hide_scenes();
 scene_control('home',0);
-montage_window('m_intro','m_intro_frame')	
-//test_buttons();
+//montage_window('m_intro','m_intro_frame')	
+test_buttons();
 
