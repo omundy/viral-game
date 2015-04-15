@@ -384,10 +384,11 @@ function update_current_score(){
 		if (montages_played.camgirl.pornstar == false){
 			montage_window('pornstar','pornstar_1')
 			montages_played.camgirl.pornstar = true
-		}
+		}	
+	} 
 		
-	// MARTYR		
-	} else if (current_score.martyr > 20 && current_score.martyr <= 39){
+	// MARTYR	
+	if (current_score.martyr > 20 && current_score.martyr <= 39){
 		if (montages_played.martyr.avenger == false){
 			montage_window('avenger','avenger_1')
 			montages_played.martyr.avenger = true
@@ -403,11 +404,12 @@ function update_current_score(){
 		if (montages_played.martyr.martyr == false){
 			montage_window('martyr','martyr_1')
 			montages_played.martyr.martyr = true
-		}
+		}		
+	} 
 	
 	
-	// TROLL		
-	} else if (current_score.troll > 20 && current_score.troll <= 39){
+	// TROLL
+	if (current_score.troll > 20 && current_score.troll <= 39){
 		if (montages_played.troll.cyberbully == false){
 			montage_window('cyberbully','cyberbully_1')
 			montages_played.troll.cyberbully = true
