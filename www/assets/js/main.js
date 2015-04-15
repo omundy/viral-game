@@ -357,7 +357,7 @@ function update_current_score(){
 	console.log('current_score: '+ JSON.stringify(current_score))
 	console.log('temp_score: '+ JSON.stringify(temp_score))
 	
-	var factor = 300 / 60;
+	var factor = 300 / 45;
 	
 	// update the score bars
 	// maximum score is 60; length divided by 60
@@ -368,19 +368,19 @@ function update_current_score(){
 	// check for action on score
 	// open montage player
 	// CAMGIRL
-	if (current_score.camgirl > 20 && current_score.camgirl <= 39){
+	if (current_score.camgirl > 15 && current_score.camgirl <= 29){
 		if (montages_played.camgirl.dslut == false){
 			montage_window('dslut','dslut_1')
 			montages_played.camgirl.dslut = true
 		}
 	}
-	else if (current_score.camgirl > 40 && current_score.camgirl <= 59){
+	else if (current_score.camgirl > 30 && current_score.camgirl <= 44){
 		if (montages_played.camgirl.camgirl == false){
 			montage_window('camgirl','camgirl_1')
 			montages_played.camgirl.camgirl = true
 		}
 	}
-	else if (current_score.camgirl >= 60){
+	else if (current_score.camgirl >= 45){
 		if (montages_played.camgirl.pornstar == false){
 			montage_window('pornstar','pornstar_1')
 			montages_played.camgirl.pornstar = true
@@ -388,19 +388,19 @@ function update_current_score(){
 	} 
 		
 	// MARTYR	
-	if (current_score.martyr > 20 && current_score.martyr <= 39){
+	if (current_score.martyr > 15 && current_score.martyr <= 29){
 		if (montages_played.martyr.avenger == false){
 			montage_window('avenger','avenger_1')
 			montages_played.martyr.avenger = true
 		}
 	}
-	else if (current_score.martyr > 40 && current_score.martyr <= 59){
+	else if (current_score.martyr > 30 && current_score.martyr <= 44){
 		if (montages_played.martyr.megalomaniac == false){
 			montage_window('mega','mega_1')
 			montages_played.martyr.megalomaniac = true
 		}
 	}
-	else if (current_score.martyr >= 60){
+	else if (current_score.martyr >= 45){
 		if (montages_played.martyr.martyr == false){
 			montage_window('martyr','martyr_1')
 			montages_played.martyr.martyr = true
@@ -409,19 +409,19 @@ function update_current_score(){
 	
 	
 	// TROLL
-	if (current_score.troll > 20 && current_score.troll <= 39){
+	if (current_score.troll > 15 && current_score.troll <= 29){
 		if (montages_played.troll.cyberbully == false){
 			montage_window('cyberbully','cyberbully_1')
 			montages_played.troll.cyberbully = true
 		}
 	}
-	else if (current_score.troll > 40 && current_score.troll <= 59){
+	else if (current_score.troll > 30 && current_score.troll <= 44){
 		if (montages_played.troll.meme == false){
 			montage_window('meme','meme_1')
 			montages_played.troll.meme = true
 		}
 	}
-	else if (current_score.troll >= 60){
+	else if (current_score.troll >= 45){
 		if (montages_played.troll.troll == false){
 			montage_window('troll','troll_1')
 			montages_played.troll.troll = true
