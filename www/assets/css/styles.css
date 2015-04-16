@@ -1397,6 +1397,16 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 911px;
     top: 638px;
  }
+     #date_elliot .pillow{ 
+    position: absolute;
+    left: 169px;
+    top: 204px;
+ }
+    #date_elliot .goback_egg{ 
+    position: absolute;
+    left: 806px;
+    top: 635px;
+ }
     #date_elliot .twonext_e{ 
     position: absolute;
     left: 842px;
@@ -1727,6 +1737,11 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     position: absolute;
     left: 961px;
     top: 421px;
+ }
+    .egg{ 
+    position: absolute;
+    left: 806px;
+    top: 635px;
  }
     .top_secret{ 
     position: absolute;
