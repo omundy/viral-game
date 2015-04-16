@@ -1,11 +1,11 @@
-html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bkg.png') }
+html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bkg.gif') }
 
 #nav { position: absolute; top: 30px; width: 9%}
 #nav .group { display: block;  }
 #nav  button { background:#666; border: none; margin: 2px 4px 0 0 }
 #report { position: absolute; color: #fff; top: 0; background: rgba(0,0,0,.5); width: 100%; font-size: 80%; z-index: 500}
 
-#container { width:100%; height: 100%; background-image: url('../img/bkg.png'); position: absolute }
+#container { width:100%; height: 100%; background-image: url('../img/bkg.gif'); position: absolute }
 #scene_container { width:1092px; height: 798px; background: #000; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); }
 
 .scene { position:relative; width: 1092px; height: 728px; }
@@ -213,19 +213,19 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 /* 	SCENE PIXEL WIDTHS: 0,1092,2184,3276,4368,5460,6552,7644,8736,9828 */
 
 #home_scene { width: 3276px; position: relative; }
-#home_scene>div { background: url('../img/home/bkg.png') left top }
+#home_scene>div { background: url('../img/home/bkg.gif') left top }
 
 #cinder_scene { width: 5460px; position: relative; }
-#cinder_scene>div { background: url('../img/cinder/bkg.png') left top; }
+#cinder_scene>div { background: url('../img/cinder/bkg.gif') left top; }
 
 #dumblr_scene { width: 18564px; position: relative; }
-#dumblr_scene>div { background: url('../img/dumblr/bkg.png') left top; }
+#dumblr_scene>div { background: url('../img/dumblr/bkg.gif') left top; }
 
 #instacam_scene { width: 9828px; position: relative; }
-#instacam_scene>div { background: url('../img/instacam/intsta_bkg.png') left top; }
+#instacam_scene>div { background: url('../img/instacam/intsta_bkg.gif') left top; }
 
 #metube_scene { width: 6552px; position: relative; }
-#metube_scene>div { background: url('../img/metube/bkg.png') left top; }
+#metube_scene>div { background: url('../img/metube/bkg.gif') left top; }
 
 
 .scene { float: left; width: 1092px; height: 728px; }
@@ -294,7 +294,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     .owen{  
     position: absolute;
     left: 90px;
-    top: 218px;
+    top: 242px;
     z-index: 109;
  }
      .rhizome{  
@@ -306,19 +306,25 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
       .gaea{  
     position: absolute;
     left: 838px;
-    top: 222px;
+    top: 202px;
     z-index: 111;
  }
        .barbie{  
     position: absolute;
     left: 810px;
-    top: 282px;
+    top: 262px;
     z-index: 112;
  }
     .zero{  
     position: absolute;
     left: 830px;
-    top: 314px;
+    top: 294px;
+    z-index: 113;
+ }
+     .boyfriend{  
+    position: absolute;
+    left: 871px;
+    top: 323px;
     z-index: 113;
  }
      .beta_website{  
@@ -363,11 +369,17 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     top: 554px;
     z-index: 120;
  }
+    .donate{  
+    position: absolute;
+    left: 0px;
+    top: 572px;
+    z-index: 120;
+ }
  .frame { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/main.gif');}
 
- .frame_ab { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/about_page.png');}
+ .frame_ab { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/about_page.gif');}
 
- .frame_co { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/collaborators.png');}
+ .frame_co { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/collaborators.gif');}
 
 /***********************************************************************************/
 /* HOME
