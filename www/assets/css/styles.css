@@ -10,7 +10,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 
 .scene { position:relative; width: 1092px; height: 728px; }
 
-
+/* Start http://www.cursors-4u.com */ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), url(http://cur.cursors-4u.net/nature/nat-4/nat325.png), progress !important;} /* End http://www.cursors-4u.com */
 
 #montage_window { 
 	display: none;
