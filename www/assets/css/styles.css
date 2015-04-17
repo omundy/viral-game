@@ -601,15 +601,21 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 13px;
     top: 10px;
  }
+ 
  #dumblr_scene .reblog { 
+    position: absolute;
+    left: 267px;
+    top: 202px;
+ }
+  #dumblr_scene .shock_egg { 
     position: absolute;
     left: 267px;
     top: 202px;
  }
   #dumblr_scene .entry {  /* bakhov.png, bak.png */
     position: absolute;
-    left: 498px;
-    top: 202px;
+    left: 859px;
+    top: 543px;
  }
    #dumblr_scene .dprompt { 
     position: absolute;
@@ -1581,6 +1587,11 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 993px;
     top: 450px;
  }
+    .is_egg{ 
+    position: absolute;
+    left: 492px;
+    top: 251px;
+ }
      .camgirl_5{  /*camgirl_6, 11*/
     position: absolute;
     left: 700px;
@@ -1666,6 +1677,16 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     position: absolute;
     left: 323px;
     top: 40px;
+ }
+     .beiber{ 
+    position: absolute;
+    left: 26px;
+    top: 154px;
+ }
+     .apolo_con{ 
+    position: absolute;
+    left: 806px;
+    top: 635px;
  }
     .meme_1{ 
     position: absolute;
