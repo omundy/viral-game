@@ -49,10 +49,12 @@ $('#instacam_home_selfood_btn')
 	.on('click',function(){ scene_control('instacam',4) })
 	.mouseover(function(){ this.src = 'assets/img/instacam/home/selfoodhov.png' })
 	.mouseout(function(){ this.src = 'assets/img/instacam/home/selfood.png' });
-$('#instacam_home_selcam_btn').on('click',function(){ scene_control('instacam',6) })
+$('#instacam_home_selcam_btn')
+	.on('click',function(){ scene_control('instacam',6) })
 	.mouseover(function(){ this.src = 'assets/img/instacam/home/selcamhov.png' })
 	.mouseout(function(){ this.src = 'assets/img/instacam/home/selcam.png'});
-$('.instacam_totags').on('click',function(){ scene_control('instacam', 7) })
+$('.instacam_totags')
+	.on('click',function(){ scene_control('instacam', 7) })
 	.mouseover(function(){ this.src = 'assets/img/instacam/nexthov.png' })
 	.mouseout(function(){ this.src = 'assets/img/instacam/next.png' });
 	
