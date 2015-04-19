@@ -25,7 +25,7 @@ var current_montage_scene = '';
 var current_montage_frame = '';
 
 function montage_window(m_scene,m_frame){
-	console.log(m_scene +' + '+ m_frame)
+	console.log('montage_window('+ m_scene +' + '+ m_frame +')')
 	
 	current_montage_scene = m_scene;
 	current_montage_frame = m_frame;
@@ -41,7 +41,7 @@ function montage_window(m_scene,m_frame){
 }
 
 function montage_frame(m_hide,m_frame){
-	console.log(m_frame)
+	console.log('montage_frame('+ m_hide +','+ m_frame +')')
 	// hide other montage_frame
 	$('#' + m_hide).hide();
 	// show the frame
@@ -156,7 +156,7 @@ function scene_control(scene,frame){
 	
 	// in wrong scene, move to different scene
 	else if (current_scene.scene != scene){
-		console.log('---in wrong scene ('+ current_scene.scene +') - moving to '+ scene);
+		//console.log('---> in wrong scene ('+ current_scene.scene +') - moving to '+ scene);
 		
 		hide_scenes();
 		$('#'+scene+'_scene').show();
@@ -167,20 +167,20 @@ function scene_control(scene,frame){
 	}
 	// in correct scene, wrong frame
 	else if (current_scene.scene == scene && current_scene.frame != frame){
-		console.log('---in correct scene ('+ current_scene.scene +')');
+		//console.log('---> in correct scene ('+ current_scene.scene +')');
 		
 		// don't go below zero
-		if (frame == -1 && current_scene.frame <= 0){ console.log('---already at zero'); } 
+		if (frame == -1 && current_scene.frame <= 0){ console.log('---> already at zero'); } 
 		// don't go above number of frames in scene
-		else if (frame >= scene_map[scene].length ){ console.log('---already at max '); }
+		else if (frame >= scene_map[scene].length ){ console.log('---> already at max '); }
 		// otherwise go ahead
 		else {
-			console.log('---but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
+			//console.log('---> but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
 			
 			// calculate new positions
 			var moveto = scene_positions[frame];
 			var movefrom = scene_positions[current_scene.frame];
-			console.log('---moving from: '+ movefrom +' to: '+moveto);
+			//console.log('---> moving from: '+ movefrom +' to: '+moveto);
 
 			// move scene				
 			$('#'+scene+'_scene').animate( {"margin-left": '-='+ (moveto-movefrom)},500, function(){ 
@@ -191,13 +191,12 @@ function scene_control(scene,frame){
 		}
 		
 	} else {
-		console.log('---apparently all is ok');
+		//console.log('---> apparently all is ok');
 	}
 	
 	// save, report
 	if (update){ 
 		current_scene = {'scene':scene,'frame':frame}
-		
 	}
 	report();
 }
@@ -209,15 +208,16 @@ function scene_control(scene,frame){
  */
 function scene_updater(scene,frame){
 	console.log('scene_updater('+ scene +','+ frame +')')
-	console.log ('btns_to_disable: '+ JSON.stringify(btns_to_disable))
+	
 	
 	$('.affirmation_curtain').css('display','none');
 	
 	// SCORING
-	// reset temp score if on app home page
+	// reset EVERYTHING if on app home page
 	if (frame == 0){
 		reset_temp_score()
 		reset_instacam_temp_score()
+		btns_to_disable = []
 	}
 	
 	//alert(scene +','+ frame)
@@ -257,7 +257,7 @@ function scene_updater(scene,frame){
 		
 		if (frame > 1){
 			update_temp_score(instacam_temp_score);
-			console.log(instacam_temp_score)
+			console.log('instacam_temp_score: '+ JSON.stringify(instacam_temp_score))
 		}
 		
 		if (frame == '0'){
@@ -277,14 +277,6 @@ function scene_updater(scene,frame){
 		// affirmation
 		else if (frame == '8'){ 
 			affirmation_loader(); 
-			
-			// loop through all instacam buttons clicked
-			for (var i = 0; i< btns_to_disable.length; i++){	
-				disable_btn(metube.buttons.vlog_rant)
-				console.log('instacam_choices: '+ JSON.stringify(instacam_choices[i]))
-			}
-			
-			
 		}
 		
 		// reset instacam_temp_score for next frame
@@ -312,15 +304,9 @@ function scene_updater(scene,frame){
 
 function update_buttons(obj){
 	
+	// loop through all the buttons for an object
 	$.each( obj.buttons, function( key, value ) {
 
-		
-		//console.log($('#selfie_bhair'));
-		
-		
-		
-		
-		
 		//console.log(key +' => '+ value)
 
 
@@ -755,6 +741,31 @@ $('#metube_tag_confirm').on('click',function(){ tag_confirm() });
 
 // affirmation
 function affirmation_loader(){
+	
+	
+	if (current_scene.scene == 'metube'){
+		// loop through all btns_to_disable clicked
+		for (var i = 0; i< btns_to_disable.length; i++){	
+			disable_btn( window[current_scene.scene].buttons[btns_to_disable[i]] )
+			console.log('time to MARK AS DISABLED: '+ current_scene.scene +','+ btns_to_disable[i])
+		}
+		// reset btns_to_disable
+		btns_to_disable = []
+	}
+	else if (current_scene.scene == 'instacam'){
+		var obj = instacam_choices;
+		for (var key in obj) {
+			var log = '';
+			if (obj.hasOwnProperty(key)) {
+				log += key +': '+ obj[key] +"\n";
+				
+				disable_btn( instacam_camera_roll.buttons[obj[key]] )
+			}
+			console.log('instacam_choices ========= '+ log);
+		}
+		
+	} 
+	
 	// update current_score with temp_score
 	update_current_score();
 	// figure out their affirmation image
