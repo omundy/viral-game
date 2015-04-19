@@ -131,6 +131,7 @@ $(document).on('mouseover', '.confirm_video_window', function(){ $('.confirm_vid
 $(document).on('mouseleave', '.confirm_video_window', function(){ $('.confirm_video_window').attr('src','assets/img/metube/videos/continue.png') });
 
 
+<<<<<<< HEAD
 $('.mv_rap').on('click',function(){ 
 	update_temp_score(metube.buttons.mv_rap.score); 
 	queue_disable_btn(metube.buttons.mv_rap); 
@@ -169,6 +170,7 @@ $('.shock_camwhore').on('click',function(){
 	show_popup_video('assets/img/metube/videos/camgirl.mp4',854,480,4) })
 $('.pic').on('click',function(){ 
 	show_popup_video_confirmonly('assets/img/metube/videos/wolfe.mp4',854,480,4) })
+
 
 /**
  *	hide_scenes()
