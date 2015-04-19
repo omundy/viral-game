@@ -95,7 +95,7 @@ $('.date_elliot').on('click',function(){ update_temp_score(cinder.buttons.date_e
 /* BTN FUNCTIONS */
 
 function disable_btn(obj){
-	//console.log('disable_btn('+ JSON.stringify(obj) +')');
+	console.log('disable_btn('+ JSON.stringify(obj) +')');
 	obj.disabled = true;
 }
 

@@ -37,7 +37,7 @@ function test_buttons(){
  */
  
  
- function show_popup_montage(file){
+function show_popup_montage(file){
 	var str = '';
 	str += '<div style="width:728px; height:1092px>';
 	
@@ -94,8 +94,10 @@ function show_popup_video_confirmonly(file,width,height){
 	$('#video_window').css('display','block');
 }
 function close_popup_video(action){
-	
-	soundtrack.play();
+	if (play_sound == true){	
+		soundtrack.play();
+	}
+	update_buttons(metube)
 	
 	if (action == 'confirm'){
 		scene_control('metube',4)
@@ -108,11 +110,11 @@ function close_popup_video(action){
 }
 
 /* all video buttons */
-$('#video_player_test').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
-$('#video_playa_one').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
-$('#video_playa_two').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
-$('#video_playa_three').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
-$('#video_playa_four').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480) })
+$('#video_player_test').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480); })
+$('#video_playa_one').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480); })
+$('#video_playa_two').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480); })
+$('#video_playa_three').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480); })
+$('#video_playa_four').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/liz.mp4', 854,480); })
 // video player click
 $(document).on('click', '.gohome_video_window', function(){ close_popup_video('home'); });
 $(document).on('click', '.confirm_video_window', function(){ close_popup_video('confirm'); });
@@ -124,15 +126,15 @@ $(document).on('mouseover', '.confirm_video_window', function(){ $('.confirm_vid
 $(document).on('mouseleave', '.confirm_video_window', function(){ $('.confirm_video_window').attr('src','assets/img/metube/videos/continue.png') });
 
 
-$('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/mypussy.mp4', 854,480,4) })
-$('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/dogfriend.mp4', 854,480,4) })
-$('.mv_parody').on('click',function(){ update_temp_score(metube.buttons.mv_parody.score); show_popup_video('assets/img/metube/videos/testicle.mp4',854,480,4) })
-$('.vlog_rant').on('click',function(){ update_temp_score(metube.buttons.vlog_rant.score); show_popup_video('assets/img/metube/videos/rant.mp4', 854,480,4) })
-$('.vlog_diary').on('click',function(){ update_temp_score(metube.buttons.vlog_diary.score); show_popup_video('assets/img/metube/videos/amanda.mp4',854,480,4) })
-$('.vlog_comedy').on('click',function(){ update_temp_score(metube.buttons.vlog_comedy.score); show_popup_video('assets/img/metube/videos/comedy.mp4', 854,480,4) })
-$('.shock_challenge').on('click',function(){ update_temp_score(metube.buttons.shock_challenge.score); show_popup_video('assets/img/metube/videos/challenge.mp4',854,480,4) })
-$('.shock_snuff').on('click',function(){ update_temp_score(metube.buttons.shock_snuff.score); show_popup_video('assets/img/metube/videos/snuff.mp4',854,480,4) })
-$('.shock_camwhore').on('click',function(){ update_temp_score(metube.buttons.shock_camwhore.score); show_popup_video('assets/img/metube/videos/camgirl.mp4',854,480,4) })
+$('.mv_rap').on('click',function(){ update_temp_score(metube.buttons.mv_rap.score); show_popup_video('assets/img/metube/videos/mypussy.mp4', 854,480,4); disable_btn(metube.buttons.mv_rap) })
+$('.mv_pop').on('click',function(){ update_temp_score(metube.buttons.mv_pop.score); show_popup_video('assets/img/metube/videos/dogfriend.mp4', 854,480,4); disable_btn(metube.buttons.mv_pop) })
+$('.mv_parody').on('click',function(){ update_temp_score(metube.buttons.mv_parody.score); show_popup_video('assets/img/metube/videos/testicle.mp4',854,480,4); disable_btn(metube.buttons.mv_parody) })
+$('.vlog_rant').on('click',function(){ update_temp_score(metube.buttons.vlog_rant.score); show_popup_video('assets/img/metube/videos/rant.mp4', 854,480,4); disable_btn(metube.buttons.vlog_rant) })
+$('.vlog_diary').on('click',function(){ update_temp_score(metube.buttons.vlog_diary.score); show_popup_video('assets/img/metube/videos/amanda.mp4',854,480,4); disable_btn(metube.buttons.vlog_diary) })
+$('.vlog_comedy').on('click',function(){ update_temp_score(metube.buttons.vlog_comedy.score); show_popup_video('assets/img/metube/videos/comedy.mp4', 854,480,4); disable_btn(metube.buttons.vlog_comedy) })
+$('.shock_challenge').on('click',function(){ update_temp_score(metube.buttons.shock_challenge.score); show_popup_video('assets/img/metube/videos/challenge.mp4',854,480,4); disable_btn(metube.buttons.shock_challenge) })
+$('.shock_snuff').on('click',function(){ update_temp_score(metube.buttons.shock_snuff.score); show_popup_video('assets/img/metube/videos/snuff.mp4',854,480,4); disable_btn(metube.buttons.shock_snuff) })
+$('.shock_camwhore').on('click',function(){ update_temp_score(metube.buttons.shock_camwhore.score); show_popup_video('assets/img/metube/videos/camgirl.mp4',854,480,4); disable_btn(metube.buttons.shock_camwhore) })
 $('.pic').on('click',function(){ show_popup_video_confirmonly('assets/img/metube/videos/wolfe.mp4',854,480,4) })
 
 /**
@@ -155,6 +157,7 @@ $(document).keydown(function(e) {
 	
 	if(e.which == 38) { // up
 		montage_close()
+		close_popup_video('home')
 	} else if(e.which == 40) { // down
 	
 	} else if(e.which == 39) { // right

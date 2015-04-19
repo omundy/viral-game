@@ -64,7 +64,6 @@ function montage_close(){
 
 
 
-
 // scene size
 var sceneW = 1092;
 var sceneH = 768;
@@ -235,6 +234,9 @@ function scene_updater(scene,frame){
 	
 	// DUMBLR
 	else if (scene == 'dumblr'){
+		
+		update_buttons(dumblr)
+		
 		if (frame == '1'){
 			
 		}
@@ -249,6 +251,8 @@ function scene_updater(scene,frame){
 	else if (scene == 'instacam'){
 		
 		update_buttons(instacam_camera_roll)
+		
+		
 		
 		
 		if (frame > 1){
@@ -271,7 +275,17 @@ function scene_updater(scene,frame){
 		// tags
 		else if (frame == '7'){ add_tags() }
 		// affirmation
-		else if (frame == '8'){ affirmation_loader(); }
+		else if (frame == '8'){ 
+			affirmation_loader(); 
+			
+			// loop through all instacam buttons clicked
+			for (var i = 0; i< btns_to_disable.length; i++){	
+				disable_btn(metube.buttons.vlog_rant)
+				console.log('instacam_choices: '+ JSON.stringify(instacam_choices[i]))
+			}
+			
+			
+		}
 		
 		// reset instacam_temp_score for next frame
 		reset_instacam_temp_score()
@@ -279,6 +293,9 @@ function scene_updater(scene,frame){
 	
 	// METUBE
 	else if (scene == 'metube'){
+		
+		update_buttons(metube)
+		
 		if (frame == '1'){
 			
 		}
@@ -310,6 +327,47 @@ function update_buttons(obj){
 		if (value.disabled == true){
 			console.log('time to disable: ' + key)
 			
+			// id
+			if ( $('#'+key).length ){
+				
+				console.log( '#'+key )
+				
+				$('#'+key)
+					.attr('title','disabled')
+					.css('opacity','0.3')
+					.removeClass('instacam_hover')
+					.addClass('disabledButton')
+					.prop('disabled', true);
+				if ($('#'+key).attr('onmouseout') ){	
+					//console.log( $('#'+key).attr('onmouseout') )	
+					$('#'+key).trigger('mouseover');
+				}
+			}
+			// class
+			else if ( $('.'+key).length ){	
+				
+				console.log( '.'+key )
+				
+				$('.'+key)
+					.attr('title','disabled')
+					.css('opacity','0.3')
+					.removeClass('instacam_hover')
+					.addClass('disabledButton')
+					.prop('disabled', true);
+				if ($('.'+key).attr('onmouseout') ){
+					//console.log( $('.'+key).attr('onmouseout') )
+					$('.'+key).trigger('mouseover');
+				}	
+			}		
+		}
+		
+		
+		
+		/*	*/
+		
+		if (value.disabled == true){
+			console.log('time to disable: ' + key)
+			
 			$('#'+key)
 				.attr('title','disabled')
 				.css('opacity','0.3')
@@ -323,8 +381,7 @@ function update_buttons(obj){
 				.addClass('disabledButton')
 				.prop('disabled', true);
 		}
-		
-		
+	
 		
 
 		/*
@@ -547,7 +604,7 @@ function instacam_preview(buttonObj){
 	
 	instacam_choices[buttonObj.frame] = buttonObj.id;
 	
-	
+	//btns_to_disable.push(buttonObj.id)
 	
 	
 	// selfie1
@@ -749,10 +806,12 @@ var sounds =  {
 // dummy function for
 var soundtrack = new Howl({ /* null */ });
 
+// sounds
+var play_sound = false;
 
 var soundtrack = new Howl({
 	urls: ['assets/sound/soundtrack.mp3'],
-	autoplay: false,
+	autoplay: play_sound,
 	loop: true,
 	volume: 0.5,
 	onend: function() {
@@ -769,8 +828,11 @@ function button_noise(){
 	// pick random sound to play
 	var keys = Object.keys(sounds)
     var sound = sounds[keys[ keys.length * Math.random() << 0]];
-    //sound.play()    
+    if (play_sound == true){
+	    sound.play()   
+	}
 }
+
 
 
 
