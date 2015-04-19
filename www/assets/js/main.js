@@ -218,6 +218,9 @@ function scene_updater(scene,frame){
 		reset_temp_score()
 		reset_instacam_temp_score()
 		btns_to_disable = []
+		if (loser_checker()){
+			montage_window('m_gameover','m_gameover_frame')
+		}
 	}
 	
 	//alert(scene +','+ frame)
@@ -846,7 +849,55 @@ function button_noise(){
 
 
 
-
+function loser_checker(){
+	// if all buttons are disabled, and you have not maxed out any score bar, you lose
+	
+	// metube
+	var obj = metube.buttons;
+	for (var key in obj) {
+		if (obj.hasOwnProperty(key)) {
+			// are any not yet disabled?
+			if (obj[key].disabled == false){
+				console.log('loser_checker() ========= metube not disabled');
+				return false;
+			}
+		}
+	}
+	// cinder
+	var obj = cinder.buttons;
+	for (var key in obj) {
+		if (obj.hasOwnProperty(key)) {
+			// are any not yet disabled?
+			if (obj[key].disabled == false){
+				console.log('loser_checker() ========= cinder not disabled');
+				return false;
+			}
+		}
+	}
+	// dumblr
+	var obj = dumblr.buttons;
+	for (var key in obj) {
+		if (obj.hasOwnProperty(key)) {
+			// are any not yet disabled?
+			if (obj[key].disabled == false){
+				console.log('loser_checker() ========= dumblr not disabled');
+				return false;
+			}
+		}
+	}
+	// instacam_camera_roll
+	var obj = instacam_camera_roll.buttons;
+	for (var key in obj) {
+		if (obj.hasOwnProperty(key)) {
+			// are any not yet disabled?
+			if (obj[key].disabled == false){
+				console.log('loser_checker() ========= instacam not disabled');
+				return false;
+			}
+		}
+	}
+	return true;
+}
 
 
 
