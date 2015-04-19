@@ -131,7 +131,7 @@ $(document).on('mouseover', '.confirm_video_window', function(){ $('.confirm_vid
 $(document).on('mouseleave', '.confirm_video_window', function(){ $('.confirm_video_window').attr('src','assets/img/metube/videos/continue.png') });
 
 
-<<<<<<< HEAD
+
 $('.mv_rap').on('click',function(){ 
 	update_temp_score(metube.buttons.mv_rap.score); 
 	queue_disable_btn(metube.buttons.mv_rap); 
