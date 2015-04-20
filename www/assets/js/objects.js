@@ -51,107 +51,107 @@ var dumblr = {
             'display':'img',
             'btn_img': 'reblog/a1.png',
             'score': { 'camgirl':-1, 'martyr':-1, 'troll':-1 }
-    },
+    	},
         'a2': {
-        'id':'a2',
+        	'id':'a2',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a2.png',
             'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
-    },
+    	},
         'a3': {
-        'id':'a3',
+        	'id':'a3',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a3.png',
             'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
-    },
-            'a4': {
-        'id':'a4',
+    	},
+        'a4': {
+			'id':'a4',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a4.png',
             'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
-    },
+    	},
         'a5': {
-        'id':'a5',
+        	'id':'a5',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a5.png',
             'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
-    },
-            'a6': {
-        'id':'a6',
+    	},
+        'a6': {
+        	'id':'a6',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a6.png',
             'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
-    },
+    	},
         'a7': {
-        'id':'a7',
+        	'id':'a7',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a7.png',
             'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
-    },
-            'a8': {
-        'id':'a8',
+    	},
+        'a8': {
+        	'id':'a8',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a8.png',
             'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
-    },
+    	},
         'a9': {
-        'id':'a9',
+       		'id':'a9',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a9.png',
             'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
-    },
-            'a10': {
-        'id':'a10',
+    	},
+        'a10': {
+        	'id':'a10',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a10.png',
             'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
-    },
-            'a11': {
-        'id':'a11',
+    	},
+        'a11': {
+        	'id':'a11',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a11.png',
             'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
-    },
+    	},
         'a12': {
-        'id':'a12',
+        	'id':'a12',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a12.png',
             'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
-    },
-            'a13': {
-        'id':'a13',
+    	},
+        'a13': {
+        	'id':'a13',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a13.png',
             'score': { 'camgirl': 1, 'martyr': 0, 'troll': 0 }
-    },
+    	},
         'a14': {
-        'id':'a14',
+        	'id':'a14',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a14.png',
             'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
-    },
-            'a15': {
-        'id':'a15',
+    	},
+        'a15': {
+        	'id':'a15',
             'disabled':false, // after used
             'display':'img',
             'btn_img': 'reblog/a15.png',
             'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
-    },
+    	},
         'a16': {
-        'id':'a16',
+        	'id':'a16',
             'disabled':false, // after used true, button greyed out or disappears
             'display':'img',
             'btn_img': 'reblog/a16.png',

@@ -13,6 +13,8 @@ function report(){
 		+'; instacam_temp_score: '+ JSON.stringify(instacam_temp_score)
 		+'; instacam_choices: '+ JSON.stringify(instacam_choices)
 		+'; btns_to_disable: '+ JSON.stringify(btns_to_disable)
+		+'; <br>montages_played: '+ JSON.stringify(montages_played)
+		
 		);	
 	//console.log(current_scene);
 }

@@ -25,7 +25,7 @@ var current_montage_scene = '';
 var current_montage_frame = '';
 
 function montage_window(m_scene,m_frame){
-	console.log('montage_window('+ m_scene +' + '+ m_frame +')')
+	console.log('montage_window('+ m_scene +', '+ m_frame +')')
 	
 	current_montage_scene = m_scene;
 	current_montage_frame = m_frame;
@@ -304,6 +304,12 @@ function scene_updater(scene,frame){
 }
 
 
+// unlock buttons
+function unlock_cameraroll(buttonObj){
+	console.log('unlock_cameraroll('+ JSON.stringify(buttonObj) +')')
+	buttonObj.locked = false;
+}
+
 
 function update_buttons(obj){
 	
@@ -311,6 +317,29 @@ function update_buttons(obj){
 	$.each( obj.buttons, function( key, value ) {
 
 		//console.log(key +' => '+ value)
+
+		// LOK
+		if (current_scene.scene == 'instacam' && current_scene.frame == 6){
+			
+			if ( value.btn_img_locked ){
+				//alert(value)
+				if ( value.locked == true ){
+					$('#'+key)
+						.attr('src','assets/img/instacam/'+ value.btn_img_locked)
+						.removeClass('instacam_hover')
+						.prop('disabled', true);
+				} else {
+					$('#'+key)
+						.attr('src','assets/img/instacam/'+ value.btn_img)
+						.addClass('instacam_hover')
+						.prop('disabled', false);
+				}
+				
+			}
+		}
+
+
+
 
 
 		if (value.disabled == true){
@@ -446,19 +475,19 @@ function update_current_score(){
 	// CAMGIRL
 	if (current_score.camgirl > 15 && current_score.camgirl <= 29){
 		if (montages_played.camgirl.dslut == false){
-			montage_window('dslut','dslut_1')
+			montage_window('dslut','dslut_1');
 			montages_played.camgirl.dslut = true
 		}
 	}
 	else if (current_score.camgirl > 30 && current_score.camgirl <= 44){
 		if (montages_played.camgirl.camgirl == false){
-			montage_window('camgirl','camgirl_1')
+			montage_window('camgirl','camgirl_1');
 			montages_played.camgirl.camgirl = true
 		}
 	}
 	else if (current_score.camgirl >= 45){
 		if (montages_played.camgirl.pornstar == false){
-			montage_window('pornstar','pornstar_1')
+			montage_window('pornstar','pornstar_1');
 			montages_played.camgirl.pornstar = true
 		}	
 	} 
