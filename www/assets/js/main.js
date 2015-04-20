@@ -25,23 +25,23 @@ var current_montage_scene = '';
 var current_montage_frame = '';
 
 function montage_window(m_scene,m_frame){
-	console.log('montage_window('+ m_scene +', '+ m_frame +')')
+	console.log('montage_window('+ m_scene +', '+ m_frame +')');
 	
 	current_montage_scene = m_scene;
 	current_montage_frame = m_frame;
 	
 	// show montage_window
-	$('#montage_window').show()
+	$('#montage_window').show();
 	// hide other montage_scene
 	$('.montage_scene').hide();
 	// show the scene
-	$('#' + m_scene).show()
+	$('#' + m_scene).show();
 	// show the frame
-	$('#' + m_frame).show()
+	$('#' + m_frame).show();
 }
 
 function montage_frame(m_hide,m_frame){
-	console.log('montage_frame('+ m_hide +','+ m_frame +')')
+	console.log('montage_frame('+ m_hide +','+ m_frame +')');
 	// hide other montage_frame
 	$('#' + m_hide).hide();
 	// show the frame
@@ -51,13 +51,13 @@ function montage_frame(m_hide,m_frame){
 
 function montage_close(){
 	
-	update_buttons(cinder)
+	update_buttons(cinder);
 	
 	$('#' + current_montage_scene).hide();
 	$('#' + current_montage_frame).hide();
 	
 	$('.montage_scene').hide();
-	$('#montage_window').hide()
+	$('#montage_window').hide();
 }
 
 
@@ -170,9 +170,13 @@ function scene_control(scene,frame){
 		//console.log('---> in correct scene ('+ current_scene.scene +')');
 		
 		// don't go below zero
-		if (frame == -1 && current_scene.frame <= 0){ console.log('---> already at zero'); } 
+		if (frame == -1 && current_scene.frame <= 0){ 
+			//console.log('---> already at zero'); 
+		} 
 		// don't go above number of frames in scene
-		else if (frame >= scene_map[scene].length ){ console.log('---> already at max '); }
+		else if (frame >= scene_map[scene].length ){ 
+			//console.log('---> already at max '); 
+		}
 		// otherwise go ahead
 		else {
 			//console.log('---> but wrong frame ('+ current_scene.frame +'). moving to '+ frame);
@@ -207,7 +211,7 @@ function scene_control(scene,frame){
  *	- Also updates all buttons to disabled / or not, etc.
  */
 function scene_updater(scene,frame){
-	console.log('scene_updater('+ scene +','+ frame +')')
+	//console.log('scene_updater('+ scene +','+ frame +')')
 	
 	
 	$('.affirmation_curtain').css('display','none');
@@ -260,7 +264,7 @@ function scene_updater(scene,frame){
 		
 		if (frame > 1){
 			update_temp_score(instacam_temp_score);
-			console.log('instacam_temp_score: '+ JSON.stringify(instacam_temp_score))
+			//console.log('instacam_temp_score: '+ JSON.stringify(instacam_temp_score))
 		}
 		
 		if (frame == '0'){
@@ -306,7 +310,7 @@ function scene_updater(scene,frame){
 
 // unlock buttons
 function unlock_cameraroll(buttonObj){
-	console.log('unlock_cameraroll('+ JSON.stringify(buttonObj) +')')
+	//console.log('unlock_cameraroll('+ JSON.stringify(buttonObj) +')')
 	buttonObj.locked = false;
 }
 
@@ -343,12 +347,12 @@ function update_buttons(obj){
 
 
 		if (value.disabled == true){
-			console.log('time to disable: ' + key)
+			//console.log('time to disable: ' + key)
 			
 			// id
 			if ( $('#'+key).length ){
 				
-				console.log( '#'+key )
+				//console.log( '#'+key )
 				
 				$('#'+key)
 					.attr('title','disabled')
@@ -364,7 +368,7 @@ function update_buttons(obj){
 			// class
 			else if ( $('.'+key).length ){	
 				
-				console.log( '.'+key )
+				//console.log( '.'+key )
 				
 				$('.'+key)
 					.attr('title','disabled')
@@ -384,7 +388,7 @@ function update_buttons(obj){
 		/*	*/
 		
 		if (value.disabled == true){
-			console.log('time to disable: ' + key)
+			//console.log('time to disable: ' + key)
 			
 			$('#'+key)
 				.attr('title','disabled')
@@ -447,28 +451,7 @@ var montages_played = {
 	}
 }
 
-/**
- *	Update current_score using temp_score, called on post pages
- *	- Only gets counted at affirmation / post
- */
-
-function update_current_score(){
-	
-	current_score.camgirl += temp_score.camgirl;
-	current_score.martyr += temp_score.martyr;
-	current_score.troll += temp_score.troll;
-	
-	// report score
-	console.log('current_score: '+ JSON.stringify(current_score))
-	console.log('temp_score: '+ JSON.stringify(temp_score))
-	
-	var factor = 300 / 45;
-	
-	// update the score bars
-	// maximum score is 60; length divided by 60
-	$('#bar1_bar').animate( {"left": '+='+ (temp_score.camgirl) * factor },500);
-	$('#bar2_bar').animate( {"left": '+='+ (temp_score.martyr) * factor },500);
-	$('#bar3_bar').animate( {"left": '+='+ (temp_score.troll) * factor },500);	
+function check_score_montage(){
 	
 	// check for action on score
 	// open montage player
@@ -534,6 +517,33 @@ function update_current_score(){
 	}
 	
 	
+}
+
+
+/**
+ *	Update current_score using temp_score, called on post pages
+ *	- Only gets counted at affirmation / post
+ */
+
+function update_current_score(){
+	
+	current_score.camgirl += temp_score.camgirl;
+	current_score.martyr += temp_score.martyr;
+	current_score.troll += temp_score.troll;
+	
+	check_score_montage();
+	
+	// report score
+	//console.log('current_score: '+ JSON.stringify(current_score))
+	//console.log('temp_score: '+ JSON.stringify(temp_score))
+	
+	var factor = 300 / 45;
+	
+	// update the score bars
+	// maximum score is 60; length divided by 60
+	$('#bar1_bar').animate( {"left": '+='+ (temp_score.camgirl) * factor },500);
+	$('#bar2_bar').animate( {"left": '+='+ (temp_score.martyr) * factor },500);
+	$('#bar3_bar').animate( {"left": '+='+ (temp_score.troll) * factor },500);	
 	
 	
 	report();
@@ -618,7 +628,7 @@ function instacam_preview(buttonObj){
 	
 	/*button_noise()*/
 	
-	console.log(buttonObj)
+	//console.log(buttonObj)
 	
 	instacam_choices[buttonObj.frame] = buttonObj.id;
 	
@@ -647,7 +657,7 @@ function instacam_preview(buttonObj){
 	else if (buttonObj.frame == 'foodie2'){
 		// change only background
 		var background_img = buttonObj.preview_img;	
-		console.log(buttonObj)
+		//console.log(buttonObj)
 	}
 	
 	// camroll1
@@ -736,7 +746,7 @@ function tag_handler(element){
 		}
 	}
 	//console.log(tags[tag_name])
-	console.log(tags_selected)
+	//console.log(tags_selected)
 }
 // confirm selected tags and add them to used
 function tag_confirm(){
@@ -763,8 +773,8 @@ function tag_confirm(){
 		scene_control(current_scene.scene,current_scene.frame +1)
 	}
 	
-	console.log('tags_selected: '+ tags_selected)
-	console.log('tags_used: '+ tags_used)
+	//console.log('tags_selected: '+ tags_selected)
+	//console.log('tags_used: '+ tags_used)
 }
 $('#dumblr_tag_confirm').on('click',function(){ tag_confirm() });
 $('#instacam_tag_confirm').on('click',function(){ tag_confirm() });
@@ -779,7 +789,7 @@ function affirmation_loader(){
 		// loop through all btns_to_disable clicked
 		for (var i = 0; i< btns_to_disable.length; i++){	
 			disable_btn( window[current_scene.scene].buttons[btns_to_disable[i]] )
-			console.log('time to MARK AS DISABLED: '+ current_scene.scene +','+ btns_to_disable[i])
+			//console.log('time to MARK AS DISABLED: '+ current_scene.scene +','+ btns_to_disable[i])
 		}
 		// reset btns_to_disable
 		btns_to_disable = []
@@ -793,7 +803,7 @@ function affirmation_loader(){
 				
 				disable_btn( instacam_camera_roll.buttons[obj[key]] )
 			}
-			console.log('instacam_choices ========= '+ log);
+			//console.log('instacam_choices ========= '+ log);
 		}
 		
 	} 
@@ -858,7 +868,7 @@ var soundtrack = new Howl({
 	loop: true,
 	volume: 0.5,
 	onend: function() {
-		console.log('Soundtrack just looped...');
+		//console.log('Soundtrack just looped...');
 	}
 });
 
@@ -887,7 +897,7 @@ function loser_checker(){
 		if (obj.hasOwnProperty(key)) {
 			// are any not yet disabled?
 			if (obj[key].disabled == false){
-				console.log('loser_checker() ========= metube not disabled');
+				//console.log('loser_checker() ========= metube not disabled');
 				return false;
 			}
 		}
@@ -898,7 +908,7 @@ function loser_checker(){
 		if (obj.hasOwnProperty(key)) {
 			// are any not yet disabled?
 			if (obj[key].disabled == false){
-				console.log('loser_checker() ========= cinder not disabled');
+				//console.log('loser_checker() ========= cinder not disabled');
 				return false;
 			}
 		}
@@ -909,7 +919,7 @@ function loser_checker(){
 		if (obj.hasOwnProperty(key)) {
 			// are any not yet disabled?
 			if (obj[key].disabled == false){
-				console.log('loser_checker() ========= dumblr not disabled');
+				//console.log('loser_checker() ========= dumblr not disabled');
 				return false;
 			}
 		}
@@ -920,7 +930,7 @@ function loser_checker(){
 		if (obj.hasOwnProperty(key)) {
 			// are any not yet disabled?
 			if (obj[key].disabled == false){
-				console.log('loser_checker() ========= instacam not disabled');
+				//console.log('loser_checker() ========= instacam not disabled');
 				return false;
 			}
 		}
