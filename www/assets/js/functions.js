@@ -25,7 +25,7 @@ function test_buttons(){
 		//alert(key)
 		$.each( this, function( frame,title ) {
 			$('#nav').append('<button id="'+ title +'">'+ title +'</button>')
-			$("#"+title).on('click',function () { scene_control(scene,frame); montage_close() });
+			$("#"+title).on('click',function () { scene_control(scene,frame); });
 		});
 		$('#nav').append('<br><br>')
 	});
