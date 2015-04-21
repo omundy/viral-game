@@ -259,7 +259,10 @@ function scene_updater(scene,frame){
 		// tags
 		else if (frame == '15'){ add_tags(); }
 		// affirmation
-		else if (frame == '16'){ affirmation_loader(); }
+		else if (frame == '16'){ 
+			affirmation_loader(); 
+			dumblr_img_disablr()
+		}
 
 	} 
 	

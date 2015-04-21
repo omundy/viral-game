@@ -90,17 +90,30 @@ $('.d_dumblr_img_btn').on('click',function(){ dumblr_img_clicked( 'd', $(this).a
 
 function dumblr_img_clicked(page,id){
 	console.log('dumblr_img_clicked('+ page +','+ id +')')
-	if (dumblr_img_button_tracker[page] >= 4){
-		alert("That's too many images!!");
-		return;
-	} else {
-		queue_disable_btn(dumblr.buttons[id]);
-		dumblr_img_button_tracker[page]++;
+	
+	// update tracker
+	dumblr_img_button_tracker[page] = id;
+	
+	if (page == 'a'){
+		scene_control('dumblr',3)
+	} else if (page == 'b'){
+		scene_control('dumblr',4)
+	} else if (page == 'c'){
+		scene_control('dumblr',5)
+	} else if (page == 'd'){
+		scene_control('dumblr',15)
 	}
+	// update the temp_score	
+	update_temp_score(dumblr.buttons[id].score)
 	
 	report() 
 }
-
+function dumblr_img_disablr(){
+	disable_btn ( dumblr.buttons[dumblr_img_button_tracker['a']] );
+	disable_btn ( dumblr.buttons[dumblr_img_button_tracker['b']] );
+	disable_btn ( dumblr.buttons[dumblr_img_button_tracker['c']] );
+	disable_btn ( dumblr.buttons[dumblr_img_button_tracker['d']] );
+}
 
 	
 	

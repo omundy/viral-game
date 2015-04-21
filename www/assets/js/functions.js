@@ -13,6 +13,7 @@ function report(){
 		+'; instacam_temp_score: '+ JSON.stringify(instacam_temp_score)
 		+'; instacam_choices: '+ JSON.stringify(instacam_choices)
 		+'; btns_to_disable: '+ JSON.stringify(btns_to_disable)
+		+'; dumblr_img_button_tracker: '+ JSON.stringify(dumblr_img_button_tracker)
 		+'; <br>montages_played: '+ JSON.stringify(montages_played)
 		
 		);	

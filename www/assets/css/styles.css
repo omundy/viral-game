@@ -607,12 +607,12 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 267px;
     top: 202px;
  }
-  #dumblr_scene .shock_egg { 
+  #dumblr_scene .entry { 
     position: absolute;
-    left: 267px;
+    left: 467px;
     top: 202px;
  }
-  #dumblr_scene .entry {  /* bakhov.png, bak.png */
+  #dumblr_scene .shock_egg1 {  /* bakhov.png, bak.png */
     position: absolute;
     left: 859px;
     top: 543px;
