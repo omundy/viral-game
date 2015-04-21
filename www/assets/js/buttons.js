@@ -79,7 +79,29 @@ $('.diary').on('click',function(){ scene_control('dumblr',6) });
 $('.manifesto').on('click',function(){ scene_control('dumblr',10) });
 $('.rant').on('click',function(){ scene_control('dumblr',8) });
 	
+
+$('.a_dumblr_img_btn').on('click',function(){ dumblr_img_clicked( 'a', $(this).attr('id') ) });
+$('.b_dumblr_img_btn').on('click',function(){ dumblr_img_clicked( 'b', $(this).attr('id') ) });
+$('.c_dumblr_img_btn').on('click',function(){ dumblr_img_clicked( 'c', $(this).attr('id') ) });
+$('.d_dumblr_img_btn').on('click',function(){ dumblr_img_clicked( 'd', $(this).attr('id') ) });
+
+
+
+
+function dumblr_img_clicked(page,id){
+	console.log('dumblr_img_clicked('+ page +','+ id +')')
+	if (dumblr_img_button_tracker[page] >= 4){
+		alert("That's too many images!!");
+		return;
+	} else {
+		queue_disable_btn(dumblr.buttons[id]);
+		dumblr_img_button_tracker[page]++;
+	}
 	
+	report() 
+}
+
+
 	
 	
 /* CINDER BUTTONS */
@@ -87,10 +109,10 @@ $('.rant').on('click',function(){ scene_control('dumblr',8) });
 $('.pass').on('click',function(){ scene_control(current_scene.scene,current_scene.frame +1) });
 $('.lastpass').on('click',function(){ scene_control('cinder', 0) });
 
-$('.date_lilb').on('click',function(){ update_temp_score(cinder.buttons.date_lilb.score); montage_window('date_lilb','lilb_1'); disable_btn(cinder.buttons.date_lilb) });
-$('.date_bro').on('click',function(){ update_temp_score(cinder.buttons.date_bro.score); montage_window('date_bro','brody_1'); disable_btn(cinder.buttons.date_bro) });
-$('.date_josie').on('click',function(){ update_temp_score(cinder.buttons.date_josie.score); montage_window('date_josie','josie_1'); disable_btn(cinder.buttons.date_josie) });
-$('.date_elliot').on('click',function(){ update_temp_score(cinder.buttons.date_elliot.score); montage_window('date_elliot','elliot_1'); disable_btn(cinder.buttons.date_elliot) });
+$('#date_lilb_btn').on('click',function(){ update_temp_score(cinder.buttons.date_lilb_btn.score); montage_window('date_lilb','lilb_1'); disable_btn(cinder.buttons.date_lilb_btn) });
+$('#date_bro_btn').on('click',function(){ update_temp_score(cinder.buttons.date_bro_btn.score); montage_window('date_bro','brody_1'); disable_btn(cinder.buttons.date_bro_btn) });
+$('#date_josie_btn').on('click',function(){ update_temp_score(cinder.buttons.date_josie_btn.score); montage_window('date_josie','josie_1'); disable_btn(cinder.buttons.date_josie_btn) });
+$('#date_elliot_btn').on('click',function(){ update_temp_score(cinder.buttons.date_elliot_btn.score); montage_window('date_elliot','elliot_1'); disable_btn(cinder.buttons.date_elliot_btn) });
 
 
 

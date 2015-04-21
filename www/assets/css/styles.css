@@ -1299,22 +1299,22 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
     left: 249px;
     top: 510px;
  }
- #cinder_scene .date_lilb {  
+ #cinder_scene #date_lilb_btn {  
     position: absolute;
     left: 546px;
     top: 510px;
  }
-#cinder_scene .date_elliot {  
+#cinder_scene #date_elliot_btn {  
     position: absolute;
     left: 546px;
     top: 510px;
  }
- #cinder_scene .date_josie {  
+ #cinder_scene #date_josie_btn {  
     position: absolute;
     left: 546px;
     top: 510px;
  }
- #cinder_scene .date_bro { 
+ #cinder_scene #date_bro_btn { 
     position: absolute;
     left: 546px;
     top: 510px;

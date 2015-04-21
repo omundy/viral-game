@@ -90,6 +90,14 @@ var tags_used = []
 // keep track of things to disable
 var btns_to_disable = []
 
+// keep track of dumblr reblog imgs
+function new_dumblr_img_button_tracker(){
+	dumblr_img_button_tracker = {'a':0,'b':0,'c':0,'d':0};
+}
+var dumblr_img_button_tracker;
+new_dumblr_img_button_tracker(); 
+
+
 // all scenes keep track in here
 var scene_map = {
 	
@@ -244,8 +252,9 @@ function scene_updater(scene,frame){
 		
 		update_buttons(dumblr)
 		
-		if (frame == '1'){
-			
+		if (frame == '0'){
+			// reset dumblr images
+			new_dumblr_img_button_tracker(); 	
 		}
 		// tags
 		else if (frame == '15'){ add_tags(); }
@@ -322,20 +331,25 @@ function update_buttons(obj){
 
 		//console.log(key +' => '+ value)
 
-		// LOK
+		// (UN)LOCK INSTACAM CAMERAROLL
 		if (current_scene.scene == 'instacam' && current_scene.frame == 6){
 			
+			// IF THERE IS A LOCKED IMG
 			if ( value.btn_img_locked ){
-				//alert(value)
+				// LOCK IT DOWN
 				if ( value.locked == true ){
 					$('#'+key)
 						.attr('src','assets/img/instacam/'+ value.btn_img_locked)
 						.removeClass('instacam_hover')
+						.addClass('disabledButton')
 						.prop('disabled', true);
-				} else {
+				} 
+				// OR NOT
+				else {
 					$('#'+key)
 						.attr('src','assets/img/instacam/'+ value.btn_img)
 						.addClass('instacam_hover')
+						.removeClass('disabledButton')
 						.prop('disabled', false);
 				}
 				
@@ -345,47 +359,51 @@ function update_buttons(obj){
 
 
 
-
-		if (value.disabled == true){
-			//console.log('time to disable: ' + key)
+		
+		
+		if (current_scene.frame > -1){
 			
-			// id
-			if ( $('#'+key).length ){
+			if (value.disabled == true){
+				console.log('time to disable: ' + key)
 				
-				//console.log( '#'+key )
-				
-				$('#'+key)
-					.attr('title','disabled')
-					.css('opacity','0.3')
-					.removeClass('instacam_hover')
-					.addClass('disabledButton')
-					.prop('disabled', true);
-				if ($('#'+key).attr('onmouseout') ){	
-					//console.log( $('#'+key).attr('onmouseout') )	
-					$('#'+key).trigger('mouseover');
+				// DISABLE INSTACAM, CINDER, DUMBLR
+				if ( $('#'+key).length ){
+					
+					//console.log( '#'+key )
+					
+					$('#'+key)
+						.attr('title','disabled')
+						.css('opacity','0.3')
+						.removeClass('instacam_hover')
+						.addClass('disabledButton')
+						.prop('disabled', true);
+					if ($('#'+key).attr('onmouseout') ){	
+						//console.log( $('#'+key).attr('onmouseout') )	
+						$('#'+key).trigger('mouseover');
+					}
 				}
+				
+				// DISABLE METUBE
+				else if ( $('.'+key).length ){	
+					
+					//console.log( '.'+key )
+					
+					$('.'+key)
+						.attr('title','disabled')
+						.css('opacity','0.3')
+						.removeClass('instacam_hover')
+						.addClass('disabledButton')
+						.prop('disabled', true);
+					if ($('.'+key).attr('onmouseout') ){
+						//console.log( $('.'+key).attr('onmouseout') )
+						$('.'+key).trigger('mouseover');
+					}	
+				}		
 			}
-			// class
-			else if ( $('.'+key).length ){	
-				
-				//console.log( '.'+key )
-				
-				$('.'+key)
-					.attr('title','disabled')
-					.css('opacity','0.3')
-					.removeClass('instacam_hover')
-					.addClass('disabledButton')
-					.prop('disabled', true);
-				if ($('.'+key).attr('onmouseout') ){
-					//console.log( $('.'+key).attr('onmouseout') )
-					$('.'+key).trigger('mouseover');
-				}	
-			}		
+		
 		}
 		
-		
-		
-		/*	*/
+		/*	
 		
 		if (value.disabled == true){
 			//console.log('time to disable: ' + key)
@@ -404,20 +422,8 @@ function update_buttons(obj){
 				.prop('disabled', true);
 		}
 	
-		
-
-		/*
-		// make button
-		if (value.locked == true){
-			var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
-		} else if (value.disabled == true){
-			var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
-		} else {
-			var btn = '<img src ="assets/'+ obj.meta.path + value.btn_img +'">'
-		}
-		$('.scene').append(btn)
-		
 		*/
+
 		
 	});
 	
