@@ -100,7 +100,7 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 	padding: 7px;	
 	margin: 4px 5px;	
 	border: none;
-	background: #fff
+	background: #EF00FF
 }
 .tags button_post {
 	font-size: 111%;
@@ -609,10 +609,85 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
  }
   #dumblr_scene .entry { 
     position: absolute;
-    left: 467px;
+    left: 497px;
     top: 202px;
  }
   #dumblr_scene .shock_egg1 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg2 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg3 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg4 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg5 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg6 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg7 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg8 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg9 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg10 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg11 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg12 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg13 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg14 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+   #dumblr_scene .shock_egg15 {  /* bakhov.png, bak.png */
+    position: absolute;
+    left: 859px;
+    top: 543px;
+ }
+    #dumblr_scene .shock_egg16 {  /* bakhov.png, bak.png */
     position: absolute;
     left: 859px;
     top: 543px;

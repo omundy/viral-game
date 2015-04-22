@@ -173,6 +173,40 @@ $('.shock_camwhore').on('click',function(){
 	show_popup_video('assets/img/metube/videos/camgirl.mp4',854,480,4) })
 $('.pic').on('click',function(){ 
 	show_popup_video_confirmonly('assets/img/metube/videos/wolfe.mp4',854,480,4) })
+$('.is_egg').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/isi.mp4',854,480,4) })
+$('.shock_egg1').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg2').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg3').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg4').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg5').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg6').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg7').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg8').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg9').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg10').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg11').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg12').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg13').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg14').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg15').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
+$('.shock_egg16').on('click',function(){ 
+	show_popup_video_confirmonly('assets/img/metube/videos/screamer.mp4',854,480,4) })
 
 
 /**
