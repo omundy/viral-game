@@ -770,7 +770,7 @@ var dumblr = {
 		
 				'mw1': {
 				    'id':'mw1' ,
-				    'text':'IDK',
+				    'text':'wieners',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw1.png',
@@ -778,6 +778,7 @@ var dumblr = {
 				},
 				'mw2': {
 				    'id':'mw2',
+				    'text':'bitches',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw2.png',
@@ -785,6 +786,7 @@ var dumblr = {
 				},
 				'mw3': {
 				    'id':'mw3',
+				    'text':'girls',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw3.png',
@@ -792,6 +794,7 @@ var dumblr = {
 				},
 				'mw4': {
 				    'id':'mw4',
+				    'text':'lattes',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw4.png',
@@ -802,6 +805,7 @@ var dumblr = {
 				
 				'mw5': {
 				    'id':'mw5',
+				    'text':'wanna fuck',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw5.png',
@@ -809,6 +813,7 @@ var dumblr = {
 				},
 				'mw6': {
 				    'id':'mw6',
+				    'text':'despise',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw6.png',
@@ -816,6 +821,7 @@ var dumblr = {
 				},
 				'mw7': {
 				    'id':'mw7' ,
+				    'text':'<3',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw7.png',
@@ -823,6 +829,7 @@ var dumblr = {
 				},
 				'mw8': {
 				    'id':'mw8' ,
+				    'text':'pwn',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw8.png',
@@ -833,6 +840,7 @@ var dumblr = {
 				
 				'mw9': {
 				    'id':'mw9',
+				    'text':'want to be',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw9.png',
@@ -840,6 +848,7 @@ var dumblr = {
 				},
 				'mw10': {
 				    'id':'mw10' ,
+				    'text':'suck',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw10.png',
@@ -847,6 +856,7 @@ var dumblr = {
 				},
 				'mw11': {
 				    'id':'mw11',
+				    'text':'rickroll',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw11.png',
@@ -854,6 +864,7 @@ var dumblr = {
 				},
 				'mw12': {
 				    'id':'mw12',
+				    'text':'loathe',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw12.png',
@@ -864,6 +875,7 @@ var dumblr = {
 					    
 				'mw13': {
 				    'id':'mw13',
+				    'text':'worship',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw13.png',
@@ -871,6 +883,7 @@ var dumblr = {
 				},
 				'mw14': {
 				    'id':'mw14' ,
+				    'text':'pee on',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw14.png',
@@ -878,6 +891,7 @@ var dumblr = {
 				},
 				'mw15': {
 				    'id':'mw15',
+				    'text':'play with my pussy',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw15.png',
@@ -885,6 +899,7 @@ var dumblr = {
 				},
 				'mw16': {
 				    'id':'mw16',
+				    'text':'destroy',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw16.png',
@@ -896,6 +911,7 @@ var dumblr = {
 						
 				'mw17': {
 				    'id':'mw17' ,
+				    'text':'white males',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw17.png',
@@ -903,6 +919,7 @@ var dumblr = {
 				},
 				'mw18': {
 				    'id':'mw18',
+				    'text':'white mocha frapuccinos',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw18.png',
@@ -910,6 +927,7 @@ var dumblr = {
 				},
 				'mw19': {
 				    'id':'mw19',
+				    'text':'people',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw19.png',
@@ -917,6 +935,7 @@ var dumblr = {
 				},
 				'mw20': {
 				    'id':'mw20',
+				    'text':'posers',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw20.png',
@@ -927,6 +946,7 @@ var dumblr = {
 		    'phrase6':{		   	
 				'mw21': {
 				    'id':'mw21',
+				    'text':'hedonistic',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw21.png',
@@ -934,6 +954,7 @@ var dumblr = {
 				},
 				'mw22': {
 				    'id':'mw22',
+				    'text':'idiotic',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw22.png',
@@ -941,6 +962,7 @@ var dumblr = {
 				},
 				'mw23': {
 				    'id':'mw23' ,
+				    'text':'problematic',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw23.png',
@@ -948,6 +970,7 @@ var dumblr = {
 				},
 				'mw24': {
 				    'id':'mw24',
+				    'text':'basic ass',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/mw24.png',
@@ -961,6 +984,7 @@ var dumblr = {
 			    
 				'm2w1': {
 				    'id':'m2w1',
+				    'text':'brunching',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w1.png',
@@ -968,6 +992,7 @@ var dumblr = {
 				},
 				'm2w2': {
 				    'id':'m2w2' ,
+				    'text':'pleasure',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w2.png',
@@ -975,6 +1000,7 @@ var dumblr = {
 				},
 				'm2w3': {
 				    'id': 'm2w3' ,
+				    'text':'fapping',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w3.png',
@@ -982,6 +1008,7 @@ var dumblr = {
 				},
 				'm2w4': {
 				    'id':'m2w4',
+				    'text':'a/s/l',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w4.png',
@@ -992,6 +1019,7 @@ var dumblr = {
 					
 				'm2w5': {
 				    'id':'m2w5',
+				    'text':'destroy',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w5.png',
@@ -999,6 +1027,7 @@ var dumblr = {
 				},
 				'm2w6': {
 				    'id':'m2w6',
+				    'text':'jizz on',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w6.png',
@@ -1006,13 +1035,15 @@ var dumblr = {
 				},
 				'm2w7': {
 				    'id':'m2w7',
+				    'text':'ignore',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w7.png',
 				    'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
 				},
 				'm2w8': {
-				    'id':'m2w8' ,
+				    'id':'m2w8',
+				    'text':'block',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w8.png',
@@ -1023,13 +1054,15 @@ var dumblr = {
 				
 				'm2w9': {
 				    'id':'m2w9',
+				    'text':'kill',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w9.png',
 				    'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
 				},
 				'm2w10': {
-				    'id':'m2w10' ,
+				    'id':'m2w10',
+				    'text':'hump',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w10.png',
@@ -1037,6 +1070,7 @@ var dumblr = {
 				},
 				'm2w11': {
 				    'id':'m2w11',
+				    'text':'ombre',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w11.png',
@@ -1044,6 +1078,7 @@ var dumblr = {
 				},
 				'm2w12': {
 				    'id':'m2w12',
+				    'text':'accept payments from',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w12.png',
@@ -1055,6 +1090,7 @@ var dumblr = {
 			    	
 				'm2w13': {
 				    'id':'m2w13',
+				    'text':'twerk',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w13.png',
@@ -1062,6 +1098,7 @@ var dumblr = {
 				},
 				'm2w14': {
 				    'id':'m2w14',
+				    'text':'suffer',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w14.png',
@@ -1069,6 +1106,7 @@ var dumblr = {
 				},
 				'm2w15': {
 				    'id':'m2w15',
+				    'text':'rage',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w15.png',
@@ -1076,6 +1114,7 @@ var dumblr = {
 				},
 				'm2w16': {
 				    'id':'m2w16' ,
+				    'text':'masturbate',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w16.png',
@@ -1087,13 +1126,15 @@ var dumblr = {
 					    	
 				'm2w17': {
 				    'id':'m2w17' ,
+				    'text':'suffer',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w17.png',
 				    'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
 				},
 				'm2w18': {
-				    'id':'m2w18' ,
+				    'id':'m2w18',
+				    'text':'rage',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w19.png',
@@ -1101,6 +1142,7 @@ var dumblr = {
 				},
 				'm2w19': {
 				    'id':'m2w19',
+				    'text':'listen to Beyonc',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w19.png',
@@ -1108,6 +1150,7 @@ var dumblr = {
 				},
 				'm2w20': {
 				    'id':'m2w20' ,
+				    'text':'live in a patriarchy',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w20.png',
@@ -1119,6 +1162,7 @@ var dumblr = {
 			    	
 				'm2w21': {
 				    'id':'m2w21',
+				    'text':'deconstruct',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w21.png',
@@ -1126,6 +1170,7 @@ var dumblr = {
 				},
 				'm2w22': {
 				    'id':'m2w22',
+				    'text':'disregard',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w22.png',
@@ -1133,6 +1178,7 @@ var dumblr = {
 				},
 				'm2w23': {
 				    'id':'m2w23',
+				    'text':'harrass',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w23.png',
@@ -1140,6 +1186,7 @@ var dumblr = {
 				},
 				'm2w24': {
 				    'id':'m2w24',
+				    'text':'destroy',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w24.png',
@@ -1157,6 +1204,7 @@ var dumblr = {
 		
 				'cgw1': {
 				    'id':'cgw1',
+				    'text':'feminists, but also a camwhore',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw1.png',
@@ -1164,6 +1212,7 @@ var dumblr = {
 				},
 				'cgw2': {
 				    'id':'cgw2',
+				    'text':'sorority sister, and debutante',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw2.png',
@@ -1171,6 +1220,7 @@ var dumblr = {
 				},
 				'cgw3': {
 				    'id':'cgw3',
+				    'text':'gamer, and lolicon enthusiast',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw3.png',
@@ -1178,6 +1228,7 @@ var dumblr = {
 				},
 				'cgw4': {
 				    'id':'cgw4',
+				    'text':'gentleman, but also a loner',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw4.png',
@@ -1187,6 +1238,7 @@ var dumblr = {
 		    'phrase2':{		
 				'cgw5': {
 				    'id':'cgw5',
+				    'text':'clevage',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw5.png',
@@ -1194,6 +1246,7 @@ var dumblr = {
 				},
 				'cgw6': {
 				    'id':'cgw6',
+				    'text':'manicures',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw6.png',
@@ -1201,6 +1254,7 @@ var dumblr = {
 				},
 				'cgw7': {
 				    'id':'cgw7',
+				    'text': 'action figure collection',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw7.png',
@@ -1208,6 +1262,7 @@ var dumblr = {
 				},
 				'cgw8': {
 				    'id':'cgw8',
+				    'text': 'aresenal',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw8.png',
@@ -1218,6 +1273,7 @@ var dumblr = {
 		    'phrase3':{		
 				'cgw9': {
 				    'id':'cgw9',
+				    'text': 'panties',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw9.png',
@@ -1225,6 +1281,7 @@ var dumblr = {
 				},
 				'cgw10': {
 				    'id':'cgw10',
+				    'text': 'chevron scarf',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw10.png',
@@ -1232,6 +1289,7 @@ var dumblr = {
 				},
 				'cgw11': {
 				    'id':'cgw11',
+				    'text': 'Legalize Bestiality T-shirt',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw11.png',
@@ -1239,6 +1297,7 @@ var dumblr = {
 				},
 				'cgw12': {
 				    'id':'cgw12',
+				    'text': 'manic state',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw12.png',
@@ -1250,6 +1309,7 @@ var dumblr = {
 			    	
 				'cgw13': {
 				    'id':'cgw13',
+				    'text': 'boobs',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw13.png',
@@ -1257,6 +1317,7 @@ var dumblr = {
 				},
 				'cgw14': {
 				    'id':'cgw14',
+				    'text': 'class',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw14.png',
@@ -1264,6 +1325,7 @@ var dumblr = {
 				},
 				'cgw15': {
 				    'id':'cgw15',
+				    'text': 'shock sites',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw15.png',
@@ -1271,6 +1333,7 @@ var dumblr = {
 				},
 				'cgw16': {
 				    'id':'cgw16',
+				    'text': 'pity',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw16.png',
@@ -1282,6 +1345,7 @@ var dumblr = {
 			    	
 				'cgw17': {
 				    'id':'cgw17',
+				    'text': 'worse',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw17.png',
@@ -1289,6 +1353,7 @@ var dumblr = {
 				},
 				'cgw18': {
 				    'id':'cgw18',
+				    'text': 'disgusting',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw18.png',
@@ -1296,6 +1361,7 @@ var dumblr = {
 				},
 				'cgw19': {
 				    'id':'cgw19',
+				    'text': 'obscene',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw19.png',
@@ -1303,6 +1369,7 @@ var dumblr = {
 				},
 				'cgw20': {
 				    'id':'cgw20',
+				    'text': 'ultimate',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw20.png',
@@ -1314,6 +1381,7 @@ var dumblr = {
 			    
 				'cgw21': {
 				    'id':'cgw21',
+				    'text': 'jaded',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw21.png',
@@ -1321,6 +1389,7 @@ var dumblr = {
 				},
 				'cgw22': {
 				    'id':'cgw22',
+				    'text': 'naive',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw22.png',
@@ -1328,6 +1397,7 @@ var dumblr = {
 				},
 				'cgw23': {
 				    'id':'cgw23',
+				    'text': 'obnoxious',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw23.png',
@@ -1335,6 +1405,7 @@ var dumblr = {
 				},
 				'cgw24': {
 				    'id':'cgw24',
+				    'text': 'social',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cgw24.png',
@@ -1347,6 +1418,7 @@ var dumblr = {
 				//diary page 2
 				'cg2w1': {
 				    'id':'cg2w1',
+				    'text': 'hard',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w1.png',
@@ -1354,6 +1426,7 @@ var dumblr = {
 				},
 				'cg2w2': {
 				    'id':'cg2w2',
+				    'text': 'gullible',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w2.png',
@@ -1361,6 +1434,7 @@ var dumblr = {
 				},
 				'cg2w3': {
 				    'id':'cg2w3',
+				    'text': 'grimey',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w3.png',
@@ -1368,6 +1442,7 @@ var dumblr = {
 				},
 				'cg2w4': {
 				    'id':'cg2w4',
+				    'text': 'narcissistic',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w4.png',
@@ -1379,6 +1454,7 @@ var dumblr = {
 			    	
 				'cg2w5': {
 				    'id':'cg2w5',
+				    'text': 'woman with autonomy over her own body',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w5.png',
@@ -1386,6 +1462,7 @@ var dumblr = {
 				},
 				'cg2w6': {
 				    'id':'cg2w6',
+				    'text': 'princss with an expensive purse',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w6.png',
@@ -1393,6 +1470,7 @@ var dumblr = {
 				},
 				'cg2w7': {
 				    'id':'cg2w7',
+				    'text': 'MRA with hacking skillz',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w7.png',
@@ -1400,6 +1478,7 @@ var dumblr = {
 				},
 				'cg2w8': {
 				    'id':'cg2w8',
+				    'text': 'supreme being with a n uzi',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w8.png',
@@ -1411,6 +1490,7 @@ var dumblr = {
 					    	
 				'cg2w9': {
 				    'id':'cg2w9',
+				    'text': 'weirdos',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w9.png',
@@ -1418,6 +1498,7 @@ var dumblr = {
 				},
 				'cg2w10': {
 				    'id':'cg2w10',
+				    'text': 'lurkers',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w10.png',
@@ -1425,6 +1506,7 @@ var dumblr = {
 				},
 				'cg2w11': {
 				    'id':'cg2w11',
+				    'text': 'haters',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w11.png',
@@ -1432,6 +1514,7 @@ var dumblr = {
 				},
 				'cg2w12': {
 				    'id':'cg2w12',
+				    'text': 'popular kids',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w12.png',
@@ -1443,6 +1526,7 @@ var dumblr = {
 			    
 				'cg2w13': {
 				    'id':'cg2w13',
+				    'text': 'freaky',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w13.png',
@@ -1450,6 +1534,7 @@ var dumblr = {
 				},
 				'cg2w14': {
 				    'id':'cg2w14',
+				    'text': 'popular',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w14.png',
@@ -1457,6 +1542,7 @@ var dumblr = {
 				},
 				'cg2w15': {
 				    'id':'cg2w15',
+				    'text': 'intimidating',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w15.png',
@@ -1464,6 +1550,7 @@ var dumblr = {
 				},
 				'cg2w16': {
 				    'id':'cg2w16',
+				    'text': 'easy to kill',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w16.png',
@@ -1475,6 +1562,7 @@ var dumblr = {
 			    	
 				'cg2w17': {
 				    'id':'cg2w17',
+				    'text': 'hedonists',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w17.png',
@@ -1482,6 +1570,7 @@ var dumblr = {
 				},
 				'cg2w18': {
 				    'id':'cg2w18',
+				    'text': 'idiots',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w18.png',
@@ -1489,6 +1578,7 @@ var dumblr = {
 				},
 				'cg2w19': {
 				    'id':'cg2w19',
+				    'text': 'stalkers',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w19.png',
@@ -1496,6 +1586,7 @@ var dumblr = {
 				},
 				'cg2w20': {
 				    'id':'cg2w20',
+				    'text': 'panties',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w20.png',
@@ -1507,6 +1598,7 @@ var dumblr = {
 			    	
 				'cg2w21': {
 				    'id':'cg2w21',
+				    'text': 'PintrestPrincess92',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w21.png',
@@ -1514,6 +1606,7 @@ var dumblr = {
 				},
 				'cg2w22': {
 				    'id':'cg2w22',
+				    'text': 'supr3m3_sh00ter',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w22.png',
@@ -1521,6 +1614,7 @@ var dumblr = {
 				},
 				'cg2w23': {
 				    'id':'cg2w23',
+				    'text': 'SJW_Slut69',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w23.png',
@@ -1528,6 +1622,7 @@ var dumblr = {
 				},
 				'cg2w24': {
 				    'id':'cg2w24',
+				    'text': 'AssL1ck3r1nvas10n',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w24.png',
@@ -1544,6 +1639,7 @@ var dumblr = {
 				//rant page 1
 				'tw1': {
 				    'id':'tw1',
+				    'text': 'perverts and fans',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw1.png',
@@ -1551,6 +1647,7 @@ var dumblr = {
 				},
 				'tw2': {
 				    'id':'tw2',
+				    'text': 'losers and wannabes',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw2.png',
@@ -1558,6 +1655,7 @@ var dumblr = {
 				},
 				'tw3': {
 				    'id':'tw3',
+				    'text': 'trolls and haters',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw3.png',
@@ -1565,6 +1663,7 @@ var dumblr = {
 				},
 				'tw4': {
 				    'id':'tw4',
+				    'text': 'pathetic creatures',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw4.png',
@@ -1576,6 +1675,7 @@ var dumblr = {
 			    	
 				'tw5': {
 				    'id':'tw5',
+				    'text': 'uggs',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw5.png',
@@ -1583,6 +1683,7 @@ var dumblr = {
 				},
 				'tw6': {
 				    'id':'tw6',
+				    'text': 'fedoras',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw6.png',
@@ -1590,6 +1691,7 @@ var dumblr = {
 				},
 				'tw7': {
 				    'id':'tw7',
+				    'text': 'crotchless panties',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw7.png',
@@ -1597,6 +1699,7 @@ var dumblr = {
 				},
 				'tw8': {
 				    'id':'tw8',
+				    'text': 'aviators',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw8.png',
@@ -1608,6 +1711,7 @@ var dumblr = {
 					    	
 				'tw9': {
 				    'id':'tw9',
+				    'text': 'glasses',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw9.png',
@@ -1615,6 +1719,7 @@ var dumblr = {
 				},
 				'tw10': {
 				    'id':'tw10',
+				    'text': 'boots',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw10.png',
@@ -1622,6 +1727,7 @@ var dumblr = {
 				},
 				'tw11': {
 				    'id':'tw11',
+				    'text': 'hat',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw11.png',
@@ -1629,6 +1735,7 @@ var dumblr = {
 				},
 				'tw12': {
 				    'id':'tw12',
+				    'text': 'lingerie',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw12.png',
@@ -1640,6 +1747,7 @@ var dumblr = {
 					    	
 				'tw13': {
 				    'id':'tw13',
+				    'text': 'obsessed with my pussy',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw13.png',
@@ -1647,6 +1755,7 @@ var dumblr = {
 				},
 				'tw14': {
 				    'id':'tw14',
+				    'text': 'unpopular',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw14.png',
@@ -1654,6 +1763,7 @@ var dumblr = {
 				},
 				'tw15': {
 				    'id':'tw15',
+				    'text': 'jealous ass haters',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw15.png',
@@ -1661,6 +1771,7 @@ var dumblr = {
 				},
 				'tw16': {
 				    'id':'tw16',
+				    'text': 'more fortunate than me',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw16.png',
@@ -1671,14 +1782,16 @@ var dumblr = {
 		    'phrase5':{	
 			    
 				'tw17': {
-				    'id':'tw10',
+				    'id':'tw17',
+				    'text': 'a fedora',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
-				    'btn_img': 'words/tw10.png',
+				    'btn_img': 'words/tw17.png',
 				    'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
 				},
 				'tw18': {
 				    'id':'tw18',
+				    'text': 'crotchless panties',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw18.png',
@@ -1686,6 +1799,7 @@ var dumblr = {
 				},
 				'tw19': {
 				    'id':'tw19',
+				    'text': 'aviators',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw19.png',
@@ -1693,6 +1807,7 @@ var dumblr = {
 				},
 				'tw20': {
 				    'id':'tw20',
+				    'text': 'Uggss',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw20.png',
@@ -1704,6 +1819,7 @@ var dumblr = {
 			    	
 				'tw21': {
 				    'id':'tw21',
+				    'text': 'stylish, and style is for ladies',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw21.png',
@@ -1711,6 +1827,7 @@ var dumblr = {
 				},
 				'tw22': {
 				    'id':'tw22',
+				    'text': 'class, and class is for men',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw22.png',
@@ -1718,6 +1835,7 @@ var dumblr = {
 				},
 				'tw23': {
 				    'id':'tw23',
+				    'text': 'sexy and sex is for sluts',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw23.png',
@@ -1725,6 +1843,7 @@ var dumblr = {
 				},
 				'tw24': {
 				    'id':'tw24',
+				    'text': 'elegant, and elegance is for gods',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/tw24.png',
@@ -1737,6 +1856,7 @@ var dumblr = {
 				//rant page 2
 				't2w1': {
 				    'id':'t2w1',
+				    'text': 'swag is for boys',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w1.png',
@@ -1744,6 +1864,7 @@ var dumblr = {
 				},
 				't2w2': {
 				    'id':'t2w2',
+				    'text': 'looking trashy is for sluts',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w2.png',
@@ -1751,6 +1872,7 @@ var dumblr = {
 				},
 				't2w3': {
 				    'id':'t2w3',
+				    'text': 'love is for disgusting humans',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w3.png',
@@ -1758,6 +1880,7 @@ var dumblr = {
 				},
 				't2w4': {
 				    'id':'t2w4',
+				    'text': 'class is for basic bitches',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w4.png',
@@ -1769,6 +1892,7 @@ var dumblr = {
 			    	
 				't2w5': {
 				    'id':'t2w5',
+				    'text': 'outcasts',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w5.png',
@@ -1776,6 +1900,7 @@ var dumblr = {
 				},
 				't2w6': {
 				    'id':'t2w6',
+				    'text': 'stalkers',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w6.png',
@@ -1783,6 +1908,7 @@ var dumblr = {
 				},
 				't2w7': {
 				    'id':'t2w7',
+				    'text': 'haters',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w7.png',
@@ -1790,6 +1916,7 @@ var dumblr = {
 				},
 				't2w8': {
 				    'id':'t2w8',
+				    'text': 'popular kids',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w8.png',
@@ -1801,6 +1928,7 @@ var dumblr = {
 					    	
 				't2w9': {
 				    'id':'t2w9',
+				    'text': 'shoe',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w9.png',
@@ -1808,6 +1936,7 @@ var dumblr = {
 				},
 				't2w10': {
 				    'id':'t2w10',
+				    'text': 'hat',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w10.png',
@@ -1815,6 +1944,7 @@ var dumblr = {
 				},
 				't2w11': {
 				    'id':'t2w11',
+				    'text': 'glasses',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w11.png',
@@ -1822,6 +1952,7 @@ var dumblr = {
 				},
 				't2w12': {
 				    'id':'t2w12',
+				    'text': 'panties',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w12.png',
@@ -1833,6 +1964,7 @@ var dumblr = {
 					    	
 				't2w13': {
 				    'id':'t2w13',
+				    'text': 'hat',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w13.png',
@@ -1840,6 +1972,7 @@ var dumblr = {
 				},
 				't2w14': {
 				    'id':'t2w14',
+				    'text': 'panties',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w14.png',
@@ -1847,6 +1980,7 @@ var dumblr = {
 				},
 				't2w15': {
 				    'id':'t2w15',
+				    'text': 'shoe',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w15.png',
@@ -1854,6 +1988,7 @@ var dumblr = {
 				},
 				't2w16': {
 				    'id':'t2w16',
+				    'text': 'glasses',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w16.png',
@@ -1865,6 +2000,7 @@ var dumblr = {
 					    	
 				't2w17': {
 				    'id':'t2w17',
+				    'text': 'wishing',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w17.png',
@@ -1872,6 +2008,7 @@ var dumblr = {
 				},
 				't2w18': {
 				    'id':'t2w18',
+				    'text': 'trolling',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w18.png',
@@ -1879,6 +2016,7 @@ var dumblr = {
 				},
 				't2w19': {
 				    'id':'t2w19',
+				    'text': 'hating',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w19.png',
@@ -1886,6 +2024,7 @@ var dumblr = {
 				},
 				't2w20': {
 				    'id':'t2w20',
+				    'text': 'enjoying life',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w20.png',
@@ -1898,6 +2037,7 @@ var dumblr = {
 					    	
 				't2w21': {
 				    'id':'t2w21',
+				    'text': 'Uggs',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w21.png',
@@ -1905,6 +2045,7 @@ var dumblr = {
 				},
 				't2w22': {
 				    'id':'t2w22',
+				    'text': 'crotchless panties',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w22.png',
@@ -1912,6 +2053,7 @@ var dumblr = {
 				},
 				't2w23': {
 				    'id':'t2w23',
+				    'text': 'aviators',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w23.png',
@@ -1919,6 +2061,7 @@ var dumblr = {
 				},
 				't2w24': {
 				    'id':'t2w24',
+				    'text': 'a fedora',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/t2w24.png',
