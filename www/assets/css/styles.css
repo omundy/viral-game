@@ -3,14 +3,23 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 #nav { position: absolute; top: 30px; width: 9%}
 #nav .group { display: block;  }
 #nav  button { background:#666; border: none; margin: 2px 4px 0 0 }
+
+/* reporting / loading */
 #report { position: absolute; color: #fff; top: 0; background: rgba(0,0,0,.5); width: 100%; font-size: 80%; z-index: 500}
+#load_progress { position: absolute; top: 0; background: rgba(25,25,25,0.85)!important; width:100% !important; height: 100% !important; z-index: 99995 }
+#load_bar_container { position: absolute; top: 0; background: #000; width: 100%; height: 5px; z-index: 99998 }
+#load_bar { position: relative; color: #fff; font-size: 80%; top: 0; background: #ff00d5; width: 100%; height: 100%; z-index: 99999 }
+#load_pic { width:1092px; height: 798px; margin: 0 auto 0; overflow: hidden; position: relative; z-index: 99997; top: 50%; transform: translateY(-50%); }
+
+
+
 
 #container { width:100%; height: 100%; background-image: url('../img/bkg.gif'); position: absolute }
 #scene_container { width:1092px; height: 798px; background: #000; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); }
 
 .scene { position:relative; width: 1092px; height: 728px; }
 
-/* Start http://www.cursors-4u.com */ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), url(http://cur.cursors-4u.net/nature/nat-4/nat325.png), progress !important;} /* End http://www.cursors-4u.com */
+body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), url(http://cur.cursors-4u.net/nature/nat-4/nat325.png), progress !important;}
 
 #montage_window { 
 	display: none;

@@ -7,17 +7,19 @@
 
 // Displays information about scenes, scores, etc.
 function report(){
-	$('#report').html('current_scene: '+ JSON.stringify(current_scene) 
-		+'; current_score: '+ JSON.stringify(current_score) 
-		+'; temp_score: '+ JSON.stringify(temp_score)
-		+'; instacam_temp_score: '+ JSON.stringify(instacam_temp_score)
-		+'; instacam_choices: '+ JSON.stringify(instacam_choices)
-		+'; btns_to_disable: '+ JSON.stringify(btns_to_disable)
-		+'; dumblr_img_button_tracker: '+ JSON.stringify(dumblr_img_button_tracker)
-		+'; <br>montages_played: '+ JSON.stringify(montages_played)
-		
-		);	
-	//console.log(current_scene);
+	if (report_test == true){
+		$('#report').html('current_scene: '+ JSON.stringify(current_scene) 
+			+'; current_score: '+ JSON.stringify(current_score) 
+			+'; temp_score: '+ JSON.stringify(temp_score)
+			+'; instacam_temp_score: '+ JSON.stringify(instacam_temp_score)
+			+'; instacam_choices: '+ JSON.stringify(instacam_choices)
+			+'; btns_to_disable: '+ JSON.stringify(btns_to_disable)
+			+'; dumblr_img_button_tracker: '+ JSON.stringify(dumblr_img_button_tracker)
+			+'; <br>montages_played: '+ JSON.stringify(montages_played)
+			
+			);	
+		//console.log(current_scene);
+	}
 }
 
 // make buttons for testing

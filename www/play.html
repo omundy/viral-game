@@ -5,11 +5,29 @@
 <title>Viral</title>
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<script src="https://code.createjs.com/preloadjs-0.6.0.min.js"></script>
+<script src="assets/js/preloader.js"></script>
+
+
+
 </head>
 <body>
 
 
 <div id="container">
+	
+	
+	<div id="load_progress">
+		<div id="load_bar_container">
+			<div id="load_bar"></div>
+		</div>
+		<div id="load_pic">
+			
+		</div>
+	</div>
+	
 	
 	<div id="video_window">
 		<div id="video_container"></div>
@@ -27,7 +45,7 @@
 			
 			<div id="m_intro" class="montage_scene">
 				<div id="m_intro_frame" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_1.gif">
+					<!--<img src="assets/img/montage/intro/intro_1.gif">-->
 					<input type="image" alt="button" class="intro_1" src="assets/img/montage/intro/next.png"
 					       onclick="montage_frame('m_intro_frame','intro_2')" 
 						onmouseover="src='assets/img/montage/intro/nexthov.png';" 
@@ -36,7 +54,7 @@
 				</div>
 	
 				<div id="intro_2" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_2.gif">
+					<!--<img src="assets/img/montage/intro/intro_2.gif">-->
 					<input type="image" alt="button" class="intro_2" src="assets/img/montage/intro/phone.gif" 
 						onclick="montage_frame('intro_2','intro_3')" 
 						onmouseover="src='assets/img/montage/intro/phone_hov.gif';" 
@@ -44,7 +62,7 @@
 					
 				</div>
 				<div id="intro_3" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_3.gif">
+					<!--<img src="assets/img/montage/intro/intro_3.gif">-->
 					<input type="image" alt="button" class="intro_a" src="assets/img/montage/intro/nextbig.png" 
 						onclick="montage_frame('intro_3','intro_4')" 
 						onmouseover="src='assets/img/montage/intro/nextbig_hov.png';" 
@@ -52,7 +70,7 @@
 					
 				</div>
 				<div id="intro_4" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_4.gif">
+					<!--<img src="assets/img/montage/intro/intro_4.gif">-->
 					<input type="image" alt="button" class="intro_a" src="assets/img/montage/intro/nextbig.png" 
 						onclick="montage_frame('intro_4','intro_5')" 
 						onmouseover="src='assets/img/montage/intro/nextbig_hov.png';" 
@@ -60,7 +78,7 @@
 					
 				</div>
 				<div id="intro_5" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_5.gif">
+					<!--<img src="assets/img/montage/intro/intro_5.gif">-->
 					<input type="image" alt="button" class="intro_5" src="assets/img/montage/intro/next.png" 
 						onclick="montage_frame('intro_5','intro_6')" 
 						onmouseover="src='assets/img/montage/intro/nexthov.png';" 
@@ -68,7 +86,7 @@
 					
 				</div>
 				<div id="intro_6" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_6.gif">
+					<!--<img src="assets/img/montage/intro/intro_6.gif">-->
 					<input type="image" alt="button" class="intro_a" src="assets/img/montage/intro/nextbig.png" 
 						onclick="montage_frame('intro_6','intro_7')" 
 						onmouseover="src='assets/img/montage/intro/nextbig_hov.png';" 
@@ -76,7 +94,7 @@
 					
 				</div>
 				<div id="intro_7" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_7.gif">
+					<!--<img src="assets/img/montage/intro/intro_7.gif">-->
 					<input type="image" alt="button" class="intro_7" src="assets/img/montage/intro/next.png" 
 						onclick="montage_frame('intro_7','intro_8')" 
 						onmouseover="src='assets/img/montage/intro/nexthov.png';" 
@@ -84,7 +102,7 @@
 					
 				</div>
 				<div id="intro_8" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_8.gif">
+					<!--<img src="assets/img/montage/intro/intro_8.gif">-->
 					<input type="image" alt="button" class="intro_8" src="assets/img/montage/intro/next.png" 
 						onclick="montage_frame('intro_8','intro_9')" 
 						onmouseover="src='assets/img/montage/intro/nexthov.png';" 
@@ -92,7 +110,7 @@
 					
 				</div>
 				<div id="intro_9" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_9.gif">
+					<!--<img src="assets/img/montage/intro/intro_9.gif">-->
 					<input type="image" alt="button" class="intro_9" src="assets/img/montage/intro/next.png" 
 						onclick="montage_frame('intro_9','intro_10')" 
 						onmouseover="src='assets/img/montage/intro/nexthov.png';" 
@@ -100,7 +118,7 @@
 					
 				</div>
 				<div id="intro_10" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_10.gif">
+					<!--<img src="assets/img/montage/intro/intro_10.gif">-->
 					<input type="image" alt="button" class="intro_10" src="assets/img/montage/intro/next.png" 
 						onclick="montage_frame('intro_10','intro_11')" 
 						onmouseover="src='assets/img/montage/intro/nexthov.png';" 
@@ -108,7 +126,7 @@
 					
 				</div>
 				<div id="intro_11" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_11.gif">
+					<!--<img src="assets/img/montage/intro/intro_11.gif">-->
 					<input type="image" alt="button" class="intro_a" src="assets/img/montage/intro/nextbig.png" 
 						onclick="montage_frame('intro_11','intro_12')" 
 						onmouseover="src='assets/img/montage/intro/nextbig_hov.png';" 
@@ -116,14 +134,14 @@
 					
 				</div>
 				<div id="intro_12" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_12.gif">
+					<!--<img src="assets/img/montage/intro/intro_12.gif">-->
 					<input type="image" alt="button" class="intro_10" src="assets/img/montage/intro/next.png" 
 						onclick="montage_frame('intro_12','intro_13')" 
 						onmouseover="src='assets/img/montage/intro/nexthov.png';" 
 						onmouseout="src='assets/img/montage/intro/next.png';">
 				</div>
 				<div id="intro_13" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_13.gif">
+					<!--<img src="assets/img/montage/intro/intro_13.gif">-->
 					<input type="image" alt="button" class="intro_13" src="assets/img/montage/intro/next.png" 
 						onclick="montage_frame('intro_13','intro_14')" 
 						onmouseover="src='assets/img/montage/intro/nexthov.png';" 
@@ -131,7 +149,7 @@
 					
 				</div>
 				<div id="intro_14" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_14.gif">
+					<!--<img src="assets/img/montage/intro/intro_14.gif">-->
 					<input type="image" alt="button" class="intro_a" src="assets/img/montage/intro/nextbig.png" 
 						onclick="montage_frame('intro_14','intro_15')" 
 						onmouseover="src='assets/img/montage/intro/nextbig_hov.png';" 
@@ -139,7 +157,7 @@
 					
 				</div>
 				<div id="intro_15" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_15.gif">
+					<!--<img src="assets/img/montage/intro/intro_15.gif">-->
 					<input type="image" alt="button" class="intro_a" src="assets/img/montage/intro/nextbig.png" 
 						onclick="montage_frame('intro_15','intro_16')" 
 						onmouseover="src='assets/img/montage/intro/nextbig_hov.png';" 
@@ -147,7 +165,7 @@
 					
 				</div>
 				<div id="intro_16" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_16.gif">
+					<!--<img src="assets/img/montage/intro/intro_16.gif">-->
 					<input type="image" alt="button" class="intro_a" src="assets/img/montage/intro/nextbig.png" 
 						onclick="montage_frame('intro_16','intro_17')" 
 						onmouseover="src='assets/img/montage/intro/nextbig_hov.png';" 
@@ -155,7 +173,7 @@
 					
 				</div>
 				<div id="intro_17" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_17.gif">
+					<!--<img src="assets/img/montage/intro/intro_17.gif">-->
 					<input type="image" alt="button" class="intro_a" src="assets/img/montage/intro/nextbig.png" 
 						onclick="montage_frame('intro_17','intro_18')" 
 						onmouseover="src='assets/img/montage/intro/nextbig_hov.png';" 
@@ -163,7 +181,7 @@
 					
 				</div>
 				<div id="intro_18" class="montage_frame">
-					<img src="assets/img/montage/intro/intro_18.gif">
+					<!--<img src="assets/img/montage/intro/intro_18.gif">-->
 					<input type="image" alt="button" class="intro_a" src="assets/img/montage/intro/nextbig.png" 
 						onclick="montage_close()" 
 						onmouseover="src='assets/img/montage/intro/nextbig_hov.png';" 
@@ -2259,7 +2277,6 @@
 	
 	
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 <script src="assets/js/objects.js"></script>
 <script src="assets/js/howler.min.js"></script>
 <script src="assets/js/functions.js"></script>

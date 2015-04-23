@@ -1,24 +1,7 @@
 
 
-/*
-	
-	TO DO
-	
-	Owen: 
-	
-	scoring
-		next page
-		associate buttons with right image
-	
-	popups
-		function will know what to do
-		html as string
-	
-	use code 
-		to grey out / disable buttons
-		hover effect 
-	
-	*/
+
+
 
 
 var current_montage_scene = '';
@@ -62,7 +45,7 @@ function montage_close(){
 
 
 
-
+var report_test = false;
 
 // scene size
 var sceneW = 1092;
@@ -957,6 +940,5 @@ function loser_checker(){
 // run game
 hide_scenes();
 scene_control('home',0);
-//montage_window('m_intro','m_intro_frame')	
-test_buttons();
-
+//test_buttons();
+//var report_test = true;
