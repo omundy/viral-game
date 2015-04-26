@@ -965,11 +965,220 @@
 				<div id="dslut_4" class="montage_frame">
 					<img src="assets/img/montage/camgirl/dslut_badge.gif">
 					<input type="image" alt="button" class="badge_ok" src="assets/img/montage/ok.png"
-					        onclick="montage_close()" 
+					        onclick="montage_close();scene_control('cinder',4)" 
 						onmouseover="src='assets/img/montage/ok_hov.png';" 
 						onmouseout="src='assets/img/montage/ok.png';">
 				</div>
 			</div>
+			<div id="date_lilb" class="montage_scene">
+				
+				<div id="lilb_1" class="montage_frame">
+					<img src="assets/img/cinder/lilb/1.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_1','lilb_2'); unlock_cameraroll( instacam_camera_roll.buttons['roll_threeone'] )" 
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_2" class="montage_frame">
+					<img src="assets/img/cinder/lilb/2.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/2a.png" 
+						onclick="montage_frame('lilb_2','lilb_3')"
+						onmouseover="src='assets/img/cinder/lilb/2ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/2a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/2b.png" 
+						onclick="montage_frame('lilb_2','lilb_3')"
+						onmouseover="src='assets/img/cinder/lilb/2bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/2b.png';">	
+				</div>
+				<div id="lilb_3" class="montage_frame">
+					<img src="assets/img/cinder/lilb/3.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_3','lilb_4')"
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_4" class="montage_frame">
+					<img src="assets/img/cinder/lilb/4.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/4a.png" 
+						onclick="montage_frame('lilb_4','lilb_5')"
+						onmouseover="src='assets/img/cinder/lilb/4ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/4a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/4b.png" 
+						onclick="montage_frame('lilb_4','lilb_5')"
+						onmouseover="src='assets/img/cinder/lilb/4bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/4b.png';">	
+				</div>
+				<div id="lilb_5" class="montage_frame">
+					<img src="assets/img/cinder/lilb/5.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_5','lilb_6')"
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_6" class="montage_frame">
+					<img src="assets/img/cinder/lilb/6.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/6a.png" 
+						onclick="montage_frame('lilb_6','lilb_7')"
+						onmouseover="src='assets/img/cinder/lilb/6ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/6a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/6b.png" 
+						onclick="montage_frame('lilb_6','lilb_7')"
+						onmouseover="src='assets/img/cinder/lilb/4bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/4b.png';">	
+				</div>
+				<div id="lilb_7" class="montage_frame">
+					<img src="assets/img/cinder/lilb/7.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_7','lilb_8')"
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_8" class="montage_frame">
+					<img src="assets/img/cinder/lilb/8.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/8a.png" 
+						onclick="montage_frame('lilb_8','lilb_9')"
+						onmouseover="src='assets/img/cinder/lilb/8ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/8a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/8b.png" 
+						onclick="montage_frame('lilb_8','lilb_9')"
+						onmouseover="src='assets/img/cinder/lilb/8bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/8b.png';">	
+				</div>
+				<div id="lilb_9" class="montage_frame">
+					<img src="assets/img/cinder/lilb/9.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_9','lilb_10')"
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_10" class="montage_frame">
+					<img src="assets/img/cinder/lilb/10.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/10a.png" 
+						onclick="montage_frame('lilb_10','lilb_11')"
+						onmouseover="src='assets/img/cinder/lilb/10ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/10a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/10b.png" 
+						onclick="montage_frame('lilb_10','lilb_11')"
+						onmouseover="src='assets/img/cinder/lilb/10bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/10b.png';">	
+				</div>
+				<div id="lilb_11" class="montage_frame">
+					<img src="assets/img/cinder/lilb/11.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_11','lilb_12')"
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_12" class="montage_frame">
+					<img src="assets/img/cinder/lilb/10.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/12a.png" 
+						onclick="montage_frame('lilb_12','lilb_13')"
+						onmouseover="src='assets/img/cinder/lilb/12ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/12a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/12b.png" 
+						onclick="montage_frame('lilb_12','lilb_13')"
+						onmouseover="src='assets/img/cinder/lilb/12bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/12b.png';">	
+				</div>
+				<div id="lilb_13" class="montage_frame">
+					<img src="assets/img/cinder/lilb/13.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_13','lilb_14')"
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_14" class="montage_frame">
+					<img src="assets/img/cinder/lilb/14.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/14a.png" 
+						onclick="montage_frame('lilb_14','lilb_15')"
+						onmouseover="src='assets/img/cinder/lilb/14ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/14a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/14b.png" 
+						onclick="montage_frame('lilb_14','lilb_15')"
+						onmouseover="src='assets/img/cinder/lilb/14bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/14b.png';">	
+				</div>
+				<div id="lilb_15" class="montage_frame">
+					<img src="assets/img/cinder/lilb/15.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_15','lilb_16')"
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_16" class="montage_frame">
+					<img src="assets/img/cinder/lilb/16.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/16a.png" 
+						onclick="montage_frame('lilb_16','lilb_17')"
+						onmouseover="src='assets/img/cinder/lilb/14ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/14a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/14b.png" 
+						onclick="montage_frame('lilb_16','lilb_17')"
+						onmouseover="src='assets/img/cinder/lilb/14bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/14b.png';">	
+				</div>
+				<div id="lilb_17" class="montage_frame">
+					<img src="assets/img/cinder/lilb/17.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_17','lilb_18')"
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_18" class="montage_frame">
+					<img src="assets/img/cinder/lilb/18.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/18a.png" 
+						onclick="montage_frame('lilb_18','lilb_19')"
+						onmouseover="src='assets/img/cinder/lilb/18ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/18a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/18b.png" 
+						onclick="montage_frame('lilb_18','lilb_19')"
+						onmouseover="src='assets/img/cinder/lilb/18bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/18b.png';">	
+				</div>
+				<div id="lilb_19" class="montage_frame">
+					<img src="assets/img/cinder/lilb/19.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_19','lilb_20')"
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_20" class="montage_frame">
+					<img src="assets/img/cinder/lilb/20.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/20a.png" 
+						onclick="montage_frame('lilb_20','lilb_21')"
+						onmouseover="src='assets/img/cinder/lilb/20ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/20a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/20b.png" 
+						onclick="montage_frame('lilb_20','lilb_21')"
+						onmouseover="src='assets/img/cinder/lilb/20bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/20b.png';">	
+				</div>
+				<div id="lilb_21" class="montage_frame">
+					<img src="assets/img/cinder/lilb/21.gif">
+					<input type="image" alt="button" class="next_lb" src="assets/img/cinder/lilb/next.png" 
+						onclick="montage_frame('lilb_21','lilb_22')"
+						onmouseover="src='assets/img/cinder/lilb/nexthov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/next.png';">
+				</div>
+				<div id="lilb_22" class="montage_frame">
+					<img src="assets/img/cinder/lilb/22.gif">
+					<input type="image" alt="button" class="youa_lb" src="assets/img/cinder/lilb/22a.png" 
+						onclick="montage_frame('lilb_22','lilb_23')"
+						onmouseover="src='assets/img/cinder/lilb/22ahov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/22a.png';">
+					<input type="image" alt="button" class="youb_lb" src="assets/img/cinder/lilb/22b.png" 
+						onclick="montage_frame('lilb_20','lilb_21')"
+						onmouseover="src='assets/img/cinder/lilb/22bhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/22b.png';">	
+				</div>
+				<div id="lilb_23" class="montage_frame">
+					<img src="assets/img/cinder/lilb/23.gif">
+					<input type="image" alt="button" class="ok_lb" src="assets/img/cinder/lilb/ok.png" 
+						onclick="montage_close()" 
+						onmouseover="src='assets/img/cinder/lilb/okhov.png';" 
+						onmouseout="src='assets/img/cinder/lilb/ok.png';">
+				</div>
+			</div>
+				
 			<div id="camgirl" class="montage_scene">
 				<div id="camgirl_1" class="montage_frame">
 					<img src="assets/img/montage/camgirl/camgirl_1.gif">
@@ -1061,8 +1270,7 @@
 						onmouseout="src='assets/img/montage/ok.png';">
 				</div>
 			</div>
-			<div id="dslut" class="pornstar">
-				<div id="pornstar_1" class="montage_frame">
+			<div id="pornstar_1" class="montage_frame">
 					<img src="assets/img/montage/camgirl/pornstar_1.gif">
 					<input type="image" alt="button" class="pornstar_1" src="assets/img/montage/intro/next.png"
 					        onclick="montage_frame('pornstar_1','pornstar_2')" 
@@ -1474,7 +1682,7 @@
 			<div id="cinder2" class="scene">
 				<input type="image" alt="button" src="assets/img/instacam/bak.png" class="home_button">
 				<input type="image" alt="button" src="assets/img/cinder/felliot.gif" class="profpic">
-				<input type="image" alt="button" src="assets/img/cinder/pass.png" onmouseover="src='assets/img/cinder/passhov.png';" onmouseout="src='assets/img/cinder/pass.png';" class="lastpass">
+				<input type="image" alt="button" src="assets/img/cinder/pass.png" onmouseover="src='assets/img/cinder/passhov.png';" onmouseout="src='assets/img/cinder/pass.png';" class="pass">
 				<input type="image" alt="button" src="assets/img/cinder/date.png" onmouseover="src='assets/img/cinder/datehov.png';" onmouseout="src='assets/img/cinder/date.png';" id="date_elliot_btn">
 			</div>
 			<div id="cinder3" class="scene">

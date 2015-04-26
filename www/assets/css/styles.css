@@ -1666,7 +1666,12 @@ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), u
     left: 32px;
     top: 593px;
  }
- 
+    #date_lilb .ok_lb{ 
+    position: absolute;
+    left: 459px;
+    top: 582px;
+ }
+   
  .cinder_date { width:1092px; height: 728px; }
  .cinder_date_next { position: absolute; left: 600px; top:500px; }
  
