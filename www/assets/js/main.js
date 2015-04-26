@@ -969,13 +969,12 @@ hide_scenes();
 scene_control('home',0);
 
 
-/*
 // comment these out to go/test live
 test_buttons();
 var report_test = true;
 $('#load_progress').hide();
 play_sound = false;
-*/
+
 
 
 

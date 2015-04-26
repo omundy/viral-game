@@ -22,8 +22,8 @@ $('.instacam_button')
 	.on('click',function(){ scene_control('instacam',0)})
 $('.metube_button')
 	.on('click',function(){ scene_control('metube', 0) })
-/*$('.dumblr_button')
-	.on('click',function(){ scene_control('dumblr', 0) })*/
+*$('.dumblr_button')
+	.on('click',function(){ scene_control('dumblr', 0) })*
 $('.cinder_button')
 	.on('click',function(){ scene_control('cinder', 0) })
 
