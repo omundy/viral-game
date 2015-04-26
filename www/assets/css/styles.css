@@ -84,6 +84,7 @@ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), u
 
 
 
+
 /* TAGS */
 
 #dumblr_scene .tags {  
@@ -130,6 +131,42 @@ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), u
 #metube_scene .tags button { font-size: 105%; padding: 4px; }
 
 
+
+
+
+
+.dumblr_words {  
+    position: absolute;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    top: 160px;
+    left: 198px;
+    width: 596px;
+    height: 360px;
+    z-index: 300;
+}
+.dumblr_words button {
+	font-size: 80%;
+	padding: 4px;	
+	margin: 3px 3px;	
+	border: none;
+	background: #ee00ff;
+}
+.dumblr_words button:hover, .dumblr_words_selected, .dumblr_words_used {
+	color: #fff;
+	background: rgba(0,0,0,.5)
+} 
+.dumblr_words_disabled, .dumblr_words_disabled:hover, .dumblr_words:disabled {
+	color: #999 !important;
+	background: rgba(0,0,0,.5) !important;
+} 
+.dumblr_words_phrase { background: rgba(0,0,0,.3); margin: 3px 0; }
+.dumblr_words_phrase_title { color: #ee00ff }
+
+
+
+
+
 #dumblr_tag_confirm, #instacam_tag_confirm, #metube_tag_confirm { position: absolute; font-size: 120%; }
 #dumblr_tag_confirm { top: 550px; left: 460px; }
 #instacam_tag_confirm { top: 580px; left: 600px; }
@@ -168,6 +205,10 @@ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), u
 }
 #video_window .gohome_video_window { left:250px; }
 #video_container { 
+	background-image: url('../img/ajax-loader.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
 	margin: 0 auto;
 	position: relative;
 	top: 50%;

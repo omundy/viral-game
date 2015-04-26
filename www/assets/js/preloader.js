@@ -1,7 +1,14 @@
 
 var manifest_intro = [
-	
+	// game elements
 	{src: "assets/img/loadingscreen.gif", id: "load_pic"},
+	{src: "assets/img/statusbar_parts/camgirlcase.png", id: "camgirlcase"},
+	{src: "assets/img/statusbar_parts/camgirljel.png", id: "bar1_bar"},
+	{src: "assets/img/statusbar_parts/martyrcase.png", id: "martyrcase"},
+	{src: "assets/img/statusbar_parts/martyrjel.png", id: "bar2_bar"},
+	{src: "assets/img/statusbar_parts/trollcase.png", id: "trollcase"},
+	{src: "assets/img/statusbar_parts/trolljel.png", id: "bar3_bar"},
+	// intro scene
 	{src: "assets/img/montage/intro/intro_1.gif", id: "m_intro_frame"},
 	{src: "assets/img/montage/intro/intro_2.gif", id: "intro_2"},
 	{src: "assets/img/montage/intro/intro_3.gif", id: "intro_3"},
@@ -66,6 +73,8 @@ function handleComplete(callback) {
 }
 
 var current_preload = '';
+
+
 
 
 // PRELOAD: INTRO

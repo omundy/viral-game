@@ -239,6 +239,7 @@ function scene_updater(scene,frame){
 			// reset dumblr images
 			new_dumblr_img_button_tracker(); 	
 		}
+		else if (frame == '6'){ show_dumblr_words(); }
 		// tags
 		else if (frame == '15'){ add_tags(); }
 		// affirmation
@@ -253,8 +254,6 @@ function scene_updater(scene,frame){
 	else if (scene == 'instacam'){
 		
 		update_buttons(instacam_camera_roll)
-		
-		
 		
 		
 		if (frame > 1){
@@ -301,6 +300,44 @@ function scene_updater(scene,frame){
 	// report
 	report();
 }
+
+
+
+function show_dumblr_words(){
+	var obj = dumblr_words.buttons.manifesto;
+	
+	// for each text
+	// for each phrase
+	$.each( obj, function( key, value ) {	
+		
+		var dumblr_phrase = '';
+		
+		
+		// for each selection in the phrase
+		$.each( value, function( key2, value2 ) {
+		
+			dumblr_phrase += '<button class="">'+ value2.text + '</button>';
+		
+		/*
+		// make sure tag hasn't been used
+			if (tags_used.indexOf(key) > -1){
+				//console.log(key +' has been used')	
+				$('.tags').append('<button class="tag_disabled" disabled>'+ key + '</button>');
+			}
+			else {
+				$('.tags').append('<button class="tag_'+ key + '">'+ key + '</button>');
+				$('.tag_'+key).click( function(){ tag_handler( $(this) ) })
+			}
+		*/
+		})
+		
+		$('.dumblr_words').append('<div class="dumblr_words_phrase"><span class="dumblr_words_phrase_title">'+ key + '</span>'+ dumblr_phrase +'</div>');
+		
+	})	
+}
+
+
+
 
 
 // unlock buttons
@@ -350,7 +387,7 @@ function update_buttons(obj){
 		if (current_scene.frame > -1){
 			
 			if (value.disabled == true){
-				console.log('time to disable: ' + key)
+				//console.log('time to disable: ' + key)
 				
 				// DISABLE INSTACAM, CINDER, DUMBLR
 				if ( $('#'+key).length ){
@@ -849,20 +886,9 @@ var sounds =  {
 };
 
 // dummy function for
-var soundtrack = new Howl({ /* null */ });
+//var soundtrack = new Howl({ /* null */ });
 
-// sounds
-var play_sound = false;
 
-var soundtrack = new Howl({
-	urls: ['assets/sound/soundtrack.mp3'],
-	autoplay: play_sound,
-	loop: true,
-	volume: 0.5,
-	onend: function() {
-		//console.log('Soundtrack just looped...');
-	}
-});
 
 
 function button_noise(){
@@ -934,11 +960,33 @@ function loser_checker(){
 
 
 
-
+// sounds
+var play_sound = true;
 
 
 // run game
 hide_scenes();
 scene_control('home',0);
-//test_buttons();
-//var report_test = true;
+
+
+/*
+// comment these out to go/test live
+test_buttons();
+var report_test = true;
+$('#load_progress').hide();
+play_sound = false;
+*/
+
+
+
+
+var soundtrack = new Howl({
+	urls: ['assets/sound/soundtrack.mp3'],
+	autoplay: play_sound,
+	loop: true,
+	volume: 0.5,
+	onend: function() {
+		//console.log('Soundtrack just looped...');
+	}
+});
+

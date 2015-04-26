@@ -760,8 +760,19 @@ var dumblr = {
 		    'btn_img': 'rant.png',
 		    'score': { 'camgirl':  0, 'martyr': 0, 'troll': 6 }
 		},
-		//NOTE: the following correspond to TEXT HTML WORDS which are inserted into text. MADLIBS STYLE
 		
+	}
+}	
+		
+		
+		
+		
+//NOTE: the following correspond to TEXT HTML WORDS which are inserted into text. MADLIBS STYLE
+var dumblr_words = {
+    'meta': {
+        'path':'img/dumblr/'
+    },
+    'buttons': {		
 		//manifesto page 1
 		
 		// LENA!!
