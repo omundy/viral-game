@@ -582,7 +582,7 @@ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), u
 /*INSTACAM NON-BUTTON ELEMENTS*/
 /*img/instacam/*/
 
-#instacam_scene .polaroid { position: absolute; top: 18px; left: 14px; width:470px; height:562px; background: url('../img/instacam/polaroid.png') } /* polaroid.png */
+#instacam_scene .polaroid { position: absolute; top: 18px; left: 14px; width:470px; height:562px; background: url('../img/instacam/polaroid.gif') } /* polaroid.png */
 #instacam_scene .polaroid .instacam_preview { position: relative; top: 106px; left: 57px; width:340px; height: 348px; }
 #instacam_scene .pic { position: absolute; left: 71px; top:132px; }  /* everyting in img/instacam/pics folder */
 #instacam_scene .select { position: absolute; left: 71px; top:132px; } /* homesel.png*/
