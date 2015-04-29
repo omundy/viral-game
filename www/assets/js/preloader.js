@@ -1,7 +1,8 @@
 
 var manifest_intro = [
-	// game elements
+	// load screen
 	{src: "assets/img/loadingscreen.gif", id: "load_pic"},
+	// game elements
 	{src: "assets/img/statusbar_parts/camgirlcase.png", id: "camgirlcase"},
 	{src: "assets/img/statusbar_parts/camgirljel.png", id: "bar1_bar"},
 	{src: "assets/img/statusbar_parts/martyrcase.png", id: "martyrcase"},
@@ -22,11 +23,7 @@ var manifest_intro = [
 	{src: "assets/img/montage/intro/intro_11.gif", id: "intro_11"},
 	{src: "assets/img/montage/intro/intro_12.gif", id: "intro_12"},
 	{src: "assets/img/montage/intro/intro_13.gif", id: "intro_13"},
-	{src: "assets/img/montage/intro/intro_14.gif", id: "intro_14"},
-	{src: "assets/img/montage/intro/intro_15.gif", id: "intro_15"},
-	{src: "assets/img/montage/intro/intro_16.gif", id: "intro_16"},
-	{src: "assets/img/montage/intro/intro_17.gif", id: "intro_17"},
-	{src: "assets/img/montage/intro/intro_18.gif", id: "intro_18"}
+	{src: "assets/img/montage/intro/intro_14.gif", id: "intro_14"}
 ];
 
 
@@ -78,8 +75,8 @@ var current_preload = '';
 
 
 // PRELOAD: INTRO
-preload_manifest(manifest_intro,"loading intro!","intro_callback")
-function intro_callback(){ montage_window('m_intro','m_intro_frame') }
+//preload_manifest(manifest_intro,"loading intro!","intro_callback")
+//function intro_callback(){ montage_window('m_intro','m_intro_frame') }
 
 
 

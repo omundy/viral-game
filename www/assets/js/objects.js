@@ -777,7 +777,7 @@ var dumblr_words = {
 		
 		// LENA!!
 		'manifesto': {
-		    'Select word 1:':{
+		    '1. Select a noun:':{
 		
 				'mw1': {
 				    'id':'mw1' ,
@@ -812,7 +812,7 @@ var dumblr_words = {
 				    'score': { 'camgirl':  -1, 'martyr': -1, 'troll': -1 }
 				},
 			},
-		    'Select word 2:':{	
+		    '2. Select a phrase:':{	
 				
 				'mw5': {
 				    'id':'mw5',
@@ -847,7 +847,7 @@ var dumblr_words = {
 				    'score': { 'camgirl':  0, 'martyr': 0, 'troll': 1 }
 				},
 			},
-		    'Select word 3:':{	
+		    '3. Select a phrase:':{	
 				
 				'mw9': {
 				    'id':'mw9',
@@ -882,7 +882,7 @@ var dumblr_words = {
 				    'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
 				},
 			},
-		    'Select word 4:':{	
+		    '4. Select a verb:':{	
 					    
 				'mw13': {
 				    'id':'mw13',
@@ -917,7 +917,7 @@ var dumblr_words = {
 				    'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
 				},
 			},
-		    'Select word 5:':{			
+		    '5. Select a noun:':{			
 				
 						
 				'mw17': {
@@ -954,7 +954,7 @@ var dumblr_words = {
 				},
 			 
 			},
-		    'Select word 6:':{		   	
+		    '6. Select a adjective:':{		   	
 				'mw21': {
 				    'id':'mw21',
 				    'text':'hedonistic',
@@ -991,7 +991,7 @@ var dumblr_words = {
 		//manifesto page 2
 		
 			},
-		    'Select word 7:':{		
+		    '7. Select a verb:':{		
 			    
 				'm2w1': {
 				    'id':'m2w1',
@@ -1026,7 +1026,7 @@ var dumblr_words = {
 				    'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
 				},
 			},
-		    'Select word 8:':{		
+		    '8. Select a verb:':{		
 					
 				'm2w5': {
 				    'id':'m2w5',
@@ -1061,7 +1061,7 @@ var dumblr_words = {
 				    'score': { 'camgirl':  1, 'martyr': 0, 'troll': 0 }
 				},
 			},
-		    'Select word 9:':{	
+		    '9. Select a verb:':{	
 				
 				'm2w9': {
 				    'id':'m2w9',
@@ -1097,7 +1097,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'phrase10':{	
+		    '10. Select a verb:':{	
 			    	
 				'm2w13': {
 				    'id':'m2w13',
@@ -1133,7 +1133,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 11:':{	
+		    '11. Select a verb:':{	
 					    	
 				'm2w17': {
 				    'id':'m2w17' ,
@@ -1153,7 +1153,7 @@ var dumblr_words = {
 				},
 				'm2w19': {
 				    'id':'m2w19',
-				    'text':'listen to Beyoncé',
+				    'text':'listen to Beyonce',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w19.png',
@@ -1169,7 +1169,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 12:':{	
+		    '12. Select a verb:':{	
 			    	
 				'm2w21': {
 				    'id':'m2w21',
@@ -1209,7 +1209,7 @@ var dumblr_words = {
 		},
 		'diary':{		
 			
-		    'Select word 1:':{	
+		    '1. Select a phrase:':{
 				
 		//diary page 1
 		
@@ -1246,7 +1246,7 @@ var dumblr_words = {
 				    'score': { 'camgirl':  0, 'martyr': 1, 'troll': 0 }
 				},
 			},
-		    'Select word 2:':{		
+		    '2. Select a noun:':{
 				'cgw5': {
 				    'id':'cgw5',
 				    'text':'clevage',
@@ -1281,7 +1281,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 3:':{		
+		    '3. Select a noun:':{
 				'cgw9': {
 				    'id':'cgw9',
 				    'text': 'panties',
@@ -1316,7 +1316,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 4:':{	
+		    '4. Select a noun:':{
 			    	
 				'cgw13': {
 				    'id':'cgw13',
@@ -1352,7 +1352,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 5:':{	
+		    '5. Select a adjective:':{
 			    	
 				'cgw17': {
 				    'id':'cgw17',
@@ -1388,7 +1388,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 6:':{	
+		    '6. Select a adverb:':{
 			    
 				'cgw21': {
 				    'id':'cgw21',
@@ -1424,7 +1424,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 7:':{	
+		    '7. Select a adjective:':{
 			    	
 				//diary page 2
 				'cg2w1': {
@@ -1461,7 +1461,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 8:':{	
+		    '8. Select a phrase:':{
 			    	
 				'cg2w5': {
 				    'id':'cg2w5',
@@ -1497,7 +1497,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 9:':{	
+		    '9. Select a noun:':{
 					    	
 				'cg2w9': {
 				    'id':'cg2w9',
@@ -1533,7 +1533,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 10:':{	
+		    '10. Select a adjective:':{
 			    
 				'cg2w13': {
 				    'id':'cg2w13',
@@ -1569,7 +1569,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 11:':{	
+		    '11. Select a noun:':{
 			    	
 				'cg2w17': {
 				    'id':'cg2w17',
@@ -1605,7 +1605,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 12:':{	
+		    '12. Select a username:':{
 			    	
 				'cg2w21': {
 				    'id':'cg2w21',
@@ -1645,7 +1645,7 @@ var dumblr_words = {
 		},
 	    'rant':{	
 			    	
-		    'Select word 1:':{	
+		    '1. Select a phrase:':{
 			    	
 				//rant page 1
 				'tw1': {
@@ -1682,7 +1682,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 2:':{	
+		    '2. Select a noun:':{
 			    	
 				'tw5': {
 				    'id':'tw5',
@@ -1718,7 +1718,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 3:':{	
+		    '3. Select a noun:':{
 					    	
 				'tw9': {
 				    'id':'tw9',
@@ -1754,7 +1754,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 4:':{	
+		    '4. Select a phrase:':{
 					    	
 				'tw13': {
 				    'id':'tw13',
@@ -1790,7 +1790,7 @@ var dumblr_words = {
 				},
 				
 			},
-		    'Select word 5:':{	
+		    '5. Select a noun:':{
 			    
 				'tw17': {
 				    'id':'tw17',
@@ -1826,7 +1826,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 6:':{	
+		    '6. Select a phrase:':{
 			    	
 				'tw21': {
 				    'id':'tw21',
@@ -1862,7 +1862,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 7:':{	
+		    '7. Select a phrase:':{
 					    	
 				//rant page 2
 				't2w1': {
@@ -1899,7 +1899,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 8:':{	
+		    '8. Select a noun:':{
 			    	
 				't2w5': {
 				    'id':'t2w5',
@@ -1935,7 +1935,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 9:':{	
+		    '9. Select a noun:':{
 					    	
 				't2w9': {
 				    'id':'t2w9',
@@ -1971,7 +1971,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 10:':{	
+		    '10. Select a noun:':{
 					    	
 				't2w13': {
 				    'id':'t2w13',
@@ -2007,7 +2007,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 11:':{	
+		    '11. Select a verb:':{
 					    	
 				't2w17': {
 				    'id':'t2w17',
@@ -2043,7 +2043,7 @@ var dumblr_words = {
 				},
 			
 			},
-		    'Select word 12:':{	
+		    '12. Select a noun:':{
 			    
 					    	
 				't2w21': {

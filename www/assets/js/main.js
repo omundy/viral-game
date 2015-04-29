@@ -93,7 +93,7 @@ var scene_map = {
 	'dumblr':[
 		'dumblr0', 'dumblr1', 'dumblr2', 'dumblr3', 'dumblr4', 'dumblr5', 
 		'dumblr6', 'dumblr7', 'dumblr8', 'dumblr9', 'dumblr10', 'dumblr11',
-	    'dumblr12', 'dumblr13', 'dumblr14', 'dumblr15', 'dumblr16',
+	    'dumblr12', 'dumblr13',
 	],
 	'instacam':[
         'instacam0', // 1_genres
@@ -237,13 +237,20 @@ function scene_updater(scene,frame){
 		
 		if (frame == '0'){
 			// reset dumblr images
-			new_dumblr_img_button_tracker(); 	
+			new_dumblr_img_button_tracker(); 
+			// reset dumblr_words_used_temp
+			dumblr_words_used_temp = [];	
 		}
-		else if (frame == '6'){ show_dumblr_words(); }
+		else if (frame == '6'){ show_dumblr_words('diary'); }
+		else if (frame == '7'){ show_dumblr_words('rant'); }
+		else if (frame == '8'){ show_dumblr_words('manifesto'); }
+		else if (frame == '9'){ insert_dumblr_text('diary'); }
+		else if (frame == '10'){ insert_dumblr_text('rant'); }
+		else if (frame == '11'){ insert_dumblr_text('manifesto'); }
 		// tags
-		else if (frame == '15'){ add_tags(); }
+		else if (frame == '12'){ add_tags(); }
 		// affirmation
-		else if (frame == '16'){ 
+		else if (frame == '13'){ 
 			affirmation_loader(); 
 			dumblr_img_disablr()
 		}
@@ -301,23 +308,93 @@ function scene_updater(scene,frame){
 	report();
 }
 
+// keep track of words used temp
+var dumblr_words_used_temp = [];
 
 
-function show_dumblr_words(){
-	var obj = dumblr_words.buttons.manifesto;
+function show_dumblr_words(which){
 	
-	// for each text
+	dumblr_words_used_temp = []
+	
+	// store object reference
+	var obj = dumblr_words.buttons[which];
+	
+	console.log("which: "+which)
+	
+	// str for output
+	var dumblr_words_text = '';
+	
 	// for each phrase
 	$.each( obj, function( key, value ) {	
 		
+		// str for phrase output
 		var dumblr_phrase = '';
-		
 		
 		// for each selection in the phrase
 		$.each( value, function( key2, value2 ) {
 		
-			dumblr_phrase += '<button class="">'+ value2.text + '</button>';
-		
+			// make sure not disabled
+			if ( value2.disabled == true){
+				dumblr_phrase += '<button id="'+ which +'_'+ value2.id +'" class="dumblr_word_btn dumblr_words_disabled disabled">'+ value2.text + '</button>';
+			}  else {
+				dumblr_phrase += '<button id="'+ which +'_'+ value2.id +'" class="dumblr_word_btn">'+ value2.text + '</button>';
+			}
+			
+			$(document).on('click', '#'+ which +'_'+ value2.id, function(){ 
+				
+				// get text and the id
+				var arr = this.id.split("_");
+				var text_name = arr[0];
+				var id_name = arr[1];
+				
+				// get number of phrase
+				var arr = key.split(".");
+				var num = arr[0];
+				
+				// if one is already clicked
+				if (dumblr_words_used_temp[num]){
+					console.log('already clicked')
+					$('#'+ text_name +'_'+ dumblr_words_used_temp[num]).removeClass('dumblr_words_disabled');
+				}
+				// store the clicked id
+				dumblr_words_used_temp[num] = id_name;
+				// disable the clicked button
+				$(this).addClass('dumblr_words_disabled');
+				
+				console.log(num)
+				console.log(id_name); 
+				console.log("dumblr_words_used_temp = "+dumblr_words_used_temp); 
+				
+				
+				//if (num == 12){  scene_control('dumblr',12) }
+				
+				
+				var gototext = true;
+				
+				/**/
+				// if all spaces are filled
+				for(var i=1; i<=12; i++){
+					if ( !dumblr_words_used_temp[i] ){
+						gototext = false;	
+					} else {
+						//console.log(i)
+					}
+				}
+				if (gototext == true){
+					if (text_name == 'diary'){
+						scene_control('dumblr',9)
+					} else if (text_name == 'rant') {
+						scene_control('dumblr',10)
+					} else if (text_name == 'manifesto') {
+						scene_control('dumblr',11)
+					}
+				}
+				
+			});
+			
+			
+			
+			
 		/*
 		// make sure tag hasn't been used
 			if (tags_used.indexOf(key) > -1){
@@ -330,10 +407,92 @@ function show_dumblr_words(){
 			}
 		*/
 		})
-		
-		$('.dumblr_words').append('<div class="dumblr_words_phrase"><span class="dumblr_words_phrase_title">'+ key + '</span>'+ dumblr_phrase +'</div>');
-		
+		dumblr_words_text += '<div class="dumblr_words_phrase"><span class="dumblr_words_phrase_title">'+ key + '</span>'+ dumblr_phrase +'</div>';
 	})	
+	// replace current buttons
+	$('.dumblr_'+ which +'_words').html(dumblr_words_text);
+}
+
+
+function insert_dumblr_text(text_name){
+
+	console.log("text_name: "+text_name)
+	
+	var obj = dumblr_words.buttons[text_name];
+	//console.log("obj: "+JSON.stringify(obj[0]))
+	
+	
+	
+	
+	var output_str = {'diary':[],'rant':[],'manifesto':[]};
+	
+	output_str['diary'][0] = 'Dear Diary,<br><br>I am a ';
+	output_str['diary'][1] = ' .<br>When I first got online I never thought I would do anything like that, but then here I was taking pictures of my ';
+	output_str['diary'][2] = ' and running around in my ';
+	output_str['diary'][3] = '. Your hits skyrocket if you show a bit of ';
+	output_str['diary'][4] = '. The trouble is you do it once and then the next time you have to top it and do something ';
+	output_str['diary'][5] = '. Now I\'m more ';
+	output_str['diary'][6] = ' and ';
+	output_str['diary'][7] = '.  I was worried that my ideology conflicted with how I made money, but then I realized that I am a strong ';
+	output_str['diary'][8] = '! <br>The ';
+	output_str['diary'][8] = ' out there do freak you out, but I guess I feel safe because they are usually on the other side of the world. They\'re just a text box on the screen - it would be more ';
+	output_str['diary'][9] = ' if it was someone in real life  coming up to you and saying those things.<br>I just hope that someone among all those ';
+	output_str['diary'][10] = ' visits my site because they are interested in reading what I have to say, and want to fight the patriarchy! <br><br>';
+	output_str['diary'][11] = '';
+	
+	
+	output_str['rant'][0] = 'This post is for all you stupid fucking ';
+	output_str['rant'][1] = ' online, saying mean and hurtful things about ';
+	output_str['rant'][2] = '.  Well guess what they roll harder than you dipshits. You don\'t know anything about this ';
+	output_str['rant'][3] = ', idiots. Quite frankly, I just think your ';
+	output_str['rant'][4] = ', because you couldn\'t even pull off this look. You couldn\'t even wear ';
+	output_str['rant'][5] = ' if your life depended on it, because it\'s ';
+	output_str['rant'][6] = ' and ';
+	output_str['rant'][7] = ', but you wouldn\'t know shit about that, fucking ';
+	output_str['rant'][8] = '. This ';
+	output_str['rant'][9] = ' is for what cool people wear, and you can\'t figure it out.  You sit there online on your fucking websites, and you say bullshit about it but guess what, it\'s just a ';
+	output_str['rant'][10] = ', and you\'re not even cool enough to wear it. So next time you think before you do ';
+	output_str['rant'][11] = '.<br>I\'d implore you to do a little bit of thinking if that\'s even possible for you, to thinking before you do fucking hating on ';
+	output_str['rant'][12] = '. <br>You don\'t know shit, you don\'t know fashion, you don\'t know anything about this world if you keep saying bullshit jokes. I know you\'re just trying to be stupid and ass funny, but it\'s not fucking funny.  Get the fuck offline if you\'re going to keep saying this bullshit, spouting it out of your stupid ass keyboards that probably aren\'t even mechanical. You don\'t know shit and I dare you to say one more fucking joke and I\'ll slit your throat and neck...Anyways, thats it haters. See you later, fucking idiots!';
+	
+	
+	
+	output_str['manifesto'][0] = 'All of those beautiful ';
+	output_str['manifesto'][1] = ' I\'ve desired so much in my life, but can never have because they ';
+	output_str['manifesto'][2] = ' and ';
+	output_str['manifesto'][3] = ' me, I will ';
+	output_str['manifesto'][4] = '. All of those popular ';
+	output_str['manifesto'][5] = ' who live ';
+	output_str['manifesto'][6] = ' lives of ';
+	output_str['manifesto'][7] = ', I will ';
+	output_str['manifesto'][8] = ', because they never accepted me as one of them. I will ';
+	output_str['manifesto'][9] = ' them all and make them ';
+	output_str['manifesto'][10] = ', just as they have made me ';
+	output_str['manifesto'][11] = '. It is only fair.  As the phrase that I had coined goes: If I cannot join them, I will rise above them; and if I cannot rise above them, I will ';
+	output_str['manifesto'][12] = ' them.';
+	
+	
+	
+	var str = '';
+	
+	var i = 0;
+	// loop through obj	
+	for (var key in obj) {
+		if (obj.hasOwnProperty(key)) {
+			var prop = obj[key];
+			
+			str += output_str[text_name][i];
+			str += '<span class="dumblr_words_word_hlite">'+ prop[ dumblr_words_used_temp[i+1] ].text +'</span>';
+			
+			//console.log("obj.child: "+JSON.stringify( prop[ dumblr_words_used_temp[i].text ] ))
+			
+			
+			i++;
+		}
+	}
+	$('#'+ text_name +'_text_ouput').html(str);
+	
+	
 }
 
 
@@ -965,18 +1124,17 @@ function loser_checker(){
 // sounds
 var play_sound = true;
 
-
 // run game
 hide_scenes();
 scene_control('home',0);
 
 
-
+/**/
 // comment these out to go/test live
-/*test_buttons();
+test_buttons();
 var report_test = true;
 $('#load_progress').hide();
-play_sound = false;*/
+play_sound = false;
 
 
 

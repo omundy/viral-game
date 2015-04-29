@@ -106,7 +106,7 @@ function show_popup_video_confirmonly(file,width,height){
 	report();
 }
 function close_popup_video(action){
-	if (play_sound == true && soundtrack.paused){	
+	if (play_sound == true){	
 		soundtrack.play();
 	}
 	update_buttons(metube)
