@@ -486,6 +486,10 @@ function insert_dumblr_text(text_name){
 			
 			//console.log("obj.child: "+JSON.stringify( prop[ dumblr_words_used_temp[i].text ] ))
 			
+			// score
+			update_temp_score(prop[ dumblr_words_used_temp[i+1] ].score);
+			// disable
+			prop[ dumblr_words_used_temp[i+1] ].disabled = true;
 			
 			i++;
 		}
