@@ -882,7 +882,9 @@ var sounds =  {
 	'static': new Howl({
 		urls: ['assets/sound/click/static.mp3']
 	}),
-	
+	'bling': new Howl({
+		urls: ['assets/sound/click/bling.mp3']
+	}),
 };
 
 // dummy function for
