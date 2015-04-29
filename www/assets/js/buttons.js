@@ -101,7 +101,7 @@ function dumblr_img_clicked(page,id){
 	} else if (page == 'c'){
 		scene_control('dumblr',5)
 	} else if (page == 'd'){
-		scene_control('dumblr',15)
+		scene_control('dumblr',12)
 	}
 	// update the temp_score	
 	update_temp_score(dumblr.buttons[id].score)
