@@ -269,7 +269,7 @@ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), u
 #cinder_scene { width: 5460px; position: relative; }
 #cinder_scene>div { background: url('../img/cinder/bkg.gif') left top; }
 
-#dumblr_scene { width: 18564px; position: relative; }
+#dumblr_scene { width: 15288px; position: relative; }
 #dumblr_scene>div { background: url('../img/dumblr/bkg.gif') left top; }
 
 #instacam_scene { width: 9828px; position: relative; }
@@ -1604,6 +1604,16 @@ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), u
     left: 406px;
     top: 635px;
  }
+      #date_elliot .eugh{ 
+    position: absolute;
+    left: 41px;
+    top: 569px;
+ }
+      #date_elliot .elips{ 
+    position: absolute;
+    left: 41px;
+    top: 629px;
+ }
   /*josie date*/
     #date_josie .jokay{ 
     position: absolute;
@@ -1649,7 +1659,7 @@ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), u
     #date_josie .nineteenbj{ /*21b, 24b*/
     position: absolute;
     left: 25px;
-    top: 636px;
+    top: 556px;
  }
    /*lilb date*/
     #date_lilb .next_lb{ 
