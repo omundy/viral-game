@@ -605,13 +605,6 @@ var dumblr = {
 		    'btn_img': 'reblog/d6.png',
 		    'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
 		},
-		'd7': {
-		    'id':'d7',
-		    'disabled':false, // after used true, button greyed out or disappears
-		    'display':'img',
-		    'btn_img': 'reblog/d7.png',
-		    'score': { 'camgirl': -1, 'martyr': -1, 'troll': -1 }
-		},
 		'd8': {
 		    'id':'d8',
 		    'disabled':false, // after used true, button greyed out or disappears
