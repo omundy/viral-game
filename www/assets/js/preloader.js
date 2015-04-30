@@ -75,8 +75,8 @@ var current_preload = '';
 
 
 // PRELOAD: INTRO
-//preload_manifest(manifest_intro,"loading intro!","intro_callback")
-//function intro_callback(){ montage_window('m_intro','m_intro_frame') }
+preload_manifest(manifest_intro,"loading intro!","intro_callback")
+function intro_callback(){ montage_window('m_intro','m_intro_frame') }
 
 
 
