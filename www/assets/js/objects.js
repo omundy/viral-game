@@ -66,13 +66,6 @@ var dumblr = {
             'btn_img': 'reblog/a3.png',
             'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
     	},
-        'a4': {
-			'id':'a4',
-            'disabled':false, // after used
-            'display':'img',
-            'btn_img': 'reblog/a4.png',
-            'score': { 'camgirl': 0, 'martyr': 0, 'troll': 1 }
-    	},
         'a5': {
         	'id':'a5',
             'disabled':false, // after used
@@ -478,14 +471,7 @@ var dumblr = {
 		    'display':'img',
 		    'btn_img': 'reblog/c13.png',
 		    'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
-		},
-		'c14': {
-		    'id':'c14',
-		    'disabled':false, // after used true, button greyed out or disappears
-		    'display':'img',
-		    'btn_img': 'reblog/c14.png',
-		    'score': { 'camgirl': 0, 'martyr': 1, 'troll': 0 }
-		},
+		},  
 		'c15': {
 		    'id':'c15',
 		    'disabled':false, // after used true, button greyed out or disappears
