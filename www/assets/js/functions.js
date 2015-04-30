@@ -73,7 +73,7 @@ var video_close_goto = -1;
 function show_popup_video(file,width,height){
 
 	soundtrack.pause();
-
+	soundtrack_playing = false;
 
 	var str = '';
 	str += '<video autoplay width="'+ width +'" height="'+ height +'"><source src="'+ file +'" type="video/mp4">';
@@ -92,6 +92,7 @@ function show_popup_video(file,width,height){
 function show_popup_video_confirmonly(file,width,height){
 	
 	soundtrack.pause();
+	soundtrack_playing = false;
 	
 	var str = '';
 	str += '<video autoplay width="'+ width +'" height="'+ height +'"><source src="'+ file +'" type="video/mp4">';
@@ -106,8 +107,9 @@ function show_popup_video_confirmonly(file,width,height){
 	report();
 }
 function close_popup_video(action){
-	if (play_sound == true && soundtrack.paused){		
+	if (play_sound == true && soundtrack_playing == false){		
 		soundtrack.play();
+		soundtrack_playing = true;
 	}
 	update_buttons(metube)
 	

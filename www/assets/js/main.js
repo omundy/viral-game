@@ -1154,4 +1154,5 @@ var soundtrack = new Howl({
 		//console.log('Soundtrack just looped...');
 	}
 });
+var soundtrack_playing = play_sound;
 
