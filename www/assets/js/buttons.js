@@ -109,7 +109,7 @@ function dumblr_img_clicked(page,id){
 	report() 
 }
 function dumblr_img_disablr(){
-	if ( dumblr.buttons[dumblr_img_button_tracker['a']] > 0){
+	if ( dumblr_img_button_tracker['a'] != '' || dumblr_img_button_tracker['b'] != '' || dumblr_img_button_tracker['c'] != '' || dumblr_img_button_tracker['d'] != ''){
 		disable_btn ( dumblr.buttons[dumblr_img_button_tracker['a']] );
 		disable_btn ( dumblr.buttons[dumblr_img_button_tracker['b']] );
 		disable_btn ( dumblr.buttons[dumblr_img_button_tracker['c']] );
