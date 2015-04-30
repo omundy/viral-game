@@ -76,8 +76,8 @@ $('.metube_shock').on('click',function(){ scene_control('metube',3) });
 $('.reblog').on('click',function(){ scene_control('dumblr',2) });
 $('.entry').on('click',function(){ scene_control('dumblr',1) });
 $('.diary').on('click',function(){ scene_control('dumblr',6) });
-$('.manifesto').on('click',function(){ scene_control('dumblr',10) });
-$('.rant').on('click',function(){ scene_control('dumblr',8) });
+$('.manifesto').on('click',function(){ scene_control('dumblr',8) });
+$('.rant').on('click',function(){ scene_control('dumblr',7) });
 	
 
 $('.a_dumblr_img_btn').on('click',function(){ dumblr_img_clicked( 'a', $(this).attr('id') ) });

@@ -435,10 +435,10 @@ function insert_dumblr_text(text_name){
 	output_str['diary'][6] = ' and ';
 	output_str['diary'][7] = '.  I was worried that my ideology conflicted with how I made money, but then I realized that I am a strong ';
 	output_str['diary'][8] = '! <br>The ';
-	output_str['diary'][8] = ' out there do freak you out, but I guess I feel safe because they are usually on the other side of the world. They\'re just a text box on the screen - it would be more ';
-	output_str['diary'][9] = ' if it was someone in real life  coming up to you and saying those things.<br>I just hope that someone among all those ';
-	output_str['diary'][10] = ' visits my site because they are interested in reading what I have to say, and want to fight the patriarchy! <br><br>';
-	output_str['diary'][11] = '';
+	output_str['diary'][9] = ' out there do freak you out, but I guess I feel safe because they are usually on the other side of the world. They\'re just a text box on the screen - it would be more ';
+	output_str['diary'][10] = ' if it was someone in real life  coming up to you and saying those things.<br>I just hope that someone among all those ';
+	output_str['diary'][11] = ' visits my site because they are interested in reading what I have to say, and want to fight the patriarchy! <br><br> -';
+	output_str['diary'][12] = ' ! ';
 	
 	
 	output_str['rant'][0] = 'This post is for all you stupid fucking ';
@@ -1135,10 +1135,10 @@ scene_control('home',0);
 
 /**/
 // comment these out to go/test live
-test_buttons();
+/*test_buttons();
 var report_test = true;
 $('#load_progress').hide();
-play_sound = false;
+play_sound = false;*/
 
 
 

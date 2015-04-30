@@ -165,7 +165,7 @@ body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), u
 .dumblr_words_phrase { background: rgba(0,0,0,.0); margin: 4px 0; }
 .dumblr_words_phrase_title { color: #000; font-family: monospace; font-weight: bold; }
 .dumblr_words_word_hlite { display: inline-block; background: #ee00ff; padding: 1px 2px; }
-.dumblr_words_confirm_btn { position:absolute; left:400px; top:560px;} 
+.dumblr_words_confirm_btn { position:absolute; left:250px; top:630px;} 
 
 
 
@@ -752,22 +752,22 @@ video {
    #dumblr_scene .dprompt { 
     position: absolute;
     left: 324px;
-    top: 207px;
+    top: 257px;
  }
    #dumblr_scene .diary { 
     position: absolute;
     left: 256px;
-    top: 260px;
+    top: 290px;
  }
    #dumblr_scene .rant {  
     position: absolute;
     left: 502px;
-    top: 260px;
+    top: 290px;
  }
    #dumblr_scene .manifesto {
     position: absolute;
     left: 349px;
-    top: 360px;
+    top: 390px;
  }
  #dumblr_scene .madtext {
     position: absolute;
@@ -792,7 +792,7 @@ video {
     #dumblr_scene .madbox {
     position: absolute;
     left: 216px;
-    top: 160px;
+    top: 175px;
  }
     #dumblr_scene .next_button {
     position: absolute;
@@ -925,477 +925,477 @@ video {
   /*MADLIBS img/dumblr/reblog/  */
     #dumblr_scene .click2reblog { 
     position: absolute;
-    left: 240px;
-    top: 452px;
+    left: 200px;
+    top: 482px;
  }
     #dumblr_scene .prog { 
     position: absolute;
-    left: 270px;
-    top: 590px;
+    left: 150px;
+    top: 630px;
  }
     #dumblr_scene .a1 { /*basic*/
     position: absolute;
     left: 636px;
-    top: 402px;
+    top: 452px;
  }
      #dumblr_scene .a2 { /*camwhore*/
     position: absolute;
     left: 690px;
-    top: 274px;
+    top: 324px;
  }
     #dumblr_scene .a3 { /*martyr*/
     position: absolute;
     left: 689px;
-    top: 402px;
+    top: 452px;
  }
     #dumblr_scene .a4 { /*troll*/
     position: absolute;
     left: 651px;
-    top: 328px;
+    top: 378px;
  }
     #dumblr_scene .a5 { /*troll*/
     position: absolute;
     left: 644px;
-    top: 212px;
+    top: 262px;
  }
     #dumblr_scene .a6 { /*camwhore*/
     position: absolute;
     left: 591px;
-    top: 266px;
+    top: 316px;
  }
      #dumblr_scene .a7 { /*martyr*/
     position: absolute;
     left: 215px;
-    top: 429px;
+    top: 479px;
  }
       #dumblr_scene .a8 { /*martyr*/
     position: absolute;
     left: 586px;
-    top: 340px;
+    top: 390px;
  }
     #dumblr_scene .a9 { /*martyr*/
     position: absolute;
     left: 435px;
-    top: 329px;
+    top: 379px;
  }
     #dumblr_scene .a10 { /*basic*/
     position: absolute;
     left: 584px;
-    top: 212px;
+    top: 262px;
  }
     #dumblr_scene .a11 { /*troll*/
     position: absolute;
     left: 505px;
-    top: 318px;
+    top: 368px;
  }
     #dumblr_scene .a12 { /*troll*/
     position: absolute;
     left: 291px;
-    top: 265px;
+    top: 315px;
  }
     #dumblr_scene .a13 { /*camwhore*/
     position: absolute;
     left: 242px;
-    top: 296px;
+    top: 346px;
  }
     #dumblr_scene .a14 { /*basic*/
     position: absolute;
     left: 458px;
-    top: 233px;
+    top: 273px;
  }
     #dumblr_scene .a15 { /*martyr*/
     position: absolute;
     left: 516px;
-    top: 384px;
+    top: 434px;
  }
     #dumblr_scene .a16 { /*camwhore*/
     position: absolute;
     left: 278px;
-    top: 363px;
+    top: 413px;
  }
     #dumblr_scene .a17 { /*troll*/
     position: absolute;
     left: 377px;
-    top: 380px;
+    top: 430px;
  }
     #dumblr_scene .a18 { /*camwhore*/
     position: absolute;
     left: 213px;
-    top: 361px;
+    top: 411px;
  }
     #dumblr_scene .a19 { /*troll*/
     position: absolute;
     left: 373px;
-    top: 325px;
+    top: 375px;
  }
     #dumblr_scene .a20 { /*camwhore*/
     position: absolute;
     left: 497px;
-    top: 212px;
+    top: 262px;
  }
     #dumblr_scene .a21   { /*basic*/
     position: absolute;
     left: 362px;
-    top: 222px;
+    top: 272px;
  }
     #dumblr_scene .a22   { /*basic*/
     position: absolute;
     left: 395px;
-    top: 255px;
+    top: 305px;
  }
     #dumblr_scene .a23   { /*troll*/
     position: absolute;
     left: 213px;
-    top: 223px;
+    top: 273px;
  }
     #dumblr_scene .a24   { /*basic*/
     position: absolute;
     left: 465px;
-    top: 393px;
+    top: 443px;
  }
     #dumblr_scene .a25   { /*martyr*/
     position: absolute;
     left: 288px;
-    top: 205px;
+    top: 255px;
  }
      #dumblr_scene .b1  { /*basic*/
     position: absolute;
     left: 477px;
-    top: 241px;
+    top: 291px;
  }
       #dumblr_scene .b2  { /*camwhore*/
     position: absolute;
     left: 315px;
-    top: 240px;
+    top: 290px;
  }
     #dumblr_scene .b3  { /*basic*/
     position: absolute;
     left: 445px;
-    top: 292px;
+    top: 342px;
  }
     #dumblr_scene .b4  { /*camwhore*/
     position: absolute;
     left: 349px;
-    top: 292px;
+    top: 342px;
  }
     #dumblr_scene .b5  { /*troll*/
     position: absolute;
     left: 690px;
-    top: 359px;
+    top: 409px;
  }
      #dumblr_scene .b6  { /*troll*/
     position: absolute;
     left: 507px;
-    top: 323px;
+    top: 373px;
  }
     #dumblr_scene .b7  { /*camwhore*/
     position: absolute;
     left: 361px;
-    top: 416px;
+    top: 466px;
  }
     #dumblr_scene .b8  { /*martyr*/
     position: absolute;
     left: 213px;
-    top: 350px;
+    top: 400px;
  }
     #dumblr_scene .b9  { /*basic*/
     position: absolute;
     left: 608px;
-    top: 310px;
+    top: 360px;
  }
     #dumblr_scene .b10  { /*martyr*/
     position: absolute;
     left: 655px;
-    top: 276px;
+    top: 326px;
  }
     #dumblr_scene .b11  { /*troll*/
     position: absolute;
     left: 449px;
-    top: 377px;
+    top: 427px;
  }
     #dumblr_scene .b12  { /*martyr*/
     position: absolute;
     left: 728px;
-    top: 308px;
+    top: 358px;
  }
     #dumblr_scene .b13  { /*basic*/
     position: absolute;
     left: 304px;
-    top: 305px;
+    top: 355px;
  }
     #dumblr_scene .b14  { /*troll*/
     position: absolute;
     left: 285px;
-    top: 348px;
+    top: 398px;
  }
     #dumblr_scene .b15  { /*martyr*/
     position: absolute;
     left: 520px;
-    top: 247px;
+    top: 297px;
  }
     #dumblr_scene .b16  { /*martyr*/
     position: absolute;
     left: 562px;
-    top: 341px;
+    top: 391px;
  }
     #dumblr_scene .b17  { /*troll*/
     position: absolute;
     left: 197px;
-    top: 439px;
+    top: 489px;
  }
     #dumblr_scene .b18  { /*basic*/
     position: absolute;
     left: 406px;
-    top: 240px;
+    top: 290px;
  }
     #dumblr_scene .b19  { /*troll*/
     position: absolute;
     left: 215px;
-    top: 257px;
+    top: 307px;
  }
      #dumblr_scene .b20  { /*basic*/
     position: absolute;
     left: 690px;
-    top: 432px;
+    top: 482px;
  }
     #dumblr_scene .b21  { /*camwhore*/
     position: absolute;
     left: 607px;
-    top: 394px;
+    top: 444px;
  }
     #dumblr_scene .b22  { /*camwhore*/
     position: absolute;
     left: 629px;
-    top: 341px;
+    top: 391px;
  }
     #dumblr_scene .b23  { /*basic*/
     position: absolute;
     left: 255px;
-    top: 416px;
+    top: 466px;
  }
      #dumblr_scene .b24  { /*camwhore*/
     position: absolute;
     left: 602px;
-    top: 222px;
+    top: 272px;
  }
     #dumblr_scene .c1  { /*camwhore*/
     position: absolute;
     left: 431px;
-    top: 380px;
+    top: 430px;
  }
      #dumblr_scene .c2  { /*troll*/
     position: absolute;
     left: 546px;
-    top: 320px;
+    top: 370px;
  }
     #dumblr_scene .c3  { /*camwhore*/
     position: absolute;
     left: 321px;
-    top: 324px;
+    top: 374px;
     }
     #dumblr_scene .c4  { /*troll*/
     position: absolute;
     left: 205px;
-    top: 365px;
+    top: 415px;
     }
     #dumblr_scene .c5  { /*camwhore*/
     position: absolute;
     left: 389px;
-    top: 323px;
+    top: 373px;
     }
     #dumblr_scene .c6  { /*trol*/
     position: absolute;
     left: 350px;
-    top: 265px;
+    top: 315px;
     }
     #dumblr_scene .c7  { /*basic*/
     position: absolute;
     left: 413px;
-    top: 276px;
+    top: 326px;
     }
     #dumblr_scene .c8  { /*basic*/
     position: absolute;
     left: 285px;
-    top: 258px;
+    top: 308px;
     }
     #dumblr_scene .c9  { /*troll*/
     position: absolute;
     left: 642px;
-    top: 426px;
+    top: 476px;
     }
     #dumblr_scene .c10  { /*troll*/
     position: absolute;
     left: 327px;
-    top: 406px;
+    top: 456px;
     }
     #dumblr_scene .c11  { /*camwhore*/
     position: absolute;
     left: 229px;
-    top: 212px;
+    top: 262px;
     }
     #dumblr_scene .c12  { /*troll*/
     position: absolute;
     left: 255px;
-    top: 446px;
+    top: 496px;
     }
     #dumblr_scene .c13  { /*martyr*/
     position: absolute;
     left: 315px;
-    top: 209px;
+    top: 2059px;
     }
     #dumblr_scene .c14  { /*martyr*/
     position: absolute;
     left: 360px;
-    top: 235px;
+    top: 285px;
     }
     #dumblr_scene .c15  { /*basic*/
     position: absolute;
     left: 518px;
-    top: 213px;
+    top: 263px;
     }
     #dumblr_scene .c16  { /*camwhore*/
     position: absolute;
     left: 605px;
-    top: 265px;
+    top: 305px;
     }
     #dumblr_scene .c17  { /*martyr*/
     position: absolute;
     left: 594px;
-    top: 351px;
+    top: 401px;
     }
     #dumblr_scene .c18  { /*basic*/
     position: absolute;
     left: 594px;
-    top: 351px;
+    top: 401px;
     }
     #dumblr_scene .c19  { /*martyr*/
     position: absolute;
     left: 677px;
-    top: 241px;
+    top: 291px;
     }
     #dumblr_scene .c20  { /*martyr*/
     position: absolute;
     left: 457px;
-    top: 309px;
+    top: 359px;
     }
     #dumblr_scene .c21  { /*camwhore*/
     position: absolute;
     left: 469px;
-    top: 257px;
+    top: 307px;
     }
     #dumblr_scene .c22  { /*basic*/
     position: absolute;
     left: 520px;
-    top: 379px;
+    top: 429px;
     }
     #dumblr_scene .c23  { /*camwhore*/
     position: absolute;
     left: 699px;
-    top: 386px;
+    top: 436px;
     }
     #dumblr_scene .c24  { /*camwhore*/
     position: absolute;
     left: 211px;
-    top: 448px;
+    top: 498px;
     }
     #dumblr_scene .c25  { /*basic*/
     position: absolute;
     left: 660px;
-    top: 325px;
+    top: 375px;
     }
     #dumblr_scene .d1 { /*basic*/
     position: absolute;
     left: 646px;
-    top: 412px;
+    top: 462px;
     }
     #dumblr_scene .d2 { /*basic*/
     position: absolute;
     left: 699px;
-    top: 285px;
+    top: 335px;
     }
     #dumblr_scene .d3 { /*troll*/
     position: absolute;
     left: 700px;
-    top: 418px;
+    top: 468px;
     }
     #dumblr_scene .d4 { /*martyr*/
     position: absolute;
     left: 663px;
-    top: 340px;
+    top: 390px;
     }
     #dumblr_scene .d5 { /*camwhore*/
     position: absolute;
     left: 654px;
-    top: 222px;
+    top: 272px;
     }
     #dumblr_scene .d6 { /*martyr*/
     position: absolute;
     left: 602px;
-    top: 276px;
+    top: 326px;
     }
     #dumblr_scene .d7 { /*basic*/
     left: 228px;
-    top: 443px;
+    top: 493px;
     }
     #dumblr_scene .d8 { /*camwhore*/
     position: absolute;
     left: 597px;
-    top: 353px;
+    top: 403px;
     }
     #dumblr_scene .d9 { /*basic*/
     position: absolute;
     left: 446px;
-    top: 341px;
+    top: 391px;
     }
     #dumblr_scene .d10 { /*martyr*/
     position: absolute;
     left: 593px;
-    top: 223px;
+    top: 273px;
     }
     #dumblr_scene .d11 { /*martyr*/
     position: absolute;
     left: 517px;
-    top: 321px;
+    top: 371px;
     }
     #dumblr_scene .d12 { /*camwhore*/
     position: absolute;
     left: 306px;
-    top: 278px;
+    top: 328px;
     }
     #dumblr_scene .d13 { /*camwhore*/
     position: absolute;
     left: 253px;
-    top: 321px;
+    top: 371px;
     }
     #dumblr_scene .d14 { /*troll*/
     position: absolute;
     left: 487px;
-    top: 301px;
+    top: 351px;
     }
     #dumblr_scene .d15 { /*troll*/
     position: absolute;
     left: 526px;
-    top: 396px;
+    top: 446px;
     }
     #dumblr_scene .d16 { /*martyr*/
     position: absolute;
     left: 291px;
-    top: 378px;
+    top: 428px;
     }
     #dumblr_scene .d17 { /*martyr*/
     position: absolute;
     left: 387px;
-    top: 414px;
+    top: 464px;
     }
     #dumblr_scene .d18 { /*troll*/
     position: absolute;
     left: 224px;
-    top: 372px;
+    top: 422px;
     }
     #dumblr_scene .d19 { /*camwhore*/
     position: absolute;
     left: 385px;
-    top: 338px;
+    top: 388px;
     }
     #dumblr_scene .d20 { /*troll*/
     position: absolute;
@@ -1405,27 +1405,27 @@ video {
     #dumblr_scene .d21 { /*martyr*/
     position: absolute;
     left: 371px;
-    top: 233px;
+    top: 273px;
     }
     #dumblr_scene .d22 { /*camwhore*/
     position: absolute;
     left: 407px;
-    top: 267px;
+    top: 317px;
     }
     #dumblr_scene .d23 { /*troll*/
     position: absolute;
     left: 223px;
-    top: 233px;
+    top: 283px;
     }
     #dumblr_scene .d24 { /*troll*/
     position: absolute;
     left: 474px;
-    top: 405px;
+    top: 455px;
     }
     #dumblr_scene .d25 { /*basic*/
     position: absolute;
     left: 298px;
-    top: 215px;
+    top: 265px;
     }
 
 /***********************************************************************************/

@@ -1137,7 +1137,7 @@ var dumblr_words = {
 					    	
 				'm2w17': {
 				    'id':'m2w17' ,
-				    'text':'suffer',
+				    'text':'writhe',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w17.png',
@@ -1145,7 +1145,7 @@ var dumblr_words = {
 				},
 				'm2w18': {
 				    'id':'m2w18',
-				    'text':'rage',
+				    'text':'poop',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/m2w19.png',
@@ -1597,7 +1597,7 @@ var dumblr_words = {
 				},
 				'cg2w20': {
 				    'id':'cg2w20',
-				    'text': 'panties',
+				    'text': 'fans',
 				    'disabled':false, // after used true, button greyed out 
 				    'display':'img',
 				    'btn_img': 'words/cg2w20.png',
