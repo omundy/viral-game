@@ -1092,8 +1092,10 @@ function loser_checker(){
 			// are any not yet disabled?
 			if (obj[key].disabled == false){
 				//console.log('loser_checker() ========= cinder not disabled');
-				return false;
-			}
+				if (obj[key].id != date_elliot_btn){
+					return false;
+				}
+			} 
 		}
 	}
 	// dumblr
