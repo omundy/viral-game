@@ -1,10 +1,12 @@
+
+
 html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bkg.gif') }
 
+
+/* reporting / loading */
 #nav { position: absolute; top: 30px; width: 9%}
 #nav .group { display: block;  }
 #nav  button { background:#666; border: none; margin: 2px 4px 0 0 }
-
-/* reporting / loading */
 #report { position: absolute; color: #fff; top: 0; background: rgba(0,0,0,.5); width: 100%; font-size: 80%; z-index: 500}
 #load_progress { position: absolute; top: 0; background: rgba(25,25,25,0.85)!important; width:100% !important; height: 100% !important; z-index: 99995 }
 #load_bar_container { position: absolute; top: 0; background: #000; width: 100%; height: 5px; z-index: 99998 }
@@ -14,13 +16,16 @@ html,body { font: 1em/1.4em Arial; color: #fff; background-image: url('../img/bk
 
 
 
-#container { width:100%; height: 100%; background-image: url('../img/bkg.gif'); position: absolute }
-#scene_container { width:1092px; height: 798px; background: #000; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); }
+#container { width:100%; height: 100%; background-image: url('../img/bkg.gif'); position: }
+/*#scene_container { width:1092px; height: 798px; background: #000; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); }*/
+#scene_container { width:1092px; height: 798px; margin: auto; position:absolute; top:0; right: 0; bottom: 0; left: 0; overflow: hidden }
+
+
 
 
 .scene { position:relative; width: 1092px; height: 728px; }
 
-body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-4/nat325.ani), url(http://cur.cursors-4u.net/nature/nat-4/nat325.png), progress !important;}
+body, a:hover {cursor: url('http://cur.cursors-4u.net/nature/nat-4/nat325.ani'), url('http://cur.cursors-4u.net/nature/nat-4/nat325.png'), progress !important;}
 
 #montage_window { 
 	display: none;
@@ -438,13 +443,13 @@ video {
     top: 572px;
     z-index: 120;
  }
- .frame { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/main.gif');}
+ .frame { background:url('../img/main/main.gif');}
 
- .frame_ab { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/about_page.gif');}
+ .frame_ab { background:url('../img/main/about_page.gif');}
 
- .frame_co { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/collaborators.gif');}
+ .frame_co { background:url('../img/main/collaborators.gif');}
 
- .frame_ns { margin: 0 auto; margin: 0 auto 0; overflow: hidden; position: relative; top: 50%; transform: translateY(-50%); width: 1092px; height: 688px; padding-top: 40px; z-index: 1; background:url('../img/main/nsfw.gif');}
+ .frame_ns { background:url('../img/main/nsfw.gif');}
 
 
 /***********************************************************************************/
